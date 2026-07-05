@@ -11,31 +11,49 @@ class Settings:
     DEFAULTS = {
         "theme": "dark",
         "language": "fr",
-        "whisper_model": "base",
         "sample_rate": 48000,
+        "whisper_model": "base",
         "auto_start": False,
+        "debug": False,
     }
 
     def __init__(self):
-        self.data = {}
+        self.data = self.DEFAULTS.copy()
 
         if self.FILE.exists():
             self.load()
         else:
-            self.data = self.DEFAULTS.copy()
             self.save()
 
     def load(self):
-        with open(self.FILE, "r", encoding="utf-8") as f:
-            self.data = json.load(f)
+        try:
+            with self.FILE.open("r", encoding="utf-8") as f:
+                self.data.update(json.load(f))
+        except Exception:
+            self.data = self.DEFAULTS.copy()
+            self.save()
 
     def save(self):
-        with open(self.FILE, "w", encoding="utf-8") as f:
-            json.dump(self.data, f, indent=4, ensure_ascii=False)
+        self.FILE.parent.mkdir(parents=True, exist_ok=True)
 
-    def get(self, key):
-        return self.data.get(key, self.DEFAULTS.get(key))
+        with self.FILE.open("w", encoding="utf-8") as f:
+            json.dump(
+                self.data,
+                f,
+                indent=4,
+                ensure_ascii=False,
+            )
+
+    def get(self, key, default=None):
+        return self.data.get(
+            key,
+            self.DEFAULTS.get(key, default),
+        )
 
     def set(self, key, value):
         self.data[key] = value
+        self.save()
+
+    def reset(self):
+        self.data = self.DEFAULTS.copy()
         self.save()

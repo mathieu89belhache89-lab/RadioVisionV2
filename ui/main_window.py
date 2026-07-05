@@ -10,8 +10,11 @@ from PySide6.QtWidgets import (
     QHBoxLayout,
     QStatusBar,
     QToolBar,
+    QSplitter,
 )
 from PySide6.QtGui import QAction
+
+from config import WINDOW_TITLE, WINDOW_WIDTH, WINDOW_HEIGHT
 
 
 class MainWindow(QMainWindow):
@@ -19,8 +22,8 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.setWindowTitle("RadioVision V2")
-        self.resize(1200, 800)
+        self.setWindowTitle(WINDOW_TITLE)
+        self.resize(WINDOW_WIDTH, WINDOW_HEIGHT)
 
         self._create_toolbar()
         self._create_statusbar()
@@ -42,15 +45,12 @@ class MainWindow(QMainWindow):
     def _create_statusbar(self):
 
         self.status = QStatusBar()
-
         self.setStatusBar(self.status)
-
         self.status.showMessage("Prêt")
 
     def _create_ui(self):
 
         central = QWidget()
-
         self.setCentralWidget(central)
 
         layout = QVBoxLayout(central)
@@ -69,8 +69,16 @@ class MainWindow(QMainWindow):
         buttons.addWidget(self.start_button)
         buttons.addWidget(self.stop_button)
 
+        splitter = QSplitter(Qt.Vertical)
+
         self.radio_log = QTextEdit()
         self.radio_log.setReadOnly(True)
+
+        self.details = QTextEdit()
+        self.details.setReadOnly(True)
+
+        splitter.addWidget(self.radio_log)
+        splitter.addWidget(self.details)
 
         self.code = QLabel("📟 Code : Aucun")
         self.signification = QLabel("📖 Signification : -")
@@ -78,7 +86,7 @@ class MainWindow(QMainWindow):
         layout.addWidget(self.state)
         layout.addWidget(self.volume)
         layout.addLayout(buttons)
-        layout.addWidget(self.radio_log)
+        layout.addWidget(splitter)
         layout.addWidget(self.code)
         layout.addWidget(self.signification)
 

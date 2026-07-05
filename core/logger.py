@@ -9,21 +9,26 @@ class Logger:
     def __init__(self):
         self.file = Path(LOG_DIR) / "radiovision.log"
 
-    def _write(self, level: str, message: str):
+        self.file.parent.mkdir(parents=True, exist_ok=True)
+
+    def _log(self, level: str, message: str):
 
         line = (
             f"[{datetime.now():%d/%m/%Y %H:%M:%S}] "
             f"[{level}] {message}\n"
         )
 
-        with open(self.file, "a", encoding="utf-8") as f:
+        with self.file.open("a", encoding="utf-8") as f:
             f.write(line)
 
     def info(self, message: str):
-        self._write("INFO", message)
+        self._log("INFO", message)
 
     def warning(self, message: str):
-        self._write("WARNING", message)
+        self._log("WARNING", message)
 
     def error(self, message: str):
-        self._write("ERROR", message)
+        self._log("ERROR", message)
+
+    def exception(self, exception: Exception):
+        self._log("EXCEPTION", str(exception))
