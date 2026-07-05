@@ -1,6 +1,7 @@
 from PySide6.QtCore import QThread, Signal
 
 from audio.capture import AudioCapture
+from audio.vad import VoiceActivityDetector
 from audio.whisper import Whisper
 
 
@@ -13,38 +14,44 @@ class AudioWorker(QThread):
 
         self.running = False
 
-        self.capture = None
+        self.capture = AudioCapture()
+        self.vad = VoiceActivityDetector()
         self.whisper = None
 
     def run(self):
 
         self.running = True
 
-        self.capture = AudioCapture()
-        self.text_received.emit("🎤 Capture audio démarrée...")
+        self.capture.start()
 
-        if self.whisper is None:
-            self.whisper = Whisper()
-            self.text_received.emit("🧠 Whisper chargé.")
+        self.whisper = Whisper()
+
+        self.text_received.emit("🎤 Capture continue démarrée")
+
+        frames = []
 
         while self.running:
 
-            try:
+            pcm = self.capture.read()
 
-                audio = self.capture.record(seconds=3)
+            if self.vad.is_speech(pcm):
 
-                self.text_received.emit(f"✅ Audio capturé : {audio}")
+                frames.append(pcm)
 
-                text = self.whisper.transcribe(audio)
+            else:
 
-                if text:
-                    self.text_received.emit(f"📝 {text}")
-                else:
-                    self.text_received.emit("⚠️ Aucun texte reconnu")
+                if len(frames) > 5:
 
-            except Exception as e:
-                self.text_received.emit(f"ERREUR : {e}")
+                    audio = b"".join(frames)
 
+                    text = self.whisper.transcribe_bytes(audio)
+
+                    if text:
+                        self.text_received.emit(text)
+
+                frames.clear()
+
+        self.capture.stop()
 
     def stop(self):
         self.running = False
