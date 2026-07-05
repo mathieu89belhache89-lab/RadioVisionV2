@@ -1,6 +1,7 @@
 import html
 import time
 from datetime import datetime
+from pathlib import Path
 
 from PySide6.QtCore import QObject
 
@@ -175,6 +176,60 @@ class RadioVisionApp(QObject):
             missing.append("véhicule")
 
         return missing
+    
+    def save_radio_event(
+        self,
+        text,
+        code=None,
+        signification=None,
+        unit=None,
+        location=None,
+        direction=None,
+        vehicle=None,
+        incidents=None,
+    ):
+        incidents = incidents or []
+
+        logs_dir = Path("logs")
+        logs_dir.mkdir(exist_ok=True)
+
+        file = logs_dir / f"radio_{datetime.now():%Y-%m-%d}.txt"
+
+        lines = []
+        lines.append("=" * 60)
+        lines.append(f"Heure : {datetime.now():%H:%M:%S}")
+        lines.append(f"Phrase : {text}")
+
+        if unit:
+            lines.append(f"Unité : {unit}")
+
+        if code:
+            lines.append(f"Code : {code}")
+
+        if signification:
+            lines.append(f"Motif : {signification}")
+
+        if location:
+            lines.append(f"Lieu : {location['name']}")
+
+        if direction:
+            lines.append(f"Direction : {direction}")
+
+        if vehicle:
+            label = vehicle["vehicle"]
+
+            if vehicle["color"]:
+                label += f" {vehicle['color']}"
+
+            lines.append(f"Véhicule : {label}")
+
+        for incident in incidents:
+            lines.append(f"Info : {incident}")
+
+        lines.append("")
+
+        with file.open("a", encoding="utf-8") as f:
+            f.write("\n".join(lines))
 
     def append_radio_bubble(
         self,
@@ -314,6 +369,17 @@ class RadioVisionApp(QObject):
         """
 
         self.window.details.append(bubble)
+
+        self.save_radio_event(
+            text=text,
+            code=code,
+            signification=signification,
+            unit=unit,
+            location=location,
+            direction=direction,
+            vehicle=vehicle,
+            incidents=incidents,
+        )
 
     def on_text(self, text):
         self.window.radio_log.append(

@@ -1,0 +1,47 @@
+============================================================
+Heure : 22:42:06
+Phrase : central, unité 21, 10-10 direction Sandy Shoress, bmw m4 blanche, 2 individus à bord.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanche
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 22:42:40
+Phrase : central l'unité 21, 10-10 direction Sandy Shoress, bmw m4 blanche, 2 individus à bord.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanche
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 22:42:56
+Phrase : central, l'unité 21, 10-10 direction Sandy Shoress, bm4w, allez voilà.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+============================================================
+Heure : 22:43:11
+Phrase : central unité 21, 10-10 direction Sandy Shoress, bmw, m4 blanche, 2 individus à bord.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanche
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 22:43:42
+Phrase : central unité, 21, 10-10 direction Sandy Shoress, goldfuiteur blanche, 2 individus à bord.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Info : 👥 2 individu(s) à bord
