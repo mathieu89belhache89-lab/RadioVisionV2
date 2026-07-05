@@ -1,0 +1,7592 @@
+[
+  {
+    "id": 94,
+    "name": "Aérodrome Grapeseed",
+    "aliases": [
+      "aerodrome grapeseed",
+      "aérodrome grapeseed",
+      "aéroport grapeseed",
+      "grapeseed",
+      "grapeseed airfield",
+      "mc kenzie",
+      "mckenzie"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5786.190877972272,
+          4995.425809675558
+        ],
+        [
+          5749.411301110373,
+          5018.057347091928
+        ],
+        [
+          5803.1660672931475,
+          5122.728207642635
+        ],
+        [
+          5811.6536619535855,
+          5196.280704245836
+        ],
+        [
+          5868.237626356506,
+          5159.504455944236
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 57,
+    "name": "Aéroport",
+    "aliases": [
+      "aeroport",
+      "aeroport los santos",
+      "aéroport",
+      "aéroport los santos",
+      "lsia"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          518,
+          3274
+        ],
+        [
+          308,
+          3150
+        ],
+        [
+          662,
+          2432
+        ],
+        [
+          888,
+          2580
+        ],
+        [
+          886,
+          2642
+        ],
+        [
+          1248,
+          2876
+        ],
+        [
+          998,
+          3304
+        ],
+        [
+          864,
+          3238
+        ],
+        [
+          822,
+          3266
+        ],
+        [
+          662,
+          3186
+        ],
+        [
+          538,
+          3270
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 179,
+    "name": "Aéroport Cayo Périco",
+    "aliases": [
+      "aeroport cayo perico",
+      "aéroport cayo perico",
+      "aéroport cayo périco",
+      "cayo",
+      "cayo perico",
+      "cayo périco",
+      "perico",
+      "périco"
+    ],
+    "type": "polygon",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1040,
+          6508
+        ],
+        [
+          1076,
+          6600
+        ],
+        [
+          1052,
+          6622
+        ],
+        [
+          1064,
+          6648
+        ],
+        [
+          1090,
+          6634
+        ],
+        [
+          1114,
+          6714
+        ],
+        [
+          1134,
+          6786
+        ],
+        [
+          1164,
+          6850
+        ],
+        [
+          1188,
+          6930
+        ],
+        [
+          1202,
+          6978
+        ],
+        [
+          1212,
+          7026
+        ],
+        [
+          1248,
+          7004
+        ],
+        [
+          1258,
+          6958
+        ],
+        [
+          1222,
+          6856
+        ],
+        [
+          1196,
+          6770
+        ],
+        [
+          1176,
+          6700
+        ],
+        [
+          1126,
+          6592
+        ],
+        [
+          1098,
+          6506
+        ],
+        [
+          1072,
+          6468
+        ],
+        [
+          1046,
+          6474
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 95,
+    "name": "Aéroport RoxWood",
+    "aliases": [
+      "aeroport roxwood",
+      "aéroport roxwood",
+      "roxwood"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          7290.659722996705,
+          186.78152966887765
+        ],
+        [
+          6758.770457609252,
+          560.2018970389697
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 89,
+    "name": "Aéroport Sandy Shores",
+    "aliases": [
+      "aerodrome sandy",
+      "aeroport sandy",
+      "aeroport sandy shores",
+      "aeroport sandy shoress",
+      "aéroport sandy",
+      "aéroport sandy shores",
+      "sandy airfield",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4714.204660167068,
+          4424.007817788734
+        ],
+        [
+          4833.030985413201,
+          4887.954334824302
+        ],
+        [
+          4787.763813890865,
+          4902.099045709534
+        ],
+        [
+          4731.179849487945,
+          4800.257127335872
+        ],
+        [
+          4632.157911782833,
+          4692.757324608118
+        ],
+        [
+          4646.303902883564,
+          4446.639355205103
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 142,
+    "name": "Alamo Island",
+    "aliases": [
+      "alamo island"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5429.685684990277,
+          3818.742439923548
+        ],
+        [
+          5358.955729486626,
+          3764.992538559671
+        ],
+        [
+          5312.730794807918,
+          3784.617116037748
+        ],
+        [
+          5298.584803707188,
+          3798.761826922979
+        ],
+        [
+          5280.195015276239,
+          3836.9525463131017
+        ],
+        [
+          5268.878222395655,
+          3872.3143235261787
+        ],
+        [
+          5257.561429515071,
+          3916.162927270394
+        ],
+        [
+          5270.292821505728,
+          3954.353646660517
+        ],
+        [
+          5308.486997477699,
+          3988.300952785071
+        ],
+        [
+          5359.412565440328,
+          3968.498357545748
+        ],
+        [
+          5406.094336072738,
+          3920.406340535963
+        ],
+        [
+          5421.654926283541,
+          3873.7287946147017
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 144,
+    "name": "Ammunation Base Militaire",
+    "aliases": [
+      "ammunation base militaire",
+      "base mili",
+      "base militaire",
+      "fort zancudo",
+      "zancudo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4424.0841569078375,
+          3010.2005996293087
+        ],
+        [
+          4448.132341779079,
+          2996.055888744078
+        ],
+        [
+          4464.400231544919,
+          3014.444012894878
+        ],
+        [
+          4444.595844003897,
+          3030.710430412893
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 193,
+    "name": "Ammunation Place Des Cubes",
+    "aliases": [
+      "ammunation place des cubes",
+      "place des cubes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1959.5,
+          3743
+        ],
+        [
+          1984.5,
+          3752.5
+        ],
+        [
+          1970.5,
+          3790.5
+        ],
+        [
+          1928.5,
+          3769
+        ],
+        [
+          1936.5,
+          3749.5
+        ],
+        [
+          1952,
+          3754
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 138,
+    "name": "Ammunation RévoBank",
+    "aliases": [
+      "ammunation revobank",
+      "ammunation révobank",
+      "revobank",
+      "révobank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2621.6155733068895,
+          3936.593277640905
+        ],
+        [
+          2642.1272604029477,
+          3945.0801041720433
+        ],
+        [
+          2652.736753728496,
+          3919.619624578628
+        ],
+        [
+          2629.395868412291,
+          3911.13279804749
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 209,
+    "name": "Ammunation RoxWood",
+    "aliases": [
+      "ammunation roxwood",
+      "roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          7661.731492877865,
+          1112.1306121268108
+        ],
+        [
+          7696.741034696623,
+          1118.1317047177326
+        ],
+        [
+          7683.7374905925135,
+          1157.1388065587248
+        ],
+        [
+          7648.727948773755,
+          1146.1368034753682
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 167,
+    "name": "Ammunation Zone Industriel",
+    "aliases": [
+      "ammunation zone industriel",
+      "ammunation zone industrielle",
+      "zone industriel",
+      "zone industrielle"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          1264.773661587185,
+          4285.83822961574
+        ],
+        [
+          1243.5546749360897,
+          4307.762531487847
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 85,
+    "name": "amphithéâtre Vinewood",
+    "aliases": [
+      "amphitheatre vinewood",
+      "amphithéâtre vinewood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          3098.5,
+          4150
+        ],
+        [
+          3104.5,
+          4177
+        ],
+        [
+          3122,
+          4184.5
+        ],
+        [
+          3100.5,
+          4245
+        ],
+        [
+          3085.5,
+          4241.5
+        ],
+        [
+          3070.5,
+          4281.5
+        ],
+        [
+          3036,
+          4317
+        ],
+        [
+          3024,
+          4348.5
+        ],
+        [
+          3006,
+          4348
+        ],
+        [
+          3008.5,
+          4322.5
+        ],
+        [
+          2991,
+          4315
+        ],
+        [
+          2998,
+          4289
+        ],
+        [
+          3006,
+          4287
+        ],
+        [
+          3016.5,
+          4273.5
+        ],
+        [
+          3026,
+          4241
+        ],
+        [
+          3021.5,
+          4235
+        ],
+        [
+          3007,
+          4234
+        ],
+        [
+          2958.5,
+          4241
+        ],
+        [
+          2955,
+          4209.5
+        ],
+        [
+          2960.5,
+          4183
+        ],
+        [
+          2965,
+          4174
+        ],
+        [
+          2971,
+          4158.5
+        ],
+        [
+          2977,
+          4148
+        ],
+        [
+          2993,
+          4132.5
+        ],
+        [
+          3000,
+          4128
+        ],
+        [
+          3044,
+          4185
+        ],
+        [
+          3061,
+          4137
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 171,
+    "name": "Ancien Benny's",
+    "aliases": [
+      "ancien benny's",
+      "benny's"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1803.6120838316933,
+          3589.119686217591
+        ],
+        [
+          1782.6063587404385,
+          3589.119686217591
+        ],
+        [
+          1781.6060861170456,
+          3619.125149172201
+        ],
+        [
+          1807.6131743252656,
+          3618.124967073714
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 139,
+    "name": "Ancien Concess Bateau",
+    "aliases": [
+      "ancien concess bateau",
+      "bateau",
+      "concess bateau"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          509.8548834217309,
+          4153.764969687323
+        ],
+        [
+          649.9001953189589,
+          4159.422854041415
+        ],
+        [
+          652.7293935391051,
+          4049.0941091366158
+        ],
+        [
+          508.4402843116575,
+          4050.5085802251383
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 226,
+    "name": "Ancien LS Custom",
+    "aliases": [
+      "ancien ls custom",
+      "ls custom"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          1382.5,
+          2981.5
+        ],
+        [
+          1322,
+          3034.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 25,
+    "name": "Ancien PDP",
+    "aliases": [
+      "ancien pdp",
+      "pdp"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2691.5,
+          4099.5
+        ],
+        [
+          2634,
+          4184
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 218,
+    "name": "Ancien Pont RoxWood",
+    "aliases": [
+      "ancien pont roxwood",
+      "pont roxwood"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6419.87456570239,
+          1762.2981599979723
+        ],
+        [
+          6426.947561252754,
+          1787.7586395913877
+        ],
+        [
+          6627.820634883123,
+          1734.0087382275105
+        ],
+        [
+          6632.064432213342,
+          1708.5482586340954
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 29,
+    "name": "Ancienne Revente Coke",
+    "aliases": [
+      "ancienne revente coke",
+      "revente coke"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          1736,
+          4842.5
+        ],
+        [
+          1523.5,
+          4938
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 187,
+    "name": "Arcadius",
+    "aliases": [
+      "arcadius"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2219.576097543806,
+          3670.0918251490825
+        ],
+        [
+          2300.598180038646,
+          3697.0967418082314
+        ],
+        [
+          2301.598452662039,
+          3657.089457868752
+        ],
+        [
+          2295.596816921681,
+          3623.0832665201942
+        ],
+        [
+          2239.581550011668,
+          3601.079260353481
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 48,
+    "name": "Auto Ecole",
+    "aliases": [
+      "auto ecole"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        1757.5,
+        3913.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 239,
+    "name": "Avenue Rockford Plaza",
+    "aliases": [
+      "avenue rockford plaza"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2682,
+          3394
+        ],
+        [
+          2654,
+          3556
+        ],
+        [
+          2564,
+          3804
+        ],
+        [
+          2526,
+          3936
+        ],
+        [
+          2482,
+          4048
+        ],
+        [
+          2452,
+          4050
+        ],
+        [
+          2468,
+          3964
+        ],
+        [
+          2540,
+          3792
+        ],
+        [
+          2578,
+          3692
+        ],
+        [
+          2622,
+          3556
+        ],
+        [
+          2650,
+          3394
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 148,
+    "name": "Avenue Vinwood",
+    "aliases": [
+      "avenue vinewood",
+      "avenue vinwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2827.012911183817,
+          3406.8404717567855
+        ],
+        [
+          2827.012911183817,
+          3544.019187306976
+        ],
+        [
+          2829.841338308563,
+          3631.700428174108
+        ],
+        [
+          2827.012911183817,
+          3764.636503037179
+        ],
+        [
+          2781.758077187878,
+          3877.7735880270266
+        ],
+        [
+          2746.4027381285505,
+          3982.4253916426355
+        ],
+        [
+          2713.8758261939693,
+          4072.9350596345134
+        ],
+        [
+          2671.4494193227765,
+          4191.728998873853
+        ],
+        [
+          2692.662622758373,
+          4204.456920935211
+        ],
+        [
+          2726.603748255327,
+          4105.461971569094
+        ],
+        [
+          2767.615941564147,
+          4006.467022202978
+        ],
+        [
+          2804.385494185847,
+          3897.5725779002496
+        ],
+        [
+          2845.397687494667,
+          3790.0923471598944
+        ],
+        [
+          2848.2261146194132,
+          3768.879143724298
+        ],
+        [
+          2848.2261146194132,
+          3623.215146799869
+        ],
+        [
+          2843.983473932294,
+          3538.3623330574837
+        ],
+        [
+          2846.8119010570404,
+          3406.8404717567855
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 147,
+    "name": "Bahamas",
+    "aliases": [
+      "bahamas"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2269.542903254225,
+          2819.321685262188
+        ],
+        [
+          2240.543621497728,
+          2838.4170449572493
+        ],
+        [
+          2256.1042117085312,
+          2860.341346829357
+        ],
+        [
+          2282.9815947999186,
+          2845.489400399865
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 55,
+    "name": "Bank Fleeca OUEST",
+    "aliases": [
+      "bank fleeca ouest",
+      "banque ouest",
+      "fleeca ouest"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        2977.5,
+        1806.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 58,
+    "name": "Barrage",
+    "aliases": [
+      "barrage"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          3060,
+          5050
+        ],
+        [
+          3246,
+          5018
+        ],
+        [
+          3168,
+          5164
+        ],
+        [
+          2882,
+          5264
+        ],
+        [
+          2618,
+          4990
+        ],
+        [
+          2626,
+          4850
+        ],
+        [
+          2712,
+          4838
+        ],
+        [
+          3072,
+          5052
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 83,
+    "name": "Base militaire",
+    "aliases": [
+      "base mili",
+      "base militaire",
+      "fort zancudo",
+      "zancudo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          4899,
+          1888
+        ],
+        [
+          4870,
+          1948
+        ],
+        [
+          4887,
+          1995
+        ],
+        [
+          4851,
+          2063
+        ],
+        [
+          4919,
+          2183
+        ],
+        [
+          4888,
+          2232
+        ],
+        [
+          4903,
+          2239
+        ],
+        [
+          4886,
+          2263
+        ],
+        [
+          4886,
+          2352
+        ],
+        [
+          4858,
+          2403
+        ],
+        [
+          4903,
+          2460
+        ],
+        [
+          4789,
+          2660
+        ],
+        [
+          4735,
+          2638
+        ],
+        [
+          4641,
+          2651
+        ],
+        [
+          4544,
+          2688
+        ],
+        [
+          4509,
+          2713
+        ],
+        [
+          4501,
+          2702
+        ],
+        [
+          4554,
+          2658
+        ],
+        [
+          4553,
+          2647
+        ],
+        [
+          4514,
+          2627
+        ],
+        [
+          4510,
+          2568
+        ],
+        [
+          4486,
+          2547
+        ],
+        [
+          4514,
+          2421
+        ],
+        [
+          4498,
+          2368
+        ],
+        [
+          4510,
+          2346
+        ],
+        [
+          4536,
+          2339
+        ],
+        [
+          4575,
+          2273
+        ],
+        [
+          4600,
+          2225
+        ],
+        [
+          4595,
+          2172
+        ],
+        [
+          4573,
+          2146
+        ],
+        [
+          4592,
+          2109
+        ],
+        [
+          4683,
+          2083
+        ],
+        [
+          4768,
+          1934
+        ],
+        [
+          4818,
+          1899
+        ],
+        [
+          4845,
+          1857
+        ],
+        [
+          4856,
+          1856
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 21,
+    "name": "Bennys",
+    "aliases": [
+      "bennys"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        2755.5,
+        4211.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 160,
+    "name": "Bijouterie",
+    "aliases": [
+      "bijouterie"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2517.5,
+          3311
+        ],
+        [
+          2501,
+          3320.5
+        ],
+        [
+          2485.5,
+          3330
+        ],
+        [
+          2490.5,
+          3345.5
+        ],
+        [
+          2500.5,
+          3358
+        ],
+        [
+          2534,
+          3339.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 131,
+    "name": "Bloods",
+    "aliases": [
+      "bloods"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2342.2453576892663,
+          2719.5525435528148
+        ],
+        [
+          2374.0738376659087,
+          2682.069059706953
+        ],
+        [
+          2429.2432029587562,
+          2722.3814857298607
+        ],
+        [
+          2469.5592775958376,
+          2750.6709075003223
+        ],
+        [
+          2424.9994056285373,
+          2791.6905690674917
+        ],
+        [
+          2402.3658198673693,
+          2812.907635395338
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 166,
+    "name": "Boucherie",
+    "aliases": [
+      "boucherie"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1184.6232613908098,
+          4366.108214012911
+        ],
+        [
+          1284.6505237301183,
+          4374.109670800807
+        ],
+        [
+          1280.649433236546,
+          4419.117865232722
+        ],
+        [
+          1178.6216256504513,
+          4410.116226346338
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 127,
+    "name": "Boule Orange",
+    "aliases": [
+      "boule orange"
+    ],
+    "type": "marker",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        5584.5,
+        5565.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 111,
+    "name": "Bucheron",
+    "aliases": [
+      "bucheron"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6095.055141159674,
+          3424.255397102037
+        ],
+        [
+          6159.072589056832,
+          3328.237915647287
+        ],
+        [
+          6237.093853681492,
+          3350.2419218140003
+        ],
+        [
+          6219.088946460417,
+          3454.260860056647
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 72,
+    "name": "Bunker Aéroport Sandy Shores",
+    "aliases": [
+      "aerodrome sandy",
+      "aeroport sandy",
+      "aeroport sandy shores",
+      "aeroport sandy shoress",
+      "aéroport sandy",
+      "aéroport sandy shores",
+      "bunker aeroport sandy shores",
+      "bunker aeroport sandy shoress",
+      "bunker aéroport sandy shores",
+      "sandy airfield",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        4877,
+        4721
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 68,
+    "name": "Bunker barrage",
+    "aliases": [
+      "barrage",
+      "bunker barrage"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        3050,
+        5030
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 67,
+    "name": "Bunker Lester",
+    "aliases": [
+      "bunker lester",
+      "lester"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        2185.5,
+        4210
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 71,
+    "name": "Bunker Magasin vetement Sandy Shores",
+    "aliases": [
+      "bunker magasin vetement sandy shores",
+      "bunker magasin vetement sandy shoress",
+      "magasin vetement sandy shores",
+      "magasin vetement sandy shoress",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        4505,
+        4143.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 74,
+    "name": "Bunker Paleto Bay",
+    "aliases": [
+      "bunker paleto bay",
+      "paleto bay"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        7062,
+        3704.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 66,
+    "name": "Bunker Plage",
+    "aliases": [
+      "bunker plage",
+      "plage"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        958.5,
+        4509.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 70,
+    "name": "Bunker Sandy shores",
+    "aliases": [
+      "bunker sandy shores",
+      "bunker sandy shoress",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        3875,
+        4320.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 75,
+    "name": "Bunker Soulevine 1",
+    "aliases": [
+      "bunker soulevine 1",
+      "soulevine 1"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        7337,
+        1164
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 76,
+    "name": "Bunker Soulevine 2",
+    "aliases": [
+      "bunker soulevine 2",
+      "soulevine 2"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        7213,
+        1195
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 69,
+    "name": "Bunker Vinewood",
+    "aliases": [
+      "bunker vinewood",
+      "vinewood"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        3351,
+        4033
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 73,
+    "name": "Bunker Zone rouge",
+    "aliases": [
+      "bunker zone rouge",
+      "zone rouge"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        1488,
+        3359
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 164,
+    "name": "Burger Shot",
+    "aliases": [
+      "burger shot"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2076,
+          2993.5
+        ],
+        [
+          2092,
+          2984
+        ],
+        [
+          2082,
+          2964
+        ],
+        [
+          2075.5,
+          2956.5
+        ],
+        [
+          2065.5,
+          2966.5
+        ],
+        [
+          2069.5,
+          2979.5
+        ],
+        [
+          2072.5,
+          2987
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 15,
+    "name": "Cabinet avocat",
+    "aliases": [
+      "cabinet avocat"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2426.5,
+          3881.5
+        ],
+        [
+          2362.5,
+          3944.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 122,
+    "name": "Camp de Gitan",
+    "aliases": [
+      "camp de gitan"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4325.052002188679,
+          5327.436005047696
+        ],
+        [
+          4303.833015537583,
+          5309.0478808968965
+        ],
+        [
+          4311.613310642985,
+          5268.028219329727
+        ],
+        [
+          4341.319891954518,
+          5270.857161506773
+        ],
+        [
+          4366.782675935833,
+          5277.929516949389
+        ],
+        [
+          4401.440354132622,
+          5282.880165759219
+        ],
+        [
+          4410.635248348097,
+          5304.804467631327
+        ],
+        [
+          4407.806050127951,
+          5325.314298414912
+        ],
+        [
+          4390.123561252038,
+          5326.728769503435
+        ],
+        [
+          4370.3191737110155,
+          5326.728769503435
+        ],
+        [
+          4359.709680385467,
+          5331.679418313265
+        ],
+        [
+          4344.149090174665,
+          5327.436005047696
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 157,
+    "name": "Canaux Vespucci",
+    "aliases": [
+      "canal vespucci",
+      "canaux",
+      "canaux vespucci",
+      "vespucci canal"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1856.5262074628718,
+          3046.1022047628408
+        ],
+        [
+          2028.5730986864824,
+          2950.0847233080904
+        ],
+        [
+          2111.5957264281083,
+          3112.114223262982
+        ],
+        [
+          1945.5504709448562,
+          3219.1337078010893
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 28,
+    "name": "Caserne Pompier",
+    "aliases": [
+      "caserne pompier"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          1666.5,
+          4574
+        ],
+        [
+          1711,
+          4522
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 23,
+    "name": "Casino",
+    "aliases": [
+      "casino",
+      "casino diamond",
+      "diamond casino"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2652,
+          4393
+        ],
+        [
+          2721,
+          4353
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 128,
+    "name": "Casse Avion",
+    "aliases": [
+      "avion",
+      "casse avion"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4653.2997194883565,
+          5282.955234631939
+        ],
+        [
+          4734.639168317554,
+          5281.540763543416
+        ],
+        [
+          4766.467648294198,
+          5352.26431796957
+        ],
+        [
+          4655.421618153466,
+          5360.043908956446
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 195,
+    "name": "Casse Mission Row",
+    "aliases": [
+      "casse mission row",
+      "mission row"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1736.6137195720519,
+          4104.132979407141
+        ],
+        [
+          1739.6145374422313,
+          4073.1273343540447
+        ],
+        [
+          1781.6259876247407,
+          4070.1267880585838
+        ],
+        [
+          1788.6278959884924,
+          4102.132615210167
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 203,
+    "name": "Casse Zone Rouge",
+    "aliases": [
+      "casse zone rouge",
+      "zone rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1527.591364453819,
+          3393.1912509229765
+        ],
+        [
+          1537.59409068775,
+          3422.1965317790987
+        ],
+        [
+          1554.5987252854322,
+          3445.2007200442995
+        ],
+        [
+          1574.604177753294,
+          3458.2030873246304
+        ],
+        [
+          1563.60117889597,
+          3494.2096428701616
+        ],
+        [
+          1545.5962716748945,
+          3487.2083681807526
+        ],
+        [
+          1525.5908192070328,
+          3480.207093491344
+        ],
+        [
+          1511.5870024795295,
+          3475.206182998909
+        ],
+        [
+          1505.5853667391711,
+          3458.2030873246304
+        ],
+        [
+          1501.5842762455986,
+          3432.1983527639686
+        ],
+        [
+          1509.5864572327434,
+          3410.194346597255
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 65,
+    "name": "CBG industies",
+    "aliases": [
+      "cbg industies",
+      "cbg industries"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          2802.5,
+          2344
+        ],
+        [
+          2764,
+          2243
+        ],
+        [
+          2862.5,
+          2192
+        ],
+        [
+          2873.5,
+          2218.5
+        ],
+        [
+          2918,
+          2200
+        ],
+        [
+          2929.5,
+          2222.5
+        ],
+        [
+          2962,
+          2227
+        ],
+        [
+          2961.5,
+          2247
+        ],
+        [
+          2943.5,
+          2248.5
+        ],
+        [
+          2936.5,
+          2261
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 97,
+    "name": "Central Electrique",
+    "aliases": [
+      "central electrique"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          3812.7418205662752,
+          5481.365390351576
+        ],
+        [
+          3508.6589430547774,
+          5705.40618041266
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 98,
+    "name": "Champ d'éolienne",
+    "aliases": [
+      "champ d'eolienne",
+      "champ d'éolienne",
+      "d'eolienne",
+      "d'éolienne"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4300.8748607821,
+          5089.294007744678
+        ],
+        [
+          4252.861774859232,
+          5345.340624957346
+        ],
+        [
+          3980.787621296313,
+          5393.349365684722
+        ],
+        [
+          3868.757087476288,
+          5225.318773138908
+        ],
+        [
+          4012.7963452448917,
+          5041.285267017303
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 234,
+    "name": "Champ d'orange",
+    "aliases": [
+      "champ d'orange",
+      "d'orange"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          6966,
+          3852
+        ],
+        [
+          6892,
+          4028
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 168,
+    "name": "Champ de pétrole",
+    "aliases": [
+      "champ de petrole",
+      "champ de pétrole",
+      "de petrole",
+      "de pétrole"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          981.2323463651792,
+          4564.298372344966
+        ],
+        [
+          1055.2525204962676,
+          4626.309662451159
+        ],
+        [
+          1125.2716041337835,
+          4644.312940223925
+        ],
+        [
+          1223.2983212263061,
+          4632.310755042081
+        ],
+        [
+          1313.3228573316837,
+          4618.308205663263
+        ],
+        [
+          1363.336488501338,
+          4684.320224163404
+        ],
+        [
+          1431.3550268920676,
+          4700.323137739196
+        ],
+        [
+          1487.3702938020804,
+          4702.323501936169
+        ],
+        [
+          1505.3752010231558,
+          4734.329329087754
+        ],
+        [
+          1523.3801082442315,
+          4786.338798209076
+        ],
+        [
+          1477.3675675681495,
+          4844.349359921322
+        ],
+        [
+          1427.353936398495,
+          4882.356279663827
+        ],
+        [
+          1371.3386694884825,
+          4874.354822875931
+        ],
+        [
+          1303.320131097753,
+          4864.3530018910615
+        ],
+        [
+          1263.3092261620295,
+          4846.349724118296
+        ],
+        [
+          1213.2955949923753,
+          4836.3479031334255
+        ],
+        [
+          1171.2841448098652,
+          4844.349359921322
+        ],
+        [
+          1133.2737851209286,
+          4850.3504525122435
+        ],
+        [
+          1097.2639706787772,
+          4802.341711784868
+        ],
+        [
+          1045.2497942623368,
+          4810.343168572764
+        ],
+        [
+          1013.241070313758,
+          4792.339890799998
+        ],
+        [
+          975.2307106248209,
+          4726.3278722998575
+        ],
+        [
+          981.2323463651792,
+          4666.316946390638
+        ],
+        [
+          975.2307106248209,
+          4616.307841466289
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 124,
+    "name": "Champ Grapeseed",
+    "aliases": [
+      "champ grapeseed",
+      "grapeseed"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5836.648070119581,
+          4953.14572630123
+        ],
+        [
+          5804.639346171002,
+          4992.1528281422225
+        ],
+        [
+          5849.651614223691,
+          5090.170673793948
+        ],
+        [
+          5908.667699003883,
+          5184.187791051723
+        ],
+        [
+          6053.70722939588,
+          5329.214195332336
+        ],
+        [
+          6101.917867028595,
+          5189.013849368375
+        ],
+        [
+          6070.796686606987,
+          5032.007558542314
+        ],
+        [
+          5964.701753351512,
+          4882.073623158868
+        ],
+        [
+          5908.117788948591,
+          4924.5077558145595
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 220,
+    "name": "Champ RoxWood",
+    "aliases": [
+      "champ roxwood",
+      "roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6849.186000388355,
+          656.2240761622759
+        ],
+        [
+          6923.206174519443,
+          814.2528477232195
+        ],
+        [
+          6901.200176804796,
+          884.2655946173084
+        ],
+        [
+          7085.250339509123,
+          928.2736069507357
+        ],
+        [
+          7167.272694627356,
+          776.245927980714
+        ],
+        [
+          7087.250884755909,
+          712.234273677547
+        ],
+        [
+          7037.237253586255,
+          682.2288107229376
+        ],
+        [
+          6969.218715195525,
+          650.222983571354
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 206,
+    "name": "Chantier Avocat",
+    "aliases": [
+      "avocat",
+      "chantier avocat"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2363.1085753447187,
+          3828.248477359532
+        ],
+        [
+          2351.105303864002,
+          3786.2408292230784
+        ],
+        [
+          2353.105849110788,
+          3748.233909480573
+        ],
+        [
+          2407.1205707740146,
+          3764.2368230563648
+        ],
+        [
+          2463.135837684027,
+          3780.2397366321566
+        ],
+        [
+          2441.1298399693796,
+          3862.2546687080894
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 118,
+    "name": "Chantier Paleto",
+    "aliases": [
+      "chantier paleto",
+      "paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6928.706689845429,
+          3802.9108232587755
+        ],
+        [
+          6969.730064037546,
+          3844.637720370206
+        ],
+        [
+          7012.168037339737,
+          3804.3252943472985
+        ],
+        [
+          6973.2665618127285,
+          3761.183926147344
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 189,
+    "name": "Chantier PC",
+    "aliases": [
+      "chantier pc"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2063.5,
+          3638
+        ],
+        [
+          1924,
+          3587.5
+        ],
+        [
+          1922,
+          3673
+        ],
+        [
+          1934.5,
+          3685
+        ],
+        [
+          2033.5,
+          3720.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 17,
+    "name": "Chantier Weazle News",
+    "aliases": [
+      "chantier weazle news",
+      "weazle news"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2093,
+          3423.5
+        ],
+        [
+          1959.5,
+          3469.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 163,
+    "name": "Cimetière",
+    "aliases": [
+      "cimetiere",
+      "cimetière"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2442.346822218335,
+          2630.4372260139567
+        ],
+        [
+          2469.216879903424,
+          2674.2778464475227
+        ],
+        [
+          2507.4006460874975,
+          2687.0057685088805
+        ],
+        [
+          2549.8270529586903,
+          2708.218971944477
+        ],
+        [
+          2586.5966055803906,
+          2679.934700697015
+        ],
+        [
+          2579.5255377685253,
+          2627.6087988892104
+        ],
+        [
+          2554.0696936458094,
+          2604.9813818912407
+        ],
+        [
+          2554.0696936458094,
+          2576.697110643779
+        ],
+        [
+          2546.998625833944,
+          2549.8270529586903
+        ],
+        [
+          2522.9569952736015,
+          2541.3417715844516
+        ],
+        [
+          2476.287947715289,
+          2566.7976157071676
+        ],
+        [
+          2448.0036764678275,
+          2592.253459829883
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 119,
+    "name": "Circuit RoxWood",
+    "aliases": [
+      "circuit roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          7463.20235779194,
+          738.222983571354
+        ],
+        [
+          7477.206174519443,
+          384.15852070696155
+        ],
+        [
+          8015.352845904923,
+          282.1399466612893
+        ],
+        [
+          8099.375746269941,
+          812.236458859391
+        ],
+        [
+          7779.288506784154,
+          928.2575822838812
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 192,
+    "name": "Club de Boxe",
+    "aliases": [
+      "club de boxe"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1565.9676077227612,
+          3763.998833149217
+        ],
+        [
+          1557.480013062323,
+          3747.02518008694
+        ],
+        [
+          1567.382206832834,
+          3718.735758316478
+        ],
+        [
+          1591.4303917040752,
+          3735.7094113787557
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 154,
+    "name": "CNN",
+    "aliases": [
+      "cnn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2488.5387481389535,
+          3007.0843591111166
+        ],
+        [
+          2490.5392933857397,
+          3039.0901862626997
+        ],
+        [
+          2502.542564866457,
+          3067.0952850203353
+        ],
+        [
+          2513.5455637237806,
+          3080.097652300666
+        ],
+        [
+          2525.5488352044977,
+          3068.0954671188224
+        ],
+        [
+          2516.54638159396,
+          3041.090550459674
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 8,
+    "name": "Coiffeur Plage",
+    "aliases": [
+      "coiffeur plage"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        1929.5,
+        2908
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 126,
+    "name": "Concess Bateau",
+    "aliases": [
+      "bateau",
+      "concess bateau"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6635.116807886618,
+          1480.1363997148346
+        ],
+        [
+          6535.089545547309,
+          1524.1444120482618
+        ],
+        [
+          6527.087364560164,
+          1612.1604367151165
+        ],
+        [
+          6595.105902950894,
+          1640.165535472752
+        ],
+        [
+          6651.121169860907,
+          1568.1524243816891
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 132,
+    "name": "Concess Voiture",
+    "aliases": [
+      "concess voiture",
+      "voiture"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": "Voiture",
+    "geometry": {
+      "latlngs": [
+        [
+          2530.5,
+          3214.5
+        ],
+        [
+          2499.5,
+          3231.5
+        ],
+        [
+          2506.5,
+          3252
+        ],
+        [
+          2542.5,
+          3234
+        ],
+        [
+          2538.5,
+          3225.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 180,
+    "name": "Concessionnaire Simeone",
+    "aliases": [
+      "concessionnaire simeone",
+      "simeone"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1929.7648757834909,
+          3708.06439557097
+        ],
+        [
+          1960.27319079698,
+          3716.56594340811
+        ],
+        [
+          1951.2707371864421,
+          3746.0713153134757
+        ],
+        [
+          1927.2641942250082,
+          3739.0700406240667
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 121,
+    "name": "Dinosaure Rose",
+    "aliases": [
+      "dinosaure rose"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4351.929385280066,
+          5461.103522913128
+        ],
+        [
+          4352.636684835103,
+          5401.695737195158
+        ],
+        [
+          4412.757147013206,
+          5399.574030562373
+        ],
+        [
+          4415.586345233352,
+          5440.593692129542
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 150,
+    "name": "Eclipse Tower",
+    "aliases": [
+      "eclipse tower"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2864.6368925604643,
+          3220.112402278112
+        ],
+        [
+          2902.6472522494014,
+          3218.112038081138
+        ],
+        [
+          2904.6477974961876,
+          3266.120778808513
+        ],
+        [
+          2864.6368925604643,
+          3267.120960907
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 107,
+    "name": "Eglise Route 68",
+    "aliases": [
+      "eglise route 68"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4535.553407354353,
+          3487.7211816527506
+        ],
+        [
+          4481.798641171577,
+          3541.4710830166277
+        ],
+        [
+          4521.407416253623,
+          3592.3920422034585
+        ],
+        [
+          4583.649777096835,
+          3549.957909547766
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 153,
+    "name": "EMS",
+    "aliases": [
+      "ems"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2273,
+          3942
+        ],
+        [
+          2261.5,
+          3983
+        ],
+        [
+          2287,
+          3996.5
+        ],
+        [
+          2301.5,
+          3950
+        ],
+        [
+          2288.5,
+          3942
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 86,
+    "name": "Fabrique de billet",
+    "aliases": [
+      "fabrique de billet"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        5124,
+        6085.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 146,
+    "name": "Fete Forraine",
+    "aliases": [
+      "del perro pier",
+      "fete foraine",
+      "fete forraine",
+      "fête foraine",
+      "jetee",
+      "jetée"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1895.1434711390336,
+          2650.2572180869074
+        ],
+        [
+          1935.154376074757,
+          2598.247748965584
+        ],
+        [
+          2067.190362362644,
+          2710.268143996126
+        ],
+        [
+          2019.177276439776,
+          2756.2765205265277
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 30,
+    "name": "Fonderie",
+    "aliases": [
+      "fonderie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          1493,
+          4389
+        ],
+        [
+          1387,
+          4431
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 50,
+    "name": "Fourrière",
+    "aliases": [
+      "fourriere",
+      "fourrière"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        1587,
+        4020
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 116,
+    "name": "Fourrière Paleto",
+    "aliases": [
+      "fourriere paleto",
+      "fourrière paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6727.43717376792,
+          3603.5841532568083
+        ],
+        [
+          6751.943853041052,
+          3580.5799649916075
+        ],
+        [
+          6769.948760262127,
+          3599.5834248628603
+        ],
+        [
+          6746.4423536123895,
+          3619.086975783356
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 24,
+    "name": "Fuente Blanca",
+    "aliases": [
+      "fuente blanca"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          3335,
+          4753.5
+        ],
+        [
+          3453,
+          4614.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 20,
+    "name": "Galaxie",
+    "aliases": [
+      "galaxie"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        2855,
+        3974
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 244,
+    "name": "Go-Fast",
+    "aliases": [
+      "go-fast"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        4871.176702791191,
+        5320.5788659638765
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 56,
+    "name": "Golf",
+    "aliases": [
+      "golf"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          2786,
+          2842.5
+        ],
+        [
+          2823,
+          3025.5
+        ],
+        [
+          2594,
+          3162.5
+        ],
+        [
+          2553,
+          3071
+        ],
+        [
+          2636.5,
+          2907.5
+        ],
+        [
+          2637,
+          2839
+        ],
+        [
+          2648,
+          2827
+        ],
+        [
+          2754.5,
+          2824.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 190,
+    "name": "Gouvernement",
+    "aliases": [
+      "gouvernement"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2484.287477058332,
+          3387.1661917317624
+        ],
+        [
+          2620.0889916253414,
+          3309.3702818629936
+        ],
+        [
+          2620.0889916253414,
+          3370.1925386694857
+        ],
+        [
+          2588.967811203735,
+          3402.725373705516
+        ],
+        [
+          2515.408657479938,
+          3450.8173907153014
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 125,
+    "name": "Grapeseed",
+    "aliases": [
+      "grapeseed"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5717.59845266204,
+          4845.122235596409
+        ],
+        [
+          5944.660338172269,
+          4809.115680050878
+        ],
+        [
+          5946.660883419056,
+          4875.1276985510185
+        ],
+        [
+          5896.647252249401,
+          4893.130976323784
+        ],
+        [
+          5806.622716144024,
+          4897.131704717733
+        ],
+        [
+          5768.612356455086,
+          4907.133525702602
+        ],
+        [
+          5736.603632506508,
+          4915.134982490498
+        ],
+        [
+          5709.5962716748945,
+          4897.131704717733
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 225,
+    "name": "Hangar Mayweather",
+    "aliases": [
+      "hangar mayweather",
+      "hangar merryweather"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          604,
+          3883
+        ],
+        [
+          487,
+          3930
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 106,
+    "name": "Harmony",
+    "aliases": [
+      "harmony"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4370.594908557929,
+          4192.168488612103
+        ],
+        [
+          4345.588092973102,
+          3974.1287911419404
+        ],
+        [
+          4345.588092973102,
+          3863.1085782098853
+        ],
+        [
+          4396.60199676615,
+          3856.1073035204763
+        ],
+        [
+          4447.615900559196,
+          4168.164118248415
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 204,
+    "name": "Hôpital Fourrière",
+    "aliases": [
+      "hopital fourriere",
+      "hôpital fourrière"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1685.5812773882749,
+          3967.06906283821
+        ],
+        [
+          1715.5894560900674,
+          3923.0610505047825
+        ],
+        [
+          1780.607176610618,
+          3976.0707017245923
+        ],
+        [
+          1726.5924549473912,
+          4038.0819918307857
+        ],
+        [
+          1701.585639362564,
+          4006.076164679202
+        ],
+        [
+          1697.5845488689918,
+          3988.0728869064365
+        ],
+        [
+          1693.5834583754195,
+          3977.0708838230794
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 205,
+    "name": "Hôpital Océan",
+    "aliases": [
+      "hopital ocean",
+      "hôpital océan"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2434.8077375694697,
+          2498.9664220825643
+        ],
+        [
+          2464.5143188810034,
+          2496.137479905518
+        ],
+        [
+          2481.4895082018793,
+          2520.1834884104105
+        ],
+        [
+          2461.685120660857,
+          2541.4005547382562
+        ],
+        [
+          2434.8077375694697,
+          2572.518918685764
+        ],
+        [
+          2405.1011562579365,
+          2549.887381269395
+        ],
+        [
+          2413.588750918375,
+          2524.4269016759795
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 27,
+    "name": "Hopital St fiacre",
+    "aliases": [
+      "hopital st fiacre"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          1710.5,
+          4474.5
+        ],
+        [
+          1665.5,
+          4522.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 137,
+    "name": "Hotel Rose",
+    "aliases": [
+      "hotel rose"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2816.417926267252,
+          2834.1816485981344
+        ],
+        [
+          2865.9288951198077,
+          2820.0369377129036
+        ],
+        [
+          2894.2208773212683,
+          2831.352706421088
+        ],
+        [
+          2909.7814675320715,
+          2866.714483634165
+        ],
+        [
+          2925.342057742874,
+          2893.5894343161035
+        ],
+        [
+          2928.1712559630205,
+          2928.9512115291805
+        ],
+        [
+          2929.585855073094,
+          2962.898517653734
+        ],
+        [
+          2906.952269311925,
+          2969.97087309635
+        ],
+        [
+          2881.4894853306114,
+          2981.286641804534
+        ],
+        [
+          2851.7829040190777,
+          2998.260294866811
+        ],
+        [
+          2836.2223138082745,
+          2943.0959224144112
+        ],
+        [
+          2829.1493182579097,
+          2883.6881366964417
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 188,
+    "name": "Leboncoin",
+    "aliases": [
+      "leboncoin"
+    ],
+    "type": "marker",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        2065.5,
+        3602
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 26,
+    "name": "Lester",
+    "aliases": [
+      "lester"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2049.38,
+          4210.08
+        ],
+        [
+          2018.38,
+          4249.08
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 32,
+    "name": "Location Scooter",
+    "aliases": [
+      "location scooter"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2010.5,
+          3226
+        ],
+        [
+          1959.5,
+          3276.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 64,
+    "name": "LS Custom",
+    "aliases": [
+      "ls custom"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          2552.5,
+          3557.5
+        ],
+        [
+          2545,
+          3525.5
+        ],
+        [
+          2570,
+          3513
+        ],
+        [
+          2606.5,
+          3532
+        ],
+        [
+          2596.5,
+          3562.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 170,
+    "name": "Magasin de vêtement Mission Row",
+    "aliases": [
+      "magasin de vetement mission row",
+      "magasin de vêtement mission row"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2162.1376615415043,
+          4027.725841362926
+        ],
+        [
+          2163.5522606515774,
+          4053.8935565006027
+        ],
+        [
+          2131.016481119898,
+          4054.600792044864
+        ],
+        [
+          2129.601882009825,
+          4025.604134730141
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 228,
+    "name": "Magasin de vêtements poste de police",
+    "aliases": [
+      "magasin de vetements poste de police",
+      "magasin de vêtements poste de police",
+      "poste de police"
+    ],
+    "type": "marker",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        2154.5,
+        2956
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 90,
+    "name": "Maison O'Neil",
+    "aliases": [
+      "maison o'neil",
+      "o'neil"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5947.324493072042,
+          5326.309662451159
+        ],
+        [
+          5913.315223876677,
+          5358.315489602743
+        ],
+        [
+          5943.3234025784695,
+          5398.3227735422215
+        ],
+        [
+          5985.334852760979,
+          5362.31621799669
+        ],
+        [
+          5989.335943254551,
+          5324.309298254185
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 156,
+    "name": "Marina",
+    "aliases": [
+      "marina"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1664,
+          3183
+        ],
+        [
+          1695,
+          3181
+        ],
+        [
+          1682,
+          3126
+        ],
+        [
+          1711,
+          3116
+        ],
+        [
+          1728,
+          3165
+        ],
+        [
+          1750,
+          3154
+        ],
+        [
+          1731,
+          3086
+        ],
+        [
+          1764,
+          3092
+        ],
+        [
+          1786,
+          3089
+        ],
+        [
+          1792,
+          3101
+        ],
+        [
+          1772,
+          3110
+        ],
+        [
+          1798,
+          3195
+        ],
+        [
+          1738,
+          3220
+        ],
+        [
+          1803,
+          3275
+        ],
+        [
+          1787,
+          3299
+        ],
+        [
+          1710,
+          3237
+        ],
+        [
+          1673,
+          3251
+        ],
+        [
+          1509,
+          3079
+        ],
+        [
+          1528,
+          3047
+        ],
+        [
+          1607,
+          3120
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 182,
+    "name": "Maze Bank",
+    "aliases": [
+      "maze bank",
+      "maze bank tower",
+      "tour maze bank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2182.658702431911,
+          3680.1373497708287
+        ],
+        [
+          2085.6322579627818,
+          3649.131704717732
+        ],
+        [
+          2055.624079260989,
+          3727.145908399717
+        ],
+        [
+          2150.6499784833322,
+          3760.1519176497877
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 199,
+    "name": "Maze Bank Arena",
+    "aliases": [
+      "arena",
+      "maze arena",
+      "maze bank arena"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1351.1974505708645,
+          3480.1942120104104
+        ],
+        [
+          1305.1849098947825,
+          3532.203681131734
+        ],
+        [
+          1331.1919981030028,
+          3604.2167922227964
+        ],
+        [
+          1383.2061745194433,
+          3608.217520616745
+        ],
+        [
+          1413.2143532212358,
+          3584.213150253057
+        ],
+        [
+          1429.218715195525,
+          3548.2065947075253
+        ],
+        [
+          1435.2203509358835,
+          3516.200767555942
+        ],
+        [
+          1421.2165342083804,
+          3488.1956687983065
+        ],
+        [
+          1397.2099912469462,
+          3474.1931194194885
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 178,
+    "name": "Mega Mall",
+    "aliases": [
+      "mega mall"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1493.6431628985051,
+          3767.132979407141
+        ],
+        [
+          1533.6540678342285,
+          3796.138260263264
+        ],
+        [
+          1499.6447986388634,
+          3839.146090498204
+        ],
+        [
+          1455.6328032095678,
+          3809.1406275435947
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 120,
+    "name": "Mine",
+    "aliases": [
+      "mine"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4450.6651232235745,
+          5448.170384561236
+        ],
+        [
+          4628.904611092775,
+          5521.722881164435
+        ],
+        [
+          4674.171782615111,
+          5776.327677098589
+        ],
+        [
+          4445.006726783282,
+          5790.472387983819
+        ],
+        [
+          4422.373141022114,
+          5609.420088652866
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 169,
+    "name": "Mirror Park",
+    "aliases": [
+      "mirror park"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2433.312944537813,
+          4442.207365606138
+        ],
+        [
+          2335.7056059427755,
+          4293.687901311216
+        ],
+        [
+          2269.2194477693433,
+          4306.4181411079235
+        ],
+        [
+          2242.3420646779564,
+          4337.536505055431
+        ],
+        [
+          2223.9522762470074,
+          4368.6548690029385
+        ],
+        [
+          2197.0748931556195,
+          4384.214050976692
+        ],
+        [
+          2167.3683118440863,
+          4401.187704038969
+        ],
+        [
+          2153.2223207433562,
+          4428.062654720908
+        ],
+        [
+          2139.076329642626,
+          4507.2730356782
+        ],
+        [
+          2151.807721633283,
+          4539.805870714231
+        ],
+        [
+          2160.295316293721,
+          4573.753176838784
+        ],
+        [
+          2161.709915403794,
+          4609.114954051862
+        ],
+        [
+          2139.076329642626,
+          4689.7398060976775
+        ],
+        [
+          2182.9289020548895,
+          4705.29898807143
+        ],
+        [
+          2216.879280696642,
+          4647.305673441984
+        ],
+        [
+          2252.2442584484675,
+          4607.700482963338
+        ],
+        [
+          2246.5858620081754,
+          4662.864855415739
+        ],
+        [
+          2273.4632450995628,
+          4686.9108639206315
+        ],
+        [
+          2310.242821961461,
+          4674.180624123923
+        ],
+        [
+          2341.364002383067,
+          4617.601780583
+        ],
+        [
+          2376.728980134893,
+          4604.871540786292
+        ],
+        [
+          2405.020962336353,
+          4596.384714255154
+        ],
+        [
+          2429.0691472075946,
+          4573.753176838784
+        ],
+        [
+          2464.43412495942,
+          4498.7862091470615
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 101,
+    "name": "Motel Sandy Shores",
+    "aliases": [
+      "motel sandy shores",
+      "motel sandy shoress"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5011.474775492656,
+          4745.00796158852
+        ],
+        [
+          5042.595955914262,
+          4723.790895260673
+        ],
+        [
+          5072.302537225795,
+          4791.685507509781
+        ],
+        [
+          5018.5477710430205,
+          4831.290697988427
+        ],
+        [
+          5004.40177994229,
+          4807.244689483535
+        ],
+        [
+          5031.279163033677,
+          4786.027623155688
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 34,
+    "name": "musée",
+    "aliases": [
+      "musee",
+      "musée"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2289.5,
+          3348.5
+        ],
+        [
+          2242,
+          3459.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 219,
+    "name": "Nouveau Pont RoxWood",
+    "aliases": [
+      "nouveau pont roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6578.309666030568,
+          2551.5730273938484
+        ],
+        [
+          6576.895066920495,
+          2577.033506987264
+        ],
+        [
+          6736.744766358745,
+          2571.375622633171
+        ],
+        [
+          6735.330167248673,
+          2544.500671951233
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 136,
+    "name": "Observatoire",
+    "aliases": [
+      "galileo",
+      "observatoire",
+      "observatoire galileo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          3394.9519497079236,
+          3426.835763747904
+        ],
+        [
+          3351.0993772956595,
+          3490.486962731442
+        ],
+        [
+          3402.0249452582884,
+          3514.5329712363346
+        ],
+        [
+          3434.560724789968,
+          3498.9737892625803
+        ],
+        [
+          3444.462918560479,
+          3469.2698964035962
+        ],
+        [
+          3433.146125679895,
+          3445.223887898704
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 115,
+    "name": "Paleto Bank",
+    "aliases": [
+      "banque paleto",
+      "fleeca paleto",
+      "paleto bank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6903.223279062169,
+          3680.5997632332264
+        ],
+        [
+          6928.686063043482,
+          3706.767478370903
+        ],
+        [
+          6950.612349249614,
+          3677.7708210561796
+        ],
+        [
+          6932.9298603737025,
+          3658.675461361119
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 224,
+    "name": "Panneau Vinwood",
+    "aliases": [
+      "panneau vinewood",
+      "panneau vinwood",
+      "signe vinewood",
+      "vinewood sign"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          3530,
+          4168
+        ],
+        [
+          3478,
+          4294
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 210,
+    "name": "Parc aquatique",
+    "aliases": [
+      "parc aquatique"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          7267.295594992375,
+          1880.2178848137185
+        ],
+        [
+          7323.310861902388,
+          1854.213150253057
+        ],
+        [
+          7363.321766838111,
+          1914.224076162276
+        ],
+        [
+          7299.304318940954,
+          1972.2346378745212
+        ],
+        [
+          7249.290687771299,
+          1924.2258971471458
+        ],
+        [
+          7235.286871043796,
+          1882.2182490106925
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 60,
+    "name": "Parking anti 208",
+    "aliases": [
+      "anti 208",
+      "parking anti 208"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          2025.5,
+          4028.5
+        ],
+        [
+          1988.5,
+          4026
+        ],
+        [
+          1990.5,
+          4085.5
+        ],
+        [
+          2030.5,
+          4082.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 183,
+    "name": "Parking blanc",
+    "aliases": [
+      "blanc",
+      "parking blanc"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2144,
+          3438.5
+        ],
+        [
+          2169,
+          3437.5
+        ],
+        [
+          2189,
+          3438
+        ],
+        [
+          2218,
+          3439
+        ],
+        [
+          2219,
+          3458.5
+        ],
+        [
+          2189,
+          3462
+        ],
+        [
+          2167,
+          3464
+        ],
+        [
+          2145.5,
+          3464
+        ],
+        [
+          2142,
+          3450
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 112,
+    "name": "Parking Central Paleto",
+    "aliases": [
+      "central paleto",
+      "parking central paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          7029.641254534754,
+          3807.0829023232204
+        ],
+        [
+          6982.628441235279,
+          3855.091643050596
+        ],
+        [
+          6998.632803209568,
+          3900.09983748251
+        ],
+        [
+          7053.647797496187,
+          3871.0945566263877
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 186,
+    "name": "Parking centrale PC",
+    "aliases": [
+      "centrale pc",
+      "parking centrale pc"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2028,
+          3518
+        ],
+        [
+          2094.5,
+          3514
+        ],
+        [
+          2087.5,
+          3549
+        ],
+        [
+          2080.5,
+          3576
+        ],
+        [
+          2056,
+          3569
+        ],
+        [
+          2047.5,
+          3555.5
+        ],
+        [
+          2029,
+          3551.5
+        ],
+        [
+          2011,
+          3593
+        ],
+        [
+          2001,
+          3588.5
+        ],
+        [
+          2011,
+          3547.5
+        ],
+        [
+          2020.5,
+          3523
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 213,
+    "name": "Parking Multicolor",
+    "aliases": [
+      "multicolor",
+      "parking multicolor"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2187.2954096035164,
+          2970.052286021586
+        ],
+        [
+          2204.300044201199,
+          2992.556383237543
+        ],
+        [
+          2263.8162652930873,
+          2944.547642510168
+        ],
+        [
+          2246.811630695405,
+          2923.0437273926977
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 181,
+    "name": "Parking rouge",
+    "aliases": [
+      "parking rouge",
+      "rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2123.441663903202,
+          3515.734916059514
+        ],
+        [
+          2165.1609639932085,
+          3517.8562364030736
+        ],
+        [
+          2199.1020894901626,
+          3515.0278092783274
+        ],
+        [
+          2225.2650403940647,
+          3517.8562364030736
+        ],
+        [
+          2221.0223997069456,
+          3548.968934775282
+        ],
+        [
+          2216.7797590198265,
+          3568.0608178673187
+        ],
+        [
+          2208.294477645588,
+          3589.274021302915
+        ],
+        [
+          2182.838633522872,
+          3586.445594178169
+        ],
+        [
+          2155.2614690565965,
+          3575.131885679184
+        ],
+        [
+          2116.3705960913367,
+          3565.2323907425725
+        ],
+        [
+          2114.9563825289633,
+          3536.2410127139237
+        ],
+        [
+          2114.249275747777,
+          3522.8059838713793
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 91,
+    "name": "Phare",
+    "aliases": [
+      "phare"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          6126.53993678685,
+          5904.598201477827
+        ],
+        [
+          6034.514855434686,
+          6052.625152053901
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 196,
+    "name": "Place Des Cubes",
+    "aliases": [
+      "place des cubes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2005.5,
+          3808
+        ],
+        [
+          2140.5,
+          3859.5
+        ],
+        [
+          2106.5,
+          3960.5
+        ],
+        [
+          1962,
+          3908
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 191,
+    "name": "Pole Emploi",
+    "aliases": [
+      "pole emploi"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        2017,
+        3589.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 134,
+    "name": "Pont Base Militaire",
+    "aliases": [
+      "pont base militaire"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4213.254156236626,
+          1988.128656555096
+        ],
+        [
+          4219.255791976984,
+          1956.1228294035127
+        ],
+        [
+          4623.3659318277905,
+          2018.1341195097057
+        ],
+        [
+          4619.364841334219,
+          2048.139582464315
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 198,
+    "name": "Port Cayo Perico",
+    "aliases": [
+      "port cayo perico"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1017.218715195525,
+          7516.489939953273
+        ],
+        [
+          1095.2399798201857,
+          7460.479742438002
+        ],
+        [
+          1147.254156236626,
+          7450.477921453133
+        ],
+        [
+          1165.2590634577016,
+          7504.4877547714295
+        ],
+        [
+          1127.2487037687642,
+          7588.503051044337
+        ],
+        [
+          1061.2307106248209,
+          7568.499409074597
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 109,
+    "name": "Poste BCSO",
+    "aliases": [
+      "bcso",
+      "bcso sandy",
+      "poste bcso",
+      "poste sandy",
+      "sheriff sandy"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5066.300316824592,
+          4951.568401737684
+        ],
+        [
+          5096.308495526385,
+          4933.065032915674
+        ],
+        [
+          5122.315583734605,
+          4970.571861608936
+        ],
+        [
+          5091.807268721115,
+          4991.575685677163
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 114,
+    "name": "Poste BCSO Paleto",
+    "aliases": [
+      "bcso paleto",
+      "poste bcso paleto",
+      "poste paleto",
+      "sheriff paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6589.816533927214,
+          3455.131881198265
+        ],
+        [
+          6622.352313458892,
+          3484.83577405725
+        ],
+        [
+          6670.448683201375,
+          3453.7174101097416
+        ],
+        [
+          6635.08370544955,
+          3421.184575073711
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 229,
+    "name": "Poste de police Mission Row",
+    "aliases": [
+      "commissariat mission row",
+      "de police mission row",
+      "mission row",
+      "mission row pd",
+      "pd mission row",
+      "poste de police mission row"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          2094.4502858745536,
+          4029.0944392009474
+        ],
+        [
+          2037.8817433796298,
+          4082.834554571125
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 158,
+    "name": "Poste LSPD",
+    "aliases": [
+      "lspd",
+      "police plage",
+      "poste lspd",
+      "poste plage"
+    ],
+    "type": "polygon",
+    "category": "Zone de patrouille",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2121.5,
+          3087
+        ],
+        [
+          2148,
+          3041.5
+        ],
+        [
+          2114,
+          2995
+        ],
+        [
+          2084,
+          3009.5
+        ],
+        [
+          2096.5,
+          3031
+        ],
+        [
+          2080,
+          3045
+        ],
+        [
+          2097,
+          3073.5
+        ],
+        [
+          2110.5,
+          3084
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 110,
+    "name": "Poste RoxWood",
+    "aliases": [
+      "bcso roxwood",
+      "police roxwood",
+      "poste roxwood",
+      "roxwood"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          6883.6281686118855,
+          1808.1260596646357
+        ],
+        [
+          6826.61262907848,
+          1873.1378960662898
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 100,
+    "name": "Prison",
+    "aliases": [
+      "bolingbroke",
+      "penitencier",
+      "prison",
+      "pénitencier"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4493.359100198512,
+          4823.184819824721
+        ],
+        [
+          4450.921126896322,
+          4984.43452391635
+        ],
+        [
+          4326.436405209896,
+          4973.1187552081665
+        ],
+        [
+          4258.535647926392,
+          4908.0530851361045
+        ],
+        [
+          4250.048053265953,
+          4814.697993293582
+        ],
+        [
+          4300.9736212285825,
+          4749.63232322152
+        ],
+        [
+          4380.191171392671,
+          4752.461265398567
+        ],
+        [
+          4453.750325116468,
+          4766.605976283797
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 54,
+    "name": "QG Nood",
+    "aliases": [
+      "qg nood"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2308.5,
+          5449
+        ],
+        [
+          2497,
+          5345
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 223,
+    "name": "QG SWAT",
+    "aliases": [
+      "qg swat"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          1835.6492039602772,
+          4290.72394823997
+        ],
+        [
+          1745.139535968399,
+          4340.2214229230285
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 177,
+    "name": "Quartier Ballas",
+    "aliases": [
+      "ballas",
+      "quartier ballas"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1511.5402412779429,
+          3728.5760222385943
+        ],
+        [
+          1467.6876688656791,
+          3688.9708317599484
+        ],
+        [
+          1409.6891053526856,
+          3753.329266287748
+        ],
+        [
+          1377.1533258210063,
+          3791.5199856778713
+        ],
+        [
+          1347.4467445094729,
+          3816.9804652712864
+        ],
+        [
+          1332.5934538537065,
+          3819.102171904071
+        ],
+        [
+          1332.5934538537065,
+          3838.904767143394
+        ],
+        [
+          1350.2759427296191,
+          3848.0988292187944
+        ],
+        [
+          1363.7146342753126,
+          3855.878420205671
+        ],
+        [
+          1375.7387267109332,
+          3866.486953369594
+        ],
+        [
+          1384.2263213713713,
+          3874.266544356471
+        ],
+        [
+          1397.6650129170653,
+          3885.5823130646563
+        ],
+        [
+          1431.6153915588175,
+          3824.052820713902
+        ],
+        [
+          1442.224884884365,
+          3805.664696563102
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 172,
+    "name": "Quartier F4L",
+    "aliases": [
+      "f4l",
+      "quartier f4l"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1510.395075610798,
+          3636.0787140580196
+        ],
+        [
+          1548.405435299735,
+          3590.0703375276184
+        ],
+        [
+          1581.414431871707,
+          3543.06177889873
+        ],
+        [
+          1651.4335155092228,
+          3574.0674239518266
+        ],
+        [
+          1710.4496002894148,
+          3582.0688807397228
+        ],
+        [
+          1729.4547801338836,
+          3627.077075171637
+        ],
+        [
+          1754.4615957187107,
+          3684.087454785395
+        ],
+        [
+          1758.462686212283,
+          3713.0927356415177
+        ],
+        [
+          1760.463231459069,
+          3766.102386861328
+        ],
+        [
+          1750.4605052251381,
+          3824.112948573573
+        ],
+        [
+          1632.4283356647543,
+          3738.0972881036923
+        ],
+        [
+          1600.4196117161755,
+          3712.0925535430306
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 161,
+    "name": "Quartier Mara",
+    "aliases": [
+      "mara",
+      "quartier mara"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1546.5894560900674,
+          4513.12879114194
+        ],
+        [
+          1578.598180038646,
+          4505.127334354045
+        ],
+        [
+          1617.6088123509762,
+          4536.132979407141
+        ],
+        [
+          1640.6150826890173,
+          4574.139899149646
+        ],
+        [
+          1653.6186267931275,
+          4596.14390531636
+        ],
+        [
+          1673.6240792609892,
+          4621.148457778535
+        ],
+        [
+          1680.6259876247407,
+          4655.154649127093
+        ],
+        [
+          1692.6292591054578,
+          4684.159929983215
+        ],
+        [
+          1701.6317127159955,
+          4711.164846642363
+        ],
+        [
+          1689.6284412352784,
+          4723.167031824207
+        ],
+        [
+          1675.6246245077753,
+          4735.169217006051
+        ],
+        [
+          1608.6063587404387,
+          4651.153920733144
+        ],
+        [
+          1580.5987252854322,
+          4671.157562702884
+        ],
+        [
+          1540.5878203497089,
+          4691.161204672624
+        ],
+        [
+          1519.582095258454,
+          4693.161568869597
+        ],
+        [
+          1509.5793690245232,
+          4663.156105914988
+        ],
+        [
+          1502.5774606607715,
+          4631.1502787634045
+        ],
+        [
+          1490.5741891800546,
+          4600.144633710308
+        ],
+        [
+          1483.572280816303,
+          4568.138806558724
+        ],
+        [
+          1499.5766427905924,
+          4545.134618293524
+        ],
+        [
+          1521.5826405052403,
+          4528.1315226192455
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 176,
+    "name": "Quartier Vagos",
+    "aliases": [
+      "quartier vagos",
+      "vagos"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1259.2917291877097,
+          3966.5404496199317
+        ],
+        [
+          1301.3031793702194,
+          3919.0317999418003
+        ],
+        [
+          1325.3097223316533,
+          3892.0268832826514
+        ],
+        [
+          1402.330714332921,
+          3961.0394480782534
+        ],
+        [
+          1383.8256708001488,
+          3985.5439094911844
+        ],
+        [
+          1341.8142206176392,
+          4027.551557627638
+        ],
+        [
+          1310.8057692924535,
+          4060.5575668777083
+        ],
+        [
+          1262.7926833695856,
+          4024.0509202829335
+        ],
+        [
+          1251.7896845122616,
+          4008.5480977563852
+        ],
+        [
+          1247.2884577069926,
+          3998.0461857222717
+        ],
+        [
+          1247.7885940186893,
+          3983.5435452942106
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 140,
+    "name": "Raton Canyon",
+    "aliases": [
+      "raton canyon"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5622.00870523282,
+          2429.792607165283
+        ],
+        [
+          5435.281622703182,
+          2653.279039151929
+        ],
+        [
+          5381.526856520407,
+          2865.44970243039
+        ],
+        [
+          5474.890397785226,
+          2910.712777263129
+        ],
+        [
+          5489.0363888859565,
+          2987.094216043375
+        ],
+        [
+          5457.91520846435,
+          3066.3045970006674
+        ],
+        [
+          5401.331244061429,
+          3071.962481354759
+        ],
+        [
+          5387.1852529606995,
+          3134.1992092497744
+        ],
+        [
+          5356.064072539093,
+          3179.462284082513
+        ],
+        [
+          5333.430486777925,
+          3236.0411276234368
+        ],
+        [
+          5316.455297457049,
+          3286.962086810267
+        ],
+        [
+          5276.8465223750045,
+          3417.0934269543895
+        ],
+        [
+          5288.163315255588,
+          3501.9616922657747
+        ],
+        [
+          5307.967702796611,
+          3535.9089983903286
+        ],
+        [
+          5319.284495677194,
+          3589.658899754206
+        ],
+        [
+          5387.1852529606995,
+          3623.6062058787593
+        ],
+        [
+          5452.256812024058,
+          3643.408801118082
+        ],
+        [
+          5514.49917286727,
+          3677.3561072426364
+        ],
+        [
+          5588.058326591067,
+          3600.974668462389
+        ],
+        [
+          5613.521110572381,
+          3482.159097026452
+        ],
+        [
+          5647.471489214134,
+          3284.1331446332206
+        ],
+        [
+          5633.325498113404,
+          3001.2389269286055
+        ],
+        [
+          5610.691912352236,
+          2845.6471071910673
+        ],
+        [
+          5622.00870523282,
+          2755.1209575255903
+        ],
+        [
+          5647.471489214134,
+          2698.542113984667
+        ],
+        [
+          5692.738660736471,
+          2641.9632704437445
+        ],
+        [
+          5754.981021579683,
+          2605.187022142144
+        ],
+        [
+          5763.468616240121,
+          2557.09500513236
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 87,
+    "name": "Récolte cocaïne",
+    "aliases": [
+      "cocaine",
+      "cocaïne",
+      "recolte cocaine",
+      "récolte cocaïne"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        5106.551932216145,
+        3800.547213901472
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 79,
+    "name": "Récolte Fantanyl",
+    "aliases": [
+      "fantanyl",
+      "fentanyl",
+      "recolte fantanyl",
+      "recolte fentanyl",
+      "récolte fantanyl"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        675,
+        7746.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 78,
+    "name": "Récolte Opium",
+    "aliases": [
+      "opium",
+      "recolte opium",
+      "récolte opium"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        4133,
+        4757
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 77,
+    "name": "Récolte Soulevine",
+    "aliases": [
+      "recolte soulevine",
+      "récolte soulevine",
+      "soulevine"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général",
+    "geometry": {
+      "latlng": [
+        7492,
+        1159
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 92,
+    "name": "Récolte Weed",
+    "aliases": [
+      "recolte weed",
+      "récolte weed",
+      "weed"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4113.11402781258,
+          4240.208779889369
+        ],
+        [
+          4067.1014871364987,
+          4318.222983571354
+        ],
+        [
+          4101.110756331864,
+          4350.228810722938
+        ],
+        [
+          4137.120570774015,
+          4310.221526783458
+        ],
+        [
+          4135.120025527229,
+          4272.214607040953
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 242,
+    "name": "Revente Coke",
+    "aliases": [
+      "coke",
+      "revente coke"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        5231.187070014409,
+        5000.0852864282215
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 41,
+    "name": "Revente fentanyl",
+    "aliases": [
+      "fentanyl",
+      "revente fentanyl"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        638,
+        4530
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 241,
+    "name": "Revente Meth",
+    "aliases": [
+      "meth",
+      "revente meth"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        5077.014317317488,
+        4669.027915935894
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 221,
+    "name": "Revente Opium",
+    "aliases": [
+      "opium",
+      "revente opium"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        6849.167616910168,
+        4690.557609021112
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 105,
+    "name": "Revente Soulvine",
+    "aliases": [
+      "revente soulevine",
+      "revente soulvine",
+      "soulevine",
+      "soulvine"
+    ],
+    "type": "rectangle",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          4908.643708145291,
+          5162.155559619528
+        ],
+        [
+          4876.634984196712,
+          5199.162297263546
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 240,
+    "name": "Revente Weed",
+    "aliases": [
+      "revente weed",
+      "weed"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        4750.203145034679,
+        5451.076870414147
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 19,
+    "name": "Revo Bank",
+    "aliases": [
+      "revo bank",
+      "revo banque",
+      "revobank"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2846.5,
+          3913.5
+        ],
+        [
+          2800.5,
+          3941.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 81,
+    "name": "Rockford Plaza",
+    "aliases": [
+      "rockford plaza"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2615,
+          3575
+        ],
+        [
+          2446.5,
+          3684.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 159,
+    "name": "Skate Parc Vespucci",
+    "aliases": [
+      "skate parc vespucci"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2137.932944304095,
+          3109.2173099550987
+        ],
+        [
+          2198.053406482198,
+          3109.2173099550987
+        ],
+        [
+          2214.321296248038,
+          3136.799496181299
+        ],
+        [
+          2219.9796926883305,
+          3164.3816824074984
+        ],
+        [
+          2219.9796926883305,
+          3177.8191577484677
+        ],
+        [
+          2198.760706037235,
+          3179.9408643812526
+        ],
+        [
+          2178.249018941176,
+          3181.355335469776
+        ],
+        [
+          2150.6643362947525,
+          3182.062571014037
+        ],
+        [
+          2131.5672483087665,
+          3182.7698065582986
+        ],
+        [
+          2127.3234509785475,
+          3148.822500433745
+        ],
+        [
+          2128.0307505335845,
+          3127.605434105899
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 236,
+    "name": "station essence animalerie",
+    "aliases": [
+      "animalerie",
+      "station essence animalerie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          2106,
+          3270
+        ],
+        [
+          2038,
+          3330
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 230,
+    "name": "Station essence Auto école",
+    "aliases": [
+      "auto ecole",
+      "auto école",
+      "station essence auto ecole",
+      "station essence auto école"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          1849,
+          3912.5
+        ],
+        [
+          1814.5,
+          3949
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 238,
+    "name": "station essence Bloods",
+    "aliases": [
+      "bloods",
+      "station essence bloods"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          2534,
+          2770
+        ],
+        [
+          2462,
+          2848
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 235,
+    "name": "station essence galaxie",
+    "aliases": [
+      "galaxie",
+      "station essence galaxie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          2883,
+          4127
+        ],
+        [
+          2802,
+          4214
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 237,
+    "name": "station essence UWU café",
+    "aliases": [
+      "station essence uwu cafe",
+      "station essence uwu café",
+      "uwu",
+      "uwu cafe",
+      "uwu café"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          1886,
+          3393
+        ],
+        [
+          1839,
+          3428
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 243,
+    "name": "Station essence YouTool",
+    "aliases": [
+      "magasin outil",
+      "station essence youtool",
+      "you tool",
+      "you-tool",
+      "youtool"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4862.195456981507,
+          5560.601164063021
+        ],
+        [
+          4863.195224010198,
+          5478.086848162792
+        ],
+        [
+          4811.7072220325745,
+          5436.579646831162
+        ],
+        [
+          4773.716074942288,
+          5506.591793655598
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 149,
+    "name": "Studio de cinéma",
+    "aliases": [
+      "studio de cinema",
+      "studio de cinéma"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2265.911175197162,
+          2986.8656895609274
+        ],
+        [
+          2336.6411307008125,
+          2919.678312856082
+        ],
+        [
+          2380.493703113076,
+          2960.697974423251
+        ],
+        [
+          2390.3958968835873,
+          3025.056408951051
+        ],
+        [
+          2356.445518241835,
+          3051.9313596329894
+        ],
+        [
+          2369.8842097875286,
+          3113.4608519837434
+        ],
+        [
+          2338.0557298108856,
+          3132.556211678804
+        ],
+        [
+          2299.154254283878,
+          3063.2471283411737
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 232,
+    "name": "supérette Est",
+    "aliases": [
+      "superette est",
+      "supérette est"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          3033.168580927889,
+          5395.860629693159
+        ],
+        [
+          2789.9238481997168,
+          5497.684006184022
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 33,
+    "name": "Taco Bomb",
+    "aliases": [
+      "taco bomb"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        2215,
+        3323
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 7,
+    "name": "Tatoueur plage",
+    "aliases": [
+      "tatoueur plage"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        1724,
+        2979.5
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 22,
+    "name": "Taxi",
+    "aliases": [
+      "taxi"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        2570,
+        4346
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 216,
+    "name": "Tekilala",
+    "aliases": [
+      "tekilala",
+      "tequi-la-la"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2843.5919097006054,
+          3392.2131027414143
+        ],
+        [
+          2845.592454947391,
+          3368.208732377727
+        ],
+        [
+          2868.598725285432,
+          3370.209096574701
+        ],
+        [
+          2871.599543155611,
+          3394.2134669383886
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 152,
+    "name": "Télésiège",
+    "aliases": [
+      "telesiege",
+      "télésiège"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6293.50551500505,
+          3240.2459279807144
+        ],
+        [
+          6341.518600927919,
+          3226.2433786018964
+        ],
+        [
+          6373.527324876497,
+          3242.2462921776882
+        ],
+        [
+          6345.51969142149,
+          3264.250298344402
+        ],
+        [
+          6319.51260321327,
+          3276.2524835262457
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 215,
+    "name": "Temple Chinois",
+    "aliases": [
+      "temple chinois"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2065.852776156258,
+          3184.889195455734
+        ],
+        [
+          2111.827247233631,
+          3186.3036665442564
+        ],
+        [
+          2111.827247233631,
+          3142.455062800041
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 108,
+    "name": "Terrain de Cross",
+    "aliases": [
+      "terrain de cross"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4091.5057706771977,
+          4418.448308423935
+        ],
+        [
+          4015.117418733255,
+          4506.145515912365
+        ],
+        [
+          4312.183231848588,
+          4517.46128462055
+        ],
+        [
+          4346.13361049034,
+          4305.290621342088
+        ],
+        [
+          4207.502897703185,
+          4285.488026102765
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 214,
+    "name": "Terrain de Tennis",
+    "aliases": [
+      "terrain de tennis"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2612.5919097006054,
+          2839.1318868162193
+        ],
+        [
+          2575.581822635061,
+          2847.133343604115
+        ],
+        [
+          2569.5801868947024,
+          2884.140081248134
+        ],
+        [
+          2558.5771880373786,
+          2899.1428127254385
+        ],
+        [
+          2595.587275102923,
+          2931.148639877022
+        ],
+        [
+          2610.5913644538186,
+          2901.1431769224123
+        ],
+        [
+          2614.592454947391,
+          2879.1391707556986
+        ],
+        [
+          2616.5930001941774,
+          2859.135528785959
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 84,
+    "name": "Théâtre Vinewood",
+    "aliases": [
+      "theatre vinewood",
+      "théâtre vinewood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          3465.5,
+          3842
+        ],
+        [
+          3446,
+          3837.5
+        ],
+        [
+          3430.5,
+          3837.5
+        ],
+        [
+          3404,
+          3844
+        ],
+        [
+          3387.5,
+          3854
+        ],
+        [
+          3381.5,
+          3861
+        ],
+        [
+          3408.5,
+          3885.5
+        ],
+        [
+          3400.5,
+          3889
+        ],
+        [
+          3408.5,
+          3930.5
+        ],
+        [
+          3465,
+          3914.5
+        ],
+        [
+          3497,
+          3915
+        ],
+        [
+          3487.5,
+          3861.5
+        ],
+        [
+          3452.5,
+          3873
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 130,
+    "name": "Toilette",
+    "aliases": [
+      "toilette"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5440.015798636996,
+          2291.126473434516
+        ],
+        [
+          5481.039172829113,
+          2282.6396469033775
+        ],
+        [
+          5514.989551470866,
+          2310.9290686738386
+        ],
+        [
+          5489.526767489551,
+          2350.534259152485
+        ],
+        [
+          5456.990987957872,
+          2332.1461350016853
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 227,
+    "name": "Tour de controle plage",
+    "aliases": [
+      "de controle plage",
+      "tour de controle plage"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1502.5,
+          2956.5
+        ],
+        [
+          1503.5,
+          2976
+        ],
+        [
+          1488,
+          2983
+        ],
+        [
+          1477,
+          2977.5
+        ],
+        [
+          1473,
+          2957.5
+        ],
+        [
+          1484.5,
+          2947.5
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 184,
+    "name": "Tour FBI",
+    "aliases": [
+      "fbi",
+      "tour fbi"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2273.6835111606815,
+          3829.1644824453897
+        ],
+        [
+          2225.6704252378136,
+          3812.1613867711108
+        ],
+        [
+          2210.6663358869173,
+          3849.168124415129
+        ],
+        [
+          2261.6802396799644,
+          3869.171766384869
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 185,
+    "name": "Tour IAA",
+    "aliases": [
+      "iaa",
+      "tour iaa"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2208.665790640131,
+          3812.1613867711108
+        ],
+        [
+          2168.6548857044077,
+          3796.158473195319
+        ],
+        [
+          2143.6480701195806,
+          3858.169763301512
+        ],
+        [
+          2191.6611560424485,
+          3874.1726768773037
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 155,
+    "name": "Traitement de pommes",
+    "aliases": [
+      "de pommes",
+      "traitement de pommes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          3865.942898133152,
+          4546.849125701898
+        ],
+        [
+          3887.1618847842474,
+          4527.046530462575
+        ],
+        [
+          3911.2100696554885,
+          4542.605712436329
+        ],
+        [
+          3939.502051856949,
+          4569.480663118267
+        ],
+        [
+          3943.745849187168,
+          4596.355613800206
+        ],
+        [
+          3925.356060756219,
+          4602.013498154299
+        ],
+        [
+          3905.5516732151964,
+          4599.184555977253
+        ],
+        [
+          3885.7472856741747,
+          4572.309605295314
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 135,
+    "name": "Traitement soulvine",
+    "aliases": [
+      "soulevine",
+      "soulvine",
+      "traitement soulevine",
+      "traitement soulvine"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null,
+    "geometry": {
+      "latlng": [
+        7207,
+        1613
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 133,
+    "name": "Tunnel ancienne coke",
+    "aliases": [
+      "tunnel ancienne coke"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6459.371384295652,
+          5302.393427755172
+        ],
+        [
+          6475.375746269942,
+          5334.399254906755
+        ],
+        [
+          6649.423182740338,
+          5172.369754951864
+        ],
+        [
+          6627.417185025691,
+          5150.36574878515
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 173,
+    "name": "Unicorn",
+    "aliases": [
+      "unicorn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1819.1004617303972,
+          3804.36688482052
+        ],
+        [
+          1793.6376777490832,
+          3817.8043601614895
+        ],
+        [
+          1812.0274661800322,
+          3852.458901830305
+        ],
+        [
+          1831.124554166018,
+          3839.728662033597
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 211,
+    "name": "Université",
+    "aliases": [
+      "universite",
+      "université"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2751.589439435712,
+          2652.635219077212
+        ],
+        [
+          2795.442011847975,
+          2631.4181527493656
+        ],
+        [
+          2835.05078693002,
+          2722.651537959104
+        ],
+        [
+          2795.442011847975,
+          2742.4541331984274
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 113,
+    "name": "Usine Cluck'In Bell (Poulailler)",
+    "aliases": [
+      "cluck'in bell (poulailler)",
+      "cluckin bell (poulailler)",
+      "usine cluck'in bell (poulailler)",
+      "usine cluckin bell (poulailler)"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6785.059913144484,
+          3746.1655750363116
+        ],
+        [
+          6703.037558026251,
+          3649.147911483074
+        ],
+        [
+          6726.043828364292,
+          3629.1442695133346
+        ],
+        [
+          6814.067819222883,
+          3712.1593836877537
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 165,
+    "name": "Usine Cypress Flat",
+    "aliases": [
+      "cypress flat",
+      "usine cypress flat"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          986.5335299124451,
+          4266.808315158577
+        ],
+        [
+          1040.2882960952197,
+          4272.46619951267
+        ],
+        [
+          1030.3861023247086,
+          4406.840952922362
+        ],
+        [
+          983.7043316922992,
+          4401.18306856827
+        ],
+        [
+          987.9481290225183,
+          4343.189753938824
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 102,
+    "name": "Usine Fabrique",
+    "aliases": [
+      "fabrique",
+      "usine fabrique"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5577.254156236626,
+          5610.304563693523
+        ],
+        [
+          5449.219260442311,
+          5650.311847633003
+        ],
+        [
+          5471.225258156959,
+          5712.323137739196
+        ],
+        [
+          5589.2574277173435,
+          5668.315125405768
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 36,
+    "name": "uwu café",
+    "aliases": [
+      "uwu",
+      "uwu cafe",
+      "uwu café"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2026.5,
+          3347.5
+        ],
+        [
+          1950,
+          3392
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 40,
+    "name": "Vente Peche",
+    "aliases": [
+      "vente peche"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable",
+    "geometry": {
+      "latlng": [
+        892,
+        3696
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 99,
+    "name": "Vigneron",
+    "aliases": [
+      "vigneron"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          3886.352371892408,
+          2576.2798933225786
+        ],
+        [
+          3998.382905712433,
+          2436.2543995344004
+        ],
+        [
+          4198.43743039105,
+          2484.263140261776
+        ],
+        [
+          4238.448335326773,
+          2688.300288353121
+        ],
+        [
+          4062.4003536095906,
+          2696.3017451410165
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 61,
+    "name": "Villa Cayo Perico",
+    "aliases": [
+      "cayo",
+      "cayo perico",
+      "perico",
+      "périco",
+      "villa cayo perico"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "latlngs": [
+        [
+          224,
+          7372
+        ],
+        [
+          332,
+          7432
+        ],
+        [
+          264,
+          7516
+        ],
+        [
+          188,
+          7436
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 217,
+    "name": "Villa Mickael",
+    "aliases": [
+      "mickael",
+      "villa mickael"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2755.28736721342,
+          3196.56439557097
+        ],
+        [
+          2796.7986810842335,
+          3197.5645776694573
+        ],
+        [
+          2797.2988173959297,
+          3250.074137840024
+        ],
+        [
+          2755.28736721342,
+          3255.5751393817022
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 212,
+    "name": "Villa PlayBoy",
+    "aliases": [
+      "playboy",
+      "villa playboy"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2709.2928196812823,
+          2798.5636671770226
+        ],
+        [
+          2701.790775005834,
+          2754.555654843595
+        ],
+        [
+          2698.7899571356547,
+          2726.050465036716
+        ],
+        [
+          2703.79132025262,
+          2708.5472783131936
+        ],
+        [
+          2710.293092304675,
+          2695.5449110328627
+        ],
+        [
+          2719.2955459152126,
+          2676.5414511616104
+        ],
+        [
+          2733.299362642716,
+          2662.038810733549
+        ],
+        [
+          2744.30236150004,
+          2671.0404496199317
+        ],
+        [
+          2750.804133552095,
+          2689.543818441941
+        ],
+        [
+          2759.3064508509365,
+          2701.546003623785
+        ],
+        [
+          2766.8084955263844,
+          2713.548188805629
+        ],
+        [
+          2771.80985864335,
+          2724.5501918889854
+        ],
+        [
+          2780.8123122538877,
+          2740.0530144155337
+        ],
+        [
+          2788.3143569293356,
+          2753.0553816958645
+        ],
+        [
+          2800.8177647217494,
+          2766.0577489761954
+        ],
+        [
+          2814.8215814492523,
+          2780.5603894042565
+        ],
+        [
+          2827.324989241666,
+          2793.062665635344
+        ],
+        [
+          2827.324989241666,
+          2806.0650329156747
+        ],
+        [
+          2818.822671942825,
+          2814.0664897035704
+        ],
+        [
+          2804.3187189036253,
+          2824.0683106884403
+        ],
+        [
+          2787.3140843059427,
+          2814.566580752814
+        ],
+        [
+          2775.8109491369223,
+          2805.0648508171876
+        ],
+        [
+          2763.807677656205,
+          2798.063576127779
+        ],
+        [
+          2751.804406175488,
+          2794.062847733831
+        ],
+        [
+          2739.3009983830743,
+          2793.5627566845874
+        ],
+        [
+          2725.797317967268,
+          2795.563120881561
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 162,
+    "name": "Villa Richman",
+    "aliases": [
+      "richman",
+      "villa richman"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          2801,
+          2551
+        ],
+        [
+          2846,
+          2515
+        ],
+        [
+          2873,
+          2512
+        ],
+        [
+          2896,
+          2512
+        ],
+        [
+          2922,
+          2506
+        ],
+        [
+          2945,
+          2503
+        ],
+        [
+          2968,
+          2493
+        ],
+        [
+          2987,
+          2484
+        ],
+        [
+          3013,
+          2489
+        ],
+        [
+          3030,
+          2492
+        ],
+        [
+          3060,
+          2506
+        ],
+        [
+          3074,
+          2515
+        ],
+        [
+          3083,
+          2526
+        ],
+        [
+          3095,
+          2540
+        ],
+        [
+          3124,
+          2518
+        ],
+        [
+          3121,
+          2496
+        ],
+        [
+          3114,
+          2470
+        ],
+        [
+          3105,
+          2443
+        ],
+        [
+          3083,
+          2425
+        ],
+        [
+          3058,
+          2418
+        ],
+        [
+          3032,
+          2412
+        ],
+        [
+          3016,
+          2406
+        ],
+        [
+          2990,
+          2400
+        ],
+        [
+          2964,
+          2408
+        ],
+        [
+          2933,
+          2411
+        ],
+        [
+          2893,
+          2413
+        ],
+        [
+          2859,
+          2424
+        ],
+        [
+          2823,
+          2438
+        ],
+        [
+          2793,
+          2438
+        ],
+        [
+          2750,
+          2466
+        ],
+        [
+          2734,
+          2496
+        ],
+        [
+          2749,
+          2520
+        ],
+        [
+          2775,
+          2538
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 123,
+    "name": "Villa Tropical",
+    "aliases": [
+      "tropical",
+      "villa tropical"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5753.643162898505,
+          4749.103479452249
+        ],
+        [
+          5775.649160613153,
+          4674.0898220657255
+        ],
+        [
+          5831.664427523166,
+          4670.089093671778
+        ],
+        [
+          5831.664427523166,
+          4743.102386861328
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 35,
+    "name": "Weazle News",
+    "aliases": [
+      "weazle news"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent",
+    "geometry": {
+      "bounds": [
+        [
+          2106.5,
+          3343
+        ],
+        [
+          2044.5,
+          3411
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 104,
+    "name": "Yellow Jack",
+    "aliases": [
+      "bar sandy",
+      "yellow jack",
+      "yellow jack inn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4701.777041693244,
+          5041.889799226878
+        ],
+        [
+          4691.874847922733,
+          5087.152874059615
+        ],
+        [
+          4649.436874620543,
+          5077.251576439954
+        ],
+        [
+          4657.924469280981,
+          5039.060857049831
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 103,
+    "name": "You Tool",
+    "aliases": [
+      "magasin outil",
+      "you tool",
+      "you-tool",
+      "youtool"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4948.6680108874625,
+          5487.722524652984
+        ],
+        [
+          5016.568768170968,
+          5510.354062069355
+        ],
+        [
+          4988.276785969507,
+          5612.195980443015
+        ],
+        [
+          4914.71763224571,
+          5578.248674318462
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 151,
+    "name": "Zone de chasse Paleto",
+    "aliases": [
+      "zone de chasse paleto"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5946,
+          2761
+        ],
+        [
+          5848,
+          2666
+        ],
+        [
+          5769,
+          2683
+        ],
+        [
+          5673,
+          2725
+        ],
+        [
+          5762,
+          2810
+        ],
+        [
+          5849,
+          2787
+        ],
+        [
+          5935,
+          2765
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 194,
+    "name": "Zone de pêche Cayo Périco",
+    "aliases": [
+      "cayo",
+      "cayo perico",
+      "cayo périco",
+      "perico",
+      "périco",
+      "zone de peche cayo perico",
+      "zone de pêche cayo périco"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          679,
+          7351
+        ],
+        [
+          700,
+          7321
+        ],
+        [
+          707,
+          7292
+        ],
+        [
+          728,
+          7284
+        ],
+        [
+          739,
+          7316
+        ],
+        [
+          757,
+          7335
+        ],
+        [
+          753,
+          7361
+        ],
+        [
+          736,
+          7386
+        ],
+        [
+          709,
+          7375
+        ],
+        [
+          692,
+          7368
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 141,
+    "name": "Zone de pêche Del Perro",
+    "aliases": [
+      "del perro",
+      "zone de peche del perro",
+      "zone de pêche del perro"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1868.1761158948584,
+          2516.5930342429224
+        ],
+        [
+          1903.5314549541858,
+          2547.7057326151307
+        ],
+        [
+          1878.7827176126566,
+          2578.111324206152
+        ],
+        [
+          1852.6197667087545,
+          2562.554975020048
+        ],
+        [
+          1845.548698896889,
+          2568.918936050727
+        ],
+        [
+          1829.2852429295983,
+          2551.241266521063
+        ],
+        [
+          1850.4984463651947,
+          2526.4925291795344
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 231,
+    "name": "zone de pêche ouest",
+    "aliases": [
+      "ouest",
+      "zone de peche ouest",
+      "zone de pêche ouest"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          3334.7155800757578,
+          1465.1252506185265
+        ],
+        [
+          3264.0049019571034,
+          1606.5466068558358
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 201,
+    "name": "Zone de pêche Roxwood",
+    "aliases": [
+      "roxwood",
+      "zone de peche roxwood",
+      "zone de pêche roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6914.090106442061,
+          1961.5142110114828
+        ],
+        [
+          6926.818028503419,
+          1986.9700551341984
+        ],
+        [
+          6914.090106442061,
+          2013.8401128192872
+        ],
+        [
+          6880.148980945107,
+          2009.597472132168
+        ],
+        [
+          6868.835272446122,
+          1974.2421330728405
+        ],
+        [
+          6890.048475881718,
+          1950.200502512498
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 197,
+    "name": "Zone de pêche Sandy shore",
+    "aliases": [
+      "sandy shore",
+      "sandy shores",
+      "zone de peche sandy shore",
+      "zone de peche sandy shores",
+      "zone de pêche sandy shore"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          5405.124235389969,
+          4350.12091785964
+        ],
+        [
+          5424.216118482006,
+          4361.434626358625
+        ],
+        [
+          5428.458759169125,
+          4388.304684043714
+        ],
+        [
+          5425.6303320443785,
+          4425.074236665414
+        ],
+        [
+          5426.337438825565,
+          4449.822974006944
+        ],
+        [
+          5429.165865950312,
+          4465.379323193048
+        ],
+        [
+          5422.801904919633,
+          4496.4920215652555
+        ],
+        [
+          5406.538448952342,
+          4502.148875814748
+        ],
+        [
+          5381.789711610812,
+          4495.784914784069
+        ],
+        [
+          5366.2333624247085,
+          4453.358507912876
+        ],
+        [
+          5364.112042081149,
+          4407.39656713575
+        ],
+        [
+          5376.13285736132,
+          4367.091480608117
+        ],
+        [
+          5388.1536726414915,
+          4351.535131422013
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 145,
+    "name": "Zone de pêche Vigneron",
+    "aliases": [
+      "vigneron",
+      "zone de peche vigneron",
+      "zone de pêche vigneron"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          4042.5,
+          2712
+        ],
+        [
+          4059.5,
+          2703
+        ],
+        [
+          4081.5,
+          2711.5
+        ],
+        [
+          4098.5,
+          2732.5
+        ],
+        [
+          4079.5,
+          2739.5
+        ],
+        [
+          4051.5,
+          2724.5
+        ],
+        [
+          4045,
+          2718
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 96,
+    "name": "Zone industriel RoxWood",
+    "aliases": [
+      "zone industriel roxwood",
+      "zone industrielle roxwood"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          7109.4506413882955,
+          2120.575811312011
+        ],
+        [
+          7293.500804092623,
+          2104.5728977362196
+        ],
+        [
+          7389.526975938359,
+          2240.5976631304493
+        ],
+        [
+          6789.3634019025085,
+          2624.667588949452
+        ],
+        [
+          6645.324144133904,
+          2432.63262603995
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 117,
+    "name": "Zone Résidentielle Paleto",
+    "aliases": [
+      "zone residentielle paleto",
+      "zone résidentielle paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          6694.713772357314,
+          3475.0712480200536
+        ],
+        [
+          6803.74348830716,
+          3422.061596800243
+        ],
+        [
+          6952.78410919273,
+          3617.097106005205
+        ],
+        [
+          6896.768842282718,
+          3675.1076677174506
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 202,
+    "name": "Zone Rouge",
+    "aliases": [
+      "zone rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null,
+    "geometry": {
+      "latlngs": [
+        [
+          1582.6063587404387,
+          3319.1777756349393
+        ],
+        [
+          1599.610993338121,
+          3330.1797787182963
+        ],
+        [
+          1616.6156279358036,
+          3342.18196390014
+        ],
+        [
+          1623.617536299555,
+          3361.185423771393
+        ],
+        [
+          1619.6164458059827,
+          3383.1894299381065
+        ],
+        [
+          1609.6137195720519,
+          3399.1923435138983
+        ],
+        [
+          1594.6096302211556,
+          3398.192161415411
+        ],
+        [
+          1584.6069039872248,
+          3383.1894299381065
+        ],
+        [
+          1580.6058134936525,
+          3358.184877475932
+        ],
+        [
+          1574.604177753294,
+          3336.180871309218
+        ]
+      ]
+    },
+    "status": "approved"
+  },
+  {
+    "id": 88,
+    "name": "Zone Rouge Nord",
+    "aliases": [
+      "zone rouge nord"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null,
+    "geometry": {
+      "bounds": [
+        [
+          5952.979402361315,
+          2978.5667003805393
+        ],
+        [
+          5865.274257536787,
+          3083.2375609312467
+        ]
+      ]
+    },
+    "status": "approved"
+  }
+]

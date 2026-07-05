@@ -1,0 +1,605 @@
+Nombre total emplacements: 201
+
+Aérodrome Grapeseed
+  alias: aerodrome grapeseed, aérodrome grapeseed, aéroport grapeseed, grapeseed, grapeseed airfield, mc kenzie, mckenzie
+
+Aéroport
+  alias: aeroport, aeroport los santos, aéroport, aéroport los santos, lsia
+
+Aéroport Cayo Périco
+  alias: aeroport cayo perico, aéroport cayo perico, aéroport cayo périco, cayo, cayo perico, cayo périco, perico, périco
+
+Aéroport RoxWood
+  alias: aeroport roxwood, aéroport roxwood, roxwood
+
+Aéroport Sandy Shores
+  alias: aerodrome sandy, aeroport sandy, aeroport sandy shores, aeroport sandy shoress, aéroport sandy, aéroport sandy shores, sandy airfield, sandy shores, sandy shoress
+
+Alamo Island
+  alias: alamo island
+
+Ammunation Base Militaire
+  alias: ammunation base militaire, base mili, base militaire, fort zancudo, zancudo
+
+Ammunation Place Des Cubes
+  alias: ammunation place des cubes, place des cubes
+
+Ammunation RévoBank
+  alias: ammunation revobank, ammunation révobank, revobank, révobank
+
+Ammunation RoxWood
+  alias: ammunation roxwood, roxwood
+
+Ammunation Zone Industriel
+  alias: ammunation zone industriel, ammunation zone industrielle, zone industriel, zone industrielle
+
+amphithéâtre Vinewood
+  alias: amphitheatre vinewood, amphithéâtre vinewood
+
+Ancien Benny's
+  alias: ancien benny's, benny's
+
+Ancien Concess Bateau
+  alias: ancien concess bateau, bateau, concess bateau
+
+Ancien LS Custom
+  alias: ancien ls custom, ls custom
+
+Ancien PDP
+  alias: ancien pdp, pdp
+
+Ancien Pont RoxWood
+  alias: ancien pont roxwood, pont roxwood
+
+Ancienne Revente Coke
+  alias: ancienne revente coke, revente coke
+
+Arcadius
+  alias: arcadius
+
+Auto Ecole
+  alias: auto ecole
+
+Avenue Rockford Plaza
+  alias: avenue rockford plaza
+
+Avenue Vinwood
+  alias: avenue vinewood, avenue vinwood
+
+Bahamas
+  alias: bahamas
+
+Bank Fleeca OUEST
+  alias: bank fleeca ouest, banque ouest, fleeca ouest
+
+Barrage
+  alias: barrage
+
+Base militaire
+  alias: base mili, base militaire, fort zancudo, zancudo
+
+Bennys
+  alias: bennys
+
+Bijouterie
+  alias: bijouterie
+
+Bloods
+  alias: bloods
+
+Boucherie
+  alias: boucherie
+
+Boule Orange
+  alias: boule orange
+
+Bucheron
+  alias: bucheron
+
+Bunker Aéroport Sandy Shores
+  alias: aerodrome sandy, aeroport sandy, aeroport sandy shores, aeroport sandy shoress, aéroport sandy, aéroport sandy shores, bunker aeroport sandy shores, bunker aeroport sandy shoress, bunker aéroport sandy shores, sandy airfield, sandy shores, sandy shoress
+
+Bunker barrage
+  alias: barrage, bunker barrage
+
+Bunker Lester
+  alias: bunker lester, lester
+
+Bunker Magasin vetement Sandy Shores
+  alias: bunker magasin vetement sandy shores, bunker magasin vetement sandy shoress, magasin vetement sandy shores, magasin vetement sandy shoress, sandy shores, sandy shoress
+
+Bunker Paleto Bay
+  alias: bunker paleto bay, paleto bay
+
+Bunker Plage
+  alias: bunker plage, plage
+
+Bunker Sandy shores
+  alias: bunker sandy shores, bunker sandy shoress, sandy shores, sandy shoress
+
+Bunker Soulevine 1
+  alias: bunker soulevine 1, soulevine 1
+
+Bunker Soulevine 2
+  alias: bunker soulevine 2, soulevine 2
+
+Bunker Vinewood
+  alias: bunker vinewood, vinewood
+
+Bunker Zone rouge
+  alias: bunker zone rouge, zone rouge
+
+Burger Shot
+  alias: burger shot
+
+Cabinet avocat
+  alias: cabinet avocat
+
+Camp de Gitan
+  alias: camp de gitan
+
+Canaux Vespucci
+  alias: canal vespucci, canaux, canaux vespucci, vespucci canal
+
+Caserne Pompier
+  alias: caserne pompier
+
+Casino
+  alias: casino, casino diamond, diamond casino
+
+Casse Avion
+  alias: avion, casse avion
+
+Casse Mission Row
+  alias: casse mission row, mission row
+
+Casse Zone Rouge
+  alias: casse zone rouge, zone rouge
+
+CBG industies
+  alias: cbg industies, cbg industries
+
+Central Electrique
+  alias: central electrique
+
+Champ d'éolienne
+  alias: champ d'eolienne, champ d'éolienne, d'eolienne, d'éolienne
+
+Champ d'orange
+  alias: champ d'orange, d'orange
+
+Champ de pétrole
+  alias: champ de petrole, champ de pétrole, de petrole, de pétrole
+
+Champ Grapeseed
+  alias: champ grapeseed, grapeseed
+
+Champ RoxWood
+  alias: champ roxwood, roxwood
+
+Chantier Avocat
+  alias: avocat, chantier avocat
+
+Chantier Paleto
+  alias: chantier paleto, paleto
+
+Chantier PC
+  alias: chantier pc
+
+Chantier Weazle News
+  alias: chantier weazle news, weazle news
+
+Cimetière
+  alias: cimetiere, cimetière
+
+Circuit RoxWood
+  alias: circuit roxwood
+
+Club de Boxe
+  alias: club de boxe
+
+CNN
+  alias: cnn
+
+Coiffeur Plage
+  alias: coiffeur plage
+
+Concess Bateau
+  alias: bateau, concess bateau
+
+Concess Voiture
+  alias: concess voiture, voiture
+
+Concessionnaire Simeone
+  alias: concessionnaire simeone, simeone
+
+Dinosaure Rose
+  alias: dinosaure rose
+
+Eclipse Tower
+  alias: eclipse tower
+
+Eglise Route 68
+  alias: eglise route 68
+
+EMS
+  alias: ems
+
+Fabrique de billet
+  alias: fabrique de billet
+
+Fete Forraine
+  alias: del perro pier, fete foraine, fete forraine, fête foraine, jetee, jetée
+
+Fonderie
+  alias: fonderie
+
+Fourrière
+  alias: fourriere, fourrière
+
+Fourrière Paleto
+  alias: fourriere paleto, fourrière paleto
+
+Fuente Blanca
+  alias: fuente blanca
+
+Galaxie
+  alias: galaxie
+
+Go-Fast
+  alias: go-fast
+
+Golf
+  alias: golf
+
+Gouvernement
+  alias: gouvernement
+
+Grapeseed
+  alias: grapeseed
+
+Hangar Mayweather
+  alias: hangar mayweather, hangar merryweather
+
+Harmony
+  alias: harmony
+
+Hôpital Fourrière
+  alias: hopital fourriere, hôpital fourrière
+
+Hôpital Océan
+  alias: hopital ocean, hôpital océan
+
+Hopital St fiacre
+  alias: hopital st fiacre
+
+Hotel Rose
+  alias: hotel rose
+
+Leboncoin
+  alias: leboncoin
+
+Lester
+  alias: lester
+
+Location Scooter
+  alias: location scooter
+
+LS Custom
+  alias: ls custom
+
+Magasin de vêtement Mission Row
+  alias: magasin de vetement mission row, magasin de vêtement mission row
+
+Magasin de vêtements poste de police
+  alias: magasin de vetements poste de police, magasin de vêtements poste de police, poste de police
+
+Maison O'Neil
+  alias: maison o'neil, o'neil
+
+Marina
+  alias: marina
+
+Maze Bank
+  alias: maze bank, maze bank tower, tour maze bank
+
+Maze Bank Arena
+  alias: arena, maze arena, maze bank arena
+
+Mega Mall
+  alias: mega mall
+
+Mine
+  alias: mine
+
+Mirror Park
+  alias: mirror park
+
+Motel Sandy Shores
+  alias: motel sandy shores, motel sandy shoress
+
+musée
+  alias: musee, musée
+
+Nouveau Pont RoxWood
+  alias: nouveau pont roxwood
+
+Observatoire
+  alias: galileo, observatoire, observatoire galileo
+
+Paleto Bank
+  alias: banque paleto, fleeca paleto, paleto bank
+
+Panneau Vinwood
+  alias: panneau vinewood, panneau vinwood, signe vinewood, vinewood sign
+
+Parc aquatique
+  alias: parc aquatique
+
+Parking anti 208
+  alias: anti 208, parking anti 208
+
+Parking blanc
+  alias: blanc, parking blanc
+
+Parking Central Paleto
+  alias: central paleto, parking central paleto
+
+Parking centrale PC
+  alias: centrale pc, parking centrale pc
+
+Parking Multicolor
+  alias: multicolor, parking multicolor
+
+Parking rouge
+  alias: parking rouge, rouge
+
+Phare
+  alias: phare
+
+Place Des Cubes
+  alias: place des cubes
+
+Pole Emploi
+  alias: pole emploi
+
+Pont Base Militaire
+  alias: pont base militaire
+
+Port Cayo Perico
+  alias: port cayo perico
+
+Poste BCSO
+  alias: bcso, bcso sandy, poste bcso, poste sandy, sheriff sandy
+
+Poste BCSO Paleto
+  alias: bcso paleto, poste bcso paleto, poste paleto, sheriff paleto
+
+Poste de police Mission Row
+  alias: commissariat mission row, de police mission row, mission row, mission row pd, pd mission row, poste de police mission row
+
+Poste LSPD
+  alias: lspd, police plage, poste lspd, poste plage
+
+Poste RoxWood
+  alias: bcso roxwood, police roxwood, poste roxwood, roxwood
+
+Prison
+  alias: bolingbroke, penitencier, prison, pénitencier
+
+QG Nood
+  alias: qg nood
+
+QG SWAT
+  alias: qg swat
+
+Quartier Ballas
+  alias: ballas, quartier ballas
+
+Quartier F4L
+  alias: f4l, quartier f4l
+
+Quartier Mara
+  alias: mara, quartier mara
+
+Quartier Vagos
+  alias: quartier vagos, vagos
+
+Raton Canyon
+  alias: raton canyon
+
+Récolte cocaïne
+  alias: cocaine, cocaïne, recolte cocaine, récolte cocaïne
+
+Récolte Fantanyl
+  alias: fantanyl, fentanyl, recolte fantanyl, recolte fentanyl, récolte fantanyl
+
+Récolte Opium
+  alias: opium, recolte opium, récolte opium
+
+Récolte Soulevine
+  alias: recolte soulevine, récolte soulevine, soulevine
+
+Récolte Weed
+  alias: recolte weed, récolte weed, weed
+
+Revente Coke
+  alias: coke, revente coke
+
+Revente fentanyl
+  alias: fentanyl, revente fentanyl
+
+Revente Meth
+  alias: meth, revente meth
+
+Revente Opium
+  alias: opium, revente opium
+
+Revente Soulvine
+  alias: revente soulevine, revente soulvine, soulevine, soulvine
+
+Revente Weed
+  alias: revente weed, weed
+
+Revo Bank
+  alias: revo bank, revo banque, revobank
+
+Rockford Plaza
+  alias: rockford plaza
+
+Skate Parc Vespucci
+  alias: skate parc vespucci
+
+station essence animalerie
+  alias: animalerie, station essence animalerie
+
+Station essence Auto école
+  alias: auto ecole, auto école, station essence auto ecole, station essence auto école
+
+station essence Bloods
+  alias: bloods, station essence bloods
+
+station essence galaxie
+  alias: galaxie, station essence galaxie
+
+station essence UWU café
+  alias: station essence uwu cafe, station essence uwu café, uwu, uwu cafe, uwu café
+
+Station essence YouTool
+  alias: magasin outil, station essence youtool, you tool, you-tool, youtool
+
+Studio de cinéma
+  alias: studio de cinema, studio de cinéma
+
+supérette Est
+  alias: superette est, supérette est
+
+Taco Bomb
+  alias: taco bomb
+
+Tatoueur plage
+  alias: tatoueur plage
+
+Taxi
+  alias: taxi
+
+Tekilala
+  alias: tekilala, tequi-la-la
+
+Télésiège
+  alias: telesiege, télésiège
+
+Temple Chinois
+  alias: temple chinois
+
+Terrain de Cross
+  alias: terrain de cross
+
+Terrain de Tennis
+  alias: terrain de tennis
+
+Théâtre Vinewood
+  alias: theatre vinewood, théâtre vinewood
+
+Toilette
+  alias: toilette
+
+Tour de controle plage
+  alias: de controle plage, tour de controle plage
+
+Tour FBI
+  alias: fbi, tour fbi
+
+Tour IAA
+  alias: iaa, tour iaa
+
+Traitement de pommes
+  alias: de pommes, traitement de pommes
+
+Traitement soulvine
+  alias: soulevine, soulvine, traitement soulevine, traitement soulvine
+
+Tunnel ancienne coke
+  alias: tunnel ancienne coke
+
+Unicorn
+  alias: unicorn
+
+Université
+  alias: universite, université
+
+Usine Cluck'In Bell (Poulailler)
+  alias: cluck'in bell (poulailler), cluckin bell (poulailler), usine cluck'in bell (poulailler), usine cluckin bell (poulailler)
+
+Usine Cypress Flat
+  alias: cypress flat, usine cypress flat
+
+Usine Fabrique
+  alias: fabrique, usine fabrique
+
+uwu café
+  alias: uwu, uwu cafe, uwu café
+
+Vente Peche
+  alias: vente peche
+
+Vigneron
+  alias: vigneron
+
+Villa Cayo Perico
+  alias: cayo, cayo perico, perico, périco, villa cayo perico
+
+Villa Mickael
+  alias: mickael, villa mickael
+
+Villa PlayBoy
+  alias: playboy, villa playboy
+
+Villa Richman
+  alias: richman, villa richman
+
+Villa Tropical
+  alias: tropical, villa tropical
+
+Weazle News
+  alias: weazle news
+
+Yellow Jack
+  alias: bar sandy, yellow jack, yellow jack inn
+
+You Tool
+  alias: magasin outil, you tool, you-tool, youtool
+
+Zone de chasse Paleto
+  alias: zone de chasse paleto
+
+Zone de pêche Cayo Périco
+  alias: cayo, cayo perico, cayo périco, perico, périco, zone de peche cayo perico, zone de pêche cayo périco
+
+Zone de pêche Del Perro
+  alias: del perro, zone de peche del perro, zone de pêche del perro
+
+zone de pêche ouest
+  alias: ouest, zone de peche ouest, zone de pêche ouest
+
+Zone de pêche Roxwood
+  alias: roxwood, zone de peche roxwood, zone de pêche roxwood
+
+Zone de pêche Sandy shore
+  alias: sandy shore, sandy shores, zone de peche sandy shore, zone de peche sandy shores, zone de pêche sandy shore
+
+Zone de pêche Vigneron
+  alias: vigneron, zone de peche vigneron, zone de pêche vigneron
+
+Zone industriel RoxWood
+  alias: zone industriel roxwood, zone industrielle roxwood
+
+Zone Résidentielle Paleto
+  alias: zone residentielle paleto, zone résidentielle paleto
+
+Zone Rouge
+  alias: zone rouge
+
+Zone Rouge Nord
+  alias: zone rouge nord
+

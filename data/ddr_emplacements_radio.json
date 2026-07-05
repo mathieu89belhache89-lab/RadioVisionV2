@@ -1,0 +1,2265 @@
+[
+  {
+    "id": 94,
+    "name": "Aérodrome Grapeseed",
+    "aliases": [
+      "aerodrome grapeseed",
+      "aérodrome grapeseed",
+      "aéroport grapeseed",
+      "grapeseed",
+      "grapeseed airfield",
+      "mc kenzie",
+      "mckenzie"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 57,
+    "name": "Aéroport",
+    "aliases": [
+      "aeroport",
+      "aeroport los santos",
+      "aéroport",
+      "aéroport los santos",
+      "lsia"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 179,
+    "name": "Aéroport Cayo Périco",
+    "aliases": [
+      "aeroport cayo perico",
+      "aéroport cayo perico",
+      "aéroport cayo périco",
+      "cayo",
+      "cayo perico",
+      "cayo périco",
+      "perico",
+      "périco"
+    ],
+    "type": "polygon",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 95,
+    "name": "Aéroport RoxWood",
+    "aliases": [
+      "aeroport roxwood",
+      "aéroport roxwood",
+      "roxwood"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 89,
+    "name": "Aéroport Sandy Shores",
+    "aliases": [
+      "aerodrome sandy",
+      "aeroport sandy",
+      "aeroport sandy shores",
+      "aeroport sandy shoress",
+      "aéroport sandy",
+      "aéroport sandy shores",
+      "sandy airfield",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 142,
+    "name": "Alamo Island",
+    "aliases": [
+      "alamo island"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 144,
+    "name": "Ammunation Base Militaire",
+    "aliases": [
+      "ammunation base militaire",
+      "base mili",
+      "base militaire",
+      "fort zancudo",
+      "zancudo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 193,
+    "name": "Ammunation Place Des Cubes",
+    "aliases": [
+      "ammunation place des cubes",
+      "place des cubes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 138,
+    "name": "Ammunation RévoBank",
+    "aliases": [
+      "ammunation revobank",
+      "ammunation révobank",
+      "revobank",
+      "révobank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 209,
+    "name": "Ammunation RoxWood",
+    "aliases": [
+      "ammunation roxwood",
+      "roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 167,
+    "name": "Ammunation Zone Industriel",
+    "aliases": [
+      "ammunation zone industriel",
+      "ammunation zone industrielle",
+      "zone industriel",
+      "zone industrielle"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 85,
+    "name": "amphithéâtre Vinewood",
+    "aliases": [
+      "amphitheatre vinewood",
+      "amphithéâtre vinewood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 171,
+    "name": "Ancien Benny's",
+    "aliases": [
+      "ancien benny's",
+      "benny's"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 139,
+    "name": "Ancien Concess Bateau",
+    "aliases": [
+      "ancien concess bateau",
+      "bateau",
+      "concess bateau"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 226,
+    "name": "Ancien LS Custom",
+    "aliases": [
+      "ancien ls custom",
+      "ls custom"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 25,
+    "name": "Ancien PDP",
+    "aliases": [
+      "ancien pdp",
+      "pdp"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 218,
+    "name": "Ancien Pont RoxWood",
+    "aliases": [
+      "ancien pont roxwood",
+      "pont roxwood"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 29,
+    "name": "Ancienne Revente Coke",
+    "aliases": [
+      "ancienne revente coke",
+      "revente coke"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 187,
+    "name": "Arcadius",
+    "aliases": [
+      "arcadius"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 48,
+    "name": "Auto Ecole",
+    "aliases": [
+      "auto ecole"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 239,
+    "name": "Avenue Rockford Plaza",
+    "aliases": [
+      "avenue rockford plaza"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 148,
+    "name": "Avenue Vinwood",
+    "aliases": [
+      "avenue vinewood",
+      "avenue vinwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 147,
+    "name": "Bahamas",
+    "aliases": [
+      "bahamas"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 55,
+    "name": "Bank Fleeca OUEST",
+    "aliases": [
+      "bank fleeca ouest",
+      "banque ouest",
+      "fleeca ouest"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 58,
+    "name": "Barrage",
+    "aliases": [
+      "barrage"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 83,
+    "name": "Base militaire",
+    "aliases": [
+      "base mili",
+      "base militaire",
+      "fort zancudo",
+      "zancudo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 21,
+    "name": "Bennys",
+    "aliases": [
+      "bennys"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 160,
+    "name": "Bijouterie",
+    "aliases": [
+      "bijouterie"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 131,
+    "name": "Bloods",
+    "aliases": [
+      "bloods"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 166,
+    "name": "Boucherie",
+    "aliases": [
+      "boucherie"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 127,
+    "name": "Boule Orange",
+    "aliases": [
+      "boule orange"
+    ],
+    "type": "marker",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 111,
+    "name": "Bucheron",
+    "aliases": [
+      "bucheron"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 72,
+    "name": "Bunker Aéroport Sandy Shores",
+    "aliases": [
+      "aerodrome sandy",
+      "aeroport sandy",
+      "aeroport sandy shores",
+      "aeroport sandy shoress",
+      "aéroport sandy",
+      "aéroport sandy shores",
+      "bunker aeroport sandy shores",
+      "bunker aeroport sandy shoress",
+      "bunker aéroport sandy shores",
+      "sandy airfield",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 68,
+    "name": "Bunker barrage",
+    "aliases": [
+      "barrage",
+      "bunker barrage"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 67,
+    "name": "Bunker Lester",
+    "aliases": [
+      "bunker lester",
+      "lester"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 71,
+    "name": "Bunker Magasin vetement Sandy Shores",
+    "aliases": [
+      "bunker magasin vetement sandy shores",
+      "bunker magasin vetement sandy shoress",
+      "magasin vetement sandy shores",
+      "magasin vetement sandy shoress",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 74,
+    "name": "Bunker Paleto Bay",
+    "aliases": [
+      "bunker paleto bay",
+      "paleto bay"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 66,
+    "name": "Bunker Plage",
+    "aliases": [
+      "bunker plage",
+      "plage"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 70,
+    "name": "Bunker Sandy shores",
+    "aliases": [
+      "bunker sandy shores",
+      "bunker sandy shoress",
+      "sandy shores",
+      "sandy shoress"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 75,
+    "name": "Bunker Soulevine 1",
+    "aliases": [
+      "bunker soulevine 1",
+      "soulevine 1"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 76,
+    "name": "Bunker Soulevine 2",
+    "aliases": [
+      "bunker soulevine 2",
+      "soulevine 2"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 69,
+    "name": "Bunker Vinewood",
+    "aliases": [
+      "bunker vinewood",
+      "vinewood"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 73,
+    "name": "Bunker Zone rouge",
+    "aliases": [
+      "bunker zone rouge",
+      "zone rouge"
+    ],
+    "type": "bunker",
+    "category": "Bunker",
+    "subcategory": "Général"
+  },
+  {
+    "id": 164,
+    "name": "Burger Shot",
+    "aliases": [
+      "burger shot"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 15,
+    "name": "Cabinet avocat",
+    "aliases": [
+      "cabinet avocat"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 122,
+    "name": "Camp de Gitan",
+    "aliases": [
+      "camp de gitan"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 157,
+    "name": "Canaux Vespucci",
+    "aliases": [
+      "canal vespucci",
+      "canaux",
+      "canaux vespucci",
+      "vespucci canal"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 28,
+    "name": "Caserne Pompier",
+    "aliases": [
+      "caserne pompier"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 23,
+    "name": "Casino",
+    "aliases": [
+      "casino",
+      "casino diamond",
+      "diamond casino"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 128,
+    "name": "Casse Avion",
+    "aliases": [
+      "avion",
+      "casse avion"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 195,
+    "name": "Casse Mission Row",
+    "aliases": [
+      "casse mission row",
+      "mission row"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 203,
+    "name": "Casse Zone Rouge",
+    "aliases": [
+      "casse zone rouge",
+      "zone rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 65,
+    "name": "CBG industies",
+    "aliases": [
+      "cbg industies",
+      "cbg industries"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 97,
+    "name": "Central Electrique",
+    "aliases": [
+      "central electrique"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 98,
+    "name": "Champ d'éolienne",
+    "aliases": [
+      "champ d'eolienne",
+      "champ d'éolienne",
+      "d'eolienne",
+      "d'éolienne"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 234,
+    "name": "Champ d'orange",
+    "aliases": [
+      "champ d'orange",
+      "d'orange"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 168,
+    "name": "Champ de pétrole",
+    "aliases": [
+      "champ de petrole",
+      "champ de pétrole",
+      "de petrole",
+      "de pétrole"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 124,
+    "name": "Champ Grapeseed",
+    "aliases": [
+      "champ grapeseed",
+      "grapeseed"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 220,
+    "name": "Champ RoxWood",
+    "aliases": [
+      "champ roxwood",
+      "roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 206,
+    "name": "Chantier Avocat",
+    "aliases": [
+      "avocat",
+      "chantier avocat"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 118,
+    "name": "Chantier Paleto",
+    "aliases": [
+      "chantier paleto",
+      "paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 189,
+    "name": "Chantier PC",
+    "aliases": [
+      "chantier pc"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 17,
+    "name": "Chantier Weazle News",
+    "aliases": [
+      "chantier weazle news",
+      "weazle news"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 163,
+    "name": "Cimetière",
+    "aliases": [
+      "cimetiere",
+      "cimetière"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 119,
+    "name": "Circuit RoxWood",
+    "aliases": [
+      "circuit roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 192,
+    "name": "Club de Boxe",
+    "aliases": [
+      "club de boxe"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 154,
+    "name": "CNN",
+    "aliases": [
+      "cnn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 8,
+    "name": "Coiffeur Plage",
+    "aliases": [
+      "coiffeur plage"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 126,
+    "name": "Concess Bateau",
+    "aliases": [
+      "bateau",
+      "concess bateau"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 132,
+    "name": "Concess Voiture",
+    "aliases": [
+      "concess voiture",
+      "voiture"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": "Voiture"
+  },
+  {
+    "id": 180,
+    "name": "Concessionnaire Simeone",
+    "aliases": [
+      "concessionnaire simeone",
+      "simeone"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 121,
+    "name": "Dinosaure Rose",
+    "aliases": [
+      "dinosaure rose"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 150,
+    "name": "Eclipse Tower",
+    "aliases": [
+      "eclipse tower"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 107,
+    "name": "Eglise Route 68",
+    "aliases": [
+      "eglise route 68"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 153,
+    "name": "EMS",
+    "aliases": [
+      "ems"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 86,
+    "name": "Fabrique de billet",
+    "aliases": [
+      "fabrique de billet"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 146,
+    "name": "Fete Forraine",
+    "aliases": [
+      "del perro pier",
+      "fete foraine",
+      "fete forraine",
+      "fête foraine",
+      "jetee",
+      "jetée"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 30,
+    "name": "Fonderie",
+    "aliases": [
+      "fonderie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 50,
+    "name": "Fourrière",
+    "aliases": [
+      "fourriere",
+      "fourrière"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 116,
+    "name": "Fourrière Paleto",
+    "aliases": [
+      "fourriere paleto",
+      "fourrière paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 24,
+    "name": "Fuente Blanca",
+    "aliases": [
+      "fuente blanca"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 20,
+    "name": "Galaxie",
+    "aliases": [
+      "galaxie"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 244,
+    "name": "Go-Fast",
+    "aliases": [
+      "go-fast"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 56,
+    "name": "Golf",
+    "aliases": [
+      "golf"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 190,
+    "name": "Gouvernement",
+    "aliases": [
+      "gouvernement"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 125,
+    "name": "Grapeseed",
+    "aliases": [
+      "grapeseed"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 225,
+    "name": "Hangar Mayweather",
+    "aliases": [
+      "hangar mayweather",
+      "hangar merryweather"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 106,
+    "name": "Harmony",
+    "aliases": [
+      "harmony"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 204,
+    "name": "Hôpital Fourrière",
+    "aliases": [
+      "hopital fourriere",
+      "hôpital fourrière"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 205,
+    "name": "Hôpital Océan",
+    "aliases": [
+      "hopital ocean",
+      "hôpital océan"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 27,
+    "name": "Hopital St fiacre",
+    "aliases": [
+      "hopital st fiacre"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 137,
+    "name": "Hotel Rose",
+    "aliases": [
+      "hotel rose"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 188,
+    "name": "Leboncoin",
+    "aliases": [
+      "leboncoin"
+    ],
+    "type": "marker",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 26,
+    "name": "Lester",
+    "aliases": [
+      "lester"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 32,
+    "name": "Location Scooter",
+    "aliases": [
+      "location scooter"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 64,
+    "name": "LS Custom",
+    "aliases": [
+      "ls custom"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 170,
+    "name": "Magasin de vêtement Mission Row",
+    "aliases": [
+      "magasin de vetement mission row",
+      "magasin de vêtement mission row"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 228,
+    "name": "Magasin de vêtements poste de police",
+    "aliases": [
+      "magasin de vetements poste de police",
+      "magasin de vêtements poste de police",
+      "poste de police"
+    ],
+    "type": "marker",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 90,
+    "name": "Maison O'Neil",
+    "aliases": [
+      "maison o'neil",
+      "o'neil"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 156,
+    "name": "Marina",
+    "aliases": [
+      "marina"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 182,
+    "name": "Maze Bank",
+    "aliases": [
+      "maze bank",
+      "maze bank tower",
+      "tour maze bank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 199,
+    "name": "Maze Bank Arena",
+    "aliases": [
+      "arena",
+      "maze arena",
+      "maze bank arena"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 178,
+    "name": "Mega Mall",
+    "aliases": [
+      "mega mall"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 120,
+    "name": "Mine",
+    "aliases": [
+      "mine"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 169,
+    "name": "Mirror Park",
+    "aliases": [
+      "mirror park"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 101,
+    "name": "Motel Sandy Shores",
+    "aliases": [
+      "motel sandy shores",
+      "motel sandy shoress"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 34,
+    "name": "musée",
+    "aliases": [
+      "musee",
+      "musée"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 219,
+    "name": "Nouveau Pont RoxWood",
+    "aliases": [
+      "nouveau pont roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 136,
+    "name": "Observatoire",
+    "aliases": [
+      "galileo",
+      "observatoire",
+      "observatoire galileo"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 115,
+    "name": "Paleto Bank",
+    "aliases": [
+      "banque paleto",
+      "fleeca paleto",
+      "paleto bank"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 224,
+    "name": "Panneau Vinwood",
+    "aliases": [
+      "panneau vinewood",
+      "panneau vinwood",
+      "signe vinewood",
+      "vinewood sign"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 210,
+    "name": "Parc aquatique",
+    "aliases": [
+      "parc aquatique"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 60,
+    "name": "Parking anti 208",
+    "aliases": [
+      "anti 208",
+      "parking anti 208"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 183,
+    "name": "Parking blanc",
+    "aliases": [
+      "blanc",
+      "parking blanc"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 112,
+    "name": "Parking Central Paleto",
+    "aliases": [
+      "central paleto",
+      "parking central paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 186,
+    "name": "Parking centrale PC",
+    "aliases": [
+      "centrale pc",
+      "parking centrale pc"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 213,
+    "name": "Parking Multicolor",
+    "aliases": [
+      "multicolor",
+      "parking multicolor"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 181,
+    "name": "Parking rouge",
+    "aliases": [
+      "parking rouge",
+      "rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 91,
+    "name": "Phare",
+    "aliases": [
+      "phare"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 196,
+    "name": "Place Des Cubes",
+    "aliases": [
+      "place des cubes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 191,
+    "name": "Pole Emploi",
+    "aliases": [
+      "pole emploi"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 134,
+    "name": "Pont Base Militaire",
+    "aliases": [
+      "pont base militaire"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 198,
+    "name": "Port Cayo Perico",
+    "aliases": [
+      "port cayo perico"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 109,
+    "name": "Poste BCSO",
+    "aliases": [
+      "bcso",
+      "bcso sandy",
+      "poste bcso",
+      "poste sandy",
+      "sheriff sandy"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 114,
+    "name": "Poste BCSO Paleto",
+    "aliases": [
+      "bcso paleto",
+      "poste bcso paleto",
+      "poste paleto",
+      "sheriff paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 229,
+    "name": "Poste de police Mission Row",
+    "aliases": [
+      "commissariat mission row",
+      "de police mission row",
+      "mission row",
+      "mission row pd",
+      "pd mission row",
+      "poste de police mission row"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 158,
+    "name": "Poste LSPD",
+    "aliases": [
+      "lspd",
+      "police plage",
+      "poste lspd",
+      "poste plage"
+    ],
+    "type": "polygon",
+    "category": "Zone de patrouille",
+    "subcategory": null
+  },
+  {
+    "id": 110,
+    "name": "Poste RoxWood",
+    "aliases": [
+      "bcso roxwood",
+      "police roxwood",
+      "poste roxwood",
+      "roxwood"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 100,
+    "name": "Prison",
+    "aliases": [
+      "bolingbroke",
+      "penitencier",
+      "prison",
+      "pénitencier"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 54,
+    "name": "QG Nood",
+    "aliases": [
+      "qg nood"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 223,
+    "name": "QG SWAT",
+    "aliases": [
+      "qg swat"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 177,
+    "name": "Quartier Ballas",
+    "aliases": [
+      "ballas",
+      "quartier ballas"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 172,
+    "name": "Quartier F4L",
+    "aliases": [
+      "f4l",
+      "quartier f4l"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 161,
+    "name": "Quartier Mara",
+    "aliases": [
+      "mara",
+      "quartier mara"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 176,
+    "name": "Quartier Vagos",
+    "aliases": [
+      "quartier vagos",
+      "vagos"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 140,
+    "name": "Raton Canyon",
+    "aliases": [
+      "raton canyon"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 87,
+    "name": "Récolte cocaïne",
+    "aliases": [
+      "cocaine",
+      "cocaïne",
+      "recolte cocaine",
+      "récolte cocaïne"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 79,
+    "name": "Récolte Fantanyl",
+    "aliases": [
+      "fantanyl",
+      "fentanyl",
+      "recolte fantanyl",
+      "recolte fentanyl",
+      "récolte fantanyl"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général"
+  },
+  {
+    "id": 78,
+    "name": "Récolte Opium",
+    "aliases": [
+      "opium",
+      "recolte opium",
+      "récolte opium"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général"
+  },
+  {
+    "id": 77,
+    "name": "Récolte Soulevine",
+    "aliases": [
+      "recolte soulevine",
+      "récolte soulevine",
+      "soulevine"
+    ],
+    "type": "drogue",
+    "category": "Drogues",
+    "subcategory": "Général"
+  },
+  {
+    "id": 92,
+    "name": "Récolte Weed",
+    "aliases": [
+      "recolte weed",
+      "récolte weed",
+      "weed"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 242,
+    "name": "Revente Coke",
+    "aliases": [
+      "coke",
+      "revente coke"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 41,
+    "name": "Revente fentanyl",
+    "aliases": [
+      "fentanyl",
+      "revente fentanyl"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 241,
+    "name": "Revente Meth",
+    "aliases": [
+      "meth",
+      "revente meth"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 221,
+    "name": "Revente Opium",
+    "aliases": [
+      "opium",
+      "revente opium"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 105,
+    "name": "Revente Soulvine",
+    "aliases": [
+      "revente soulevine",
+      "revente soulvine",
+      "soulevine",
+      "soulvine"
+    ],
+    "type": "rectangle",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 240,
+    "name": "Revente Weed",
+    "aliases": [
+      "revente weed",
+      "weed"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 19,
+    "name": "Revo Bank",
+    "aliases": [
+      "revo bank",
+      "revo banque",
+      "revobank"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 81,
+    "name": "Rockford Plaza",
+    "aliases": [
+      "rockford plaza"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 159,
+    "name": "Skate Parc Vespucci",
+    "aliases": [
+      "skate parc vespucci"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 236,
+    "name": "station essence animalerie",
+    "aliases": [
+      "animalerie",
+      "station essence animalerie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 230,
+    "name": "Station essence Auto école",
+    "aliases": [
+      "auto ecole",
+      "auto école",
+      "station essence auto ecole",
+      "station essence auto école"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 238,
+    "name": "station essence Bloods",
+    "aliases": [
+      "bloods",
+      "station essence bloods"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 235,
+    "name": "station essence galaxie",
+    "aliases": [
+      "galaxie",
+      "station essence galaxie"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 237,
+    "name": "station essence UWU café",
+    "aliases": [
+      "station essence uwu cafe",
+      "station essence uwu café",
+      "uwu",
+      "uwu cafe",
+      "uwu café"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 243,
+    "name": "Station essence YouTool",
+    "aliases": [
+      "magasin outil",
+      "station essence youtool",
+      "you tool",
+      "you-tool",
+      "youtool"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 149,
+    "name": "Studio de cinéma",
+    "aliases": [
+      "studio de cinema",
+      "studio de cinéma"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 232,
+    "name": "supérette Est",
+    "aliases": [
+      "superette est",
+      "supérette est"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 33,
+    "name": "Taco Bomb",
+    "aliases": [
+      "taco bomb"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 7,
+    "name": "Tatoueur plage",
+    "aliases": [
+      "tatoueur plage"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 22,
+    "name": "Taxi",
+    "aliases": [
+      "taxi"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 216,
+    "name": "Tekilala",
+    "aliases": [
+      "tekilala",
+      "tequi-la-la"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 152,
+    "name": "Télésiège",
+    "aliases": [
+      "telesiege",
+      "télésiège"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 215,
+    "name": "Temple Chinois",
+    "aliases": [
+      "temple chinois"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 108,
+    "name": "Terrain de Cross",
+    "aliases": [
+      "terrain de cross"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 214,
+    "name": "Terrain de Tennis",
+    "aliases": [
+      "terrain de tennis"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 84,
+    "name": "Théâtre Vinewood",
+    "aliases": [
+      "theatre vinewood",
+      "théâtre vinewood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 130,
+    "name": "Toilette",
+    "aliases": [
+      "toilette"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 227,
+    "name": "Tour de controle plage",
+    "aliases": [
+      "de controle plage",
+      "tour de controle plage"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 184,
+    "name": "Tour FBI",
+    "aliases": [
+      "fbi",
+      "tour fbi"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 185,
+    "name": "Tour IAA",
+    "aliases": [
+      "iaa",
+      "tour iaa"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 155,
+    "name": "Traitement de pommes",
+    "aliases": [
+      "de pommes",
+      "traitement de pommes"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 135,
+    "name": "Traitement soulvine",
+    "aliases": [
+      "soulevine",
+      "soulvine",
+      "traitement soulevine",
+      "traitement soulvine"
+    ],
+    "type": "marker",
+    "category": "Drogues",
+    "subcategory": null
+  },
+  {
+    "id": 133,
+    "name": "Tunnel ancienne coke",
+    "aliases": [
+      "tunnel ancienne coke"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 173,
+    "name": "Unicorn",
+    "aliases": [
+      "unicorn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 211,
+    "name": "Université",
+    "aliases": [
+      "universite",
+      "université"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 113,
+    "name": "Usine Cluck'In Bell (Poulailler)",
+    "aliases": [
+      "cluck'in bell (poulailler)",
+      "cluckin bell (poulailler)",
+      "usine cluck'in bell (poulailler)",
+      "usine cluckin bell (poulailler)"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 165,
+    "name": "Usine Cypress Flat",
+    "aliases": [
+      "cypress flat",
+      "usine cypress flat"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 102,
+    "name": "Usine Fabrique",
+    "aliases": [
+      "fabrique",
+      "usine fabrique"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 36,
+    "name": "uwu café",
+    "aliases": [
+      "uwu",
+      "uwu cafe",
+      "uwu café"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 40,
+    "name": "Vente Peche",
+    "aliases": [
+      "vente peche"
+    ],
+    "type": "marker",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux Notable"
+  },
+  {
+    "id": 99,
+    "name": "Vigneron",
+    "aliases": [
+      "vigneron"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 61,
+    "name": "Villa Cayo Perico",
+    "aliases": [
+      "cayo",
+      "cayo perico",
+      "perico",
+      "périco",
+      "villa cayo perico"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 217,
+    "name": "Villa Mickael",
+    "aliases": [
+      "mickael",
+      "villa mickael"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 212,
+    "name": "Villa PlayBoy",
+    "aliases": [
+      "playboy",
+      "villa playboy"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 162,
+    "name": "Villa Richman",
+    "aliases": [
+      "richman",
+      "villa richman"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 123,
+    "name": "Villa Tropical",
+    "aliases": [
+      "tropical",
+      "villa tropical"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 35,
+    "name": "Weazle News",
+    "aliases": [
+      "weazle news"
+    ],
+    "type": "rectangle",
+    "category": "Important 10-3 oraux",
+    "subcategory": "Lieux fréquent"
+  },
+  {
+    "id": 104,
+    "name": "Yellow Jack",
+    "aliases": [
+      "bar sandy",
+      "yellow jack",
+      "yellow jack inn"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 103,
+    "name": "You Tool",
+    "aliases": [
+      "magasin outil",
+      "you tool",
+      "you-tool",
+      "youtool"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 151,
+    "name": "Zone de chasse Paleto",
+    "aliases": [
+      "zone de chasse paleto"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 194,
+    "name": "Zone de pêche Cayo Périco",
+    "aliases": [
+      "cayo",
+      "cayo perico",
+      "cayo périco",
+      "perico",
+      "périco",
+      "zone de peche cayo perico",
+      "zone de pêche cayo périco"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 141,
+    "name": "Zone de pêche Del Perro",
+    "aliases": [
+      "del perro",
+      "zone de peche del perro",
+      "zone de pêche del perro"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 231,
+    "name": "zone de pêche ouest",
+    "aliases": [
+      "ouest",
+      "zone de peche ouest",
+      "zone de pêche ouest"
+    ],
+    "type": "rectangle",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 201,
+    "name": "Zone de pêche Roxwood",
+    "aliases": [
+      "roxwood",
+      "zone de peche roxwood",
+      "zone de pêche roxwood"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 197,
+    "name": "Zone de pêche Sandy shore",
+    "aliases": [
+      "sandy shore",
+      "sandy shores",
+      "zone de peche sandy shore",
+      "zone de peche sandy shores",
+      "zone de pêche sandy shore"
+    ],
+    "type": "polygon",
+    "category": null,
+    "subcategory": null
+  },
+  {
+    "id": 145,
+    "name": "Zone de pêche Vigneron",
+    "aliases": [
+      "vigneron",
+      "zone de peche vigneron",
+      "zone de pêche vigneron"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 96,
+    "name": "Zone industriel RoxWood",
+    "aliases": [
+      "zone industriel roxwood",
+      "zone industrielle roxwood"
+    ],
+    "type": "polygon",
+    "category": "Autre",
+    "subcategory": null
+  },
+  {
+    "id": 117,
+    "name": "Zone Résidentielle Paleto",
+    "aliases": [
+      "zone residentielle paleto",
+      "zone résidentielle paleto"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 202,
+    "name": "Zone Rouge",
+    "aliases": [
+      "zone rouge"
+    ],
+    "type": "polygon",
+    "category": "Important 10-3 oraux",
+    "subcategory": null
+  },
+  {
+    "id": 88,
+    "name": "Zone Rouge Nord",
+    "aliases": [
+      "zone rouge nord"
+    ],
+    "type": "rectangle",
+    "category": "Autre",
+    "subcategory": null
+  }
+]
