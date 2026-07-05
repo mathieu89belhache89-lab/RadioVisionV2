@@ -1,7 +1,6 @@
 from PySide6.QtCore import QThread, Signal
 
 from audio.capture import AudioCapture
-from audio.vad import VoiceActivityDetector
 from audio.whisper import Whisper
 
 
@@ -15,7 +14,6 @@ class AudioWorker(QThread):
         self.running = False
 
         self.capture = AudioCapture()
-        self.vad = VoiceActivityDetector()
         self.whisper = None
 
     def run(self):
@@ -30,11 +28,19 @@ class AudioWorker(QThread):
 
         frames = []
 
+        frames = []
+
         while self.running:
 
             pcm = self.capture.read()
 
-            if self.vad.is_speech(pcm):
+            import numpy as np
+
+            samples = np.frombuffer(pcm, dtype=np.int16)
+
+            volume = np.sqrt(np.mean(samples.astype(np.float32) ** 2))
+
+            if volume > 400:
 
                 frames.append(pcm)
 
@@ -46,7 +52,7 @@ class AudioWorker(QThread):
 
                     text = self.whisper.transcribe_bytes(audio)
 
-                    if text:
+                    if text.strip():
                         self.text_received.emit(text)
 
                 frames.clear()

@@ -8,36 +8,38 @@ class Whisper:
 
     def __init__(self):
 
+        print("Chargement Whisper...")
+
         self.model = WhisperModel(
             "base",
             device="cpu",
             compute_type="int8",
         )
 
-    def transcribe_bytes(self, pcm_bytes):
+        print("Whisper prêt.")
+
+    def transcribe_bytes(self, pcm):
 
         with tempfile.NamedTemporaryFile(
             suffix=".wav",
             delete=False,
-        ) as f:
+        ) as tmp:
 
-            with wave.open(f.name, "wb") as wav:
+            with wave.open(tmp.name, "wb") as wav:
 
                 wav.setnchannels(1)
                 wav.setsampwidth(2)
                 wav.setframerate(16000)
-                wav.writeframes(pcm_bytes)
+                wav.writeframes(pcm)
 
             segments, _ = self.model.transcribe(
-                f.name,
+                tmp.name,
                 language="fr",
                 beam_size=1,
-                vad_filter=True,
+                vad_filter=False,
             )
 
-        text = " ".join(
-            segment.text.strip()
-            for segment in segments
+        return " ".join(
+            s.text.strip()
+            for s in segments
         )
-
-        return text.strip()
