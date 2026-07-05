@@ -4,7 +4,7 @@ import unicodedata
 
 class UnitParser:
 
-    NUMBER_WORDS = {
+    SIMPLE_NUMBERS = {
         "zero": 0,
         "un": 1,
         "une": 1,
@@ -30,6 +30,42 @@ class UnitParser:
         "soixante": 60,
     }
 
+    STOP_WORDS = [
+        "code",
+        "10",
+        "direction",
+        "vers",
+        "dernier",
+        "visuel",
+        "vue",
+        "vehicule",
+        "voiture",
+        "conducteur",
+        "individu",
+        "individus",
+        "suspect",
+        "suspects",
+        "poursuite",
+        "fuite",
+        "immobilise",
+        "accident",
+        "renfort",
+        "arme",
+        "audi",
+        "bmw",
+        "mercedes",
+        "porsche",
+        "ferrari",
+        "mclaren",
+        "lamborghini",
+        "mission",
+        "sandy",
+        "paleto",
+        "legion",
+        "casino",
+        "bijouterie",
+    ]
+
     def clean(self, text: str) -> str:
         text = text.lower()
 
@@ -40,36 +76,94 @@ class UnitParser:
         )
 
         text = text.replace("-", " ")
+        text = text.replace("'", " ")
         text = re.sub(r"[^a-z0-9 ]", " ", text)
-        text = re.sub(r"\s+", " ", text)
+        text = re.sub(r"\s+", " ", text).strip()
 
-        return text.strip()
+        replacements = {
+            r"\bunitee\b": "unite",
+            r"\buniter\b": "unite",
+            r"\bunites\b": "unite",
+            r"\bunit\b": "unite",
+            r"\bcentral de l unite\b": "central unite",
+            r"\bcentral de la unite\b": "central unite",
+            r"\bcentral l unite\b": "central unite",
+        }
+
+        for pattern, replacement in replacements.items():
+            text = re.sub(pattern, replacement, text)
+
+        text = re.sub(r"\s+", " ", text).strip()
+
+        return text
+
+    def cut_after_stop_word(self, raw: str) -> str:
+        raw = raw.strip()
+
+        for stop in self.STOP_WORDS:
+            raw = re.split(
+                r"\b" + re.escape(stop) + r"\b",
+                raw
+            )[0].strip()
+
+        return raw
 
     def words_to_number(self, words: str):
         words = words.strip()
 
-        if words.isdigit():
-            return int(words)
+        direct_digit = re.search(r"\b(\d{1,3})\b", words)
+
+        if direct_digit:
+            return int(direct_digit.group(1))
 
         parts = words.split()
 
         parts = [
-            p for p in parts
-            if p not in ["et", "l", "de", "la", "le"]
+            part for part in parts
+            if part not in [
+                "et",
+                "de",
+                "du",
+                "la",
+                "le",
+                "l",
+                "d",
+            ]
         ]
 
         if not parts:
             return None
 
         total = 0
+        found_number = False
 
-        for part in parts:
-            if part not in self.NUMBER_WORDS:
+        index = 0
+
+        while index < len(parts):
+            part = parts[index]
+
+            if part.isdigit():
+                total += int(part)
+                found_number = True
+                index += 1
                 continue
 
-            total += self.NUMBER_WORDS[part]
+            if part == "quatre" and index + 1 < len(parts):
+                next_part = parts[index + 1]
 
-        if total > 0:
+                if next_part == "vingt":
+                    total += 80
+                    found_number = True
+                    index += 2
+                    continue
+
+            if part in self.SIMPLE_NUMBERS:
+                total += self.SIMPLE_NUMBERS[part]
+                found_number = True
+
+            index += 1
+
+        if found_number and total > 0:
             return total
 
         return None
@@ -77,42 +171,38 @@ class UnitParser:
     def find(self, text: str):
         text = self.clean(text)
 
-        patterns = [
-            r"\bunite\s+([a-z0-9 ]{1,30})",
-            r"\bunit\s+([a-z0-9 ]{1,30})",
-            r"\bu\s+([a-z0-9 ]{1,10})",
-            r"\bpatrouille\s+([a-z0-9 ]{1,30})",
-            r"\bcentral\s+unite\s+([a-z0-9 ]{1,30})",
-            r"\bcentral\s+de\s+l\s+unite\s+([a-z0-9 ]{1,30})",
+        direct_patterns = [
+            r"\bunite\s+(\d{1,3})\b",
+            r"\bcentral\s+unite\s+(\d{1,3})\b",
+            r"\bpatrouille\s+(\d{1,3})\b",
+            r"\bu\s+(\d{1,3})\b",
         ]
 
-        stop_words = [
-            "code",
-            "10",
-            "direction",
-            "vehicule",
-            "voiture",
-            "audi",
-            "bmw",
-            "mercedes",
-            "sultan",
-            "mission",
-            "sandy",
-            "paleto",
-        ]
-
-        for pattern in patterns:
+        for pattern in direct_patterns:
             match = re.search(pattern, text)
 
             if match:
-                raw = match.group(1).strip()
+                return str(int(match.group(1)))
 
-                for stop in stop_words:
-                    raw = raw.split(stop)[0].strip()
+        word_patterns = [
+            r"\bcentral\s+unite\s+([a-z0-9 ]{1,50})",
+            r"\bunite\s+([a-z0-9 ]{1,50})",
+            r"\bpatrouille\s+([a-z0-9 ]{1,50})",
+            r"\bu\s+([a-z0-9 ]{1,20})",
+        ]
 
-                number = self.words_to_number(raw)
+        for pattern in word_patterns:
+            match = re.search(pattern, text)
 
-                if number is not None:
-                    return str(number)
+            if not match:
+                continue
+
+            raw = match.group(1).strip()
+            raw = self.cut_after_stop_word(raw)
+
+            number = self.words_to_number(raw)
+
+            if number is not None:
+                return str(number)
 
         return None

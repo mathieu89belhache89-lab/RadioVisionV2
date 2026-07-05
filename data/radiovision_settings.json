@@ -5,5 +5,5 @@
     "pending_delay": 5,
     "merge_window": 8,
     "pursuit_window": 5,
-    "whisper_model": "small"
+    "whisper_model": "base"
 }

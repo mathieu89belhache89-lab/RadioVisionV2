@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.setWindowTitle("RadioVision")
-        self.resize(980, 720)
+        self.resize(1040, 760)
 
         self._build_actions()
         self._build_toolbar()
@@ -49,6 +49,7 @@ class MainWindow(QMainWindow):
 
         self.tabs.addTab(self._build_radio_tab(), "Radio")
         self.tabs.addTab(self._build_details_tab(), "Poursuite")
+        self.tabs.addTab(self._build_history_tab(), "Historique poursuites")
         self.tabs.addTab(self._build_settings_tab(), "Paramètres")
 
         self.setCentralWidget(self.tabs)
@@ -128,6 +129,35 @@ class MainWindow(QMainWindow):
         """)
 
         layout.addWidget(self.details)
+
+        return page
+
+    def _build_history_tab(self):
+        page = QWidget()
+        layout = QVBoxLayout(page)
+        layout.setContentsMargins(12, 12, 12, 12)
+
+        self.pursuit_history = QTextEdit()
+        self.pursuit_history.setReadOnly(True)
+        self.pursuit_history.setObjectName("pursuitHistory")
+        self.pursuit_history.setHtml("""
+        <html>
+            <body style="
+                background-color:#1e1f22;
+                color:#dbdee1;
+                font-family:Segoe UI, Arial;
+                font-size:13px;
+                margin:0;
+                padding:0;
+            ">
+                <div style="color:#949ba4; padding:8px;">
+                    Aucune poursuite pour le moment.
+                </div>
+            </body>
+        </html>
+        """)
+
+        layout.addWidget(self.pursuit_history)
 
         return page
 

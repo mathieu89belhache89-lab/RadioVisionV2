@@ -22,6 +22,7 @@ from parser.unit_parser import UnitParser
 from parser.direction_parser import DirectionParser
 from parser.vehicle_parser import VehicleParser
 from parser.incident_parser import IncidentParser
+from parser.pursuit_tracker import PursuitTracker
 
 
 DEFAULT_RUNTIME_SETTINGS = {
@@ -49,6 +50,7 @@ class RadioVisionApp(QObject):
         self.direction_parser = DirectionParser()
         self.vehicle_parser = VehicleParser()
         self.incident_parser = IncidentParser()
+        self.pursuit_tracker = PursuitTracker()
 
         self.runtime_settings_file = Path("data") / "radiovision_settings.json"
         self.runtime_settings = self.load_runtime_settings()
@@ -61,13 +63,9 @@ class RadioVisionApp(QObject):
         self.pending_merge_window = int(self.runtime_settings["merge_window"])
         self.pending_delay_ms = int(self.runtime_settings["pending_delay"]) * 1000
 
-        self.active_pursuit = None
-        self.active_pursuit_time = None
-        self.active_pursuit_window = int(self.runtime_settings["pursuit_window"]) * 60
-
         self.detail_bubbles = []
         self.bubble_counter = 0
-        self.active_pursuit_bubble_id = None
+        self.pursuit_bubble_ids = {}
         self.max_detail_bubbles = 80
 
         self.pending_timer = QTimer(self)
@@ -82,6 +80,7 @@ class RadioVisionApp(QObject):
 
         self._connect_signals()
         self.apply_runtime_settings(self.runtime_settings, update_ui=True)
+        self.update_pursuit_history()
 
         self.logger.info("RadioVision démarré")
 
@@ -167,7 +166,9 @@ class RadioVisionApp(QObject):
     def apply_runtime_settings(self, settings, update_ui=False):
         self.pending_delay_ms = int(settings.get("pending_delay", 6)) * 1000
         self.pending_merge_window = int(settings.get("merge_window", 8))
-        self.active_pursuit_window = int(settings.get("pursuit_window", 3)) * 60
+
+        pursuit_window_seconds = int(settings.get("pursuit_window", 3)) * 60
+        self.pursuit_tracker.set_active_window(pursuit_window_seconds)
 
         self.overlay.set_enabled(settings.get("overlay_enabled", True))
         self.overlay.set_display_seconds(settings.get("overlay_duration", 15))
@@ -309,6 +310,14 @@ class RadioVisionApp(QObject):
             "vehicle": self.vehicle_parser.find(text),
             "incidents": self.incident_parser.find(text),
             "is_update": False,
+            "is_unassigned": False,
+            "is_code_lookup": False,
+            "pursuit_id": None,
+            "pursuit_label": None,
+            "pursuit_status": None,
+            "pursuit_status_label": None,
+            "tracker_action": None,
+            "association_score": 0,
         }
 
     def event_has_content(self, event):
@@ -321,78 +330,14 @@ class RadioVisionApp(QObject):
             event.get("incidents"),
         ])
 
-    def is_pursuit_event(self, event):
-        code = event.get("code")
-        incidents = event.get("incidents") or []
-
-        if code in ["10-10", "10-11"]:
-            return True
-
-        pursuit_words = [
-            "Poursuite",
-            "Visuel",
-            "Fuite",
-            "Immobilisé",
-            "Accident",
-            "Interpellation",
-            "Renfort",
-            "Refus",
-            "Coups de feu",
-        ]
-
-        for incident in incidents:
-            for word in pursuit_words:
-                if word.lower() in incident.lower():
-                    return True
-
-        if event.get("vehicle") and (
-            event.get("location") or event.get("direction")
-        ):
-            return True
-
-        return False
-
-    def is_active_pursuit_valid(self):
-        if not self.active_pursuit:
-            return False
-
-        if self.active_pursuit_time is None:
-            return False
-
-        if time.time() - self.active_pursuit_time > self.active_pursuit_window:
-            self.active_pursuit = None
-            self.active_pursuit_time = None
-            self.active_pursuit_bubble_id = None
-            return False
-
-        return True
-
-    def is_followup_for_active_pursuit(self, event):
-        if not self.is_active_pursuit_valid():
-            return False
-
-        active_pursuit = self.active_pursuit
-
-        if active_pursuit is None:
-            return False
-
-        if event.get("code") in ["10-10", "10-11"]:
-            return False
-
-        has_followup_info = any([
+    def is_code_only_event(self, event):
+        return bool(event.get("code")) and not any([
+            event.get("unit"),
             event.get("location"),
             event.get("direction"),
+            event.get("vehicle"),
             event.get("incidents"),
         ])
-
-        if not has_followup_info:
-            return False
-
-        if event.get("unit") and active_pursuit.get("unit"):
-            if event.get("unit") != active_pursuit.get("unit"):
-                return False
-
-        return True
 
     def build_signature(
         self,
@@ -402,24 +347,32 @@ class RadioVisionApp(QObject):
         direction=None,
         vehicle=None,
         incidents=None,
+        pursuit_id=None,
+        is_unassigned=False,
+        is_code_lookup=False,
     ):
         incidents = incidents or []
 
         location_name = ""
+
         if location:
             location_name = location.get("name", "")
 
         vehicle_key = ""
+
         if vehicle:
             vehicle_key = vehicle.get("key") or vehicle.get("vehicle", "")
 
         signature_parts = [
+            str(pursuit_id or ""),
             str(code or ""),
             str(unit or ""),
             str(location_name or ""),
             str(direction or ""),
             str(vehicle_key or ""),
             "|".join(incidents),
+            str(is_unassigned),
+            str(is_code_lookup),
         ]
 
         return " / ".join(signature_parts).lower().strip()
@@ -451,7 +404,11 @@ class RadioVisionApp(QObject):
         location=None,
         direction=None,
         vehicle=None,
+        is_code_lookup=False,
     ):
+        if is_code_lookup:
+            return []
+
         missing = []
 
         has_any_info = any([
@@ -536,6 +493,7 @@ class RadioVisionApp(QObject):
             location=event.get("location"),
             direction=event.get("direction"),
             vehicle=event.get("vehicle"),
+            is_code_lookup=event.get("is_code_lookup", False),
         )
 
     def should_merge_with_pending(self, new_event):
@@ -609,13 +567,17 @@ class RadioVisionApp(QObject):
 
         return merged
 
-    def remember_active_pursuit(self, event):
-        if self.is_pursuit_event(event):
-            self.active_pursuit = event.copy()
-            self.active_pursuit_time = time.time()
-
     def handle_event(self, event):
         if not self.event_has_content(event):
+            return
+
+        if self.is_code_only_event(event):
+            event["is_code_lookup"] = True
+
+            if self.pending_event:
+                self.flush_pending_event()
+
+            self.display_event(event)
             return
 
         if self.should_merge_with_pending(event):
@@ -629,29 +591,17 @@ class RadioVisionApp(QObject):
             self.pending_event = None
             self.pending_event_time = None
 
-            self.display_event(merged)
-            self.remember_active_pursuit(merged)
+            self.process_and_display_event(merged)
             return
 
-        if self.is_followup_for_active_pursuit(event):
+        if (
+            self.pursuit_tracker.has_active_pursuits()
+            and self.pursuit_tracker.is_followup_like(event)
+        ):
             if self.pending_event:
                 self.flush_pending_event()
 
-            active_pursuit = self.active_pursuit
-
-            if active_pursuit is None:
-                return
-
-            merged = self.merge_events(
-                active_pursuit,
-                event,
-                update_existing=True,
-            )
-
-            merged["is_update"] = True
-
-            self.display_event(merged)
-            self.remember_active_pursuit(merged)
+            self.process_and_display_event(event)
             return
 
         missing = self.event_missing_infos(event)
@@ -668,8 +618,7 @@ class RadioVisionApp(QObject):
         if self.pending_event:
             self.flush_pending_event()
 
-        self.display_event(event)
-        self.remember_active_pursuit(event)
+        self.process_and_display_event(event)
 
     def flush_pending_event(self):
         if not self.pending_event:
@@ -680,8 +629,12 @@ class RadioVisionApp(QObject):
         self.pending_event = None
         self.pending_event_time = None
 
-        self.display_event(event)
-        self.remember_active_pursuit(event)
+        self.process_and_display_event(event)
+
+    def process_and_display_event(self, event):
+        tracked_event = self.pursuit_tracker.process_event(event)
+        self.display_event(tracked_event)
+        self.update_pursuit_history()
 
     def display_event(self, event):
         self.append_radio_bubble(
@@ -694,6 +647,12 @@ class RadioVisionApp(QObject):
             vehicle=event.get("vehicle"),
             incidents=event.get("incidents"),
             is_update=event.get("is_update", False),
+            is_unassigned=event.get("is_unassigned", False),
+            is_code_lookup=event.get("is_code_lookup", False),
+            pursuit_id=event.get("pursuit_id"),
+            pursuit_label=event.get("pursuit_label"),
+            pursuit_status_label=event.get("pursuit_status_label"),
+            association_score=event.get("association_score", 0),
         )
 
         if event.get("code"):
@@ -713,6 +672,9 @@ class RadioVisionApp(QObject):
         vehicle=None,
         incidents=None,
         is_update=False,
+        is_unassigned=False,
+        is_code_lookup=False,
+        pursuit_id=None,
     ):
         incidents = incidents or []
 
@@ -725,8 +687,17 @@ class RadioVisionApp(QObject):
         lines.append("=" * 60)
         lines.append(f"Heure : {datetime.now():%H:%M:%S}")
 
+        if pursuit_id:
+            lines.append(f"Poursuite : #{pursuit_id}")
+
         if is_update:
-            lines.append("Type : Mise à jour poursuite active")
+            lines.append("Type : Mise à jour poursuite")
+
+        if is_unassigned:
+            lines.append("Type : Info non attribuée")
+
+        if is_code_lookup:
+            lines.append("Type : Code radio seul")
 
         lines.append(f"Phrase : {text}")
 
@@ -788,12 +759,19 @@ class RadioVisionApp(QObject):
         scroll = self.window.details.verticalScrollBar()
         scroll.setValue(scroll.maximum())
 
-    def add_or_update_detail_bubble(self, bubble_html, is_update=False, is_pursuit=False):
+    def add_or_update_detail_bubble(
+        self,
+        bubble_html,
+        is_update=False,
+        pursuit_id=None,
+    ):
         updated = False
 
-        if is_update and self.active_pursuit_bubble_id is not None:
+        if is_update and pursuit_id in self.pursuit_bubble_ids:
+            bubble_id_to_update = self.pursuit_bubble_ids[pursuit_id]
+
             for item in self.detail_bubbles:
-                if item["id"] == self.active_pursuit_bubble_id:
+                if item["id"] == bubble_id_to_update:
                     item["html"] = bubble_html
                     updated = True
                     break
@@ -808,14 +786,15 @@ class RadioVisionApp(QObject):
                 "html": bubble_html,
             })
 
-            if is_pursuit:
-                self.active_pursuit_bubble_id = bubble_id
+            if pursuit_id:
+                self.pursuit_bubble_ids[pursuit_id] = bubble_id
 
         while len(self.detail_bubbles) > self.max_detail_bubbles:
             removed = self.detail_bubbles.pop(0)
 
-            if removed["id"] == self.active_pursuit_bubble_id:
-                self.active_pursuit_bubble_id = None
+            for pursuit_key, bubble_id in list(self.pursuit_bubble_ids.items()):
+                if bubble_id == removed["id"]:
+                    del self.pursuit_bubble_ids[pursuit_key]
 
         self.render_detail_bubbles()
 
@@ -830,6 +809,12 @@ class RadioVisionApp(QObject):
         vehicle=None,
         incidents=None,
         is_update=False,
+        is_unassigned=False,
+        is_code_lookup=False,
+        pursuit_id=None,
+        pursuit_label=None,
+        pursuit_status_label=None,
+        association_score=0,
     ):
         incidents = incidents or []
 
@@ -839,6 +824,7 @@ class RadioVisionApp(QObject):
             location=location,
             direction=direction,
             vehicle=vehicle,
+            is_code_lookup=is_code_lookup,
         )
 
         confidence_label, confidence_percent, confidence_emoji = self.get_confidence(
@@ -857,6 +843,9 @@ class RadioVisionApp(QObject):
             direction=direction,
             vehicle=vehicle,
             incidents=incidents,
+            pursuit_id=pursuit_id,
+            is_unassigned=is_unassigned,
+            is_code_lookup=is_code_lookup,
         )
 
         if is_update:
@@ -873,26 +862,61 @@ class RadioVisionApp(QObject):
         priority_color = "#5865f2"
         priority_label = "INFO"
 
-        if code in ["10-99", "CODE 3", "460", "10-31"]:
+        if is_code_lookup:
+            priority_color = "#5865f2"
+            priority_label = "CODE RADIO"
+
+        elif is_unassigned:
+            priority_color = "#747f8d"
+            priority_label = "NON ATTRIBUÉ"
+
+        elif code in ["10-99", "CODE 3", "460", "10-31"]:
             priority_color = "#ed4245"
             priority_label = "URGENT"
 
+        elif pursuit_id:
+            priority_color = "#faa61a"
+            priority_label = f"POURSUITE #{pursuit_id}"
+
         elif code in ["10-10", "10-11"]:
             priority_color = "#faa61a"
-            priority_label = "POURSUITE ACTIVE"
+            priority_label = "POURSUITE"
 
-        if is_update:
+        if is_update and pursuit_id:
             priority_color = "#57f287"
-            priority_label = "POURSUITE ACTIVE"
+            priority_label = f"POURSUITE #{pursuit_id}"
 
-        elif missing_infos and priority_label != "URGENT":
+        elif missing_infos and priority_label not in [
+            "URGENT",
+            "NON ATTRIBUÉ",
+            "CODE RADIO",
+        ]:
             priority_color = "#faa61a"
             priority_label = "INCOMPLET"
 
         rows = []
 
+        if is_code_lookup:
+            rows.append(("📘", "Type", "Signification code radio"))
+
+        if pursuit_label:
+            rows.append(("🚓", "Dossier", html.escape(str(pursuit_label))))
+
+        if pursuit_status_label:
+            rows.append(("📌", "Statut", html.escape(str(pursuit_status_label))))
+
         if is_update:
-            rows.append(("🔄", "Type", "Mise à jour de la poursuite"))
+            rows.append(("🔄", "Type", "Mise à jour"))
+
+        if is_unassigned:
+            rows.append(("⚪", "Type", "Info non attribuée"))
+
+        if association_score:
+            rows.append((
+                "🧠",
+                "Association",
+                html.escape(f"{association_score} points")
+            ))
 
         if unit:
             rows.append(("👮", "Unité", html.escape(str(unit))))
@@ -901,13 +925,14 @@ class RadioVisionApp(QObject):
             rows.append(("📟", "Code", html.escape(str(code))))
 
         if signification:
-            rows.append(("📖", "Motif", html.escape(str(signification))))
+            rows.append(("📖", "Signification", html.escape(str(signification))))
 
-        rows.append((
-            confidence_emoji,
-            "Confiance",
-            html.escape(f"{confidence_label} ({confidence_percent}%)")
-        ))
+        if not is_code_lookup:
+            rows.append((
+                confidence_emoji,
+                "Confiance",
+                html.escape(f"{confidence_label} ({confidence_percent}%)")
+            ))
 
         if location:
             rows.append(("📍", "Dernier lieu", html.escape(str(location["name"]))))
@@ -926,7 +951,7 @@ class RadioVisionApp(QObject):
         for incident in incidents:
             rows.append(("", "Info", html.escape(str(incident))))
 
-        if missing_infos:
+        if missing_infos and not is_unassigned:
             missing_text = ", ".join(missing_infos)
             rows.append(("❔", "Manquant", html.escape(missing_text)))
 
@@ -982,12 +1007,10 @@ class RadioVisionApp(QObject):
         </div>
         """
 
-        is_pursuit = code in ["10-10", "10-11"] or is_update
-
         self.add_or_update_detail_bubble(
             bubble_html=bubble,
             is_update=is_update,
-            is_pursuit=is_pursuit,
+            pursuit_id=pursuit_id,
         )
 
         self.overlay.show_radio_event(
@@ -1006,7 +1029,156 @@ class RadioVisionApp(QObject):
             vehicle=vehicle,
             incidents=incidents,
             is_update=is_update,
+            is_unassigned=is_unassigned,
+            is_code_lookup=is_code_lookup,
+            pursuit_id=pursuit_id,
         )
+
+    def update_pursuit_history(self):
+        pursuits = self.pursuit_tracker.get_history()
+
+        if not pursuits:
+            self.window.pursuit_history.setHtml("""
+            <html>
+                <body style="
+                    background-color:#1e1f22;
+                    color:#dbdee1;
+                    font-family:Segoe UI, Arial;
+                    font-size:13px;
+                    margin:0;
+                    padding:0;
+                ">
+                    <div style="color:#949ba4; padding:8px;">
+                        Aucune poursuite pour le moment.
+                    </div>
+                </body>
+            </html>
+            """)
+            return
+
+        body = ""
+
+        for pursuit in pursuits:
+            status = pursuit.get("status")
+            status_label = pursuit.get("status_label", "-")
+
+            color = "#faa61a"
+
+            if status == "ended":
+                color = "#57f287"
+            elif status == "expired":
+                color = "#747f8d"
+
+            vehicle = pursuit.get("vehicle_label") or "-"
+            location = pursuit.get("location_name") or "-"
+            direction = pursuit.get("direction") or "-"
+            unit = pursuit.get("unit") or "-"
+            code = pursuit.get("code") or "-"
+
+            incidents = pursuit.get("incidents") or []
+
+            incidents_html = ""
+
+            for incident in incidents:
+                incidents_html += f"""
+                <div style="color:#dbdee1; margin:2px 0;">
+                    {html.escape(str(incident))}
+                </div>
+                """
+
+            if not incidents_html:
+                incidents_html = """
+                <div style="color:#747f8d;">Aucune info</div>
+                """
+
+            body += f"""
+            <div style="
+                background-color:#2b2d31;
+                border-left:5px solid {color};
+                padding:10px;
+                margin:8px 4px;
+            ">
+                <div style="
+                    color:#ffffff;
+                    font-weight:bold;
+                    font-size:14px;
+                    margin-bottom:6px;
+                ">
+                    🚓 Poursuite #{pursuit.get("id")}
+                    <span style="
+                        color:{color};
+                        font-size:11px;
+                        margin-left:8px;
+                    ">
+                        {html.escape(str(status_label))}
+                    </span>
+                </div>
+
+                <table cellspacing="0" cellpadding="0" style="
+                    width:100%;
+                    border-collapse:collapse;
+                    font-size:13px;
+                ">
+                    <tr>
+                        <td style="color:#949ba4; width:120px;">Début</td>
+                        <td>{html.escape(str(pursuit.get("started_at", "-")))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Dernière info</td>
+                        <td>{html.escape(str(pursuit.get("last_update", "-")))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Unité</td>
+                        <td>{html.escape(str(unit))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Code</td>
+                        <td>{html.escape(str(code))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Véhicule</td>
+                        <td>{html.escape(str(vehicle))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Dernier lieu</td>
+                        <td>{html.escape(str(location))}</td>
+                    </tr>
+                    <tr>
+                        <td style="color:#949ba4;">Direction</td>
+                        <td>{html.escape(str(direction))}</td>
+                    </tr>
+                </table>
+
+                <div style="
+                    color:#ffffff;
+                    font-weight:bold;
+                    margin-top:8px;
+                    margin-bottom:4px;
+                ">
+                    Infos
+                </div>
+
+                {incidents_html}
+            </div>
+            """
+
+        final_html = f"""
+        <html>
+            <body style="
+                background-color:#1e1f22;
+                color:#dbdee1;
+                font-family:Segoe UI, Arial;
+                font-size:13px;
+                margin:0;
+                padding:0;
+            ">
+                {body}
+            </body>
+        </html>
+        """
+
+        self.window.pursuit_history.setHtml(final_html)
+        self.window.pursuit_history.moveCursor(QTextCursor.MoveOperation.End)
 
     def on_text(self, text):
         self.window.radio_log.append(
