@@ -4,6 +4,8 @@ import unicodedata
 
 class IncidentParser:
 
+    MAX_PEOPLE_COUNT = 8
+
     NUMBER_WORDS = {
         "un": 1,
         "une": 1,
@@ -14,8 +16,6 @@ class IncidentParser:
         "six": 6,
         "sept": 7,
         "huit": 8,
-        "neuf": 9,
-        "dix": 10,
     }
 
     def clean(self, text: str) -> str:
@@ -30,19 +30,29 @@ class IncidentParser:
         replacements = {
             "pour suite": "poursuite",
             "pour suites": "poursuite",
+
             "a pcie": "a pied",
             "a pie": "a pied",
             "a pieds": "a pied",
             "en fuite a pcie": "en fuite a pied",
             "individu en fuite": "individu a pied",
             "suspect en fuite": "suspect a pied",
+
             "poisons de renfort": "besoin de renfort",
             "besoins de renfort": "besoin de renfort",
+            "besoin d un renfort": "besoin de renfort",
+
             "coup de feu": "coups de feu",
             "coups de feux": "coups de feu",
+
             "supermiss": "suspect",
             "super mis": "suspect",
             "sus permis": "suspect",
+
+            "suspect armer": "suspect arme",
+            "suspect arme": "suspect arme",
+            "individu armer": "individu arme",
+            "individu arme": "individu arme",
         }
 
         for bad, good in replacements.items():
@@ -59,27 +69,44 @@ class IncidentParser:
         if value and value not in results:
             results.append(value)
 
+    def is_valid_people_count(self, count):
+        if count is None:
+            return False
+
+        if count < 1:
+            return False
+
+        if count > self.MAX_PEOPLE_COUNT:
+            return False
+
+        return True
+
     def find_people(self, text_clean: str):
         patterns = [
             r"\b(\d{1,2})\s+(individus|individu|personnes|personne|occupants|occupant|suspects|suspect)\b",
-            r"\b(un|une|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(individus|individu|personnes|personne|occupants|occupant|suspects|suspect)\b",
+            r"\b(un|une|deux|trois|quatre|cinq|six|sept|huit)\s+(individus|individu|personnes|personne|occupants|occupant|suspects|suspect)\b",
         ]
 
         for pattern in patterns:
             match = re.search(pattern, text_clean)
 
-            if match:
-                value = match.group(1)
+            if not match:
+                continue
 
-                if value.isdigit():
-                    count = int(value)
-                else:
-                    count = self.NUMBER_WORDS.get(value)
+            value = match.group(1)
 
-                if count:
-                    return f"👥 {count} individu(s) à bord"
+            if value.isdigit():
+                count = int(value)
+            else:
+                count = self.NUMBER_WORDS.get(value)
 
-        if re.search(r"\bconducteur seul\b|\bseul a bord\b|\bun seul individu\b", text_clean):
+            if self.is_valid_people_count(count):
+                return f"👥 {count} individu(s) à bord"
+
+        if re.search(
+            r"\bconducteur seul\b|\bseul a bord\b|\bun seul individu\b|\bune seule personne\b",
+            text_clean
+        ):
             return "👥 1 individu à bord"
 
         return None
@@ -88,13 +115,19 @@ class IncidentParser:
         if re.search(r"\barme visible\b|\barme apercue\b", text_clean):
             return "🔫 Arme visible"
 
-        if re.search(r"\bindividu arme\b|\bindividus armes\b|\bsuspect arme\b|\bsuspects armes\b", text_clean):
+        if re.search(
+            r"\bindividu arme\b|\bindividus armes\b|\bsuspect arme\b|\bsuspects armes\b",
+            text_clean
+        ):
             return "🔫 Individu armé"
 
         if re.search(r"\barme de poing\b|\bpistolet\b|\brevolver\b", text_clean):
             return "🔫 Arme de poing"
 
-        if re.search(r"\bfusil\b|\barme lourde\b|\bak\b|\bkalash\b|\bcarabine\b", text_clean):
+        if re.search(
+            r"\bfusil\b|\barme lourde\b|\bak\b|\bkalash\b|\bcarabine\b",
+            text_clean
+        ):
             return "🔫 Arme longue / lourde"
 
         if re.search(r"\bcouteau\b|\barme blanche\b", text_clean):

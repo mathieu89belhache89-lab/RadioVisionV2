@@ -489,3 +489,545 @@ Type : Code radio seul
 Phrase : 10-99
 Code : 10-99
 Motif : Demande de renfort immédiat
+============================================================
+Heure : 01:18:30
+Poursuite : #1
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+============================================================
+Heure : 01:18:32
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. m4 blanche.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+============================================================
+Heure : 01:18:39
+Poursuite : #2
+Phrase : central unité 14, 10-11, vers paleto bay, mercedes amg grise.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+============================================================
+Heure : 01:18:46
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:18:54
+Type : Info non attribuée
+Phrase : une t-14, suspect en fuite à pied vers chiliade.
+Info : 🏃 Fuite à pied
+============================================================
+Heure : 01:19:00
+Type : Info non attribuée
+Phrase : l'un des visuels vers les gens squaires véhiculent.
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 01:19:05
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:19:11
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino. une unité 21, besoin de renfort, coups de feu, suspect armé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 01:19:17
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino. une unité 21, besoin de renfort, coups de feu, suspect armé. unité 21, individu interpellé, véhicule immobilisé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+Info : ✅ Interpellation
+============================================================
+Heure : 01:20:32
+Phrase : si il me fait quoi, qui me fait l'unité 5, nous attend cette nuit, hop puton de merde.
+Unité : 5
+============================================================
+Heure : 01:24:37
+Phrase : encore une fois, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la station, le député de la police sur la
+Véhicule : police
+============================================================
+Heure : 01:24:59
+Poursuite : #1
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+============================================================
+Heure : 01:25:08
+Poursuite : #2
+Phrase : central unité 14, 10-11, vers paleto bay, mercedes-amg gris.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+============================================================
+Heure : 01:25:16
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:25:24
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14, 10-11, vers paleto bay, mercedes-amg gris. unité 14, suspect en fuite à pied vers chiliade.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+Info : 🏃 Fuite à pied
+============================================================
+Heure : 01:25:31
+Type : Info non attribuée
+Phrase : l'année dernière visuelle vers légence quaire, véhicule accidenté.
+Info : 💥 Accident signalé
+============================================================
+Heure : 01:25:37
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:25:43
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino. unité 21, besoin de renfort, coups de feu, suspect armé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 01:25:50
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. unité 21, dernier visuel vers mission row, véhicule immobilisé. bmw m4 blanche à perçue vers casino. unité 21, besoin de renfort, coups de feu, suspect armé. unité 21, individu interpellé, véhicule immobilisé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+Info : ✅ Interpellation
+============================================================
+Heure : 01:26:42
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14, 10-11, vers paleto bay, mercedes-amg gris. unité 14, suspect en fuite à pied vers chiliade. codes radio, véhicule immobilisé, fuite à pied.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+Info : 🏃 Fuite à pied
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:26:44
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14, 10-11, vers paleto bay, mercedes-amg gris. unité 14, suspect en fuite à pied vers chiliade. codes radio, véhicule immobilisé, fuite à pied. codes radio, véhicule immobilisé, fuite à pied.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+Info : 🏃 Fuite à pied
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 01:33:49
+Type : Code radio seul
+Phrase : 10-0
+Code : 10-0
+Motif : Retour au poste de police
+============================================================
+Heure : 01:33:53
+Type : Code radio seul
+Phrase : 10-3
+Code : 10-3
+Motif : Demande de renfort, équivaut code 3
+============================================================
+Heure : 01:34:59
+Type : Code radio seul
+Phrase : code ds, ds.
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 01:35:22
+Type : Code radio seul
+Phrase : code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 01:35:34
+Type : Code radio seul
+Phrase : code ds-30.
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 01:36:44
+Type : Code radio seul
+Phrase : 460.
+Code : 460
+Motif : Braquage
+============================================================
+Heure : 01:36:50
+Type : Code radio seul
+Phrase : 461.
+Code : 461
+Motif : Supérette
+============================================================
+Heure : 01:36:57
+Type : Code radio seul
+Phrase : 10-19, 19-19.
+Code : 10-19
+Motif : Accident
+============================================================
+Heure : 01:37:16
+Type : Code radio seul
+Phrase : 10-99.
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 01:37:24
+Type : Code radio seul
+Phrase : code 3.
+Code : CODE 3
+Motif : Urgence toutes les unités avec sirène et gyrophare
+============================================================
+Heure : 01:37:29
+Type : Code radio seul
+Phrase : code od.
+Code : CODE OD
+Motif : Agent à terre
+============================================================
+Heure : 01:37:35
+Type : Code radio seul
+Phrase : code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds, code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 01:37:40
+Type : Code radio seul
+Phrase : code doa.
+Code : CODE DOA
+Motif : Civil à terre, sans info précise
+============================================================
+Heure : 01:37:46
+Type : Code radio seul
+Phrase : code dcd.
+Code : CODE DCD
+Motif : Civil décédé
+============================================================
+Heure : 01:37:51
+Type : Code radio seul
+Phrase : code rdp.
+Code : CODE RDP
+Motif : Récapitulatif des patrouilles
+============================================================
+Heure : 01:37:56
+Type : Code radio seul
+Phrase : code s.
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 01:38:55
+Type : Info non attribuée
+Phrase : il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il est prêt à faire un coups de feu, il
+Info : 🚨 Coups de feu
+============================================================
+Heure : 01:39:41
+Type : Code radio seul
+Phrase : 187.
+Code : 187
+Motif : Homicide
+============================================================
+Heure : 01:40:30
+Phrase : monique tamer, 208.
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+============================================================
+Heure : 01:40:47
+Type : Code radio seul
+Phrase : mary.
+Code : MARY
+Motif : Patrouille en moto
+============================================================
+Heure : 01:40:53
+Type : Code radio seul
+Phrase : henry.
+Code : HENRY
+Motif : Patrouille en hélicoptère
+============================================================
+Heure : 01:40:57
+Type : Code radio seul
+Phrase : lincoln
+Code : LINCOLN
+Motif : Patrouille seul
+============================================================
+Heure : 01:41:06
+Type : Code radio seul
+Phrase : adams.
+Code : ADAMS
+Motif : Patrouille à deux
+============================================================
+Heure : 01:41:17
+Type : Code radio seul
+Phrase : j'l'ai comme ça se froidons, ok ? tango ?
+Code : TANGO
+Motif : Patrouille à trois
+============================================================
+Heure : 01:41:21
+Type : Code radio seul
+Phrase : tango+.
+Code : TANGO+
+Motif : Patrouille à quatre
+============================================================
+Heure : 01:41:45
+Type : Code radio seul
+Phrase : mais... code 3, je crois qu'il la met, oui.
+Code : CODE 3
+Motif : Urgence toutes les unités avec sirène et gyrophare
+============================================================
+Heure : 01:42:12
+Type : Code radio seul
+Phrase : code ds, ds.
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 01:44:40
+Poursuite : #1
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn...
+Unité : 2
+Lieu : Golf
+Direction : Golf
+Véhicule : Volkswagen Golf 8
+============================================================
+Heure : 01:45:42
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn... central unité 2, 10-2, ver place des cubes golf 8r.
+Unité : 2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+Lieu : Ammunation Place Des Cubes
+Direction : Golf
+Véhicule : Volkswagen Golf 8
+============================================================
+Heure : 01:45:44
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn... central unité 2, 10-2, ver place des cubes golf 8r. c'est un carque conducteur seul.
+Unité : 2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+Lieu : Ammunation Place Des Cubes
+Direction : Golf
+Véhicule : Volkswagen Golf 8
+Info : 👥 1 individu à bord
+============================================================
+Heure : 01:45:55
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn... central unité 2, 10-2, ver place des cubes golf 8r. c'est un carque conducteur seul. golf futère.
+Unité : 2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+Lieu : Golf
+Direction : Golf
+Véhicule : Volkswagen Golf 8
+Info : 👥 1 individu à bord
+============================================================
+Heure : 01:46:00
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn... central unité 2, 10-2, ver place des cubes golf 8r. c'est un carque conducteur seul. golf futère. golf fitter.
+Unité : 2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+Lieu : Golf
+Direction : Golf
+Véhicule : Volkswagen Golf 8
+Info : 👥 1 individu à bord
+============================================================
+Heure : 01:46:20
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 2, 12-2, vers place d'ecube golf, 8-r, conn... central unité 2, 10-2, ver place des cubes golf 8r. c'est un carque conducteur seul. golf futère. golf fitter. central unité 2, 10-2, vers place des cubes golf vitaire conducteur s.
+Unité : 2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+Lieu : Ammunation Place Des Cubes
+Direction : Ammunation Place Des Cubes
+Véhicule : Volkswagen Golf 8
+Info : 👥 1 individu à bord
+============================================================
+Heure : 01:50:02
+Phrase : 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+============================================================
+Heure : 01:50:04
+Type : Code radio seul
+Phrase : codes de la codes, code 3, code 3, code 4, code 3, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code 4, code
+Code : CODE 3
+Motif : Urgence toutes les unités avec sirène et gyrophare
+============================================================
+Heure : 01:50:17
+Phrase : j'ai fait un sens inversé. 208.
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+============================================================
+Heure : 01:50:23
+Type : Code radio seul
+Phrase : 207.
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 01:50:30
+Type : Code radio seul
+Phrase : 10-99.
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 01:50:36
+Type : Code radio seul
+Phrase : 459.
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 01:50:51
+Type : Code radio seul
+Phrase : 10-31.
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 01:50:57
+Type : Code radio seul
+Phrase : 10-30.
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 01:51:02
+Type : Code radio seul
+Phrase : 10-10.
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 01:51:10
+Type : Code radio seul
+Phrase : 10-11.
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+============================================================
+Heure : 01:51:22
+Phrase : 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+============================================================
+Heure : 01:52:24
+Type : Code radio seul
+Phrase : 208.
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 01:52:42
+Phrase : 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208. 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+============================================================
+Heure : 01:52:45
+Type : Code radio seul
+Phrase : 10-10.
+Code : 10-10
+Motif : Refus d'obtempérer à pied

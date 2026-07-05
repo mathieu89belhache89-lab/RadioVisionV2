@@ -290,9 +290,57 @@ class RadioVisionApp(QObject):
                 return True
 
         return False
+    
+    def is_raw_code_lookup_text(self, text, code):
+        if not code:
+            return False
+
+        text_clean = self.parser.clean(text)
+
+        if len(text_clean.split()) > 5:
+            return False
+
+        code_clean = self.parser.clean(code)
+
+        accepted = {
+            code_clean,
+            f"code {code_clean}",
+        }
+
+        for item in self.parser.aliases:
+            if item.get("code") != code:
+                continue
+
+            alias_clean = item.get("alias_clean")
+
+            accepted.add(alias_clean)
+            accepted.add(f"code {alias_clean}")
+
+        return text_clean in accepted
 
     def parse_event(self, text):
         code, signification = self.parser.parse(text)
+
+        if code and self.is_raw_code_lookup_text(text, code):
+            return {
+                "text": text,
+                "code": code,
+                "signification": signification,
+                "location": None,
+                "unit": None,
+                "direction": None,
+                "vehicle": None,
+                "incidents": [],
+                "is_update": False,
+                "is_unassigned": False,
+                "is_code_lookup": True,
+                "pursuit_id": None,
+                "pursuit_label": None,
+                "pursuit_status": None,
+                "pursuit_status_label": None,
+                "tracker_action": None,
+                "association_score": 0,
+            }
 
         location = self.location_parser.find(text)
         direction = self.direction_parser.find(text)
@@ -770,9 +818,13 @@ class RadioVisionApp(QObject):
         if is_update and pursuit_id in self.pursuit_bubble_ids:
             bubble_id_to_update = self.pursuit_bubble_ids[pursuit_id]
 
-            for item in self.detail_bubbles:
+            for index, item in enumerate(self.detail_bubbles):
                 if item["id"] == bubble_id_to_update:
                     item["html"] = bubble_html
+
+                    moved_item = self.detail_bubbles.pop(index)
+                    self.detail_bubbles.append(moved_item)
+
                     updated = True
                     break
 
