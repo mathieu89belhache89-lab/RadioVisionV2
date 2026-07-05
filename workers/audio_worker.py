@@ -1,12 +1,12 @@
-from PySide6.QtCore import QThread, Signal
+from PySide6.QtCore import QThread
+
+import numpy as np
 
 from audio.capture import AudioCapture
-from audio.whisper import Whisper
+from workers.whisper_worker import WhisperWorker
 
 
 class AudioWorker(QThread):
-
-    text_received = Signal(str)
 
     def __init__(self):
         super().__init__()
@@ -14,7 +14,8 @@ class AudioWorker(QThread):
         self.running = False
 
         self.capture = AudioCapture()
-        self.whisper = None
+
+        self.whisper = WhisperWorker()
 
     def run(self):
 
@@ -22,11 +23,7 @@ class AudioWorker(QThread):
 
         self.capture.start()
 
-        self.whisper = Whisper()
-
-        self.text_received.emit("🎤 Capture continue démarrée")
-
-        frames = []
+        self.whisper.start()
 
         frames = []
 
@@ -34,11 +31,11 @@ class AudioWorker(QThread):
 
             pcm = self.capture.read()
 
-            import numpy as np
-
             samples = np.frombuffer(pcm, dtype=np.int16)
 
-            volume = np.sqrt(np.mean(samples.astype(np.float32) ** 2))
+            volume = np.sqrt(
+                np.mean(samples.astype(np.float32) ** 2)
+            )
 
             if volume > 400:
 
@@ -46,18 +43,17 @@ class AudioWorker(QThread):
 
             else:
 
-                if len(frames) > 5:
+                if len(frames) >= 8:
 
-                    audio = b"".join(frames)
-
-                    text = self.whisper.transcribe_bytes(audio)
-
-                    if text.strip():
-                        self.text_received.emit(text)
+                    self.whisper.add_audio(
+                        b"".join(frames)
+                    )
 
                 frames.clear()
 
         self.capture.stop()
+        self.whisper.stop()
+        self.whisper.wait()
 
     def stop(self):
         self.running = False

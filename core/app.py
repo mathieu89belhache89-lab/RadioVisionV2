@@ -42,7 +42,7 @@ class RadioVisionApp(QObject):
             return
 
         self.audio_worker = AudioWorker()
-        self.audio_worker.text_received.connect(self.on_text)
+        self.audio_worker.whisper.text_received.connect(self.on_text)
 
         self.audio_worker.start()
 
