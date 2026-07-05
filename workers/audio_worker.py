@@ -24,9 +24,9 @@ class AudioWorker(QThread):
         self.whisper.status.connect(self.status.emit)
 
         self.threshold = 0.0018
-        self.silence_limit = 8
-        self.min_blocks = 6
-        self.max_blocks = 32
+        self.silence_limit = 5
+        self.min_blocks = 5
+        self.max_blocks = 26
         self.pre_roll_blocks = 4
 
     def run(self):

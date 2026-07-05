@@ -52,6 +52,30 @@ class VehicleParser:
         text = re.sub(r"[^a-z0-9 ]", " ", text)
         text = re.sub(r"\s+", " ", text)
 
+        replacements = {
+            "m quatre": "m 4",
+            "m trois": "m 3",
+            "m cinq": "m 5",
+            "m huit": "m 8",
+            "x cinq": "x 5",
+            "x six": "x 6",
+            "rs six": "rs6",
+            "rs quatre": "rs4",
+            "rs trois": "rs3",
+            "r s six": "rs6",
+            "r s quatre": "rs4",
+            "r s trois": "rs3",
+            "audi r s six": "audi rs6",
+            "audi r s quatre": "audi rs4",
+            "audi r s trois": "audi rs3",
+            "bmw m quatre": "bmw m 4",
+            "bmw m trois": "bmw m 3",
+            "bmw m cinq": "bmw m 5",
+        }
+
+        for bad, good in replacements.items():
+            text = text.replace(bad, good)
+
         return text.strip()
 
     def should_skip_alias(self, alias: str) -> bool:

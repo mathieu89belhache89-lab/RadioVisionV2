@@ -1,4 +1,5 @@
 import re
+
 import numpy as np
 from faster_whisper import WhisperModel
 
@@ -7,7 +8,7 @@ class Whisper:
 
     def __init__(self):
         self.model = WhisperModel(
-            "small",
+            "base",
             device="cpu",
             compute_type="int8",
         )
@@ -15,7 +16,7 @@ class Whisper:
     def transcribe_array(self, audio):
         audio = np.asarray(audio, dtype=np.float32)
 
-        if len(audio) < 16000:
+        if len(audio) < 4000:
             return ""
 
         audio = audio - np.mean(audio)
@@ -27,18 +28,27 @@ class Whisper:
         segments, _ = self.model.transcribe(
             audio,
             language="fr",
-            beam_size=5,
-            best_of=5,
+            beam_size=1,
+            best_of=1,
             temperature=0.0,
             vad_filter=False,
             condition_on_previous_text=False,
-            no_speech_threshold=0.45,
-            compression_ratio_threshold=2.4,
+
+            # Important :
+            # plus haut = Whisper accepte plus facilement les phrases courtes
+            no_speech_threshold=0.85,
+
+            compression_ratio_threshold=2.8,
+            log_prob_threshold=-1.2,
+
             initial_prompt=(
                 "Communication radio police sur GTA FiveM. "
-                "Exemples : Central de l'unité 32, 10-80 direction Legion Square, Sultan noire. "
-                "Codes radio : 10-0, 10-1, 10-2, 10-3, 10-4, 10-5, 10-8, 10-20, 10-30, 10-31, 10-80, 10-99. "
-                "Lieux : Legion Square, Mission Row, Sandy Shores, Paleto Bay, Vinewood, Vespucci, Davis, Pillbox."
+                "Phrases courtes possibles. "
+                "Exemples : besoin de renfort, coups de feu, suspect armé. "
+                "Exemples : central unité 21, 10-10 direction Sandy Shores, BMW M4 blanche. "
+                "Exemples : dernier visuel vers Paleto, véhicule immobilisé, fuite à pied. "
+                "Codes radio : 10-10, 10-11, 10-31, 10-99, CODE 3, 460. "
+                "Lieux : Mission Row, Sandy Shores, Paleto Bay, Casino, Bijouterie."
             ),
         )
 
@@ -56,10 +66,6 @@ class Whisper:
         replacements = {
             "direction légion": "direction Legion Square",
             "direction legion": "direction Legion Square",
-            "direction région": "direction Legion Square",
-            "direction les gens": "direction Legion Square",
-            "légion": "Legion Square",
-            "legion": "Legion Square",
 
             "mission roux": "Mission Row",
             "mission rowe": "Mission Row",
@@ -67,27 +73,47 @@ class Whisper:
 
             "sandy short": "Sandy Shores",
             "sandy shore": "Sandy Shores",
-            "sandy shores": "Sandy Shores",
+            "sandy shoress": "Sandy Shores",
 
             "paletto": "Paleto Bay",
-            "paleto": "Paleto Bay",
 
-            "dix quatre": "10-4",
-            "dix cinq": "10-5",
-            "dix vingt": "10-20",
-            "dix quatre-vingt": "10-80",
-            "dix quatre vingt": "10-80",
+            "dix dix": "10-10",
+            "dix onze": "10-11",
+            "dix trente et un": "10-31",
+            "dix quatre vingt dix neuf": "10-99",
+            "dix quatre-vingt-dix-neuf": "10-99",
 
-            "10 4": "10-4",
-            "10 5": "10-5",
-            "10 20": "10-20",
-            "10 80": "10-80",
+            "10 10": "10-10",
+            "10 11": "10-11",
+            "10 31": "10-31",
+            "10 99": "10-99",
+
+            "pour suite": "poursuite",
+            "pour suites": "poursuite",
+
+            "a pcie": "à pied",
+            "a pie": "à pied",
+            "a pieds": "à pied",
+
+            "poisons de renfort": "besoin de renfort",
+            "besoins de renfort": "besoin de renfort",
+            "besoin d un renfort": "besoin de renfort",
+
+            "coup de feu": "coups de feu",
+            "coups de feux": "coups de feu",
+
+            "supermiss": "suspect",
+            "super mis": "suspect",
+            "sus permis": "suspect",
+
+            "suspect armer": "suspect armé",
+            "suspect arme": "suspect armé",
         }
 
         lower = text.lower()
 
         for bad, good in replacements.items():
-            lower = lower.replace(bad, good)
+            lower = lower.replace(bad, good.lower())
 
         lower = re.sub(r"\b10\s*-\s*(\d+)\b", r"10-\1", lower)
         lower = re.sub(r"\s+", " ", lower)

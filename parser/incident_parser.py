@@ -12,6 +12,10 @@ class IncidentParser:
         "quatre": 4,
         "cinq": 5,
         "six": 6,
+        "sept": 7,
+        "huit": 8,
+        "neuf": 9,
+        "dix": 10,
     }
 
     def clean(self, text: str) -> str:
@@ -23,16 +27,42 @@ class IncidentParser:
             if unicodedata.category(c) != "Mn"
         )
 
+        replacements = {
+            "pour suite": "poursuite",
+            "pour suites": "poursuite",
+            "a pcie": "a pied",
+            "a pie": "a pied",
+            "a pieds": "a pied",
+            "en fuite a pcie": "en fuite a pied",
+            "individu en fuite": "individu a pied",
+            "suspect en fuite": "suspect a pied",
+            "poisons de renfort": "besoin de renfort",
+            "besoins de renfort": "besoin de renfort",
+            "coup de feu": "coups de feu",
+            "coups de feux": "coups de feu",
+            "supermiss": "suspect",
+            "super mis": "suspect",
+            "sus permis": "suspect",
+        }
+
+        for bad, good in replacements.items():
+            text = text.replace(bad, good)
+
         text = text.replace("-", " ")
+        text = text.replace("'", " ")
         text = re.sub(r"[^a-z0-9 ]", " ", text)
         text = re.sub(r"\s+", " ", text)
 
         return text.strip()
 
+    def add_unique(self, results, value):
+        if value and value not in results:
+            results.append(value)
+
     def find_people(self, text_clean: str):
         patterns = [
-            r"\b(\d{1,2})\s+(individus|individu|personnes|personne|occupants|occupant)\b",
-            r"\b(un|une|deux|trois|quatre|cinq|six)\s+(individus|individu|personnes|personne|occupants|occupant)\b",
+            r"\b(\d{1,2})\s+(individus|individu|personnes|personne|occupants|occupant|suspects|suspect)\b",
+            r"\b(un|une|deux|trois|quatre|cinq|six|sept|huit|neuf|dix)\s+(individus|individu|personnes|personne|occupants|occupant|suspects|suspect)\b",
         ]
 
         for pattern in patterns:
@@ -47,25 +77,28 @@ class IncidentParser:
                     count = self.NUMBER_WORDS.get(value)
 
                 if count:
-                    return f"{count} individu(s) à bord"
+                    return f"👥 {count} individu(s) à bord"
 
-        if re.search(r"\bconducteur seul\b", text_clean):
-            return "1 individu à bord"
+        if re.search(r"\bconducteur seul\b|\bseul a bord\b|\bun seul individu\b", text_clean):
+            return "👥 1 individu à bord"
 
         return None
 
     def find_weapon(self, text_clean: str):
-        if re.search(r"\barme visible\b", text_clean):
-            return "Arme visible"
+        if re.search(r"\barme visible\b|\barme apercue\b", text_clean):
+            return "🔫 Arme visible"
 
-        if re.search(r"\bindividu arme\b|\bindividus armes\b|\bsuspect arme\b", text_clean):
-            return "Individu armé"
+        if re.search(r"\bindividu arme\b|\bindividus armes\b|\bsuspect arme\b|\bsuspects armes\b", text_clean):
+            return "🔫 Individu armé"
 
-        if re.search(r"\barme de poing\b|\bpistolet\b", text_clean):
-            return "Arme de poing"
+        if re.search(r"\barme de poing\b|\bpistolet\b|\brevolver\b", text_clean):
+            return "🔫 Arme de poing"
 
-        if re.search(r"\bfusil\b|\barme lourde\b|\bak\b|\bkalash\b", text_clean):
-            return "Arme longue / lourde"
+        if re.search(r"\bfusil\b|\barme lourde\b|\bak\b|\bkalash\b|\bcarabine\b", text_clean):
+            return "🔫 Arme longue / lourde"
+
+        if re.search(r"\bcouteau\b|\barme blanche\b", text_clean):
+            return "🔪 Arme blanche"
 
         return None
 
@@ -85,6 +118,8 @@ class IncidentParser:
             "individu",
             "individus",
             "arme",
+            "vehicule",
+            "voiture",
         ]
 
         for pattern in patterns:
@@ -96,33 +131,75 @@ class IncidentParser:
                 for word in stop_words:
                     plate = plate.split(word)[0].strip()
 
-                plate = plate.upper()
+                plate = re.sub(r"\s+", "", plate).upper()
 
                 if len(plate) >= 3:
-                    return plate
+                    return f"🔢 Plaque : {plate}"
 
         return None
 
-    def find_status(self, text_clean: str):
+    def find_pursuit_statuses(self, text_clean: str):
         statuses = []
 
-        if re.search(r"\bperdu de vue\b|\bplus de visuel\b|\bvisuel perdu\b", text_clean):
-            statuses.append("Visuel perdu")
+        if re.search(
+            r"\bpoursuite en cours\b|\ben poursuite\b|\bpoursuite active\b|\btoujours en poursuite\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "🚓 Poursuite en cours")
 
-        if re.search(r"\bdernier visuel\b|\bdernier visu\b", text_clean):
-            statuses.append("Dernier visuel signalé")
+        if re.search(
+            r"\bdernier visuel\b|\bdernier visu\b|\bun des visuels\b|\bvisuel vers\b|\bcontact visuel\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "👁️ Visuel signalé")
 
-        if re.search(r"\bpoursuite en cours\b|\ben poursuite\b", text_clean):
-            statuses.append("Poursuite en cours")
+        if re.search(
+            r"\bperdu de vue\b|\bplus de visuel\b|\bvisuel perdu\b|\baucun visuel\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "⚠️ Visuel perdu")
 
-        if re.search(r"\baccident\b|\bcrash\b|\bvehicule accidente\b", text_clean):
-            statuses.append("Accident signalé")
+        if re.search(
+            r"\bvehicule immobilise\b|\bvehicule bloque\b|\bvehicule stoppe\b|\bvehicule arrete\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "🛑 Véhicule immobilisé")
 
-        if re.search(r"\bvehicule immobilise\b|\bvehicule bloque\b|\bvehicule stoppe\b", text_clean):
-            statuses.append("Véhicule immobilisé")
+        if re.search(
+            r"\baccident\b|\bcrash\b|\bvehicule accidente\b|\ba percute\b|\bcollision\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "💥 Accident signalé")
 
-        if re.search(r"\brefus d obtemperer\b", text_clean):
-            statuses.append("Refus d'obtempérer")
+        if re.search(
+            r"\bfuite a pied\b|\bpart a pied\b|\bindividu a pied\b|\bsuspect a pied\b|\bcontinue a pied\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "🏃 Fuite à pied")
+
+        if re.search(
+            r"\bindividu interpelle\b|\bsuspect interpelle\b|\binterpellation\b|\bindividu menotte\b|\bsuspect menotte\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "✅ Interpellation")
+
+        if re.search(
+            r"\brenfort demande\b|\bdemande renfort\b|\bbesoin de renfort\b|\bbesoin d un renfort\b|\bbackup\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "🚨 Renfort demandé")
+
+        if re.search(
+            r"\brefus d obtemperer\b|\brefus d obtempere\b|\brefus obtemperer\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "⚠️ Refus d'obtempérer")
+
+        if re.search(
+            r"\btirs\b|\bcoups de feu\b|\btire dessus\b|\bnous tire dessus\b|\bprise de tir\b",
+            text_clean
+        ):
+            self.add_unique(statuses, "🚨 Coups de feu")
 
         return statuses
 
@@ -134,18 +211,13 @@ class IncidentParser:
         people = self.find_people(text_clean)
         weapon = self.find_weapon(text_clean)
         plate = self.find_plate(text_clean)
-        statuses = self.find_status(text_clean)
+        statuses = self.find_pursuit_statuses(text_clean)
 
-        if people:
-            results.append(f"👥 {people}")
-
-        if weapon:
-            results.append(f"🔫 {weapon}")
-
-        if plate:
-            results.append(f"🔢 Plaque : {plate}")
+        self.add_unique(results, people)
+        self.add_unique(results, weapon)
+        self.add_unique(results, plate)
 
         for status in statuses:
-            results.append(f"⚠️ {status}")
+            self.add_unique(results, status)
 
         return results
