@@ -39,6 +39,20 @@ class DirectionParser:
                     direction
                 )[0].strip()
 
+                corrections = {
+                    "sandy shoress": "Sandy Shores",
+                    "sandy shores": "Sandy Shores",
+                    "sandy shore": "Sandy Shores",
+                    "mission row": "Mission Row",
+                    "paleto bay": "Paleto Bay",
+                    "legion square": "Legion Square",
+                }
+
+                for bad, good in corrections.items():
+                    if bad in direction:
+                        direction = good
+                        break
+
                 return direction
 
         return None

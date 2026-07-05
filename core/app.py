@@ -1,3 +1,4 @@
+import html
 from datetime import datetime
 
 from PySide6.QtCore import QObject
@@ -7,6 +8,7 @@ from core.settings import Settings
 from ui.main_window import MainWindow
 from ui.theme import apply_theme
 from workers.audio_worker import AudioWorker
+
 from parser.radio_parser import RadioParser
 from parser.location_parser import LocationParser
 from parser.unit_parser import UnitParser
@@ -20,15 +22,15 @@ class RadioVisionApp(QObject):
     def __init__(self):
         super().__init__()
 
-        self.incident_parser = IncidentParser()
-        self.vehicle_parser = VehicleParser()
-        self.direction_parser = DirectionParser()
-        self.location_parser = LocationParser()
-        self.unit_parser = UnitParser()
-
         self.logger = Logger()
         self.settings = Settings()
+
         self.parser = RadioParser()
+        self.location_parser = LocationParser()
+        self.unit_parser = UnitParser()
+        self.direction_parser = DirectionParser()
+        self.vehicle_parser = VehicleParser()
+        self.incident_parser = IncidentParser()
 
         apply_theme()
 
@@ -83,6 +85,74 @@ class RadioVisionApp(QObject):
 
         self.logger.info("Capture arrêtée")
 
+    def append_radio_bubble(
+        self,
+        text,
+        code=None,
+        signification=None,
+        unit=None,
+        location=None,
+        direction=None,
+        vehicle=None,
+        incidents=None,
+    ):
+        incidents = incidents or []
+
+        time = datetime.now().strftime("%H:%M:%S")
+        rows = []
+
+        if unit:
+            rows.append(f"👮 <b>Unité :</b> {html.escape(str(unit))}")
+
+        if code:
+            rows.append(f"📟 <b>Code :</b> {html.escape(str(code))}")
+
+        if signification:
+            rows.append(f"📖 <b>Motif :</b> {html.escape(str(signification))}")
+
+        if location:
+            rows.append(f"📍 <b>Lieu :</b> {html.escape(str(location['name']))}")
+
+        if direction:
+            rows.append(f"➡️ <b>Direction :</b> {html.escape(str(direction))}")
+
+        if vehicle:
+            label = vehicle["vehicle"]
+
+            if vehicle["color"]:
+                label += f" {vehicle['color']}"
+
+            rows.append(f"🚗 <b>Véhicule :</b> {html.escape(str(label))}")
+
+        for incident in incidents:
+            rows.append(html.escape(str(incident)))
+
+        if not rows:
+            return
+
+        body = "<br>".join(rows)
+
+        bubble = f"""
+        <div style="
+            background-color:#313338;
+            color:#dbdee1;
+            border-left:4px solid #5865f2;
+            padding:10px;
+            margin:8px 4px;
+            font-size:13px;
+        ">
+            <div style="color:#949ba4; font-size:11px; margin-bottom:6px;">
+                RADIOVISION • {time}
+            </div>
+
+            <div style="font-size:14px; line-height:1.5;">
+                {body}
+            </div>
+        </div>
+        """
+
+        self.window.details.append(bubble)
+
     def on_text(self, text):
         self.window.radio_log.append(
             f"[{datetime.now():%H:%M:%S}] {text}"
@@ -95,43 +165,20 @@ class RadioVisionApp(QObject):
         vehicle = self.vehicle_parser.find(text)
         incidents = self.incident_parser.find(text)
 
-        if unit:
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] 👮 Unité : {unit}"
-            )
-
-        if location:
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] 📍 Lieu : {location['name']}"
-            )
-
-        if direction:
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] ➡️ Direction : {direction}"
-            )
-
-        if vehicle:
-            label = vehicle["vehicle"]
-
-            if vehicle["color"]:
-                label += f" {vehicle['color']}"
-
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] 🚗 Véhicule : {label}"
-            )
-
-        for incident in incidents:
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] {incident}"
-            )    
+        self.append_radio_bubble(
+            text=text,
+            code=code,
+            signification=signification,
+            unit=unit,
+            location=location,
+            direction=direction,
+            vehicle=vehicle,
+            incidents=incidents,
+        )
 
         if code:
             self.window.code.setText(f"📟 Code : {code}")
             self.window.signification.setText(f"📖 Signification : {signification}")
-
-            self.window.details.append(
-                f"[{datetime.now():%H:%M:%S}] {code} → {signification}"
-            )
 
     def on_status(self, text):
         self.window.radio_log.append(

@@ -57,8 +57,13 @@ class LocationParser:
         manual_locations = {
             "mission row": "Mission Row",
             "sandy shores": "Sandy Shores",
+            "sandy shore": "Sandy Shores",
+            "sandy shoress": "Sandy Shores",
             "paleto bay": "Paleto Bay",
+            "paleto": "Paleto",
             "legion square": "Legion Square",
+            "casino": "Casino",
+            "bijouterie": "Bijouterie",
         }
 
         for alias, name in manual_locations.items():
