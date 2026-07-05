@@ -1,0 +1,158 @@
+============================================================
+Heure : 00:05:58
+Phrase : le point élevateur el jacuzzi, je fais un rachraage, il faut bien frotter la dalle, mettre un premier d'accrochage.
+Véhicule : premier
+============================================================
+Heure : 00:06:19
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanche
+============================================================
+Heure : 00:06:25
+Type : Mise à jour poursuite active
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. 2 individus à bord poursuite en cours. dernier visuel vers paleto, véhicule immobilisé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Paleto
+Direction : Paleto
+Véhicule : BMW M4 blanche
+Info : 👥 2 individu(s) à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 00:06:33
+Type : Mise à jour poursuite active
+Phrase : central unité 21, 10-10 direction sandy shores, bmw m4 blanche. 2 individus à bord poursuite en cours. dernier visuel vers paleto, véhicule immobilisé. besoin de renfort, coups de feu, suspect armé.
+Unité : 21
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Paleto
+Direction : Paleto
+Véhicule : BMW M4 blanche
+Info : 👥 2 individu(s) à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 00:20:11
+Phrase : central unité 32, 10-10 direction legion square square, audi rs6 noir.
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Legion Square
+Direction : Legion Square
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 00:20:14
+Type : Mise à jour poursuite active
+Phrase : central unité 32, 10-10 direction legion square square, audi rs6 noir. 3 individus à bord poursuite en cours.
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Legion Square
+Direction : Legion Square
+Véhicule : Audi RS6 noir
+Info : 👥 3 individu(s) à bord
+Info : 🚓 Poursuite en cours
+============================================================
+Heure : 00:20:20
+Type : Mise à jour poursuite active
+Phrase : central unité 32, 10-10 direction legion square square, audi rs6 noir. 3 individus à bord poursuite en cours. dernier visuel vers mission row, véhicule accidenté, suspect en fuite à pied.
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Audi RS6 noir
+Info : 👥 3 individu(s) à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 💥 Accident signalé
+Info : 🏃 Fuite à pied
+============================================================
+Heure : 00:20:25
+Type : Mise à jour poursuite active
+Phrase : central unité 32, 10-10 direction legion square square, audi rs6 noir. 3 individus à bord poursuite en cours. dernier visuel vers mission row, véhicule accidenté, suspect en fuite à pied. besan de renfort immédiat, coups de feu, suspect armé.
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Audi RS6 noir
+Info : 👥 3 individu(s) à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 💥 Accident signalé
+Info : 🏃 Fuite à pied
+Info : 🔫 Individu armé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 00:21:00
+Phrase : central unité 14, 10-11 vers paleto bay, mercedes amg. vigé grise, conducteur seul, dernier visuel tunnel nord.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Info : 👥 1 individu à bord
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 00:21:29
+Phrase : central unité 14, 10-11 vers paleto bay. merci d'être... amg gris, conducteur seul, dernier visuel tunnel nord.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Info : 👥 1 individu à bord
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 00:26:30
+Phrase : compris à l'unité 14, 10-11 vers paleto bay, mercedes amg.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG
+============================================================
+Heure : 00:26:34
+Type : Mise à jour poursuite active
+Phrase : compris à l'unité 14, 10-11 vers paleto bay, mercedes amg. grise, conducteur seul, dernier visuel tunnel nord.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG
+Info : 👥 1 individu à bord
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 00:29:08
+Phrase : central unité 14, 10-11 vers paleto bay, mercedes amg gris.
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+============================================================
+Heure : 00:29:19
+Phrase : conducteur seul, dernier visuel tunnel nord. central unité 32, 10-10 direction leu... mission square, audi rs noir, 3 individus à bord.
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Direction : leu
+Véhicule : Audi RS noir
+Info : 👥 1 individu à bord
+Info : 👁️ Visuel signalé
+Info : 👥 3 individu(s) à bord

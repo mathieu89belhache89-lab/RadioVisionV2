@@ -1,11 +1,13 @@
 import html
-import time
+import json
 import re
+import time
 import unicodedata
 from datetime import datetime
 from pathlib import Path
 
 from PySide6.QtCore import QObject, QTimer
+from PySide6.QtGui import QTextCursor
 
 from core.logger import Logger
 from core.settings import Settings
@@ -20,6 +22,17 @@ from parser.unit_parser import UnitParser
 from parser.direction_parser import DirectionParser
 from parser.vehicle_parser import VehicleParser
 from parser.incident_parser import IncidentParser
+
+
+DEFAULT_RUNTIME_SETTINGS = {
+    "overlay_enabled": True,
+    "overlay_duration": 15,
+    "overlay_position": "top_right",
+    "pending_delay": 6,
+    "merge_window": 8,
+    "pursuit_window": 3,
+    "whisper_model": "base",
+}
 
 
 class RadioVisionApp(QObject):
@@ -37,17 +50,25 @@ class RadioVisionApp(QObject):
         self.vehicle_parser = VehicleParser()
         self.incident_parser = IncidentParser()
 
+        self.runtime_settings_file = Path("data") / "radiovision_settings.json"
+        self.runtime_settings = self.load_runtime_settings()
+
         self.last_bubbles = {}
         self.duplicate_delay = 10
 
         self.pending_event = None
         self.pending_event_time = None
-        self.pending_merge_window = 8
-        self.pending_delay_ms = 6000
+        self.pending_merge_window = int(self.runtime_settings["merge_window"])
+        self.pending_delay_ms = int(self.runtime_settings["pending_delay"]) * 1000
 
         self.active_pursuit = None
         self.active_pursuit_time = None
-        self.active_pursuit_window = 180
+        self.active_pursuit_window = int(self.runtime_settings["pursuit_window"]) * 60
+
+        self.detail_bubbles = []
+        self.bubble_counter = 0
+        self.active_pursuit_bubble_id = None
+        self.max_detail_bubbles = 80
 
         self.pending_timer = QTimer(self)
         self.pending_timer.setSingleShot(True)
@@ -60,8 +81,129 @@ class RadioVisionApp(QObject):
         self.audio_worker = None
 
         self._connect_signals()
+        self.apply_runtime_settings(self.runtime_settings, update_ui=True)
 
         self.logger.info("RadioVision démarré")
+
+    def clamp_int(self, value, minimum, maximum, default):
+        try:
+            value = int(value)
+        except Exception:
+            value = default
+
+        return max(minimum, min(value, maximum))
+
+    def load_runtime_settings(self):
+        settings = DEFAULT_RUNTIME_SETTINGS.copy()
+
+        if not self.runtime_settings_file.exists():
+            return settings
+
+        try:
+            with self.runtime_settings_file.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            if not isinstance(data, dict):
+                return settings
+
+            settings["overlay_enabled"] = bool(
+                data.get("overlay_enabled", settings["overlay_enabled"])
+            )
+
+            settings["overlay_duration"] = self.clamp_int(
+                data.get("overlay_duration"),
+                3,
+                60,
+                settings["overlay_duration"],
+            )
+
+            position = data.get("overlay_position", settings["overlay_position"])
+
+            if position in ["top_right", "top_left", "bottom_right", "bottom_left"]:
+                settings["overlay_position"] = position
+
+            settings["pending_delay"] = self.clamp_int(
+                data.get("pending_delay"),
+                1,
+                15,
+                settings["pending_delay"],
+            )
+
+            settings["merge_window"] = self.clamp_int(
+                data.get("merge_window"),
+                2,
+                20,
+                settings["merge_window"],
+            )
+
+            settings["pursuit_window"] = self.clamp_int(
+                data.get("pursuit_window"),
+                1,
+                10,
+                settings["pursuit_window"],
+            )
+
+            model = data.get("whisper_model", settings["whisper_model"])
+
+            if model in ["tiny", "base", "small"]:
+                settings["whisper_model"] = model
+
+        except Exception:
+            return settings
+
+        return settings
+
+    def save_runtime_settings(self):
+        self.runtime_settings_file.parent.mkdir(exist_ok=True)
+
+        with self.runtime_settings_file.open("w", encoding="utf-8") as f:
+            json.dump(
+                self.runtime_settings,
+                f,
+                ensure_ascii=False,
+                indent=4,
+            )
+
+    def apply_runtime_settings(self, settings, update_ui=False):
+        self.pending_delay_ms = int(settings.get("pending_delay", 6)) * 1000
+        self.pending_merge_window = int(settings.get("merge_window", 8))
+        self.active_pursuit_window = int(settings.get("pursuit_window", 3)) * 60
+
+        self.overlay.set_enabled(settings.get("overlay_enabled", True))
+        self.overlay.set_display_seconds(settings.get("overlay_duration", 15))
+        self.overlay.set_position(settings.get("overlay_position", "top_right"))
+
+        if update_ui:
+            self.window.set_settings_values(settings)
+
+    def apply_settings_from_ui(self):
+        old_model = self.runtime_settings.get("whisper_model", "base")
+
+        self.runtime_settings = self.window.get_settings_values()
+        self.save_runtime_settings()
+        self.apply_runtime_settings(self.runtime_settings, update_ui=False)
+
+        new_model = self.runtime_settings.get("whisper_model", "base")
+
+        message = "Paramètres sauvegardés."
+
+        if new_model != old_model:
+            message = (
+                "Paramètres sauvegardés. "
+                "Redémarre l’écoute pour appliquer le modèle Whisper."
+            )
+
+        self.window.setting_status.setText(message)
+        self.window.status.showMessage(message, 6000)
+
+    def reset_runtime_settings(self):
+        self.runtime_settings = DEFAULT_RUNTIME_SETTINGS.copy()
+        self.save_runtime_settings()
+        self.apply_runtime_settings(self.runtime_settings, update_ui=True)
+
+        message = "Paramètres réinitialisés."
+        self.window.setting_status.setText(message)
+        self.window.status.showMessage(message, 6000)
 
     def _connect_signals(self):
         self.window.start_button.clicked.connect(self.start)
@@ -69,6 +211,9 @@ class RadioVisionApp(QObject):
 
         self.window.action_start.triggered.connect(self.start)
         self.window.action_stop.triggered.connect(self.stop)
+
+        self.window.setting_apply_button.clicked.connect(self.apply_settings_from_ui)
+        self.window.setting_reset_button.clicked.connect(self.reset_runtime_settings)
 
     def start(self):
         if self.audio_worker and self.audio_worker.isRunning():
@@ -217,12 +362,18 @@ class RadioVisionApp(QObject):
         if time.time() - self.active_pursuit_time > self.active_pursuit_window:
             self.active_pursuit = None
             self.active_pursuit_time = None
+            self.active_pursuit_bubble_id = None
             return False
 
         return True
 
     def is_followup_for_active_pursuit(self, event):
         if not self.is_active_pursuit_valid():
+            return False
+
+        active_pursuit = self.active_pursuit
+
+        if active_pursuit is None:
             return False
 
         if event.get("code") in ["10-10", "10-11"]:
@@ -237,8 +388,8 @@ class RadioVisionApp(QObject):
         if not has_followup_info:
             return False
 
-        if event.get("unit") and self.active_pursuit.get("unit"):
-            if event.get("unit") != self.active_pursuit.get("unit"):
+        if event.get("unit") and active_pursuit.get("unit"):
+            if event.get("unit") != active_pursuit.get("unit"):
                 return False
 
         return True
@@ -486,8 +637,13 @@ class RadioVisionApp(QObject):
             if self.pending_event:
                 self.flush_pending_event()
 
+            active_pursuit = self.active_pursuit
+
+            if active_pursuit is None:
+                return
+
             merged = self.merge_events(
-                self.active_pursuit,
+                active_pursuit,
                 event,
                 update_existing=True,
             )
@@ -556,6 +712,7 @@ class RadioVisionApp(QObject):
         direction=None,
         vehicle=None,
         incidents=None,
+        is_update=False,
     ):
         incidents = incidents or []
 
@@ -567,6 +724,10 @@ class RadioVisionApp(QObject):
         lines = []
         lines.append("=" * 60)
         lines.append(f"Heure : {datetime.now():%H:%M:%S}")
+
+        if is_update:
+            lines.append("Type : Mise à jour poursuite active")
+
         lines.append(f"Phrase : {text}")
 
         if unit:
@@ -599,6 +760,64 @@ class RadioVisionApp(QObject):
 
         with file.open("a", encoding="utf-8") as f:
             f.write("\n".join(lines))
+
+    def render_detail_bubbles(self):
+        body = ""
+
+        for item in self.detail_bubbles:
+            body += item["html"]
+
+        final_html = f"""
+        <html>
+            <body style="
+                background-color:#1e1f22;
+                color:#dbdee1;
+                font-family:Segoe UI, Arial;
+                font-size:13px;
+                margin:0;
+                padding:0;
+            ">
+                {body}
+            </body>
+        </html>
+        """
+
+        self.window.details.setHtml(final_html)
+        self.window.details.moveCursor(QTextCursor.MoveOperation.End)
+
+        scroll = self.window.details.verticalScrollBar()
+        scroll.setValue(scroll.maximum())
+
+    def add_or_update_detail_bubble(self, bubble_html, is_update=False, is_pursuit=False):
+        updated = False
+
+        if is_update and self.active_pursuit_bubble_id is not None:
+            for item in self.detail_bubbles:
+                if item["id"] == self.active_pursuit_bubble_id:
+                    item["html"] = bubble_html
+                    updated = True
+                    break
+
+        if not updated:
+            self.bubble_counter += 1
+
+            bubble_id = self.bubble_counter
+
+            self.detail_bubbles.append({
+                "id": bubble_id,
+                "html": bubble_html,
+            })
+
+            if is_pursuit:
+                self.active_pursuit_bubble_id = bubble_id
+
+        while len(self.detail_bubbles) > self.max_detail_bubbles:
+            removed = self.detail_bubbles.pop(0)
+
+            if removed["id"] == self.active_pursuit_bubble_id:
+                self.active_pursuit_bubble_id = None
+
+        self.render_detail_bubbles()
 
     def append_radio_bubble(
         self,
@@ -660,11 +879,11 @@ class RadioVisionApp(QObject):
 
         elif code in ["10-10", "10-11"]:
             priority_color = "#faa61a"
-            priority_label = "POURSUITE"
+            priority_label = "POURSUITE ACTIVE"
 
         if is_update:
             priority_color = "#57f287"
-            priority_label = "MISE À JOUR"
+            priority_label = "POURSUITE ACTIVE"
 
         elif missing_infos and priority_label != "URGENT":
             priority_color = "#faa61a"
@@ -673,7 +892,7 @@ class RadioVisionApp(QObject):
         rows = []
 
         if is_update:
-            rows.append(("🔄", "Type", "Mise à jour poursuite active"))
+            rows.append(("🔄", "Type", "Mise à jour de la poursuite"))
 
         if unit:
             rows.append(("👮", "Unité", html.escape(str(unit))))
@@ -691,7 +910,7 @@ class RadioVisionApp(QObject):
         ))
 
         if location:
-            rows.append(("📍", "Lieu", html.escape(str(location["name"]))))
+            rows.append(("📍", "Dernier lieu", html.escape(str(location["name"]))))
 
         if direction:
             rows.append(("➡️", "Direction", html.escape(str(direction))))
@@ -763,7 +982,13 @@ class RadioVisionApp(QObject):
         </div>
         """
 
-        self.window.details.append(bubble)
+        is_pursuit = code in ["10-10", "10-11"] or is_update
+
+        self.add_or_update_detail_bubble(
+            bubble_html=bubble,
+            is_update=is_update,
+            is_pursuit=is_pursuit,
+        )
 
         self.overlay.show_radio_event(
             priority_label=priority_label,
@@ -780,6 +1005,7 @@ class RadioVisionApp(QObject):
             direction=direction,
             vehicle=vehicle,
             incidents=incidents,
+            is_update=is_update,
         )
 
     def on_text(self, text):

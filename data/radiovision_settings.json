@@ -1,0 +1,9 @@
+{
+    "overlay_enabled": true,
+    "overlay_duration": 15,
+    "overlay_position": "top_right",
+    "pending_delay": 5,
+    "merge_window": 8,
+    "pursuit_window": 5,
+    "whisper_model": "small"
+}

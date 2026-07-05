@@ -1,4 +1,6 @@
+import json
 import re
+from pathlib import Path
 
 import numpy as np
 from faster_whisper import WhisperModel
@@ -7,11 +9,35 @@ from faster_whisper import WhisperModel
 class Whisper:
 
     def __init__(self):
+        self.model_name = self.load_model_name()
+
         self.model = WhisperModel(
-            "base",
+            self.model_name,
             device="cpu",
             compute_type="int8",
         )
+
+    def load_model_name(self):
+        settings_file = Path("data") / "radiovision_settings.json"
+
+        allowed = ["tiny", "base", "small"]
+
+        if not settings_file.exists():
+            return "base"
+
+        try:
+            with settings_file.open("r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            model_name = data.get("whisper_model", "base")
+
+            if model_name in allowed:
+                return model_name
+
+        except Exception:
+            pass
+
+        return "base"
 
     def transcribe_array(self, audio):
         audio = np.asarray(audio, dtype=np.float32)
@@ -33,14 +59,9 @@ class Whisper:
             temperature=0.0,
             vad_filter=False,
             condition_on_previous_text=False,
-
-            # Important :
-            # plus haut = Whisper accepte plus facilement les phrases courtes
             no_speech_threshold=0.85,
-
             compression_ratio_threshold=2.8,
             log_prob_threshold=-1.2,
-
             initial_prompt=(
                 "Communication radio police sur GTA FiveM. "
                 "Phrases courtes possibles. "

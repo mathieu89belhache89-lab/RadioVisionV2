@@ -17,16 +17,18 @@ class OverlayWindow(QWidget):
     def __init__(self):
         super().__init__()
 
+        self.enabled = True
         self.display_ms = 15000
+        self.position = "top_right"
 
         self.setWindowFlags(
-            Qt.FramelessWindowHint
-            | Qt.WindowStaysOnTopHint
-            | Qt.Tool
+            Qt.WindowType.FramelessWindowHint
+            | Qt.WindowType.WindowStaysOnTopHint
+            | Qt.WindowType.Tool
         )
 
-        self.setAttribute(Qt.WA_TranslucentBackground)
-        self.setAttribute(Qt.WA_ShowWithoutActivating)
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
+        self.setAttribute(Qt.WidgetAttribute.WA_ShowWithoutActivating)
 
         self.setFixedWidth(390)
 
@@ -42,11 +44,11 @@ class OverlayWindow(QWidget):
 
         self.header = QLabel()
         self.header.setObjectName("radioOverlayHeader")
-        self.header.setTextFormat(Qt.RichText)
+        self.header.setTextFormat(Qt.TextFormat.RichText)
 
         self.content = QLabel()
         self.content.setObjectName("radioOverlayContent")
-        self.content.setTextFormat(Qt.RichText)
+        self.content.setTextFormat(Qt.TextFormat.RichText)
         self.content.setWordWrap(True)
 
         self.card_layout.addWidget(self.header)
@@ -66,6 +68,37 @@ class OverlayWindow(QWidget):
 
         self.hide()
 
+    def set_enabled(self, enabled):
+        self.enabled = bool(enabled)
+
+        if not self.enabled:
+            self.hide()
+
+    def set_display_seconds(self, seconds):
+        try:
+            seconds = int(seconds)
+        except ValueError:
+            seconds = 15
+
+        seconds = max(3, min(seconds, 60))
+        self.display_ms = seconds * 1000
+
+    def set_position(self, position):
+        valid_positions = [
+            "top_right",
+            "top_left",
+            "bottom_right",
+            "bottom_left",
+        ]
+
+        if position not in valid_positions:
+            position = "top_right"
+
+        self.position = position
+
+        if self.isVisible():
+            self.move_to_position()
+
     def priority_style(self, priority_label):
         if priority_label == "URGENT":
             return {
@@ -74,11 +107,11 @@ class OverlayWindow(QWidget):
                 "title": "URGENCE RADIO",
             }
 
-        if priority_label == "POURSUITE":
+        if "POURSUITE" in priority_label:
             return {
                 "color": "#faa61a",
                 "emoji": "🚓",
-                "title": "POURSUITE EN COURS",
+                "title": "POURSUITE ACTIVE",
             }
 
         if priority_label == "INCOMPLET":
@@ -88,6 +121,13 @@ class OverlayWindow(QWidget):
                 "title": "INFO INCOMPLÈTE",
             }
 
+        if priority_label == "MISE À JOUR":
+            return {
+                "color": "#57f287",
+                "emoji": "🔄",
+                "title": "MISE À JOUR",
+            }
+
         return {
             "color": "#5865f2",
             "emoji": "📡",
@@ -95,8 +135,11 @@ class OverlayWindow(QWidget):
         }
 
     def show_radio_event(self, priority_label, priority_color, rows):
+        if not self.enabled:
+            return
+
         style = self.priority_style(priority_label)
-        color = style["color"]
+        color = priority_color or style["color"]
 
         self.card.setStyleSheet(f"""
             QFrame#radioOverlayCard {{
@@ -184,21 +227,35 @@ class OverlayWindow(QWidget):
         self.content.setText(html_rows)
 
         self.adjustSize()
-        self.move_to_top_right()
+        self.move_to_position()
 
         self.show()
         self.raise_()
         self.timer.start(self.display_ms)
 
-    def move_to_top_right(self):
+    def move_to_position(self):
         screen = QApplication.primaryScreen()
 
         if not screen:
             return
 
         geo = screen.availableGeometry()
+        margin = 25
 
-        x = geo.right() - self.width() - 25
-        y = geo.top() + 25
+        if self.position == "top_left":
+            x = geo.left() + margin
+            y = geo.top() + margin
+
+        elif self.position == "bottom_right":
+            x = geo.right() - self.width() - margin
+            y = geo.bottom() - self.height() - margin
+
+        elif self.position == "bottom_left":
+            x = geo.left() + margin
+            y = geo.bottom() - self.height() - margin
+
+        else:
+            x = geo.right() - self.width() - margin
+            y = geo.top() + margin
 
         self.move(x, y)
