@@ -1,0 +1,7 @@
+{
+    "theme": "dark",
+    "language": "fr",
+    "whisper_model": "base",
+    "sample_rate": 48000,
+    "auto_start": false
+}
