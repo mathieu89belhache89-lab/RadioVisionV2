@@ -1,0 +1,3671 @@
+{
+  "name": "FiveM import vehicle aliases FR",
+  "description": "Liste d'alias de véhicules importés fréquents sur FiveM, pensée pour reconnaissance vocale radio/police.",
+  "note": "Évite d'utiliser uniquement les marques seules comme alias principal, car cela crée beaucoup de faux positifs.",
+  "total_vehicles": 207,
+  "vehicles_aliases": {
+    "audi_a1": [
+      "a1",
+      "a 1",
+      "audi a1",
+      "audi a 1"
+    ],
+    "audi_a3": [
+      "a3",
+      "a 3",
+      "audi a3",
+      "audi a 3"
+    ],
+    "audi_s3": [
+      "s3",
+      "s 3",
+      "audi s3",
+      "audi s 3"
+    ],
+    "audi_rs3": [
+      "rs3",
+      "rs 3",
+      "r s 3",
+      "audi rs3",
+      "audi rs 3",
+      "audi r s 3"
+    ],
+    "audi_a4": [
+      "a4",
+      "a 4",
+      "audi a4",
+      "audi a 4"
+    ],
+    "audi_s4": [
+      "s4",
+      "s 4",
+      "audi s4",
+      "audi s 4"
+    ],
+    "audi_rs4": [
+      "rs4",
+      "rs 4",
+      "r s 4",
+      "audi rs4",
+      "audi rs 4",
+      "audi r s 4",
+      "break rs4"
+    ],
+    "audi_a5": [
+      "a5",
+      "a 5",
+      "audi a5",
+      "audi a 5"
+    ],
+    "audi_s5": [
+      "s5",
+      "s 5",
+      "audi s5",
+      "audi s 5"
+    ],
+    "audi_rs5": [
+      "rs5",
+      "rs 5",
+      "r s 5",
+      "audi rs5",
+      "audi rs 5",
+      "audi r s 5"
+    ],
+    "audi_a6": [
+      "a6",
+      "a 6",
+      "audi a6",
+      "audi a 6"
+    ],
+    "audi_s6": [
+      "s6",
+      "s 6",
+      "audi s6",
+      "audi s 6"
+    ],
+    "audi_rs6": [
+      "rs6",
+      "rs 6",
+      "r s 6",
+      "audi rs6",
+      "audi rs 6",
+      "audi r s 6",
+      "break rs6",
+      "break audi",
+      "rs six"
+    ],
+    "audi_a7": [
+      "a7",
+      "a 7",
+      "audi a7",
+      "audi a 7"
+    ],
+    "audi_s7": [
+      "s7",
+      "s 7",
+      "audi s7",
+      "audi s 7"
+    ],
+    "audi_rs7": [
+      "rs7",
+      "rs 7",
+      "r s 7",
+      "audi rs7",
+      "audi rs 7",
+      "audi r s 7"
+    ],
+    "audi_a8": [
+      "a8",
+      "a 8",
+      "audi a8",
+      "audi a 8"
+    ],
+    "audi_r8": [
+      "r8",
+      "r 8",
+      "audi r8",
+      "audi r 8"
+    ],
+    "audi_tt": [
+      "tt",
+      "t t",
+      "audi tt",
+      "audi t t"
+    ],
+    "audi_ttrs": [
+      "ttrs",
+      "tt rs",
+      "t t rs",
+      "audi ttrs",
+      "audi tt rs"
+    ],
+    "audi_q7": [
+      "q7",
+      "q 7",
+      "audi q7",
+      "audi q 7"
+    ],
+    "audi_q8": [
+      "q8",
+      "q 8",
+      "audi q8",
+      "audi q 8"
+    ],
+    "audi_rsq8": [
+      "rsq8",
+      "rs q8",
+      "rs q 8",
+      "r s q8",
+      "audi rsq8",
+      "audi rs q8",
+      "audi rs q 8"
+    ],
+    "bmw_serie_1": [
+      "serie 1",
+      "série 1",
+      "bmw serie 1",
+      "bmw série 1",
+      "118i",
+      "120d",
+      "m135i",
+      "m140i"
+    ],
+    "bmw_m2": [
+      "m2",
+      "m 2",
+      "bmw m2",
+      "bmw m 2"
+    ],
+    "bmw_m3": [
+      "m3",
+      "m 3",
+      "bmw m3",
+      "bmw m 3"
+    ],
+    "bmw_m4": [
+      "m4",
+      "m 4",
+      "bmw m4",
+      "bmw m 4"
+    ],
+    "bmw_m5": [
+      "m5",
+      "m 5",
+      "bmw m5",
+      "bmw m 5"
+    ],
+    "bmw_m6": [
+      "m6",
+      "m 6",
+      "bmw m6",
+      "bmw m 6"
+    ],
+    "bmw_m8": [
+      "m8",
+      "m 8",
+      "bmw m8",
+      "bmw m 8"
+    ],
+    "bmw_i8": [
+      "i8",
+      "i 8",
+      "bmw i8",
+      "bmw i 8"
+    ],
+    "bmw_x5": [
+      "x5",
+      "x 5",
+      "bmw x5",
+      "bmw x 5"
+    ],
+    "bmw_x5m": [
+      "x5m",
+      "x5 m",
+      "x 5 m",
+      "bmw x5m",
+      "bmw x5 m"
+    ],
+    "bmw_x6": [
+      "x6",
+      "x 6",
+      "bmw x6",
+      "bmw x 6"
+    ],
+    "bmw_x6m": [
+      "x6m",
+      "x6 m",
+      "x 6 m",
+      "bmw x6m",
+      "bmw x6 m"
+    ],
+    "bmw_z4": [
+      "z4",
+      "z 4",
+      "bmw z4",
+      "bmw z 4"
+    ],
+    "bmw_s1000rr": [
+      "s1000rr",
+      "s 1000 rr",
+      "bmw s1000rr",
+      "bmw s 1000 rr",
+      "s mille rr",
+      "mille rr"
+    ],
+    "mercedes_classe_a": [
+      "classe a",
+      "mercedes classe a",
+      "merco classe a",
+      "a class",
+      "classe à"
+    ],
+    "mercedes_a45": [
+      "a45",
+      "a 45",
+      "a45 amg",
+      "a 45 amg",
+      "mercedes a45",
+      "merco a45",
+      "classe a45",
+      "a quarante cinq"
+    ],
+    "mercedes_classe_c": [
+      "classe c",
+      "mercedes classe c",
+      "merco classe c",
+      "c class"
+    ],
+    "mercedes_c63": [
+      "c63",
+      "c 63",
+      "c63 amg",
+      "c 63 amg",
+      "mercedes c63",
+      "merco c63",
+      "classe c63",
+      "c soixante trois"
+    ],
+    "mercedes_e63": [
+      "e63",
+      "e 63",
+      "e63 amg",
+      "e 63 amg",
+      "mercedes e63",
+      "merco e63",
+      "classe e63",
+      "e soixante trois"
+    ],
+    "mercedes_s63": [
+      "s63",
+      "s 63",
+      "s63 amg",
+      "s 63 amg",
+      "mercedes s63",
+      "merco s63",
+      "classe s63"
+    ],
+    "mercedes_cls63": [
+      "cls63",
+      "cls 63",
+      "cls63 amg",
+      "mercedes cls63",
+      "merco cls63"
+    ],
+    "mercedes_gt63": [
+      "gt63",
+      "gt 63",
+      "amg gt63",
+      "amg gt 63",
+      "mercedes gt63",
+      "merco gt63"
+    ],
+    "mercedes_amg_gt": [
+      "amg gt",
+      "mercedes amg gt",
+      "merco amg gt",
+      "amg gtr",
+      "amg gt r"
+    ],
+    "mercedes_g63": [
+      "g63",
+      "g 63",
+      "g63 amg",
+      "mercedes g63",
+      "merco g63",
+      "classe g",
+      "g class",
+      "g wagon",
+      "g-wagon",
+      "classe g63"
+    ],
+    "mercedes_g65": [
+      "g65",
+      "g 65",
+      "g65 amg",
+      "mercedes g65",
+      "merco g65"
+    ],
+    "mercedes_gls": [
+      "gls",
+      "mercedes gls",
+      "merco gls"
+    ],
+    "mercedes_maybach": [
+      "maybach",
+      "mercedes maybach",
+      "merco maybach",
+      "classe s maybach"
+    ],
+    "mercedes_sprinter": [
+      "sprinter",
+      "mercedes sprinter",
+      "merco sprinter",
+      "camion sprinter",
+      "fourgon sprinter"
+    ],
+    "vw_golf_6": [
+      "golf 6",
+      "golf six",
+      "golf vi",
+      "volkswagen golf 6",
+      "vw golf 6"
+    ],
+    "vw_golf_7": [
+      "golf 7",
+      "golf sept",
+      "golf vii",
+      "volkswagen golf 7",
+      "vw golf 7",
+      "golf r",
+      "golf 7r",
+      "golf 7 r"
+    ],
+    "vw_golf_8": [
+      "golf 8",
+      "golf huit",
+      "golf viii",
+      "volkswagen golf 8",
+      "vw golf 8",
+      "golf 8r",
+      "golf 8 r"
+    ],
+    "vw_polo": [
+      "polo",
+      "volkswagen polo",
+      "vw polo",
+      "polo gti"
+    ],
+    "vw_scirocco": [
+      "scirocco",
+      "volkswagen scirocco",
+      "vw scirocco"
+    ],
+    "vw_passat": [
+      "passat",
+      "volkswagen passat",
+      "vw passat"
+    ],
+    "vw_touareg": [
+      "touareg",
+      "volkswagen touareg",
+      "vw touareg"
+    ],
+    "vw_transporteur": [
+      "transporter",
+      "transporteur",
+      "vw transporter",
+      "volkswagen transporter",
+      "t5",
+      "t6",
+      "t 5",
+      "t 6"
+    ],
+    "porsche_911": [
+      "911",
+      "nine eleven",
+      "porsche 911",
+      "porsche neuf onze"
+    ],
+    "porsche_911_gt3": [
+      "gt3",
+      "gt 3",
+      "911 gt3",
+      "911 gt 3",
+      "porsche gt3",
+      "porsche 911 gt3"
+    ],
+    "porsche_911_gt2rs": [
+      "gt2rs",
+      "gt2 rs",
+      "gt 2 rs",
+      "911 gt2rs",
+      "911 gt2 rs",
+      "porsche gt2rs"
+    ],
+    "porsche_918": [
+      "918",
+      "918 spyder",
+      "porsche 918",
+      "porsche spyder"
+    ],
+    "porsche_cayenne": [
+      "cayenne",
+      "porsche cayenne"
+    ],
+    "porsche_macan": [
+      "macan",
+      "porsche macan"
+    ],
+    "porsche_panamera": [
+      "panamera",
+      "porsche panamera"
+    ],
+    "porsche_taycan": [
+      "taycan",
+      "porsche taycan",
+      "taycan turbo"
+    ],
+    "lamborghini_aventador": [
+      "aventador",
+      "lamborghini aventador",
+      "lambo aventador",
+      "lambo"
+    ],
+    "lamborghini_huracan": [
+      "huracan",
+      "huracán",
+      "lamborghini huracan",
+      "lambo huracan"
+    ],
+    "lamborghini_gallardo": [
+      "gallardo",
+      "lamborghini gallardo",
+      "lambo gallardo"
+    ],
+    "lamborghini_urus": [
+      "urus",
+      "lamborghini urus",
+      "lambo urus"
+    ],
+    "lamborghini_countach": [
+      "countach",
+      "lamborghini countach",
+      "lambo countach"
+    ],
+    "lamborghini_sian": [
+      "sian",
+      "sián",
+      "lamborghini sian",
+      "lambo sian"
+    ],
+    "ferrari_458": [
+      "458",
+      "458 italia",
+      "ferrari 458",
+      "ferrari quatre cinq huit"
+    ],
+    "ferrari_488": [
+      "488",
+      "ferrari 488",
+      "488 pista",
+      "ferrari pista"
+    ],
+    "ferrari_f8": [
+      "f8",
+      "f 8",
+      "f8 tributo",
+      "ferrari f8",
+      "ferrari f 8"
+    ],
+    "ferrari_812": [
+      "812",
+      "812 superfast",
+      "ferrari 812"
+    ],
+    "ferrari_laferrari": [
+      "laferrari",
+      "la ferrari",
+      "ferrari laferrari"
+    ],
+    "ferrari_enzo": [
+      "enzo",
+      "ferrari enzo"
+    ],
+    "ferrari_f40": [
+      "f40",
+      "f 40",
+      "ferrari f40",
+      "ferrari f 40"
+    ],
+    "ferrari_f50": [
+      "f50",
+      "f 50",
+      "ferrari f50",
+      "ferrari f 50"
+    ],
+    "ferrari_roma": [
+      "roma",
+      "ferrari roma"
+    ],
+    "ferrari_portofino": [
+      "portofino",
+      "ferrari portofino"
+    ],
+    "mclaren_570s": [
+      "570s",
+      "570 s",
+      "mclaren 570s",
+      "maclaren 570s"
+    ],
+    "mclaren_600lt": [
+      "600lt",
+      "600 lt",
+      "mclaren 600lt",
+      "maclaren 600lt"
+    ],
+    "mclaren_720s": [
+      "720s",
+      "720 s",
+      "mclaren 720s",
+      "maclaren 720s"
+    ],
+    "mclaren_765lt": [
+      "765lt",
+      "765 lt",
+      "mclaren 765lt",
+      "maclaren 765lt"
+    ],
+    "mclaren_p1": [
+      "p1",
+      "p 1",
+      "mclaren p1",
+      "maclaren p1"
+    ],
+    "mclaren_senna": [
+      "senna",
+      "mclaren senna",
+      "maclaren senna"
+    ],
+    "bugatti_veyron": [
+      "veyron",
+      "bugatti veyron"
+    ],
+    "bugatti_chiron": [
+      "chiron",
+      "bugatti chiron"
+    ],
+    "bugatti_divo": [
+      "divo",
+      "bugatti divo"
+    ],
+    "bugatti_bolide": [
+      "bolide",
+      "bugatti bolide"
+    ],
+    "koenigsegg_agera": [
+      "agera",
+      "koenigsegg agera",
+      "koenigsegg",
+      "koenigseg"
+    ],
+    "koenigsegg_jesko": [
+      "jesko",
+      "koenigsegg jesko",
+      "koenigseg jesko"
+    ],
+    "koenigsegg_regera": [
+      "regera",
+      "koenigsegg regera",
+      "koenigseg regera"
+    ],
+    "pagani_huayra": [
+      "huayra",
+      "pagani huayra",
+      "pagani"
+    ],
+    "pagani_zonda": [
+      "zonda",
+      "pagani zonda"
+    ],
+    "nissan_gtr": [
+      "gtr",
+      "gt r",
+      "g t r",
+      "nissan gtr",
+      "nissan gt r",
+      "nissan g t r",
+      "r35",
+      "r 35",
+      "gtr r35",
+      "g t r r35"
+    ],
+    "nissan_skyline_r34": [
+      "skyline",
+      "r34",
+      "r 34",
+      "skyline r34",
+      "nissan skyline",
+      "nissan r34"
+    ],
+    "nissan_silvia_s13": [
+      "s13",
+      "s 13",
+      "silvia s13",
+      "nissan s13",
+      "nissan silvia"
+    ],
+    "nissan_silvia_s14": [
+      "s14",
+      "s 14",
+      "silvia s14",
+      "nissan s14"
+    ],
+    "nissan_silvia_s15": [
+      "s15",
+      "s 15",
+      "silvia s15",
+      "nissan s15"
+    ],
+    "nissan_350z": [
+      "350z",
+      "350 z",
+      "trois cinquante z",
+      "nissan 350z",
+      "nissan 350 z"
+    ],
+    "nissan_370z": [
+      "370z",
+      "370 z",
+      "trois soixante dix z",
+      "nissan 370z",
+      "nissan 370 z"
+    ],
+    "nissan_400z": [
+      "400z",
+      "400 z",
+      "quatre cents z",
+      "nissan 400z",
+      "nissan 400 z",
+      "nissan z"
+    ],
+    "nissan_patrol": [
+      "patrol",
+      "nissan patrol"
+    ],
+    "nissan_navara": [
+      "navara",
+      "nissan navara",
+      "pick up nissan",
+      "pickup nissan"
+    ],
+    "toyota_supra_mk4": [
+      "supra",
+      "supra mk4",
+      "mk4",
+      "mk 4",
+      "toyota supra",
+      "toyota supra mk4"
+    ],
+    "toyota_supra_mk5": [
+      "supra mk5",
+      "mk5",
+      "mk 5",
+      "toyota supra mk5",
+      "nouvelle supra"
+    ],
+    "toyota_gt86": [
+      "gt86",
+      "gt 86",
+      "g t 86",
+      "toyota gt86",
+      "toyota gt 86",
+      "toyota 86"
+    ],
+    "toyota_gr86": [
+      "gr86",
+      "gr 86",
+      "g r 86",
+      "toyota gr86",
+      "toyota gr 86"
+    ],
+    "toyota_yaris_gr": [
+      "yaris gr",
+      "gr yaris",
+      "toyota yaris gr",
+      "toyota gr yaris"
+    ],
+    "toyota_land_cruiser": [
+      "land cruiser",
+      "landcruiser",
+      "toyota land cruiser",
+      "toyota 4x4"
+    ],
+    "toyota_hilux": [
+      "hilux",
+      "toyota hilux",
+      "pick up toyota",
+      "pickup toyota"
+    ],
+    "toyota_prius": [
+      "prius",
+      "toyota prius"
+    ],
+    "honda_civic": [
+      "civic",
+      "honda civic"
+    ],
+    "honda_civic_type_r": [
+      "type r",
+      "type-r",
+      "civic type r",
+      "honda type r",
+      "honda civic type r"
+    ],
+    "honda_s2000": [
+      "s2000",
+      "s 2000",
+      "honda s2000",
+      "honda s 2000"
+    ],
+    "honda_nsx": [
+      "nsx",
+      "n s x",
+      "honda nsx",
+      "acura nsx"
+    ],
+    "honda_crx": [
+      "crx",
+      "c r x",
+      "honda crx"
+    ],
+    "mitsubishi_lancer_evo": [
+      "evo",
+      "lancer evo",
+      "mitsubishi evo",
+      "mitsubishi lancer",
+      "lancer evolution",
+      "evo 8",
+      "evo 9",
+      "evo x",
+      "evo 10"
+    ],
+    "mitsubishi_eclipse": [
+      "eclipse",
+      "mitsubishi eclipse"
+    ],
+    "subaru_impreza": [
+      "impreza",
+      "wrx",
+      "sti",
+      "subaru impreza",
+      "subaru wrx",
+      "subaru sti",
+      "impreza sti",
+      "wrx sti"
+    ],
+    "subaru_brz": [
+      "brz",
+      "b r z",
+      "subaru brz"
+    ],
+    "mazda_rx7": [
+      "rx7",
+      "rx 7",
+      "r x 7",
+      "mazda rx7",
+      "mazda rx 7"
+    ],
+    "mazda_rx8": [
+      "rx8",
+      "rx 8",
+      "r x 8",
+      "mazda rx8",
+      "mazda rx 8"
+    ],
+    "mazda_mx5": [
+      "mx5",
+      "mx 5",
+      "m x 5",
+      "mazda mx5",
+      "mazda mx 5",
+      "miata"
+    ],
+    "dodge_charger": [
+      "charger",
+      "dodge charger"
+    ],
+    "dodge_challenger": [
+      "challenger",
+      "dodge challenger"
+    ],
+    "dodge_demon": [
+      "demon",
+      "dodge demon",
+      "challenger demon"
+    ],
+    "dodge_viper": [
+      "viper",
+      "dodge viper"
+    ],
+    "dodge_ram": [
+      "ram",
+      "dodge ram",
+      "ram 1500",
+      "dodge ram 1500",
+      "pick up ram",
+      "pickup ram"
+    ],
+    "ford_mustang": [
+      "mustang",
+      "ford mustang"
+    ],
+    "ford_mustang_gt": [
+      "mustang gt",
+      "mustang g t",
+      "ford mustang gt"
+    ],
+    "ford_mustang_shelby": [
+      "shelby",
+      "gt500",
+      "gt 500",
+      "shelby gt500",
+      "mustang shelby",
+      "ford shelby"
+    ],
+    "ford_focus_rs": [
+      "focus rs",
+      "ford focus rs",
+      "focus r s"
+    ],
+    "ford_fiesta_st": [
+      "fiesta st",
+      "ford fiesta st"
+    ],
+    "ford_f150": [
+      "f150",
+      "f 150",
+      "ford f150",
+      "ford f 150",
+      "pick up ford",
+      "pickup ford"
+    ],
+    "ford_raptor": [
+      "raptor",
+      "ford raptor",
+      "f150 raptor",
+      "f 150 raptor"
+    ],
+    "ford_bronco": [
+      "bronco",
+      "ford bronco"
+    ],
+    "ford_transit": [
+      "transit",
+      "ford transit",
+      "fourgon ford",
+      "camion ford"
+    ],
+    "chevrolet_camaro": [
+      "camaro",
+      "chevrolet camaro",
+      "chevy camaro"
+    ],
+    "chevrolet_corvette": [
+      "corvette",
+      "chevrolet corvette",
+      "chevy corvette",
+      "c7",
+      "c 7",
+      "c8",
+      "c 8",
+      "corvette c8"
+    ],
+    "chevrolet_tahoe": [
+      "tahoe",
+      "chevrolet tahoe",
+      "chevy tahoe"
+    ],
+    "chevrolet_suburban": [
+      "suburban",
+      "chevrolet suburban",
+      "chevy suburban"
+    ],
+    "chevrolet_silverado": [
+      "silverado",
+      "chevrolet silverado",
+      "chevy silverado",
+      "pick up silverado",
+      "pickup silverado"
+    ],
+    "cadillac_escalade": [
+      "escalade",
+      "cadillac escalade"
+    ],
+    "range_rover": [
+      "range rover",
+      "rang rover",
+      "rangerover",
+      "range",
+      "land rover range rover"
+    ],
+    "range_rover_sport": [
+      "range rover sport",
+      "range sport",
+      "rang sport",
+      "range rover svr",
+      "svr"
+    ],
+    "land_rover_defender": [
+      "defender",
+      "land rover defender",
+      "landrover defender"
+    ],
+    "jeep_wrangler": [
+      "wrangler",
+      "jeep wrangler",
+      "jeep"
+    ],
+    "jeep_cherokee": [
+      "cherokee",
+      "jeep cherokee",
+      "grand cherokee"
+    ],
+    "bentley_continental": [
+      "continental",
+      "continental gt",
+      "bentley continental",
+      "bentley gt"
+    ],
+    "bentley_bentayga": [
+      "bentayga",
+      "bentley bentayga"
+    ],
+    "rolls_royce_phantom": [
+      "phantom",
+      "rolls phantom",
+      "rolls royce phantom",
+      "rolls-royce phantom"
+    ],
+    "rolls_royce_ghost": [
+      "ghost",
+      "rolls ghost",
+      "rolls royce ghost",
+      "rolls-royce ghost"
+    ],
+    "rolls_royce_wraith": [
+      "wraith",
+      "rolls wraith",
+      "rolls royce wraith",
+      "rolls-royce wraith"
+    ],
+    "rolls_royce_cullinan": [
+      "cullinan",
+      "rolls cullinan",
+      "rolls royce cullinan",
+      "rolls-royce cullinan"
+    ],
+    "aston_martin_db11": [
+      "db11",
+      "db 11",
+      "aston martin db11",
+      "aston db11"
+    ],
+    "aston_martin_vantage": [
+      "vantage",
+      "aston martin vantage",
+      "aston vantage"
+    ],
+    "maserati_ghibli": [
+      "ghibli",
+      "maserati ghibli"
+    ],
+    "maserati_granturismo": [
+      "granturismo",
+      "gran turismo",
+      "maserati granturismo",
+      "maserati gran turismo"
+    ],
+    "renault_clio": [
+      "clio",
+      "renault clio",
+      "clio rs",
+      "clio r s"
+    ],
+    "renault_megane": [
+      "megane",
+      "mégane",
+      "renault megane",
+      "renault mégane",
+      "megane rs",
+      "mégane rs"
+    ],
+    "renault_twingo": [
+      "twingo",
+      "renault twingo"
+    ],
+    "renault_master": [
+      "master",
+      "renault master",
+      "fourgon renault"
+    ],
+    "peugeot_208": [
+      "208",
+      "deux cent huit",
+      "peugeot 208",
+      "208 gti"
+    ],
+    "peugeot_308": [
+      "308",
+      "trois cent huit",
+      "peugeot 308",
+      "308 gti"
+    ],
+    "peugeot_508": [
+      "508",
+      "cinq cent huit",
+      "peugeot 508"
+    ],
+    "peugeot_3008": [
+      "3008",
+      "trois mille huit",
+      "peugeot 3008"
+    ],
+    "peugeot_partner": [
+      "partner",
+      "peugeot partner"
+    ],
+    "citroen_c3": [
+      "c3",
+      "c 3",
+      "citroen c3",
+      "citroën c3"
+    ],
+    "citroen_c4": [
+      "c4",
+      "c 4",
+      "citroen c4",
+      "citroën c4"
+    ],
+    "citroen_berlingo": [
+      "berlingo",
+      "citroen berlingo",
+      "citroën berlingo"
+    ],
+    "alfa_romeo_giulia": [
+      "giulia",
+      "alfa giulia",
+      "alfa romeo giulia"
+    ],
+    "alfa_romeo_4c": [
+      "4c",
+      "4 c",
+      "alfa 4c",
+      "alfa romeo 4c"
+    ],
+    "fiat_500": [
+      "fiat 500",
+      "500 abarth",
+      "abarth",
+      "fiat cinq cents"
+    ],
+    "mini_cooper": [
+      "mini",
+      "mini cooper",
+      "cooper",
+      "cooper s"
+    ],
+    "seat_leon": [
+      "leon",
+      "léon",
+      "seat leon",
+      "seat léon",
+      "cupra leon",
+      "cupra"
+    ],
+    "skoda_octavia": [
+      "octavia",
+      "skoda octavia",
+      "octavia rs"
+    ],
+    "volvo_xc90": [
+      "xc90",
+      "xc 90",
+      "volvo xc90"
+    ],
+    "tesla_model_s": [
+      "model s",
+      "modele s",
+      "modèle s",
+      "tesla model s",
+      "tesla modèle s"
+    ],
+    "tesla_model_3": [
+      "model 3",
+      "modele 3",
+      "modèle 3",
+      "tesla model 3",
+      "tesla modèle 3"
+    ],
+    "tesla_model_x": [
+      "model x",
+      "modele x",
+      "modèle x",
+      "tesla model x",
+      "tesla modèle x"
+    ],
+    "tesla_model_y": [
+      "model y",
+      "modele y",
+      "modèle y",
+      "tesla model y",
+      "tesla modèle y"
+    ],
+    "tesla_cybertruck": [
+      "cybertruck",
+      "cyber truck",
+      "tesla cybertruck",
+      "tesla cyber truck"
+    ],
+    "yamaha_tmax": [
+      "tmax",
+      "t max",
+      "t-max",
+      "yamaha tmax",
+      "yamaha t max",
+      "scooter tmax",
+      "tmax 530",
+      "tmax 560"
+    ],
+    "yamaha_xmax": [
+      "xmax",
+      "x max",
+      "x-max",
+      "yamaha xmax",
+      "scooter xmax"
+    ],
+    "yamaha_r1": [
+      "r1",
+      "r 1",
+      "yamaha r1",
+      "yamaha r 1"
+    ],
+    "yamaha_r6": [
+      "r6",
+      "r 6",
+      "yamaha r6",
+      "yamaha r 6"
+    ],
+    "yamaha_mt07": [
+      "mt07",
+      "mt 07",
+      "mt-07",
+      "mt 7",
+      "mt7",
+      "yamaha mt07",
+      "yamaha mt 07"
+    ],
+    "yamaha_mt09": [
+      "mt09",
+      "mt 09",
+      "mt-09",
+      "mt 9",
+      "mt9",
+      "yamaha mt09",
+      "yamaha mt 09"
+    ],
+    "yamaha_mt10": [
+      "mt10",
+      "mt 10",
+      "mt-10",
+      "yamaha mt10",
+      "yamaha mt 10"
+    ],
+    "kawasaki_ninja": [
+      "ninja",
+      "kawasaki ninja",
+      "ninja 400",
+      "ninja 600",
+      "ninja 1000"
+    ],
+    "kawasaki_h2": [
+      "h2",
+      "h 2",
+      "ninja h2",
+      "kawasaki h2",
+      "kawasaki ninja h2"
+    ],
+    "kawasaki_z900": [
+      "z900",
+      "z 900",
+      "kawasaki z900",
+      "kawasaki z 900"
+    ],
+    "kawasaki_z1000": [
+      "z1000",
+      "z 1000",
+      "kawasaki z1000",
+      "kawasaki z 1000"
+    ],
+    "suzuki_hayabusa": [
+      "hayabusa",
+      "suzuki hayabusa",
+      "busa"
+    ],
+    "suzuki_gsxr": [
+      "gsxr",
+      "gsx r",
+      "g s x r",
+      "suzuki gsxr",
+      "suzuki gsx r"
+    ],
+    "ducati_panigale": [
+      "panigale",
+      "ducati panigale",
+      "ducati v4",
+      "panigale v4"
+    ],
+    "ducati_monster": [
+      "monster",
+      "ducati monster"
+    ],
+    "ktm_duke": [
+      "duke",
+      "ktm duke",
+      "ktm 690",
+      "ktm 790",
+      "ktm 890",
+      "ktm 1290",
+      "super duke"
+    ],
+    "harley_davidson": [
+      "harley",
+      "harley davidson",
+      "harley-davidson",
+      "moto harley"
+    ],
+    "generic_depanneuse_plateau": [
+      "depanneuse",
+      "dépanneuse",
+      "plateau",
+      "camion plateau",
+      "camion depanneuse",
+      "camion dépanneuse",
+      "remorqueuse"
+    ],
+    "generic_quad": [
+      "quad",
+      "atv",
+      "quad bike"
+    ],
+    "generic_bmx": [
+      "bmx",
+      "velo",
+      "vélo",
+      "bicyclette",
+      "vtt"
+    ]
+  },
+  "vehicles_details": {
+    "audi_a1": {
+      "brand": "Audi",
+      "model": "A1",
+      "category": "citadine",
+      "aliases": [
+        "a1",
+        "a 1",
+        "audi a1",
+        "audi a 1"
+      ]
+    },
+    "audi_a3": {
+      "brand": "Audi",
+      "model": "A3",
+      "category": "compacte",
+      "aliases": [
+        "a3",
+        "a 3",
+        "audi a3",
+        "audi a 3"
+      ]
+    },
+    "audi_s3": {
+      "brand": "Audi",
+      "model": "S3",
+      "category": "compacte sportive",
+      "aliases": [
+        "s3",
+        "s 3",
+        "audi s3",
+        "audi s 3"
+      ]
+    },
+    "audi_rs3": {
+      "brand": "Audi",
+      "model": "RS3",
+      "category": "compacte sportive",
+      "aliases": [
+        "rs3",
+        "rs 3",
+        "r s 3",
+        "audi rs3",
+        "audi rs 3",
+        "audi r s 3"
+      ]
+    },
+    "audi_a4": {
+      "brand": "Audi",
+      "model": "A4",
+      "category": "berline",
+      "aliases": [
+        "a4",
+        "a 4",
+        "audi a4",
+        "audi a 4"
+      ]
+    },
+    "audi_s4": {
+      "brand": "Audi",
+      "model": "S4",
+      "category": "berline sportive",
+      "aliases": [
+        "s4",
+        "s 4",
+        "audi s4",
+        "audi s 4"
+      ]
+    },
+    "audi_rs4": {
+      "brand": "Audi",
+      "model": "RS4",
+      "category": "break sportif",
+      "aliases": [
+        "rs4",
+        "rs 4",
+        "r s 4",
+        "audi rs4",
+        "audi rs 4",
+        "audi r s 4",
+        "break rs4"
+      ]
+    },
+    "audi_a5": {
+      "brand": "Audi",
+      "model": "A5",
+      "category": "coupé",
+      "aliases": [
+        "a5",
+        "a 5",
+        "audi a5",
+        "audi a 5"
+      ]
+    },
+    "audi_s5": {
+      "brand": "Audi",
+      "model": "S5",
+      "category": "coupé sportif",
+      "aliases": [
+        "s5",
+        "s 5",
+        "audi s5",
+        "audi s 5"
+      ]
+    },
+    "audi_rs5": {
+      "brand": "Audi",
+      "model": "RS5",
+      "category": "coupé sportif",
+      "aliases": [
+        "rs5",
+        "rs 5",
+        "r s 5",
+        "audi rs5",
+        "audi rs 5",
+        "audi r s 5"
+      ]
+    },
+    "audi_a6": {
+      "brand": "Audi",
+      "model": "A6",
+      "category": "berline",
+      "aliases": [
+        "a6",
+        "a 6",
+        "audi a6",
+        "audi a 6"
+      ]
+    },
+    "audi_s6": {
+      "brand": "Audi",
+      "model": "S6",
+      "category": "berline sportive",
+      "aliases": [
+        "s6",
+        "s 6",
+        "audi s6",
+        "audi s 6"
+      ]
+    },
+    "audi_rs6": {
+      "brand": "Audi",
+      "model": "RS6",
+      "category": "break sportif",
+      "aliases": [
+        "rs6",
+        "rs 6",
+        "r s 6",
+        "audi rs6",
+        "audi rs 6",
+        "audi r s 6",
+        "break rs6",
+        "break audi",
+        "rs six"
+      ]
+    },
+    "audi_a7": {
+      "brand": "Audi",
+      "model": "A7",
+      "category": "berline coupé",
+      "aliases": [
+        "a7",
+        "a 7",
+        "audi a7",
+        "audi a 7"
+      ]
+    },
+    "audi_s7": {
+      "brand": "Audi",
+      "model": "S7",
+      "category": "berline coupé sportive",
+      "aliases": [
+        "s7",
+        "s 7",
+        "audi s7",
+        "audi s 7"
+      ]
+    },
+    "audi_rs7": {
+      "brand": "Audi",
+      "model": "RS7",
+      "category": "berline sportive",
+      "aliases": [
+        "rs7",
+        "rs 7",
+        "r s 7",
+        "audi rs7",
+        "audi rs 7",
+        "audi r s 7"
+      ]
+    },
+    "audi_a8": {
+      "brand": "Audi",
+      "model": "A8",
+      "category": "berline luxe",
+      "aliases": [
+        "a8",
+        "a 8",
+        "audi a8",
+        "audi a 8"
+      ]
+    },
+    "audi_r8": {
+      "brand": "Audi",
+      "model": "R8",
+      "category": "supercar",
+      "aliases": [
+        "r8",
+        "r 8",
+        "audi r8",
+        "audi r 8"
+      ]
+    },
+    "audi_tt": {
+      "brand": "Audi",
+      "model": "TT",
+      "category": "coupé",
+      "aliases": [
+        "tt",
+        "t t",
+        "audi tt",
+        "audi t t"
+      ]
+    },
+    "audi_ttrs": {
+      "brand": "Audi",
+      "model": "TT RS",
+      "category": "coupé sportif",
+      "aliases": [
+        "ttrs",
+        "tt rs",
+        "t t rs",
+        "audi ttrs",
+        "audi tt rs"
+      ]
+    },
+    "audi_q7": {
+      "brand": "Audi",
+      "model": "Q7",
+      "category": "suv",
+      "aliases": [
+        "q7",
+        "q 7",
+        "audi q7",
+        "audi q 7"
+      ]
+    },
+    "audi_q8": {
+      "brand": "Audi",
+      "model": "Q8",
+      "category": "suv",
+      "aliases": [
+        "q8",
+        "q 8",
+        "audi q8",
+        "audi q 8"
+      ]
+    },
+    "audi_rsq8": {
+      "brand": "Audi",
+      "model": "RS Q8",
+      "category": "suv sportif",
+      "aliases": [
+        "rsq8",
+        "rs q8",
+        "rs q 8",
+        "r s q8",
+        "audi rsq8",
+        "audi rs q8",
+        "audi rs q 8"
+      ]
+    },
+    "bmw_serie_1": {
+      "brand": "BMW",
+      "model": "Série 1",
+      "category": "compacte",
+      "aliases": [
+        "serie 1",
+        "série 1",
+        "bmw serie 1",
+        "bmw série 1",
+        "118i",
+        "120d",
+        "m135i",
+        "m140i"
+      ]
+    },
+    "bmw_m2": {
+      "brand": "BMW",
+      "model": "M2",
+      "category": "coupé sportif",
+      "aliases": [
+        "m2",
+        "m 2",
+        "bmw m2",
+        "bmw m 2"
+      ]
+    },
+    "bmw_m3": {
+      "brand": "BMW",
+      "model": "M3",
+      "category": "berline sportive",
+      "aliases": [
+        "m3",
+        "m 3",
+        "bmw m3",
+        "bmw m 3"
+      ]
+    },
+    "bmw_m4": {
+      "brand": "BMW",
+      "model": "M4",
+      "category": "coupé sportif",
+      "aliases": [
+        "m4",
+        "m 4",
+        "bmw m4",
+        "bmw m 4"
+      ]
+    },
+    "bmw_m5": {
+      "brand": "BMW",
+      "model": "M5",
+      "category": "berline sportive",
+      "aliases": [
+        "m5",
+        "m 5",
+        "bmw m5",
+        "bmw m 5"
+      ]
+    },
+    "bmw_m6": {
+      "brand": "BMW",
+      "model": "M6",
+      "category": "coupé sportif",
+      "aliases": [
+        "m6",
+        "m 6",
+        "bmw m6",
+        "bmw m 6"
+      ]
+    },
+    "bmw_m8": {
+      "brand": "BMW",
+      "model": "M8",
+      "category": "coupé sportif",
+      "aliases": [
+        "m8",
+        "m 8",
+        "bmw m8",
+        "bmw m 8"
+      ]
+    },
+    "bmw_i8": {
+      "brand": "BMW",
+      "model": "i8",
+      "category": "sportive hybride",
+      "aliases": [
+        "i8",
+        "i 8",
+        "bmw i8",
+        "bmw i 8"
+      ]
+    },
+    "bmw_x5": {
+      "brand": "BMW",
+      "model": "X5",
+      "category": "suv",
+      "aliases": [
+        "x5",
+        "x 5",
+        "bmw x5",
+        "bmw x 5"
+      ]
+    },
+    "bmw_x5m": {
+      "brand": "BMW",
+      "model": "X5M",
+      "category": "suv sportif",
+      "aliases": [
+        "x5m",
+        "x5 m",
+        "x 5 m",
+        "bmw x5m",
+        "bmw x5 m"
+      ]
+    },
+    "bmw_x6": {
+      "brand": "BMW",
+      "model": "X6",
+      "category": "suv coupé",
+      "aliases": [
+        "x6",
+        "x 6",
+        "bmw x6",
+        "bmw x 6"
+      ]
+    },
+    "bmw_x6m": {
+      "brand": "BMW",
+      "model": "X6M",
+      "category": "suv sportif",
+      "aliases": [
+        "x6m",
+        "x6 m",
+        "x 6 m",
+        "bmw x6m",
+        "bmw x6 m"
+      ]
+    },
+    "bmw_z4": {
+      "brand": "BMW",
+      "model": "Z4",
+      "category": "roadster",
+      "aliases": [
+        "z4",
+        "z 4",
+        "bmw z4",
+        "bmw z 4"
+      ]
+    },
+    "bmw_s1000rr": {
+      "brand": "BMW",
+      "model": "S1000RR",
+      "category": "moto sportive",
+      "aliases": [
+        "s1000rr",
+        "s 1000 rr",
+        "bmw s1000rr",
+        "bmw s 1000 rr",
+        "s mille rr",
+        "mille rr"
+      ]
+    },
+    "mercedes_classe_a": {
+      "brand": "Mercedes-Benz",
+      "model": "Classe A",
+      "category": "compacte",
+      "aliases": [
+        "classe a",
+        "mercedes classe a",
+        "merco classe a",
+        "a class",
+        "classe à"
+      ]
+    },
+    "mercedes_a45": {
+      "brand": "Mercedes-Benz",
+      "model": "A45 AMG",
+      "category": "compacte sportive",
+      "aliases": [
+        "a45",
+        "a 45",
+        "a45 amg",
+        "a 45 amg",
+        "mercedes a45",
+        "merco a45",
+        "classe a45",
+        "a quarante cinq"
+      ]
+    },
+    "mercedes_classe_c": {
+      "brand": "Mercedes-Benz",
+      "model": "Classe C",
+      "category": "berline",
+      "aliases": [
+        "classe c",
+        "mercedes classe c",
+        "merco classe c",
+        "c class"
+      ]
+    },
+    "mercedes_c63": {
+      "brand": "Mercedes-Benz",
+      "model": "C63 AMG",
+      "category": "berline sportive",
+      "aliases": [
+        "c63",
+        "c 63",
+        "c63 amg",
+        "c 63 amg",
+        "mercedes c63",
+        "merco c63",
+        "classe c63",
+        "c soixante trois"
+      ]
+    },
+    "mercedes_e63": {
+      "brand": "Mercedes-Benz",
+      "model": "E63 AMG",
+      "category": "berline sportive",
+      "aliases": [
+        "e63",
+        "e 63",
+        "e63 amg",
+        "e 63 amg",
+        "mercedes e63",
+        "merco e63",
+        "classe e63",
+        "e soixante trois"
+      ]
+    },
+    "mercedes_s63": {
+      "brand": "Mercedes-Benz",
+      "model": "S63 AMG",
+      "category": "berline luxe sportive",
+      "aliases": [
+        "s63",
+        "s 63",
+        "s63 amg",
+        "s 63 amg",
+        "mercedes s63",
+        "merco s63",
+        "classe s63"
+      ]
+    },
+    "mercedes_cls63": {
+      "brand": "Mercedes-Benz",
+      "model": "CLS63 AMG",
+      "category": "berline coupé sportive",
+      "aliases": [
+        "cls63",
+        "cls 63",
+        "cls63 amg",
+        "mercedes cls63",
+        "merco cls63"
+      ]
+    },
+    "mercedes_gt63": {
+      "brand": "Mercedes-Benz",
+      "model": "AMG GT63",
+      "category": "berline sportive",
+      "aliases": [
+        "gt63",
+        "gt 63",
+        "amg gt63",
+        "amg gt 63",
+        "mercedes gt63",
+        "merco gt63"
+      ]
+    },
+    "mercedes_amg_gt": {
+      "brand": "Mercedes-Benz",
+      "model": "AMG GT",
+      "category": "coupé sportif",
+      "aliases": [
+        "amg gt",
+        "mercedes amg gt",
+        "merco amg gt",
+        "amg gtr",
+        "amg gt r"
+      ]
+    },
+    "mercedes_g63": {
+      "brand": "Mercedes-Benz",
+      "model": "G63 AMG",
+      "category": "4x4 luxe",
+      "aliases": [
+        "g63",
+        "g 63",
+        "g63 amg",
+        "mercedes g63",
+        "merco g63",
+        "classe g",
+        "g class",
+        "g wagon",
+        "g-wagon",
+        "classe g63"
+      ]
+    },
+    "mercedes_g65": {
+      "brand": "Mercedes-Benz",
+      "model": "G65 AMG",
+      "category": "4x4 luxe",
+      "aliases": [
+        "g65",
+        "g 65",
+        "g65 amg",
+        "mercedes g65",
+        "merco g65"
+      ]
+    },
+    "mercedes_gls": {
+      "brand": "Mercedes-Benz",
+      "model": "GLS",
+      "category": "suv luxe",
+      "aliases": [
+        "gls",
+        "mercedes gls",
+        "merco gls"
+      ]
+    },
+    "mercedes_maybach": {
+      "brand": "Mercedes-Benz",
+      "model": "Maybach",
+      "category": "luxe",
+      "aliases": [
+        "maybach",
+        "mercedes maybach",
+        "merco maybach",
+        "classe s maybach"
+      ]
+    },
+    "mercedes_sprinter": {
+      "brand": "Mercedes-Benz",
+      "model": "Sprinter",
+      "category": "utilitaire",
+      "aliases": [
+        "sprinter",
+        "mercedes sprinter",
+        "merco sprinter",
+        "camion sprinter",
+        "fourgon sprinter"
+      ]
+    },
+    "vw_golf_6": {
+      "brand": "Volkswagen",
+      "model": "Golf 6",
+      "category": "compacte",
+      "aliases": [
+        "golf 6",
+        "golf six",
+        "golf vi",
+        "volkswagen golf 6",
+        "vw golf 6"
+      ]
+    },
+    "vw_golf_7": {
+      "brand": "Volkswagen",
+      "model": "Golf 7",
+      "category": "compacte",
+      "aliases": [
+        "golf 7",
+        "golf sept",
+        "golf vii",
+        "volkswagen golf 7",
+        "vw golf 7",
+        "golf r",
+        "golf 7r",
+        "golf 7 r"
+      ]
+    },
+    "vw_golf_8": {
+      "brand": "Volkswagen",
+      "model": "Golf 8",
+      "category": "compacte",
+      "aliases": [
+        "golf 8",
+        "golf huit",
+        "golf viii",
+        "volkswagen golf 8",
+        "vw golf 8",
+        "golf 8r",
+        "golf 8 r"
+      ]
+    },
+    "vw_polo": {
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "category": "citadine",
+      "aliases": [
+        "polo",
+        "volkswagen polo",
+        "vw polo",
+        "polo gti"
+      ]
+    },
+    "vw_scirocco": {
+      "brand": "Volkswagen",
+      "model": "Scirocco",
+      "category": "coupé",
+      "aliases": [
+        "scirocco",
+        "volkswagen scirocco",
+        "vw scirocco"
+      ]
+    },
+    "vw_passat": {
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "category": "berline",
+      "aliases": [
+        "passat",
+        "volkswagen passat",
+        "vw passat"
+      ]
+    },
+    "vw_touareg": {
+      "brand": "Volkswagen",
+      "model": "Touareg",
+      "category": "suv",
+      "aliases": [
+        "touareg",
+        "volkswagen touareg",
+        "vw touareg"
+      ]
+    },
+    "vw_transporteur": {
+      "brand": "Volkswagen",
+      "model": "Transporter",
+      "category": "utilitaire",
+      "aliases": [
+        "transporter",
+        "transporteur",
+        "vw transporter",
+        "volkswagen transporter",
+        "t5",
+        "t6",
+        "t 5",
+        "t 6"
+      ]
+    },
+    "porsche_911": {
+      "brand": "Porsche",
+      "model": "911",
+      "category": "sportive",
+      "aliases": [
+        "911",
+        "nine eleven",
+        "porsche 911",
+        "porsche neuf onze"
+      ]
+    },
+    "porsche_911_gt3": {
+      "brand": "Porsche",
+      "model": "911 GT3",
+      "category": "sportive",
+      "aliases": [
+        "gt3",
+        "gt 3",
+        "911 gt3",
+        "911 gt 3",
+        "porsche gt3",
+        "porsche 911 gt3"
+      ]
+    },
+    "porsche_911_gt2rs": {
+      "brand": "Porsche",
+      "model": "911 GT2 RS",
+      "category": "sportive",
+      "aliases": [
+        "gt2rs",
+        "gt2 rs",
+        "gt 2 rs",
+        "911 gt2rs",
+        "911 gt2 rs",
+        "porsche gt2rs"
+      ]
+    },
+    "porsche_918": {
+      "brand": "Porsche",
+      "model": "918 Spyder",
+      "category": "hypercar",
+      "aliases": [
+        "918",
+        "918 spyder",
+        "porsche 918",
+        "porsche spyder"
+      ]
+    },
+    "porsche_cayenne": {
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "category": "suv",
+      "aliases": [
+        "cayenne",
+        "porsche cayenne"
+      ]
+    },
+    "porsche_macan": {
+      "brand": "Porsche",
+      "model": "Macan",
+      "category": "suv",
+      "aliases": [
+        "macan",
+        "porsche macan"
+      ]
+    },
+    "porsche_panamera": {
+      "brand": "Porsche",
+      "model": "Panamera",
+      "category": "berline sportive",
+      "aliases": [
+        "panamera",
+        "porsche panamera"
+      ]
+    },
+    "porsche_taycan": {
+      "brand": "Porsche",
+      "model": "Taycan",
+      "category": "berline électrique",
+      "aliases": [
+        "taycan",
+        "porsche taycan",
+        "taycan turbo"
+      ]
+    },
+    "lamborghini_aventador": {
+      "brand": "Lamborghini",
+      "model": "Aventador",
+      "category": "supercar",
+      "aliases": [
+        "aventador",
+        "lamborghini aventador",
+        "lambo aventador",
+        "lambo"
+      ]
+    },
+    "lamborghini_huracan": {
+      "brand": "Lamborghini",
+      "model": "Huracan",
+      "category": "supercar",
+      "aliases": [
+        "huracan",
+        "huracán",
+        "lamborghini huracan",
+        "lambo huracan"
+      ]
+    },
+    "lamborghini_gallardo": {
+      "brand": "Lamborghini",
+      "model": "Gallardo",
+      "category": "supercar",
+      "aliases": [
+        "gallardo",
+        "lamborghini gallardo",
+        "lambo gallardo"
+      ]
+    },
+    "lamborghini_urus": {
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "category": "suv sportif",
+      "aliases": [
+        "urus",
+        "lamborghini urus",
+        "lambo urus"
+      ]
+    },
+    "lamborghini_countach": {
+      "brand": "Lamborghini",
+      "model": "Countach",
+      "category": "sportive classique",
+      "aliases": [
+        "countach",
+        "lamborghini countach",
+        "lambo countach"
+      ]
+    },
+    "lamborghini_sian": {
+      "brand": "Lamborghini",
+      "model": "Sian",
+      "category": "hypercar",
+      "aliases": [
+        "sian",
+        "sián",
+        "lamborghini sian",
+        "lambo sian"
+      ]
+    },
+    "ferrari_458": {
+      "brand": "Ferrari",
+      "model": "458 Italia",
+      "category": "supercar",
+      "aliases": [
+        "458",
+        "458 italia",
+        "ferrari 458",
+        "ferrari quatre cinq huit"
+      ]
+    },
+    "ferrari_488": {
+      "brand": "Ferrari",
+      "model": "488",
+      "category": "supercar",
+      "aliases": [
+        "488",
+        "ferrari 488",
+        "488 pista",
+        "ferrari pista"
+      ]
+    },
+    "ferrari_f8": {
+      "brand": "Ferrari",
+      "model": "F8 Tributo",
+      "category": "supercar",
+      "aliases": [
+        "f8",
+        "f 8",
+        "f8 tributo",
+        "ferrari f8",
+        "ferrari f 8"
+      ]
+    },
+    "ferrari_812": {
+      "brand": "Ferrari",
+      "model": "812 Superfast",
+      "category": "gt sportive",
+      "aliases": [
+        "812",
+        "812 superfast",
+        "ferrari 812"
+      ]
+    },
+    "ferrari_laferrari": {
+      "brand": "Ferrari",
+      "model": "LaFerrari",
+      "category": "hypercar",
+      "aliases": [
+        "laferrari",
+        "la ferrari",
+        "ferrari laferrari"
+      ]
+    },
+    "ferrari_enzo": {
+      "brand": "Ferrari",
+      "model": "Enzo",
+      "category": "supercar",
+      "aliases": [
+        "enzo",
+        "ferrari enzo"
+      ]
+    },
+    "ferrari_f40": {
+      "brand": "Ferrari",
+      "model": "F40",
+      "category": "sportive classique",
+      "aliases": [
+        "f40",
+        "f 40",
+        "ferrari f40",
+        "ferrari f 40"
+      ]
+    },
+    "ferrari_f50": {
+      "brand": "Ferrari",
+      "model": "F50",
+      "category": "sportive classique",
+      "aliases": [
+        "f50",
+        "f 50",
+        "ferrari f50",
+        "ferrari f 50"
+      ]
+    },
+    "ferrari_roma": {
+      "brand": "Ferrari",
+      "model": "Roma",
+      "category": "gt",
+      "aliases": [
+        "roma",
+        "ferrari roma"
+      ]
+    },
+    "ferrari_portofino": {
+      "brand": "Ferrari",
+      "model": "Portofino",
+      "category": "cabriolet gt",
+      "aliases": [
+        "portofino",
+        "ferrari portofino"
+      ]
+    },
+    "mclaren_570s": {
+      "brand": "McLaren",
+      "model": "570S",
+      "category": "supercar",
+      "aliases": [
+        "570s",
+        "570 s",
+        "mclaren 570s",
+        "maclaren 570s"
+      ]
+    },
+    "mclaren_600lt": {
+      "brand": "McLaren",
+      "model": "600LT",
+      "category": "supercar",
+      "aliases": [
+        "600lt",
+        "600 lt",
+        "mclaren 600lt",
+        "maclaren 600lt"
+      ]
+    },
+    "mclaren_720s": {
+      "brand": "McLaren",
+      "model": "720S",
+      "category": "supercar",
+      "aliases": [
+        "720s",
+        "720 s",
+        "mclaren 720s",
+        "maclaren 720s"
+      ]
+    },
+    "mclaren_765lt": {
+      "brand": "McLaren",
+      "model": "765LT",
+      "category": "supercar",
+      "aliases": [
+        "765lt",
+        "765 lt",
+        "mclaren 765lt",
+        "maclaren 765lt"
+      ]
+    },
+    "mclaren_p1": {
+      "brand": "McLaren",
+      "model": "P1",
+      "category": "hypercar",
+      "aliases": [
+        "p1",
+        "p 1",
+        "mclaren p1",
+        "maclaren p1"
+      ]
+    },
+    "mclaren_senna": {
+      "brand": "McLaren",
+      "model": "Senna",
+      "category": "hypercar",
+      "aliases": [
+        "senna",
+        "mclaren senna",
+        "maclaren senna"
+      ]
+    },
+    "bugatti_veyron": {
+      "brand": "Bugatti",
+      "model": "Veyron",
+      "category": "hypercar",
+      "aliases": [
+        "veyron",
+        "bugatti veyron"
+      ]
+    },
+    "bugatti_chiron": {
+      "brand": "Bugatti",
+      "model": "Chiron",
+      "category": "hypercar",
+      "aliases": [
+        "chiron",
+        "bugatti chiron"
+      ]
+    },
+    "bugatti_divo": {
+      "brand": "Bugatti",
+      "model": "Divo",
+      "category": "hypercar",
+      "aliases": [
+        "divo",
+        "bugatti divo"
+      ]
+    },
+    "bugatti_bolide": {
+      "brand": "Bugatti",
+      "model": "Bolide",
+      "category": "hypercar",
+      "aliases": [
+        "bolide",
+        "bugatti bolide"
+      ]
+    },
+    "koenigsegg_agera": {
+      "brand": "Koenigsegg",
+      "model": "Agera",
+      "category": "hypercar",
+      "aliases": [
+        "agera",
+        "koenigsegg agera",
+        "koenigsegg",
+        "koenigseg"
+      ]
+    },
+    "koenigsegg_jesko": {
+      "brand": "Koenigsegg",
+      "model": "Jesko",
+      "category": "hypercar",
+      "aliases": [
+        "jesko",
+        "koenigsegg jesko",
+        "koenigseg jesko"
+      ]
+    },
+    "koenigsegg_regera": {
+      "brand": "Koenigsegg",
+      "model": "Regera",
+      "category": "hypercar",
+      "aliases": [
+        "regera",
+        "koenigsegg regera",
+        "koenigseg regera"
+      ]
+    },
+    "pagani_huayra": {
+      "brand": "Pagani",
+      "model": "Huayra",
+      "category": "hypercar",
+      "aliases": [
+        "huayra",
+        "pagani huayra",
+        "pagani"
+      ]
+    },
+    "pagani_zonda": {
+      "brand": "Pagani",
+      "model": "Zonda",
+      "category": "hypercar",
+      "aliases": [
+        "zonda",
+        "pagani zonda"
+      ]
+    },
+    "nissan_gtr": {
+      "brand": "Nissan",
+      "model": "GT-R",
+      "category": "sportive",
+      "aliases": [
+        "gtr",
+        "gt r",
+        "g t r",
+        "nissan gtr",
+        "nissan gt r",
+        "nissan g t r",
+        "r35",
+        "r 35",
+        "gtr r35",
+        "g t r r35"
+      ]
+    },
+    "nissan_skyline_r34": {
+      "brand": "Nissan",
+      "model": "Skyline R34",
+      "category": "sportive japonaise",
+      "aliases": [
+        "skyline",
+        "r34",
+        "r 34",
+        "skyline r34",
+        "nissan skyline",
+        "nissan r34"
+      ]
+    },
+    "nissan_silvia_s13": {
+      "brand": "Nissan",
+      "model": "Silvia S13",
+      "category": "drift",
+      "aliases": [
+        "s13",
+        "s 13",
+        "silvia s13",
+        "nissan s13",
+        "nissan silvia"
+      ]
+    },
+    "nissan_silvia_s14": {
+      "brand": "Nissan",
+      "model": "Silvia S14",
+      "category": "drift",
+      "aliases": [
+        "s14",
+        "s 14",
+        "silvia s14",
+        "nissan s14"
+      ]
+    },
+    "nissan_silvia_s15": {
+      "brand": "Nissan",
+      "model": "Silvia S15",
+      "category": "drift",
+      "aliases": [
+        "s15",
+        "s 15",
+        "silvia s15",
+        "nissan s15"
+      ]
+    },
+    "nissan_350z": {
+      "brand": "Nissan",
+      "model": "350Z",
+      "category": "sportive",
+      "aliases": [
+        "350z",
+        "350 z",
+        "trois cinquante z",
+        "nissan 350z",
+        "nissan 350 z"
+      ]
+    },
+    "nissan_370z": {
+      "brand": "Nissan",
+      "model": "370Z",
+      "category": "sportive",
+      "aliases": [
+        "370z",
+        "370 z",
+        "trois soixante dix z",
+        "nissan 370z",
+        "nissan 370 z"
+      ]
+    },
+    "nissan_400z": {
+      "brand": "Nissan",
+      "model": "400Z",
+      "category": "sportive",
+      "aliases": [
+        "400z",
+        "400 z",
+        "quatre cents z",
+        "nissan 400z",
+        "nissan 400 z",
+        "nissan z"
+      ]
+    },
+    "nissan_patrol": {
+      "brand": "Nissan",
+      "model": "Patrol",
+      "category": "4x4",
+      "aliases": [
+        "patrol",
+        "nissan patrol"
+      ]
+    },
+    "nissan_navara": {
+      "brand": "Nissan",
+      "model": "Navara",
+      "category": "pick-up",
+      "aliases": [
+        "navara",
+        "nissan navara",
+        "pick up nissan",
+        "pickup nissan"
+      ]
+    },
+    "toyota_supra_mk4": {
+      "brand": "Toyota",
+      "model": "Supra MK4",
+      "category": "sportive japonaise",
+      "aliases": [
+        "supra",
+        "supra mk4",
+        "mk4",
+        "mk 4",
+        "toyota supra",
+        "toyota supra mk4"
+      ]
+    },
+    "toyota_supra_mk5": {
+      "brand": "Toyota",
+      "model": "Supra MK5",
+      "category": "sportive",
+      "aliases": [
+        "supra mk5",
+        "mk5",
+        "mk 5",
+        "toyota supra mk5",
+        "nouvelle supra"
+      ]
+    },
+    "toyota_gt86": {
+      "brand": "Toyota",
+      "model": "GT86",
+      "category": "sportive",
+      "aliases": [
+        "gt86",
+        "gt 86",
+        "g t 86",
+        "toyota gt86",
+        "toyota gt 86",
+        "toyota 86"
+      ]
+    },
+    "toyota_gr86": {
+      "brand": "Toyota",
+      "model": "GR86",
+      "category": "sportive",
+      "aliases": [
+        "gr86",
+        "gr 86",
+        "g r 86",
+        "toyota gr86",
+        "toyota gr 86"
+      ]
+    },
+    "toyota_yaris_gr": {
+      "brand": "Toyota",
+      "model": "Yaris GR",
+      "category": "compacte sportive",
+      "aliases": [
+        "yaris gr",
+        "gr yaris",
+        "toyota yaris gr",
+        "toyota gr yaris"
+      ]
+    },
+    "toyota_land_cruiser": {
+      "brand": "Toyota",
+      "model": "Land Cruiser",
+      "category": "4x4",
+      "aliases": [
+        "land cruiser",
+        "landcruiser",
+        "toyota land cruiser",
+        "toyota 4x4"
+      ]
+    },
+    "toyota_hilux": {
+      "brand": "Toyota",
+      "model": "Hilux",
+      "category": "pick-up",
+      "aliases": [
+        "hilux",
+        "toyota hilux",
+        "pick up toyota",
+        "pickup toyota"
+      ]
+    },
+    "toyota_prius": {
+      "brand": "Toyota",
+      "model": "Prius",
+      "category": "hybride",
+      "aliases": [
+        "prius",
+        "toyota prius"
+      ]
+    },
+    "honda_civic": {
+      "brand": "Honda",
+      "model": "Civic",
+      "category": "compacte",
+      "aliases": [
+        "civic",
+        "honda civic"
+      ]
+    },
+    "honda_civic_type_r": {
+      "brand": "Honda",
+      "model": "Civic Type R",
+      "category": "compacte sportive",
+      "aliases": [
+        "type r",
+        "type-r",
+        "civic type r",
+        "honda type r",
+        "honda civic type r"
+      ]
+    },
+    "honda_s2000": {
+      "brand": "Honda",
+      "model": "S2000",
+      "category": "roadster",
+      "aliases": [
+        "s2000",
+        "s 2000",
+        "honda s2000",
+        "honda s 2000"
+      ]
+    },
+    "honda_nsx": {
+      "brand": "Honda",
+      "model": "NSX",
+      "category": "supercar japonaise",
+      "aliases": [
+        "nsx",
+        "n s x",
+        "honda nsx",
+        "acura nsx"
+      ]
+    },
+    "honda_crx": {
+      "brand": "Honda",
+      "model": "CRX",
+      "category": "compacte classique",
+      "aliases": [
+        "crx",
+        "c r x",
+        "honda crx"
+      ]
+    },
+    "mitsubishi_lancer_evo": {
+      "brand": "Mitsubishi",
+      "model": "Lancer Evolution",
+      "category": "rallye",
+      "aliases": [
+        "evo",
+        "lancer evo",
+        "mitsubishi evo",
+        "mitsubishi lancer",
+        "lancer evolution",
+        "evo 8",
+        "evo 9",
+        "evo x",
+        "evo 10"
+      ]
+    },
+    "mitsubishi_eclipse": {
+      "brand": "Mitsubishi",
+      "model": "Eclipse",
+      "category": "sportive",
+      "aliases": [
+        "eclipse",
+        "mitsubishi eclipse"
+      ]
+    },
+    "subaru_impreza": {
+      "brand": "Subaru",
+      "model": "Impreza WRX STI",
+      "category": "rallye",
+      "aliases": [
+        "impreza",
+        "wrx",
+        "sti",
+        "subaru impreza",
+        "subaru wrx",
+        "subaru sti",
+        "impreza sti",
+        "wrx sti"
+      ]
+    },
+    "subaru_brz": {
+      "brand": "Subaru",
+      "model": "BRZ",
+      "category": "sportive",
+      "aliases": [
+        "brz",
+        "b r z",
+        "subaru brz"
+      ]
+    },
+    "mazda_rx7": {
+      "brand": "Mazda",
+      "model": "RX-7",
+      "category": "sportive japonaise",
+      "aliases": [
+        "rx7",
+        "rx 7",
+        "r x 7",
+        "mazda rx7",
+        "mazda rx 7"
+      ]
+    },
+    "mazda_rx8": {
+      "brand": "Mazda",
+      "model": "RX-8",
+      "category": "sportive",
+      "aliases": [
+        "rx8",
+        "rx 8",
+        "r x 8",
+        "mazda rx8",
+        "mazda rx 8"
+      ]
+    },
+    "mazda_mx5": {
+      "brand": "Mazda",
+      "model": "MX-5",
+      "category": "roadster",
+      "aliases": [
+        "mx5",
+        "mx 5",
+        "m x 5",
+        "mazda mx5",
+        "mazda mx 5",
+        "miata"
+      ]
+    },
+    "dodge_charger": {
+      "brand": "Dodge",
+      "model": "Charger",
+      "category": "muscle",
+      "aliases": [
+        "charger",
+        "dodge charger"
+      ]
+    },
+    "dodge_challenger": {
+      "brand": "Dodge",
+      "model": "Challenger",
+      "category": "muscle",
+      "aliases": [
+        "challenger",
+        "dodge challenger"
+      ]
+    },
+    "dodge_demon": {
+      "brand": "Dodge",
+      "model": "Demon",
+      "category": "muscle",
+      "aliases": [
+        "demon",
+        "dodge demon",
+        "challenger demon"
+      ]
+    },
+    "dodge_viper": {
+      "brand": "Dodge",
+      "model": "Viper",
+      "category": "sportive",
+      "aliases": [
+        "viper",
+        "dodge viper"
+      ]
+    },
+    "dodge_ram": {
+      "brand": "Dodge",
+      "model": "Ram",
+      "category": "pick-up",
+      "aliases": [
+        "ram",
+        "dodge ram",
+        "ram 1500",
+        "dodge ram 1500",
+        "pick up ram",
+        "pickup ram"
+      ]
+    },
+    "ford_mustang": {
+      "brand": "Ford",
+      "model": "Mustang",
+      "category": "muscle",
+      "aliases": [
+        "mustang",
+        "ford mustang"
+      ]
+    },
+    "ford_mustang_gt": {
+      "brand": "Ford",
+      "model": "Mustang GT",
+      "category": "muscle sportive",
+      "aliases": [
+        "mustang gt",
+        "mustang g t",
+        "ford mustang gt"
+      ]
+    },
+    "ford_mustang_shelby": {
+      "brand": "Ford",
+      "model": "Shelby GT500",
+      "category": "muscle sportive",
+      "aliases": [
+        "shelby",
+        "gt500",
+        "gt 500",
+        "shelby gt500",
+        "mustang shelby",
+        "ford shelby"
+      ]
+    },
+    "ford_focus_rs": {
+      "brand": "Ford",
+      "model": "Focus RS",
+      "category": "compacte sportive",
+      "aliases": [
+        "focus rs",
+        "ford focus rs",
+        "focus r s"
+      ]
+    },
+    "ford_fiesta_st": {
+      "brand": "Ford",
+      "model": "Fiesta ST",
+      "category": "citadine sportive",
+      "aliases": [
+        "fiesta st",
+        "ford fiesta st"
+      ]
+    },
+    "ford_f150": {
+      "brand": "Ford",
+      "model": "F-150",
+      "category": "pick-up",
+      "aliases": [
+        "f150",
+        "f 150",
+        "ford f150",
+        "ford f 150",
+        "pick up ford",
+        "pickup ford"
+      ]
+    },
+    "ford_raptor": {
+      "brand": "Ford",
+      "model": "Raptor",
+      "category": "pick-up",
+      "aliases": [
+        "raptor",
+        "ford raptor",
+        "f150 raptor",
+        "f 150 raptor"
+      ]
+    },
+    "ford_bronco": {
+      "brand": "Ford",
+      "model": "Bronco",
+      "category": "4x4",
+      "aliases": [
+        "bronco",
+        "ford bronco"
+      ]
+    },
+    "ford_transit": {
+      "brand": "Ford",
+      "model": "Transit",
+      "category": "utilitaire",
+      "aliases": [
+        "transit",
+        "ford transit",
+        "fourgon ford",
+        "camion ford"
+      ]
+    },
+    "chevrolet_camaro": {
+      "brand": "Chevrolet",
+      "model": "Camaro",
+      "category": "muscle",
+      "aliases": [
+        "camaro",
+        "chevrolet camaro",
+        "chevy camaro"
+      ]
+    },
+    "chevrolet_corvette": {
+      "brand": "Chevrolet",
+      "model": "Corvette",
+      "category": "sportive",
+      "aliases": [
+        "corvette",
+        "chevrolet corvette",
+        "chevy corvette",
+        "c7",
+        "c 7",
+        "c8",
+        "c 8",
+        "corvette c8"
+      ]
+    },
+    "chevrolet_tahoe": {
+      "brand": "Chevrolet",
+      "model": "Tahoe",
+      "category": "suv",
+      "aliases": [
+        "tahoe",
+        "chevrolet tahoe",
+        "chevy tahoe"
+      ]
+    },
+    "chevrolet_suburban": {
+      "brand": "Chevrolet",
+      "model": "Suburban",
+      "category": "suv",
+      "aliases": [
+        "suburban",
+        "chevrolet suburban",
+        "chevy suburban"
+      ]
+    },
+    "chevrolet_silverado": {
+      "brand": "Chevrolet",
+      "model": "Silverado",
+      "category": "pick-up",
+      "aliases": [
+        "silverado",
+        "chevrolet silverado",
+        "chevy silverado",
+        "pick up silverado",
+        "pickup silverado"
+      ]
+    },
+    "cadillac_escalade": {
+      "brand": "Cadillac",
+      "model": "Escalade",
+      "category": "suv luxe",
+      "aliases": [
+        "escalade",
+        "cadillac escalade"
+      ]
+    },
+    "range_rover": {
+      "brand": "Land Rover",
+      "model": "Range Rover",
+      "category": "suv luxe",
+      "aliases": [
+        "range rover",
+        "rang rover",
+        "rangerover",
+        "range",
+        "land rover range rover"
+      ]
+    },
+    "range_rover_sport": {
+      "brand": "Land Rover",
+      "model": "Range Rover Sport",
+      "category": "suv luxe",
+      "aliases": [
+        "range rover sport",
+        "range sport",
+        "rang sport",
+        "range rover svr",
+        "svr"
+      ]
+    },
+    "land_rover_defender": {
+      "brand": "Land Rover",
+      "model": "Defender",
+      "category": "4x4",
+      "aliases": [
+        "defender",
+        "land rover defender",
+        "landrover defender"
+      ]
+    },
+    "jeep_wrangler": {
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "category": "4x4",
+      "aliases": [
+        "wrangler",
+        "jeep wrangler",
+        "jeep"
+      ]
+    },
+    "jeep_cherokee": {
+      "brand": "Jeep",
+      "model": "Cherokee",
+      "category": "suv",
+      "aliases": [
+        "cherokee",
+        "jeep cherokee",
+        "grand cherokee"
+      ]
+    },
+    "bentley_continental": {
+      "brand": "Bentley",
+      "model": "Continental GT",
+      "category": "gt luxe",
+      "aliases": [
+        "continental",
+        "continental gt",
+        "bentley continental",
+        "bentley gt"
+      ]
+    },
+    "bentley_bentayga": {
+      "brand": "Bentley",
+      "model": "Bentayga",
+      "category": "suv luxe",
+      "aliases": [
+        "bentayga",
+        "bentley bentayga"
+      ]
+    },
+    "rolls_royce_phantom": {
+      "brand": "Rolls-Royce",
+      "model": "Phantom",
+      "category": "luxe",
+      "aliases": [
+        "phantom",
+        "rolls phantom",
+        "rolls royce phantom",
+        "rolls-royce phantom"
+      ]
+    },
+    "rolls_royce_ghost": {
+      "brand": "Rolls-Royce",
+      "model": "Ghost",
+      "category": "luxe",
+      "aliases": [
+        "ghost",
+        "rolls ghost",
+        "rolls royce ghost",
+        "rolls-royce ghost"
+      ]
+    },
+    "rolls_royce_wraith": {
+      "brand": "Rolls-Royce",
+      "model": "Wraith",
+      "category": "coupé luxe",
+      "aliases": [
+        "wraith",
+        "rolls wraith",
+        "rolls royce wraith",
+        "rolls-royce wraith"
+      ]
+    },
+    "rolls_royce_cullinan": {
+      "brand": "Rolls-Royce",
+      "model": "Cullinan",
+      "category": "suv luxe",
+      "aliases": [
+        "cullinan",
+        "rolls cullinan",
+        "rolls royce cullinan",
+        "rolls-royce cullinan"
+      ]
+    },
+    "aston_martin_db11": {
+      "brand": "Aston Martin",
+      "model": "DB11",
+      "category": "gt",
+      "aliases": [
+        "db11",
+        "db 11",
+        "aston martin db11",
+        "aston db11"
+      ]
+    },
+    "aston_martin_vantage": {
+      "brand": "Aston Martin",
+      "model": "Vantage",
+      "category": "sportive",
+      "aliases": [
+        "vantage",
+        "aston martin vantage",
+        "aston vantage"
+      ]
+    },
+    "maserati_ghibli": {
+      "brand": "Maserati",
+      "model": "Ghibli",
+      "category": "berline luxe",
+      "aliases": [
+        "ghibli",
+        "maserati ghibli"
+      ]
+    },
+    "maserati_granturismo": {
+      "brand": "Maserati",
+      "model": "GranTurismo",
+      "category": "gt",
+      "aliases": [
+        "granturismo",
+        "gran turismo",
+        "maserati granturismo",
+        "maserati gran turismo"
+      ]
+    },
+    "renault_clio": {
+      "brand": "Renault",
+      "model": "Clio",
+      "category": "citadine",
+      "aliases": [
+        "clio",
+        "renault clio",
+        "clio rs",
+        "clio r s"
+      ]
+    },
+    "renault_megane": {
+      "brand": "Renault",
+      "model": "Mégane",
+      "category": "compacte",
+      "aliases": [
+        "megane",
+        "mégane",
+        "renault megane",
+        "renault mégane",
+        "megane rs",
+        "mégane rs"
+      ]
+    },
+    "renault_twingo": {
+      "brand": "Renault",
+      "model": "Twingo",
+      "category": "citadine",
+      "aliases": [
+        "twingo",
+        "renault twingo"
+      ]
+    },
+    "renault_master": {
+      "brand": "Renault",
+      "model": "Master",
+      "category": "utilitaire",
+      "aliases": [
+        "master",
+        "renault master",
+        "fourgon renault"
+      ]
+    },
+    "peugeot_208": {
+      "brand": "Peugeot",
+      "model": "208",
+      "category": "citadine",
+      "aliases": [
+        "208",
+        "deux cent huit",
+        "peugeot 208",
+        "208 gti"
+      ]
+    },
+    "peugeot_308": {
+      "brand": "Peugeot",
+      "model": "308",
+      "category": "compacte",
+      "aliases": [
+        "308",
+        "trois cent huit",
+        "peugeot 308",
+        "308 gti"
+      ]
+    },
+    "peugeot_508": {
+      "brand": "Peugeot",
+      "model": "508",
+      "category": "berline",
+      "aliases": [
+        "508",
+        "cinq cent huit",
+        "peugeot 508"
+      ]
+    },
+    "peugeot_3008": {
+      "brand": "Peugeot",
+      "model": "3008",
+      "category": "suv",
+      "aliases": [
+        "3008",
+        "trois mille huit",
+        "peugeot 3008"
+      ]
+    },
+    "peugeot_partner": {
+      "brand": "Peugeot",
+      "model": "Partner",
+      "category": "utilitaire",
+      "aliases": [
+        "partner",
+        "peugeot partner"
+      ]
+    },
+    "citroen_c3": {
+      "brand": "Citroën",
+      "model": "C3",
+      "category": "citadine",
+      "aliases": [
+        "c3",
+        "c 3",
+        "citroen c3",
+        "citroën c3"
+      ]
+    },
+    "citroen_c4": {
+      "brand": "Citroën",
+      "model": "C4",
+      "category": "compacte",
+      "aliases": [
+        "c4",
+        "c 4",
+        "citroen c4",
+        "citroën c4"
+      ]
+    },
+    "citroen_berlingo": {
+      "brand": "Citroën",
+      "model": "Berlingo",
+      "category": "utilitaire",
+      "aliases": [
+        "berlingo",
+        "citroen berlingo",
+        "citroën berlingo"
+      ]
+    },
+    "alfa_romeo_giulia": {
+      "brand": "Alfa Romeo",
+      "model": "Giulia",
+      "category": "berline sportive",
+      "aliases": [
+        "giulia",
+        "alfa giulia",
+        "alfa romeo giulia"
+      ]
+    },
+    "alfa_romeo_4c": {
+      "brand": "Alfa Romeo",
+      "model": "4C",
+      "category": "sportive",
+      "aliases": [
+        "4c",
+        "4 c",
+        "alfa 4c",
+        "alfa romeo 4c"
+      ]
+    },
+    "fiat_500": {
+      "brand": "Fiat",
+      "model": "500",
+      "category": "citadine",
+      "aliases": [
+        "fiat 500",
+        "500 abarth",
+        "abarth",
+        "fiat cinq cents"
+      ]
+    },
+    "mini_cooper": {
+      "brand": "Mini",
+      "model": "Cooper",
+      "category": "citadine",
+      "aliases": [
+        "mini",
+        "mini cooper",
+        "cooper",
+        "cooper s"
+      ]
+    },
+    "seat_leon": {
+      "brand": "SEAT",
+      "model": "Leon",
+      "category": "compacte",
+      "aliases": [
+        "leon",
+        "léon",
+        "seat leon",
+        "seat léon",
+        "cupra leon",
+        "cupra"
+      ]
+    },
+    "skoda_octavia": {
+      "brand": "Skoda",
+      "model": "Octavia",
+      "category": "berline",
+      "aliases": [
+        "octavia",
+        "skoda octavia",
+        "octavia rs"
+      ]
+    },
+    "volvo_xc90": {
+      "brand": "Volvo",
+      "model": "XC90",
+      "category": "suv",
+      "aliases": [
+        "xc90",
+        "xc 90",
+        "volvo xc90"
+      ]
+    },
+    "tesla_model_s": {
+      "brand": "Tesla",
+      "model": "Model S",
+      "category": "berline électrique",
+      "aliases": [
+        "model s",
+        "modele s",
+        "modèle s",
+        "tesla model s",
+        "tesla modèle s"
+      ]
+    },
+    "tesla_model_3": {
+      "brand": "Tesla",
+      "model": "Model 3",
+      "category": "berline électrique",
+      "aliases": [
+        "model 3",
+        "modele 3",
+        "modèle 3",
+        "tesla model 3",
+        "tesla modèle 3"
+      ]
+    },
+    "tesla_model_x": {
+      "brand": "Tesla",
+      "model": "Model X",
+      "category": "suv électrique",
+      "aliases": [
+        "model x",
+        "modele x",
+        "modèle x",
+        "tesla model x",
+        "tesla modèle x"
+      ]
+    },
+    "tesla_model_y": {
+      "brand": "Tesla",
+      "model": "Model Y",
+      "category": "suv électrique",
+      "aliases": [
+        "model y",
+        "modele y",
+        "modèle y",
+        "tesla model y",
+        "tesla modèle y"
+      ]
+    },
+    "tesla_cybertruck": {
+      "brand": "Tesla",
+      "model": "Cybertruck",
+      "category": "pick-up électrique",
+      "aliases": [
+        "cybertruck",
+        "cyber truck",
+        "tesla cybertruck",
+        "tesla cyber truck"
+      ]
+    },
+    "yamaha_tmax": {
+      "brand": "Yamaha",
+      "model": "TMAX",
+      "category": "scooter",
+      "aliases": [
+        "tmax",
+        "t max",
+        "t-max",
+        "yamaha tmax",
+        "yamaha t max",
+        "scooter tmax",
+        "tmax 530",
+        "tmax 560"
+      ]
+    },
+    "yamaha_xmax": {
+      "brand": "Yamaha",
+      "model": "XMAX",
+      "category": "scooter",
+      "aliases": [
+        "xmax",
+        "x max",
+        "x-max",
+        "yamaha xmax",
+        "scooter xmax"
+      ]
+    },
+    "yamaha_r1": {
+      "brand": "Yamaha",
+      "model": "R1",
+      "category": "moto sportive",
+      "aliases": [
+        "r1",
+        "r 1",
+        "yamaha r1",
+        "yamaha r 1"
+      ]
+    },
+    "yamaha_r6": {
+      "brand": "Yamaha",
+      "model": "R6",
+      "category": "moto sportive",
+      "aliases": [
+        "r6",
+        "r 6",
+        "yamaha r6",
+        "yamaha r 6"
+      ]
+    },
+    "yamaha_mt07": {
+      "brand": "Yamaha",
+      "model": "MT-07",
+      "category": "moto roadster",
+      "aliases": [
+        "mt07",
+        "mt 07",
+        "mt-07",
+        "mt 7",
+        "mt7",
+        "yamaha mt07",
+        "yamaha mt 07"
+      ]
+    },
+    "yamaha_mt09": {
+      "brand": "Yamaha",
+      "model": "MT-09",
+      "category": "moto roadster",
+      "aliases": [
+        "mt09",
+        "mt 09",
+        "mt-09",
+        "mt 9",
+        "mt9",
+        "yamaha mt09",
+        "yamaha mt 09"
+      ]
+    },
+    "yamaha_mt10": {
+      "brand": "Yamaha",
+      "model": "MT-10",
+      "category": "moto roadster",
+      "aliases": [
+        "mt10",
+        "mt 10",
+        "mt-10",
+        "yamaha mt10",
+        "yamaha mt 10"
+      ]
+    },
+    "kawasaki_ninja": {
+      "brand": "Kawasaki",
+      "model": "Ninja",
+      "category": "moto sportive",
+      "aliases": [
+        "ninja",
+        "kawasaki ninja",
+        "ninja 400",
+        "ninja 600",
+        "ninja 1000"
+      ]
+    },
+    "kawasaki_h2": {
+      "brand": "Kawasaki",
+      "model": "Ninja H2",
+      "category": "moto sportive",
+      "aliases": [
+        "h2",
+        "h 2",
+        "ninja h2",
+        "kawasaki h2",
+        "kawasaki ninja h2"
+      ]
+    },
+    "kawasaki_z900": {
+      "brand": "Kawasaki",
+      "model": "Z900",
+      "category": "moto roadster",
+      "aliases": [
+        "z900",
+        "z 900",
+        "kawasaki z900",
+        "kawasaki z 900"
+      ]
+    },
+    "kawasaki_z1000": {
+      "brand": "Kawasaki",
+      "model": "Z1000",
+      "category": "moto roadster",
+      "aliases": [
+        "z1000",
+        "z 1000",
+        "kawasaki z1000",
+        "kawasaki z 1000"
+      ]
+    },
+    "suzuki_hayabusa": {
+      "brand": "Suzuki",
+      "model": "Hayabusa",
+      "category": "moto sportive",
+      "aliases": [
+        "hayabusa",
+        "suzuki hayabusa",
+        "busa"
+      ]
+    },
+    "suzuki_gsxr": {
+      "brand": "Suzuki",
+      "model": "GSX-R",
+      "category": "moto sportive",
+      "aliases": [
+        "gsxr",
+        "gsx r",
+        "g s x r",
+        "suzuki gsxr",
+        "suzuki gsx r"
+      ]
+    },
+    "ducati_panigale": {
+      "brand": "Ducati",
+      "model": "Panigale",
+      "category": "moto sportive",
+      "aliases": [
+        "panigale",
+        "ducati panigale",
+        "ducati v4",
+        "panigale v4"
+      ]
+    },
+    "ducati_monster": {
+      "brand": "Ducati",
+      "model": "Monster",
+      "category": "moto roadster",
+      "aliases": [
+        "monster",
+        "ducati monster"
+      ]
+    },
+    "ktm_duke": {
+      "brand": "KTM",
+      "model": "Duke",
+      "category": "moto roadster",
+      "aliases": [
+        "duke",
+        "ktm duke",
+        "ktm 690",
+        "ktm 790",
+        "ktm 890",
+        "ktm 1290",
+        "super duke"
+      ]
+    },
+    "harley_davidson": {
+      "brand": "Harley-Davidson",
+      "model": "Harley",
+      "category": "moto custom",
+      "aliases": [
+        "harley",
+        "harley davidson",
+        "harley-davidson",
+        "moto harley"
+      ]
+    },
+    "generic_depanneuse_plateau": {
+      "brand": "Générique",
+      "model": "Dépanneuse / plateau",
+      "category": "utilitaire dépannage",
+      "aliases": [
+        "depanneuse",
+        "dépanneuse",
+        "plateau",
+        "camion plateau",
+        "camion depanneuse",
+        "camion dépanneuse",
+        "remorqueuse"
+      ]
+    },
+    "generic_quad": {
+      "brand": "Générique",
+      "model": "Quad",
+      "category": "quad",
+      "aliases": [
+        "quad",
+        "atv",
+        "quad bike"
+      ]
+    },
+    "generic_bmx": {
+      "brand": "Générique",
+      "model": "BMX / vélo",
+      "category": "vélo",
+      "aliases": [
+        "bmx",
+        "velo",
+        "vélo",
+        "bicyclette",
+        "vtt"
+      ]
+    }
+  },
+  "ambiguous_aliases_to_avoid_or_low_priority": [
+    "audi",
+    "bmw",
+    "mercedes",
+    "merco",
+    "volkswagen",
+    "vw",
+    "porsche",
+    "ferrari",
+    "lamborghini",
+    "lambo",
+    "nissan",
+    "toyota",
+    "honda",
+    "ford",
+    "chevrolet",
+    "tesla",
+    "range",
+    "jeep",
+    "moto",
+    "scooter",
+    "suv",
+    "4x4",
+    "berline",
+    "sportive"
+  ]
+}

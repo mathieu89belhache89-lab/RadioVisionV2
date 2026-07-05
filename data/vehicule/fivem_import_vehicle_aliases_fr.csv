@@ -1,0 +1,208 @@
+vehicle_id,brand,model,category,aliases
+audi_a1,Audi,A1,citadine,a1 | a 1 | audi a1 | audi a 1
+audi_a3,Audi,A3,compacte,a3 | a 3 | audi a3 | audi a 3
+audi_s3,Audi,S3,compacte sportive,s3 | s 3 | audi s3 | audi s 3
+audi_rs3,Audi,RS3,compacte sportive,rs3 | rs 3 | r s 3 | audi rs3 | audi rs 3 | audi r s 3
+audi_a4,Audi,A4,berline,a4 | a 4 | audi a4 | audi a 4
+audi_s4,Audi,S4,berline sportive,s4 | s 4 | audi s4 | audi s 4
+audi_rs4,Audi,RS4,break sportif,rs4 | rs 4 | r s 4 | audi rs4 | audi rs 4 | audi r s 4 | break rs4
+audi_a5,Audi,A5,coupé,a5 | a 5 | audi a5 | audi a 5
+audi_s5,Audi,S5,coupé sportif,s5 | s 5 | audi s5 | audi s 5
+audi_rs5,Audi,RS5,coupé sportif,rs5 | rs 5 | r s 5 | audi rs5 | audi rs 5 | audi r s 5
+audi_a6,Audi,A6,berline,a6 | a 6 | audi a6 | audi a 6
+audi_s6,Audi,S6,berline sportive,s6 | s 6 | audi s6 | audi s 6
+audi_rs6,Audi,RS6,break sportif,rs6 | rs 6 | r s 6 | audi rs6 | audi rs 6 | audi r s 6 | break rs6 | break audi | rs six
+audi_a7,Audi,A7,berline coupé,a7 | a 7 | audi a7 | audi a 7
+audi_s7,Audi,S7,berline coupé sportive,s7 | s 7 | audi s7 | audi s 7
+audi_rs7,Audi,RS7,berline sportive,rs7 | rs 7 | r s 7 | audi rs7 | audi rs 7 | audi r s 7
+audi_a8,Audi,A8,berline luxe,a8 | a 8 | audi a8 | audi a 8
+audi_r8,Audi,R8,supercar,r8 | r 8 | audi r8 | audi r 8
+audi_tt,Audi,TT,coupé,tt | t t | audi tt | audi t t
+audi_ttrs,Audi,TT RS,coupé sportif,ttrs | tt rs | t t rs | audi ttrs | audi tt rs
+audi_q7,Audi,Q7,suv,q7 | q 7 | audi q7 | audi q 7
+audi_q8,Audi,Q8,suv,q8 | q 8 | audi q8 | audi q 8
+audi_rsq8,Audi,RS Q8,suv sportif,rsq8 | rs q8 | rs q 8 | r s q8 | audi rsq8 | audi rs q8 | audi rs q 8
+bmw_serie_1,BMW,Série 1,compacte,serie 1 | série 1 | bmw serie 1 | bmw série 1 | 118i | 120d | m135i | m140i
+bmw_m2,BMW,M2,coupé sportif,m2 | m 2 | bmw m2 | bmw m 2
+bmw_m3,BMW,M3,berline sportive,m3 | m 3 | bmw m3 | bmw m 3
+bmw_m4,BMW,M4,coupé sportif,m4 | m 4 | bmw m4 | bmw m 4
+bmw_m5,BMW,M5,berline sportive,m5 | m 5 | bmw m5 | bmw m 5
+bmw_m6,BMW,M6,coupé sportif,m6 | m 6 | bmw m6 | bmw m 6
+bmw_m8,BMW,M8,coupé sportif,m8 | m 8 | bmw m8 | bmw m 8
+bmw_i8,BMW,i8,sportive hybride,i8 | i 8 | bmw i8 | bmw i 8
+bmw_x5,BMW,X5,suv,x5 | x 5 | bmw x5 | bmw x 5
+bmw_x5m,BMW,X5M,suv sportif,x5m | x5 m | x 5 m | bmw x5m | bmw x5 m
+bmw_x6,BMW,X6,suv coupé,x6 | x 6 | bmw x6 | bmw x 6
+bmw_x6m,BMW,X6M,suv sportif,x6m | x6 m | x 6 m | bmw x6m | bmw x6 m
+bmw_z4,BMW,Z4,roadster,z4 | z 4 | bmw z4 | bmw z 4
+bmw_s1000rr,BMW,S1000RR,moto sportive,s1000rr | s 1000 rr | bmw s1000rr | bmw s 1000 rr | s mille rr | mille rr
+mercedes_classe_a,Mercedes-Benz,Classe A,compacte,classe a | mercedes classe a | merco classe a | a class | classe à
+mercedes_a45,Mercedes-Benz,A45 AMG,compacte sportive,a45 | a 45 | a45 amg | a 45 amg | mercedes a45 | merco a45 | classe a45 | a quarante cinq
+mercedes_classe_c,Mercedes-Benz,Classe C,berline,classe c | mercedes classe c | merco classe c | c class
+mercedes_c63,Mercedes-Benz,C63 AMG,berline sportive,c63 | c 63 | c63 amg | c 63 amg | mercedes c63 | merco c63 | classe c63 | c soixante trois
+mercedes_e63,Mercedes-Benz,E63 AMG,berline sportive,e63 | e 63 | e63 amg | e 63 amg | mercedes e63 | merco e63 | classe e63 | e soixante trois
+mercedes_s63,Mercedes-Benz,S63 AMG,berline luxe sportive,s63 | s 63 | s63 amg | s 63 amg | mercedes s63 | merco s63 | classe s63
+mercedes_cls63,Mercedes-Benz,CLS63 AMG,berline coupé sportive,cls63 | cls 63 | cls63 amg | mercedes cls63 | merco cls63
+mercedes_gt63,Mercedes-Benz,AMG GT63,berline sportive,gt63 | gt 63 | amg gt63 | amg gt 63 | mercedes gt63 | merco gt63
+mercedes_amg_gt,Mercedes-Benz,AMG GT,coupé sportif,amg gt | mercedes amg gt | merco amg gt | amg gtr | amg gt r
+mercedes_g63,Mercedes-Benz,G63 AMG,4x4 luxe,g63 | g 63 | g63 amg | mercedes g63 | merco g63 | classe g | g class | g wagon | g-wagon | classe g63
+mercedes_g65,Mercedes-Benz,G65 AMG,4x4 luxe,g65 | g 65 | g65 amg | mercedes g65 | merco g65
+mercedes_gls,Mercedes-Benz,GLS,suv luxe,gls | mercedes gls | merco gls
+mercedes_maybach,Mercedes-Benz,Maybach,luxe,maybach | mercedes maybach | merco maybach | classe s maybach
+mercedes_sprinter,Mercedes-Benz,Sprinter,utilitaire,sprinter | mercedes sprinter | merco sprinter | camion sprinter | fourgon sprinter
+vw_golf_6,Volkswagen,Golf 6,compacte,golf 6 | golf six | golf vi | volkswagen golf 6 | vw golf 6
+vw_golf_7,Volkswagen,Golf 7,compacte,golf 7 | golf sept | golf vii | volkswagen golf 7 | vw golf 7 | golf r | golf 7r | golf 7 r
+vw_golf_8,Volkswagen,Golf 8,compacte,golf 8 | golf huit | golf viii | volkswagen golf 8 | vw golf 8 | golf 8r | golf 8 r
+vw_polo,Volkswagen,Polo,citadine,polo | volkswagen polo | vw polo | polo gti
+vw_scirocco,Volkswagen,Scirocco,coupé,scirocco | volkswagen scirocco | vw scirocco
+vw_passat,Volkswagen,Passat,berline,passat | volkswagen passat | vw passat
+vw_touareg,Volkswagen,Touareg,suv,touareg | volkswagen touareg | vw touareg
+vw_transporteur,Volkswagen,Transporter,utilitaire,transporter | transporteur | vw transporter | volkswagen transporter | t5 | t6 | t 5 | t 6
+porsche_911,Porsche,911,sportive,911 | nine eleven | porsche 911 | porsche neuf onze
+porsche_911_gt3,Porsche,911 GT3,sportive,gt3 | gt 3 | 911 gt3 | 911 gt 3 | porsche gt3 | porsche 911 gt3
+porsche_911_gt2rs,Porsche,911 GT2 RS,sportive,gt2rs | gt2 rs | gt 2 rs | 911 gt2rs | 911 gt2 rs | porsche gt2rs
+porsche_918,Porsche,918 Spyder,hypercar,918 | 918 spyder | porsche 918 | porsche spyder
+porsche_cayenne,Porsche,Cayenne,suv,cayenne | porsche cayenne
+porsche_macan,Porsche,Macan,suv,macan | porsche macan
+porsche_panamera,Porsche,Panamera,berline sportive,panamera | porsche panamera
+porsche_taycan,Porsche,Taycan,berline électrique,taycan | porsche taycan | taycan turbo
+lamborghini_aventador,Lamborghini,Aventador,supercar,aventador | lamborghini aventador | lambo aventador | lambo
+lamborghini_huracan,Lamborghini,Huracan,supercar,huracan | huracán | lamborghini huracan | lambo huracan
+lamborghini_gallardo,Lamborghini,Gallardo,supercar,gallardo | lamborghini gallardo | lambo gallardo
+lamborghini_urus,Lamborghini,Urus,suv sportif,urus | lamborghini urus | lambo urus
+lamborghini_countach,Lamborghini,Countach,sportive classique,countach | lamborghini countach | lambo countach
+lamborghini_sian,Lamborghini,Sian,hypercar,sian | sián | lamborghini sian | lambo sian
+ferrari_458,Ferrari,458 Italia,supercar,458 | 458 italia | ferrari 458 | ferrari quatre cinq huit
+ferrari_488,Ferrari,488,supercar,488 | ferrari 488 | 488 pista | ferrari pista
+ferrari_f8,Ferrari,F8 Tributo,supercar,f8 | f 8 | f8 tributo | ferrari f8 | ferrari f 8
+ferrari_812,Ferrari,812 Superfast,gt sportive,812 | 812 superfast | ferrari 812
+ferrari_laferrari,Ferrari,LaFerrari,hypercar,laferrari | la ferrari | ferrari laferrari
+ferrari_enzo,Ferrari,Enzo,supercar,enzo | ferrari enzo
+ferrari_f40,Ferrari,F40,sportive classique,f40 | f 40 | ferrari f40 | ferrari f 40
+ferrari_f50,Ferrari,F50,sportive classique,f50 | f 50 | ferrari f50 | ferrari f 50
+ferrari_roma,Ferrari,Roma,gt,roma | ferrari roma
+ferrari_portofino,Ferrari,Portofino,cabriolet gt,portofino | ferrari portofino
+mclaren_570s,McLaren,570S,supercar,570s | 570 s | mclaren 570s | maclaren 570s
+mclaren_600lt,McLaren,600LT,supercar,600lt | 600 lt | mclaren 600lt | maclaren 600lt
+mclaren_720s,McLaren,720S,supercar,720s | 720 s | mclaren 720s | maclaren 720s
+mclaren_765lt,McLaren,765LT,supercar,765lt | 765 lt | mclaren 765lt | maclaren 765lt
+mclaren_p1,McLaren,P1,hypercar,p1 | p 1 | mclaren p1 | maclaren p1
+mclaren_senna,McLaren,Senna,hypercar,senna | mclaren senna | maclaren senna
+bugatti_veyron,Bugatti,Veyron,hypercar,veyron | bugatti veyron
+bugatti_chiron,Bugatti,Chiron,hypercar,chiron | bugatti chiron
+bugatti_divo,Bugatti,Divo,hypercar,divo | bugatti divo
+bugatti_bolide,Bugatti,Bolide,hypercar,bolide | bugatti bolide
+koenigsegg_agera,Koenigsegg,Agera,hypercar,agera | koenigsegg agera | koenigsegg | koenigseg
+koenigsegg_jesko,Koenigsegg,Jesko,hypercar,jesko | koenigsegg jesko | koenigseg jesko
+koenigsegg_regera,Koenigsegg,Regera,hypercar,regera | koenigsegg regera | koenigseg regera
+pagani_huayra,Pagani,Huayra,hypercar,huayra | pagani huayra | pagani
+pagani_zonda,Pagani,Zonda,hypercar,zonda | pagani zonda
+nissan_gtr,Nissan,GT-R,sportive,gtr | gt r | g t r | nissan gtr | nissan gt r | nissan g t r | r35 | r 35 | gtr r35 | g t r r35
+nissan_skyline_r34,Nissan,Skyline R34,sportive japonaise,skyline | r34 | r 34 | skyline r34 | nissan skyline | nissan r34
+nissan_silvia_s13,Nissan,Silvia S13,drift,s13 | s 13 | silvia s13 | nissan s13 | nissan silvia
+nissan_silvia_s14,Nissan,Silvia S14,drift,s14 | s 14 | silvia s14 | nissan s14
+nissan_silvia_s15,Nissan,Silvia S15,drift,s15 | s 15 | silvia s15 | nissan s15
+nissan_350z,Nissan,350Z,sportive,350z | 350 z | trois cinquante z | nissan 350z | nissan 350 z
+nissan_370z,Nissan,370Z,sportive,370z | 370 z | trois soixante dix z | nissan 370z | nissan 370 z
+nissan_400z,Nissan,400Z,sportive,400z | 400 z | quatre cents z | nissan 400z | nissan 400 z | nissan z
+nissan_patrol,Nissan,Patrol,4x4,patrol | nissan patrol
+nissan_navara,Nissan,Navara,pick-up,navara | nissan navara | pick up nissan | pickup nissan
+toyota_supra_mk4,Toyota,Supra MK4,sportive japonaise,supra | supra mk4 | mk4 | mk 4 | toyota supra | toyota supra mk4
+toyota_supra_mk5,Toyota,Supra MK5,sportive,supra mk5 | mk5 | mk 5 | toyota supra mk5 | nouvelle supra
+toyota_gt86,Toyota,GT86,sportive,gt86 | gt 86 | g t 86 | toyota gt86 | toyota gt 86 | toyota 86
+toyota_gr86,Toyota,GR86,sportive,gr86 | gr 86 | g r 86 | toyota gr86 | toyota gr 86
+toyota_yaris_gr,Toyota,Yaris GR,compacte sportive,yaris gr | gr yaris | toyota yaris gr | toyota gr yaris
+toyota_land_cruiser,Toyota,Land Cruiser,4x4,land cruiser | landcruiser | toyota land cruiser | toyota 4x4
+toyota_hilux,Toyota,Hilux,pick-up,hilux | toyota hilux | pick up toyota | pickup toyota
+toyota_prius,Toyota,Prius,hybride,prius | toyota prius
+honda_civic,Honda,Civic,compacte,civic | honda civic
+honda_civic_type_r,Honda,Civic Type R,compacte sportive,type r | type-r | civic type r | honda type r | honda civic type r
+honda_s2000,Honda,S2000,roadster,s2000 | s 2000 | honda s2000 | honda s 2000
+honda_nsx,Honda,NSX,supercar japonaise,nsx | n s x | honda nsx | acura nsx
+honda_crx,Honda,CRX,compacte classique,crx | c r x | honda crx
+mitsubishi_lancer_evo,Mitsubishi,Lancer Evolution,rallye,evo | lancer evo | mitsubishi evo | mitsubishi lancer | lancer evolution | evo 8 | evo 9 | evo x | evo 10
+mitsubishi_eclipse,Mitsubishi,Eclipse,sportive,eclipse | mitsubishi eclipse
+subaru_impreza,Subaru,Impreza WRX STI,rallye,impreza | wrx | sti | subaru impreza | subaru wrx | subaru sti | impreza sti | wrx sti
+subaru_brz,Subaru,BRZ,sportive,brz | b r z | subaru brz
+mazda_rx7,Mazda,RX-7,sportive japonaise,rx7 | rx 7 | r x 7 | mazda rx7 | mazda rx 7
+mazda_rx8,Mazda,RX-8,sportive,rx8 | rx 8 | r x 8 | mazda rx8 | mazda rx 8
+mazda_mx5,Mazda,MX-5,roadster,mx5 | mx 5 | m x 5 | mazda mx5 | mazda mx 5 | miata
+dodge_charger,Dodge,Charger,muscle,charger | dodge charger
+dodge_challenger,Dodge,Challenger,muscle,challenger | dodge challenger
+dodge_demon,Dodge,Demon,muscle,demon | dodge demon | challenger demon
+dodge_viper,Dodge,Viper,sportive,viper | dodge viper
+dodge_ram,Dodge,Ram,pick-up,ram | dodge ram | ram 1500 | dodge ram 1500 | pick up ram | pickup ram
+ford_mustang,Ford,Mustang,muscle,mustang | ford mustang
+ford_mustang_gt,Ford,Mustang GT,muscle sportive,mustang gt | mustang g t | ford mustang gt
+ford_mustang_shelby,Ford,Shelby GT500,muscle sportive,shelby | gt500 | gt 500 | shelby gt500 | mustang shelby | ford shelby
+ford_focus_rs,Ford,Focus RS,compacte sportive,focus rs | ford focus rs | focus r s
+ford_fiesta_st,Ford,Fiesta ST,citadine sportive,fiesta st | ford fiesta st
+ford_f150,Ford,F-150,pick-up,f150 | f 150 | ford f150 | ford f 150 | pick up ford | pickup ford
+ford_raptor,Ford,Raptor,pick-up,raptor | ford raptor | f150 raptor | f 150 raptor
+ford_bronco,Ford,Bronco,4x4,bronco | ford bronco
+ford_transit,Ford,Transit,utilitaire,transit | ford transit | fourgon ford | camion ford
+chevrolet_camaro,Chevrolet,Camaro,muscle,camaro | chevrolet camaro | chevy camaro
+chevrolet_corvette,Chevrolet,Corvette,sportive,corvette | chevrolet corvette | chevy corvette | c7 | c 7 | c8 | c 8 | corvette c8
+chevrolet_tahoe,Chevrolet,Tahoe,suv,tahoe | chevrolet tahoe | chevy tahoe
+chevrolet_suburban,Chevrolet,Suburban,suv,suburban | chevrolet suburban | chevy suburban
+chevrolet_silverado,Chevrolet,Silverado,pick-up,silverado | chevrolet silverado | chevy silverado | pick up silverado | pickup silverado
+cadillac_escalade,Cadillac,Escalade,suv luxe,escalade | cadillac escalade
+range_rover,Land Rover,Range Rover,suv luxe,range rover | rang rover | rangerover | range | land rover range rover
+range_rover_sport,Land Rover,Range Rover Sport,suv luxe,range rover sport | range sport | rang sport | range rover svr | svr
+land_rover_defender,Land Rover,Defender,4x4,defender | land rover defender | landrover defender
+jeep_wrangler,Jeep,Wrangler,4x4,wrangler | jeep wrangler | jeep
+jeep_cherokee,Jeep,Cherokee,suv,cherokee | jeep cherokee | grand cherokee
+bentley_continental,Bentley,Continental GT,gt luxe,continental | continental gt | bentley continental | bentley gt
+bentley_bentayga,Bentley,Bentayga,suv luxe,bentayga | bentley bentayga
+rolls_royce_phantom,Rolls-Royce,Phantom,luxe,phantom | rolls phantom | rolls royce phantom | rolls-royce phantom
+rolls_royce_ghost,Rolls-Royce,Ghost,luxe,ghost | rolls ghost | rolls royce ghost | rolls-royce ghost
+rolls_royce_wraith,Rolls-Royce,Wraith,coupé luxe,wraith | rolls wraith | rolls royce wraith | rolls-royce wraith
+rolls_royce_cullinan,Rolls-Royce,Cullinan,suv luxe,cullinan | rolls cullinan | rolls royce cullinan | rolls-royce cullinan
+aston_martin_db11,Aston Martin,DB11,gt,db11 | db 11 | aston martin db11 | aston db11
+aston_martin_vantage,Aston Martin,Vantage,sportive,vantage | aston martin vantage | aston vantage
+maserati_ghibli,Maserati,Ghibli,berline luxe,ghibli | maserati ghibli
+maserati_granturismo,Maserati,GranTurismo,gt,granturismo | gran turismo | maserati granturismo | maserati gran turismo
+renault_clio,Renault,Clio,citadine,clio | renault clio | clio rs | clio r s
+renault_megane,Renault,Mégane,compacte,megane | mégane | renault megane | renault mégane | megane rs | mégane rs
+renault_twingo,Renault,Twingo,citadine,twingo | renault twingo
+renault_master,Renault,Master,utilitaire,master | renault master | fourgon renault
+peugeot_208,Peugeot,208,citadine,208 | deux cent huit | peugeot 208 | 208 gti
+peugeot_308,Peugeot,308,compacte,308 | trois cent huit | peugeot 308 | 308 gti
+peugeot_508,Peugeot,508,berline,508 | cinq cent huit | peugeot 508
+peugeot_3008,Peugeot,3008,suv,3008 | trois mille huit | peugeot 3008
+peugeot_partner,Peugeot,Partner,utilitaire,partner | peugeot partner
+citroen_c3,Citroën,C3,citadine,c3 | c 3 | citroen c3 | citroën c3
+citroen_c4,Citroën,C4,compacte,c4 | c 4 | citroen c4 | citroën c4
+citroen_berlingo,Citroën,Berlingo,utilitaire,berlingo | citroen berlingo | citroën berlingo
+alfa_romeo_giulia,Alfa Romeo,Giulia,berline sportive,giulia | alfa giulia | alfa romeo giulia
+alfa_romeo_4c,Alfa Romeo,4C,sportive,4c | 4 c | alfa 4c | alfa romeo 4c
+fiat_500,Fiat,500,citadine,fiat 500 | 500 abarth | abarth | fiat cinq cents
+mini_cooper,Mini,Cooper,citadine,mini | mini cooper | cooper | cooper s
+seat_leon,SEAT,Leon,compacte,leon | léon | seat leon | seat léon | cupra leon | cupra
+skoda_octavia,Skoda,Octavia,berline,octavia | skoda octavia | octavia rs
+volvo_xc90,Volvo,XC90,suv,xc90 | xc 90 | volvo xc90
+tesla_model_s,Tesla,Model S,berline électrique,model s | modele s | modèle s | tesla model s | tesla modèle s
+tesla_model_3,Tesla,Model 3,berline électrique,model 3 | modele 3 | modèle 3 | tesla model 3 | tesla modèle 3
+tesla_model_x,Tesla,Model X,suv électrique,model x | modele x | modèle x | tesla model x | tesla modèle x
+tesla_model_y,Tesla,Model Y,suv électrique,model y | modele y | modèle y | tesla model y | tesla modèle y
+tesla_cybertruck,Tesla,Cybertruck,pick-up électrique,cybertruck | cyber truck | tesla cybertruck | tesla cyber truck
+yamaha_tmax,Yamaha,TMAX,scooter,tmax | t max | t-max | yamaha tmax | yamaha t max | scooter tmax | tmax 530 | tmax 560
+yamaha_xmax,Yamaha,XMAX,scooter,xmax | x max | x-max | yamaha xmax | scooter xmax
+yamaha_r1,Yamaha,R1,moto sportive,r1 | r 1 | yamaha r1 | yamaha r 1
+yamaha_r6,Yamaha,R6,moto sportive,r6 | r 6 | yamaha r6 | yamaha r 6
+yamaha_mt07,Yamaha,MT-07,moto roadster,mt07 | mt 07 | mt-07 | mt 7 | mt7 | yamaha mt07 | yamaha mt 07
+yamaha_mt09,Yamaha,MT-09,moto roadster,mt09 | mt 09 | mt-09 | mt 9 | mt9 | yamaha mt09 | yamaha mt 09
+yamaha_mt10,Yamaha,MT-10,moto roadster,mt10 | mt 10 | mt-10 | yamaha mt10 | yamaha mt 10
+kawasaki_ninja,Kawasaki,Ninja,moto sportive,ninja | kawasaki ninja | ninja 400 | ninja 600 | ninja 1000
+kawasaki_h2,Kawasaki,Ninja H2,moto sportive,h2 | h 2 | ninja h2 | kawasaki h2 | kawasaki ninja h2
+kawasaki_z900,Kawasaki,Z900,moto roadster,z900 | z 900 | kawasaki z900 | kawasaki z 900
+kawasaki_z1000,Kawasaki,Z1000,moto roadster,z1000 | z 1000 | kawasaki z1000 | kawasaki z 1000
+suzuki_hayabusa,Suzuki,Hayabusa,moto sportive,hayabusa | suzuki hayabusa | busa
+suzuki_gsxr,Suzuki,GSX-R,moto sportive,gsxr | gsx r | g s x r | suzuki gsxr | suzuki gsx r
+ducati_panigale,Ducati,Panigale,moto sportive,panigale | ducati panigale | ducati v4 | panigale v4
+ducati_monster,Ducati,Monster,moto roadster,monster | ducati monster
+ktm_duke,KTM,Duke,moto roadster,duke | ktm duke | ktm 690 | ktm 790 | ktm 890 | ktm 1290 | super duke
+harley_davidson,Harley-Davidson,Harley,moto custom,harley | harley davidson | harley-davidson | moto harley
+generic_depanneuse_plateau,Générique,Dépanneuse / plateau,utilitaire dépannage,depanneuse | dépanneuse | plateau | camion plateau | camion depanneuse | camion dépanneuse | remorqueuse
+generic_quad,Générique,Quad,quad,quad | atv | quad bike
+generic_bmx,Générique,BMX / vélo,vélo,bmx | velo | vélo | bicyclette | vtt

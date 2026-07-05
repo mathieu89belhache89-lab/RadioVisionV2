@@ -1,0 +1,693 @@
+model_name,category
+adder,Super
+autarch,Super
+banshee2,Super
+bullet,Super
+cheetah,Super
+cyclone,Super
+deveste,Super
+emerus,Super
+entity2,Super
+entityxf,Super
+fmj,Super
+furia,Super
+gp1,Super
+ignus,Super
+italigtb,Super
+italigtb2,Super
+italirsx,Super
+krieger,Super
+le7b,Super
+nero,Super
+nero2,Super
+osiris,Super
+penetrator,Super
+pfister811,Super
+prototipo,Super
+re7b,Super
+reaper,Super
+s80,Super
+sc1,Super
+scramjet,Super
+sheava,Super
+sultanrs,Super
+t20,Super
+taipan,Super
+tempesta,Super
+tezeract,Super
+thrax,Super
+tigon,Super
+turismor,Super
+tyrant,Super
+tyrus,Super
+vacca,Super
+vagner,Super
+vigilante,Super
+visione,Super
+voltic,Super
+voltic2,Super
+xa21,Super
+zentorno,Super
+zorrusso,Super
+virtue,Super
+torero2,Super
+lm87,Super
+zeno,Super
+champion,Super
+entity3,Super
+tenf,Super
+tenf2,Super
+r300,Super
+infernus,Super
+turismo2,Super
+alpha,Sports
+9f,Sports
+9f2,Sports
+bestia,Sports
+carbonizzare,Sports
+comet2,Sports
+comet3,Sports
+comet4,Sports
+comet5,Sports
+coquette,Sports
+coquette4,Sports
+drafter,Sports
+elegy,Sports
+elegy2,Sports
+feltzer2,Sports
+flashgt,Sports
+furoregt,Sports
+fusilade,Sports
+futo,Sports
+futo2,Sports
+gb200,Sports
+growler,Sports
+hotring,Sports
+imorgon,Sports
+issi7,Sports
+italigto,Sports
+jester,Sports
+jester2,Sports
+jester3,Sports
+jester4,Sports
+jugular,Sports
+khamelion,Sports
+komoda,Sports
+kuruma,Sports
+kuruma2,Sports
+locust,Sports
+lynx,Sports
+massacro,Sports
+massacro2,Sports
+neo,Sports
+neon,Sports
+ninef,Sports
+ninef2,Sports
+omnis,Sports
+omnisegt,Sports
+pariah,Sports
+penumbra,Sports
+penumbra2,Sports
+raiden,Sports
+rapidgt,Sports
+rapidgt2,Sports
+raptor,Sports
+remus,Sports
+revolter,Sports
+rt3000,Sports
+ruston,Sports
+schafter3,Sports
+schafter4,Sports
+schafter5,Sports
+schafter6,Sports
+schlagen,Sports
+schwarzer,Sports
+sentinel3,Sports
+seven70,Sports
+specter,Sports
+specter2,Sports
+streiter,Sports
+sugoi,Sports
+sultan,Sports
+sultan2,Sports
+sultan3,Sports
+surano,Sports
+tropos,Sports
+verlierer2,Sports
+vectre,Sports
+vstr,Sports
+zr350,Sports
+calico,Sports
+comet6,Sports
+cypher,Sports
+dominator7,Sports
+dominator8,Sports
+euros,Sports
+previon,Sports
+tailgater2,Sports
+warrener2,Sports
+comet7,Sports
+blade,Muscle
+buccaneer,Muscle
+buccaneer2,Muscle
+chino,Muscle
+chino2,Muscle
+clique,Muscle
+coquette3,Muscle
+deviant,Muscle
+dominator,Muscle
+dominator2,Muscle
+dominator3,Muscle
+dominator4,Muscle
+dominator5,Muscle
+dominator6,Muscle
+dukes,Muscle
+dukes2,Muscle
+dukes3,Muscle
+ellie,Muscle
+faction,Muscle
+faction2,Muscle
+faction3,Muscle
+gauntlet,Muscle
+gauntlet2,Muscle
+gauntlet3,Muscle
+gauntlet4,Muscle
+gauntlet5,Muscle
+hermes,Muscle
+hotknife,Muscle
+hustler,Muscle
+impaler,Muscle
+impaler2,Muscle
+impaler3,Muscle
+impaler4,Muscle
+imperator,Muscle
+imperator2,Muscle
+imperator3,Muscle
+lurcher,Muscle
+moonbeam,Muscle
+moonbeam2,Muscle
+nightshade,Muscle
+peyote3,Muscle
+phoenix,Muscle
+picador,Muscle
+ratloader,Muscle
+ratloader2,Muscle
+ruiner,Muscle
+ruiner2,Muscle
+ruiner3,Muscle
+sabregt,Muscle
+sabregt2,Muscle
+slamvan,Muscle
+slamvan2,Muscle
+slamvan3,Muscle
+slamvan4,Muscle
+slamvan5,Muscle
+slamvan6,Muscle
+stalion,Muscle
+stalion2,Muscle
+tampa,Muscle
+tampa3,Muscle
+tulip,Muscle
+vamos,Muscle
+vigero,Muscle
+vigero2,Muscle
+virgo,Muscle
+virgo2,Muscle
+virgo3,Muscle
+voodoo,Muscle
+voodoo2,Muscle
+yosemite,Muscle
+yosemite2,Muscle
+buffalo4,Muscle
+greenwood,Muscle
+manana2,Muscle
+weevil2,Muscle
+tahoma,Muscle
+ardent,Sports Classic
+btype,Sports Classic
+btype2,Sports Classic
+btype3,Sports Classic
+casco,Sports Classic
+cheburek,Sports Classic
+cheetah2,Sports Classic
+coquette2,Sports Classic
+deluxo,Sports Classic
+dynasty,Sports Classic
+fagaloa,Sports Classic
+feltzer3,Sports Classic
+gt500,Sports Classic
+infernus2,Sports Classic
+jb700,Sports Classic
+jb7002,Sports Classic
+mamba,Sports Classic
+manana,Sports Classic
+michelli,Sports Classic
+monroe,Sports Classic
+nebula,Sports Classic
+peyote,Sports Classic
+peyote2,Sports Classic
+pigalle,Sports Classic
+rapidgt3,Sports Classic
+retinue,Sports Classic
+retinue2,Sports Classic
+savestra,Sports Classic
+stinger,Sports Classic
+stingergt,Sports Classic
+stromberg,Sports Classic
+swinger,Sports Classic
+torero,Sports Classic
+tornado,Sports Classic
+tornado2,Sports Classic
+tornado3,Sports Classic
+tornado4,Sports Classic
+tornado5,Sports Classic
+tornado6,Sports Classic
+viseris,Sports Classic
+z190,Sports Classic
+zion3,Sports Classic
+ztype,Sports Classic
+toreador,Sports Classic
+panthere,Sports Classic
+sm722,Sports Classic
+asea,Sedan
+asea2,Sedan
+asterope,Sedan
+cog55,Sedan
+cog552,Sedan
+cognoscenti,Sedan
+cognoscenti2,Sedan
+emperor,Sedan
+emperor2,Sedan
+emperor3,Sedan
+fugitive,Sedan
+glendale,Sedan
+glendale2,Sedan
+ingot,Sedan
+intruder,Sedan
+limo2,Sedan
+premier,Sedan
+primo,Sedan
+primo2,Sedan
+regina,Sedan
+romero,Sedan
+schafter2,Sedan
+stafford,Sedan
+stanier,Sedan
+stretch,Sedan
+superd,Sedan
+surge,Sedan
+tailgater,Sedan
+warrener,Sedan
+washington,Sedan
+cogcabrio,Coupe
+exemplar,Coupe
+f620,Coupe
+felon,Coupe
+felon2,Coupe
+jackal,Coupe
+oracle,Coupe
+oracle2,Coupe
+sentinel,Coupe
+sentinel2,Coupe
+windsor,Coupe
+windsor2,Coupe
+zion,Coupe
+zion2,Coupe
+baller,SUV
+baller2,SUV
+baller3,SUV
+baller4,SUV
+baller5,SUV
+baller6,SUV
+baller7,SUV
+bjxl,SUV
+cavalcade,SUV
+cavalcade2,SUV
+contender,SUV
+dubsta,SUV
+dubsta2,SUV
+fq2,SUV
+granger,SUV
+granger2,SUV
+gresley,SUV
+habanero,SUV
+huntley,SUV
+landstalker,SUV
+landstalker2,SUV
+mesa,SUV
+mesa2,SUV
+novak,SUV
+patriot,SUV
+patriot2,SUV
+patriot3,SUV
+radi,SUV
+rebla,SUV
+rocoto,SUV
+seminole,SUV
+seminole2,SUV
+serrano,SUV
+toros,SUV
+xls,SUV
+xls2,SUV
+jubilee,SUV
+iwagen,SUV
+astron,SUV
+astron2,SUV
+blista,Compact
+blista2,Compact
+blista3,Compact
+brioso,Compact
+brioso2,Compact
+dilettante,Compact
+dilettante2,Compact
+issi2,Compact
+issi3,Compact
+issi4,Compact
+issi5,Compact
+issi6,Compact
+kanjo,Compact
+panto,Compact
+prairie,Compact
+rhapsody,Compact
+club,Compact
+weevil,Compact
+asbo,Compact
+bifta,Off-Road
+blazer,Off-Road
+blazer2,Off-Road
+blazer3,Off-Road
+blazer4,Off-Road
+blazer5,Off-Road
+brawler,Off-Road
+bruiser,Off-Road
+bruiser2,Off-Road
+bruiser3,Off-Road
+brutus,Off-Road
+brutus2,Off-Road
+brutus3,Off-Road
+caracara,Off-Road
+caracara2,Off-Road
+dloader,Off-Road
+dubsta3,Off-Road
+duneloader,Off-Road
+everon,Off-Road
+freecrawler,Off-Road
+hellion,Off-Road
+insurgent,Off-Road
+insurgent2,Off-Road
+insurgent3,Off-Road
+kamacho,Off-Road
+marshall,Off-Road
+menacer,Off-Road
+monster,Off-Road
+monster3,Off-Road
+monster4,Off-Road
+monster5,Off-Road
+nightshark,Off-Road
+outlaw,Off-Road
+rancherxl,Off-Road
+rancherxl2,Off-Road
+rebel,Off-Road
+rebel2,Off-Road
+riata,Off-Road
+sandking,Off-Road
+sandking2,Off-Road
+technical,Off-Road
+technical2,Off-Road
+technical3,Off-Road
+trophytruck,Off-Road
+trophytruck2,Off-Road
+vagrant,Off-Road
+verus,Off-Road
+winky,Off-Road
+draugur,Off-Road
+akuma,Motorcycle
+avarus,Motorcycle
+bagger,Motorcycle
+bati,Motorcycle
+bati2,Motorcycle
+bf400,Motorcycle
+carbonrs,Motorcycle
+chimera,Motorcycle
+cliffhanger,Motorcycle
+daemon,Motorcycle
+daemon2,Motorcycle
+defiler,Motorcycle
+deathbike,Motorcycle
+deathbike2,Motorcycle
+deathbike3,Motorcycle
+diablous,Motorcycle
+diablous2,Motorcycle
+double,Motorcycle
+enduro,Motorcycle
+esskey,Motorcycle
+faggio,Motorcycle
+faggio2,Motorcycle
+faggio3,Motorcycle
+fcr,Motorcycle
+fcr2,Motorcycle
+gargoyle,Motorcycle
+hakuchou,Motorcycle
+hakuchou2,Motorcycle
+hexer,Motorcycle
+innovation,Motorcycle
+lectro,Motorcycle
+manchez,Motorcycle
+manchez2,Motorcycle
+manchez3,Motorcycle
+nemesis,Motorcycle
+nightblade,Motorcycle
+oppressor,Motorcycle
+oppressor2,Motorcycle
+pcj,Motorcycle
+ratbike,Motorcycle
+rrocket,Motorcycle
+ruffian,Motorcycle
+sanchez,Motorcycle
+sanchez2,Motorcycle
+sanctus,Motorcycle
+shinobi,Motorcycle
+shotaro,Motorcycle
+sovereign,Motorcycle
+stryder,Motorcycle
+thrust,Motorcycle
+vader,Motorcycle
+vindicator,Motorcycle
+vortex,Motorcycle
+wolfsbane,Motorcycle
+zombiea,Motorcycle
+zombieb,Motorcycle
+reever,Motorcycle
+powersurge,Motorcycle
+bison,Van / Pickup
+bison2,Van / Pickup
+bison3,Van / Pickup
+bobcatxl,Van / Pickup
+bodhi2,Van / Pickup
+burrito,Van / Pickup
+burrito2,Van / Pickup
+burrito3,Van / Pickup
+burrito4,Van / Pickup
+burrito5,Van / Pickup
+camper,Van / Pickup
+gburrito,Van / Pickup
+gburrito2,Van / Pickup
+journey,Van / Pickup
+minivan,Van / Pickup
+minivan2,Van / Pickup
+paradise,Van / Pickup
+pony,Van / Pickup
+pony2,Van / Pickup
+rumpo,Van / Pickup
+rumpo2,Van / Pickup
+rumpo3,Van / Pickup
+sadler,Van / Pickup
+sadler2,Van / Pickup
+speedo,Van / Pickup
+speedo2,Van / Pickup
+speedo4,Van / Pickup
+surfer,Van / Pickup
+surfer2,Van / Pickup
+taco,Van / Pickup
+youga,Van / Pickup
+youga2,Van / Pickup
+youga3,Van / Pickup
+youga4,Van / Pickup
+ambulance,Emergency
+barracks,Emergency
+barracks2,Emergency
+barracks3,Emergency
+crusader,Emergency
+fbi,Emergency
+fbi2,Emergency
+firetruk,Emergency
+lguard,Emergency
+pbus,Emergency
+police,Emergency
+police2,Emergency
+police3,Emergency
+police4,Emergency
+policeb,Emergency
+policeold1,Emergency
+policeold2,Emergency
+policet,Emergency
+polmav,Emergency
+pranger,Emergency
+predator,Emergency
+riot,Emergency
+riot2,Emergency
+sheriff,Emergency
+sheriff2,Emergency
+apc,Military
+barrage,Military
+chernobog,Military
+halftrack,Military
+khanjali,Military
+minitank,Military
+rhino,Military
+scarab,Military
+scarab2,Military
+scarab3,Military
+thruster,Military
+vetir,Military
+akula,Aircraft
+alkonost,Aircraft
+alphaz1,Aircraft
+annihilator,Aircraft
+annihilator2,Aircraft
+avenger,Aircraft
+avenger2,Aircraft
+besra,Aircraft
+bombushka,Aircraft
+buzzard,Aircraft
+buzzard2,Aircraft
+cargobob,Aircraft
+cargobob2,Aircraft
+cargobob3,Aircraft
+cargobob4,Aircraft
+conada,Aircraft
+cuban800,Aircraft
+dodo,Aircraft
+duster,Aircraft
+frogger,Aircraft
+frogger2,Aircraft
+havok,Aircraft
+howard,Aircraft
+hunter,Aircraft
+hydra,Aircraft
+lazer,Aircraft
+luxor,Aircraft
+luxor2,Aircraft
+mammatus,Aircraft
+maverick,Aircraft
+microlight,Aircraft
+miljet,Aircraft
+mogul,Aircraft
+molotok,Aircraft
+nimbus,Aircraft
+nokota,Aircraft
+pyro,Aircraft
+rogue,Aircraft
+savage,Aircraft
+seabreeze,Aircraft
+seasparrow,Aircraft
+seasparrow2,Aircraft
+seasparrow3,Aircraft
+shamal,Aircraft
+skylift,Aircraft
+starling,Aircraft
+strikeforce,Aircraft
+stunt,Aircraft
+supervolito,Aircraft
+supervolito2,Aircraft
+swift,Aircraft
+swift2,Aircraft
+tula,Aircraft
+titan,Aircraft
+valkyrie,Aircraft
+valkyrie2,Aircraft
+velum,Aircraft
+velum2,Aircraft
+vestra,Aircraft
+volatol,Aircraft
+volatus,Aircraft
+raiju,Aircraft
+streamer216,Aircraft
+conada2,Aircraft
+avisa,Boat
+dinghy,Boat
+dinghy2,Boat
+dinghy3,Boat
+dinghy4,Boat
+dinghy5,Boat
+jetmax,Boat
+kosatka,Boat
+marquis,Boat
+seashark,Boat
+seashark2,Boat
+seashark3,Boat
+speeder,Boat
+speeder2,Boat
+squalo,Boat
+submersible,Boat
+submersible2,Boat
+suntrap,Boat
+tropic,Boat
+tropic2,Boat
+tug,Boat
+longfin,Boat
+patrolboat,Boat
+bmx,Bicycle
+cruiser,Bicycle
+fixter,Bicycle
+scorcher,Bicycle
+tribike,Bicycle
+tribike2,Bicycle
+tribike3,Bicycle
+benson,Commercial
+biff,Commercial
+cerberus,Commercial
+cerberus2,Commercial
+cerberus3,Commercial
+cutter,Commercial
+flatbed,Commercial
+hauler,Commercial
+hauler2,Commercial
+handler,Commercial
+mixer,Commercial
+mixer2,Commercial
+mule,Commercial
+mule2,Commercial
+mule3,Commercial
+mule4,Commercial
+packer,Commercial
+phantom,Commercial
+phantom2,Commercial
+phantom3,Commercial
+pounder,Commercial
+pounder2,Commercial
+rubble,Commercial
+stockade,Commercial
+stockade3,Commercial
+terbyte,Commercial
+airtug,Utility
+caddy,Utility
+caddy2,Utility
+caddy3,Utility
+docktug,Utility
+forklift,Utility
+mower,Utility
+ripley,Utility
+scrap,Utility
+towtruck,Utility
+towtruck2,Utility
+tractor,Utility
+tractor2,Utility
+tractor3,Utility
+utillitruck,Utility
+utillitruck2,Utility
+utillitruck3,Utility
+formula,Open Wheel
+formula2,Open Wheel
+openwheel1,Open Wheel
+openwheel2,Open Wheel

@@ -1,0 +1,9556 @@
+{
+  "source_note": "Base principale: CfxNatives vehicle atlas snapshot listing 692 GTA V / FiveM vehicle spawn model names in 19 categories. Extra entries: model names observed in current Cfx.re docs snippets but not present in the 692 snapshot; some may require newer game builds.",
+  "total_models_main": 692,
+  "category_counts_main": {
+    "Super": 61,
+    "Sports": 87,
+    "Muscle": 76,
+    "Sports Classic": 46,
+    "Sedan": 30,
+    "Coupe": 14,
+    "SUV": 40,
+    "Compact": 19,
+    "Off-Road": 49,
+    "Motorcycle": 58,
+    "Van / Pickup": 34,
+    "Emergency": 25,
+    "Military": 12,
+    "Aircraft": 64,
+    "Boat": 23,
+    "Bicycle": 7,
+    "Commercial": 26,
+    "Utility": 17,
+    "Open Wheel": 4
+  },
+  "categories": {
+    "Super": [
+      "adder",
+      "autarch",
+      "banshee2",
+      "bullet",
+      "cheetah",
+      "cyclone",
+      "deveste",
+      "emerus",
+      "entity2",
+      "entityxf",
+      "fmj",
+      "furia",
+      "gp1",
+      "ignus",
+      "italigtb",
+      "italigtb2",
+      "italirsx",
+      "krieger",
+      "le7b",
+      "nero",
+      "nero2",
+      "osiris",
+      "penetrator",
+      "pfister811",
+      "prototipo",
+      "re7b",
+      "reaper",
+      "s80",
+      "sc1",
+      "scramjet",
+      "sheava",
+      "sultanrs",
+      "t20",
+      "taipan",
+      "tempesta",
+      "tezeract",
+      "thrax",
+      "tigon",
+      "turismor",
+      "tyrant",
+      "tyrus",
+      "vacca",
+      "vagner",
+      "vigilante",
+      "visione",
+      "voltic",
+      "voltic2",
+      "xa21",
+      "zentorno",
+      "zorrusso",
+      "virtue",
+      "torero2",
+      "lm87",
+      "zeno",
+      "champion",
+      "entity3",
+      "tenf",
+      "tenf2",
+      "r300",
+      "infernus",
+      "turismo2"
+    ],
+    "Sports": [
+      "alpha",
+      "9f",
+      "9f2",
+      "bestia",
+      "carbonizzare",
+      "comet2",
+      "comet3",
+      "comet4",
+      "comet5",
+      "coquette",
+      "coquette4",
+      "drafter",
+      "elegy",
+      "elegy2",
+      "feltzer2",
+      "flashgt",
+      "furoregt",
+      "fusilade",
+      "futo",
+      "futo2",
+      "gb200",
+      "growler",
+      "hotring",
+      "imorgon",
+      "issi7",
+      "italigto",
+      "jester",
+      "jester2",
+      "jester3",
+      "jester4",
+      "jugular",
+      "khamelion",
+      "komoda",
+      "kuruma",
+      "kuruma2",
+      "locust",
+      "lynx",
+      "massacro",
+      "massacro2",
+      "neo",
+      "neon",
+      "ninef",
+      "ninef2",
+      "omnis",
+      "omnisegt",
+      "pariah",
+      "penumbra",
+      "penumbra2",
+      "raiden",
+      "rapidgt",
+      "rapidgt2",
+      "raptor",
+      "remus",
+      "revolter",
+      "rt3000",
+      "ruston",
+      "schafter3",
+      "schafter4",
+      "schafter5",
+      "schafter6",
+      "schlagen",
+      "schwarzer",
+      "sentinel3",
+      "seven70",
+      "specter",
+      "specter2",
+      "streiter",
+      "sugoi",
+      "sultan",
+      "sultan2",
+      "sultan3",
+      "surano",
+      "tropos",
+      "verlierer2",
+      "vectre",
+      "vstr",
+      "zr350",
+      "calico",
+      "comet6",
+      "cypher",
+      "dominator7",
+      "dominator8",
+      "euros",
+      "previon",
+      "tailgater2",
+      "warrener2",
+      "comet7"
+    ],
+    "Muscle": [
+      "blade",
+      "buccaneer",
+      "buccaneer2",
+      "chino",
+      "chino2",
+      "clique",
+      "coquette3",
+      "deviant",
+      "dominator",
+      "dominator2",
+      "dominator3",
+      "dominator4",
+      "dominator5",
+      "dominator6",
+      "dukes",
+      "dukes2",
+      "dukes3",
+      "ellie",
+      "faction",
+      "faction2",
+      "faction3",
+      "gauntlet",
+      "gauntlet2",
+      "gauntlet3",
+      "gauntlet4",
+      "gauntlet5",
+      "hermes",
+      "hotknife",
+      "hustler",
+      "impaler",
+      "impaler2",
+      "impaler3",
+      "impaler4",
+      "imperator",
+      "imperator2",
+      "imperator3",
+      "lurcher",
+      "moonbeam",
+      "moonbeam2",
+      "nightshade",
+      "peyote3",
+      "phoenix",
+      "picador",
+      "ratloader",
+      "ratloader2",
+      "ruiner",
+      "ruiner2",
+      "ruiner3",
+      "sabregt",
+      "sabregt2",
+      "slamvan",
+      "slamvan2",
+      "slamvan3",
+      "slamvan4",
+      "slamvan5",
+      "slamvan6",
+      "stalion",
+      "stalion2",
+      "tampa",
+      "tampa3",
+      "tulip",
+      "vamos",
+      "vigero",
+      "vigero2",
+      "virgo",
+      "virgo2",
+      "virgo3",
+      "voodoo",
+      "voodoo2",
+      "yosemite",
+      "yosemite2",
+      "buffalo4",
+      "greenwood",
+      "manana2",
+      "weevil2",
+      "tahoma"
+    ],
+    "Sports Classic": [
+      "ardent",
+      "btype",
+      "btype2",
+      "btype3",
+      "casco",
+      "cheburek",
+      "cheetah2",
+      "coquette2",
+      "deluxo",
+      "dynasty",
+      "fagaloa",
+      "feltzer3",
+      "gt500",
+      "infernus2",
+      "jb700",
+      "jb7002",
+      "mamba",
+      "manana",
+      "michelli",
+      "monroe",
+      "nebula",
+      "peyote",
+      "peyote2",
+      "pigalle",
+      "rapidgt3",
+      "retinue",
+      "retinue2",
+      "savestra",
+      "stinger",
+      "stingergt",
+      "stromberg",
+      "swinger",
+      "torero",
+      "tornado",
+      "tornado2",
+      "tornado3",
+      "tornado4",
+      "tornado5",
+      "tornado6",
+      "viseris",
+      "z190",
+      "zion3",
+      "ztype",
+      "toreador",
+      "panthere",
+      "sm722"
+    ],
+    "Sedan": [
+      "asea",
+      "asea2",
+      "asterope",
+      "cog55",
+      "cog552",
+      "cognoscenti",
+      "cognoscenti2",
+      "emperor",
+      "emperor2",
+      "emperor3",
+      "fugitive",
+      "glendale",
+      "glendale2",
+      "ingot",
+      "intruder",
+      "limo2",
+      "premier",
+      "primo",
+      "primo2",
+      "regina",
+      "romero",
+      "schafter2",
+      "stafford",
+      "stanier",
+      "stretch",
+      "superd",
+      "surge",
+      "tailgater",
+      "warrener",
+      "washington"
+    ],
+    "Coupe": [
+      "cogcabrio",
+      "exemplar",
+      "f620",
+      "felon",
+      "felon2",
+      "jackal",
+      "oracle",
+      "oracle2",
+      "sentinel",
+      "sentinel2",
+      "windsor",
+      "windsor2",
+      "zion",
+      "zion2"
+    ],
+    "SUV": [
+      "baller",
+      "baller2",
+      "baller3",
+      "baller4",
+      "baller5",
+      "baller6",
+      "baller7",
+      "bjxl",
+      "cavalcade",
+      "cavalcade2",
+      "contender",
+      "dubsta",
+      "dubsta2",
+      "fq2",
+      "granger",
+      "granger2",
+      "gresley",
+      "habanero",
+      "huntley",
+      "landstalker",
+      "landstalker2",
+      "mesa",
+      "mesa2",
+      "novak",
+      "patriot",
+      "patriot2",
+      "patriot3",
+      "radi",
+      "rebla",
+      "rocoto",
+      "seminole",
+      "seminole2",
+      "serrano",
+      "toros",
+      "xls",
+      "xls2",
+      "jubilee",
+      "iwagen",
+      "astron",
+      "astron2"
+    ],
+    "Compact": [
+      "blista",
+      "blista2",
+      "blista3",
+      "brioso",
+      "brioso2",
+      "dilettante",
+      "dilettante2",
+      "issi2",
+      "issi3",
+      "issi4",
+      "issi5",
+      "issi6",
+      "kanjo",
+      "panto",
+      "prairie",
+      "rhapsody",
+      "club",
+      "weevil",
+      "asbo"
+    ],
+    "Off-Road": [
+      "bifta",
+      "blazer",
+      "blazer2",
+      "blazer3",
+      "blazer4",
+      "blazer5",
+      "brawler",
+      "bruiser",
+      "bruiser2",
+      "bruiser3",
+      "brutus",
+      "brutus2",
+      "brutus3",
+      "caracara",
+      "caracara2",
+      "dloader",
+      "dubsta3",
+      "duneloader",
+      "everon",
+      "freecrawler",
+      "hellion",
+      "insurgent",
+      "insurgent2",
+      "insurgent3",
+      "kamacho",
+      "marshall",
+      "menacer",
+      "monster",
+      "monster3",
+      "monster4",
+      "monster5",
+      "nightshark",
+      "outlaw",
+      "rancherxl",
+      "rancherxl2",
+      "rebel",
+      "rebel2",
+      "riata",
+      "sandking",
+      "sandking2",
+      "technical",
+      "technical2",
+      "technical3",
+      "trophytruck",
+      "trophytruck2",
+      "vagrant",
+      "verus",
+      "winky",
+      "draugur"
+    ],
+    "Motorcycle": [
+      "akuma",
+      "avarus",
+      "bagger",
+      "bati",
+      "bati2",
+      "bf400",
+      "carbonrs",
+      "chimera",
+      "cliffhanger",
+      "daemon",
+      "daemon2",
+      "defiler",
+      "deathbike",
+      "deathbike2",
+      "deathbike3",
+      "diablous",
+      "diablous2",
+      "double",
+      "enduro",
+      "esskey",
+      "faggio",
+      "faggio2",
+      "faggio3",
+      "fcr",
+      "fcr2",
+      "gargoyle",
+      "hakuchou",
+      "hakuchou2",
+      "hexer",
+      "innovation",
+      "lectro",
+      "manchez",
+      "manchez2",
+      "manchez3",
+      "nemesis",
+      "nightblade",
+      "oppressor",
+      "oppressor2",
+      "pcj",
+      "ratbike",
+      "rrocket",
+      "ruffian",
+      "sanchez",
+      "sanchez2",
+      "sanctus",
+      "shinobi",
+      "shotaro",
+      "sovereign",
+      "stryder",
+      "thrust",
+      "vader",
+      "vindicator",
+      "vortex",
+      "wolfsbane",
+      "zombiea",
+      "zombieb",
+      "reever",
+      "powersurge"
+    ],
+    "Van / Pickup": [
+      "bison",
+      "bison2",
+      "bison3",
+      "bobcatxl",
+      "bodhi2",
+      "burrito",
+      "burrito2",
+      "burrito3",
+      "burrito4",
+      "burrito5",
+      "camper",
+      "gburrito",
+      "gburrito2",
+      "journey",
+      "minivan",
+      "minivan2",
+      "paradise",
+      "pony",
+      "pony2",
+      "rumpo",
+      "rumpo2",
+      "rumpo3",
+      "sadler",
+      "sadler2",
+      "speedo",
+      "speedo2",
+      "speedo4",
+      "surfer",
+      "surfer2",
+      "taco",
+      "youga",
+      "youga2",
+      "youga3",
+      "youga4"
+    ],
+    "Emergency": [
+      "ambulance",
+      "barracks",
+      "barracks2",
+      "barracks3",
+      "crusader",
+      "fbi",
+      "fbi2",
+      "firetruk",
+      "lguard",
+      "pbus",
+      "police",
+      "police2",
+      "police3",
+      "police4",
+      "policeb",
+      "policeold1",
+      "policeold2",
+      "policet",
+      "polmav",
+      "pranger",
+      "predator",
+      "riot",
+      "riot2",
+      "sheriff",
+      "sheriff2"
+    ],
+    "Military": [
+      "apc",
+      "barrage",
+      "chernobog",
+      "halftrack",
+      "khanjali",
+      "minitank",
+      "rhino",
+      "scarab",
+      "scarab2",
+      "scarab3",
+      "thruster",
+      "vetir"
+    ],
+    "Aircraft": [
+      "akula",
+      "alkonost",
+      "alphaz1",
+      "annihilator",
+      "annihilator2",
+      "avenger",
+      "avenger2",
+      "besra",
+      "bombushka",
+      "buzzard",
+      "buzzard2",
+      "cargobob",
+      "cargobob2",
+      "cargobob3",
+      "cargobob4",
+      "conada",
+      "cuban800",
+      "dodo",
+      "duster",
+      "frogger",
+      "frogger2",
+      "havok",
+      "howard",
+      "hunter",
+      "hydra",
+      "lazer",
+      "luxor",
+      "luxor2",
+      "mammatus",
+      "maverick",
+      "microlight",
+      "miljet",
+      "mogul",
+      "molotok",
+      "nimbus",
+      "nokota",
+      "pyro",
+      "rogue",
+      "savage",
+      "seabreeze",
+      "seasparrow",
+      "seasparrow2",
+      "seasparrow3",
+      "shamal",
+      "skylift",
+      "starling",
+      "strikeforce",
+      "stunt",
+      "supervolito",
+      "supervolito2",
+      "swift",
+      "swift2",
+      "tula",
+      "titan",
+      "valkyrie",
+      "valkyrie2",
+      "velum",
+      "velum2",
+      "vestra",
+      "volatol",
+      "volatus",
+      "raiju",
+      "streamer216",
+      "conada2"
+    ],
+    "Boat": [
+      "avisa",
+      "dinghy",
+      "dinghy2",
+      "dinghy3",
+      "dinghy4",
+      "dinghy5",
+      "jetmax",
+      "kosatka",
+      "marquis",
+      "seashark",
+      "seashark2",
+      "seashark3",
+      "speeder",
+      "speeder2",
+      "squalo",
+      "submersible",
+      "submersible2",
+      "suntrap",
+      "tropic",
+      "tropic2",
+      "tug",
+      "longfin",
+      "patrolboat"
+    ],
+    "Bicycle": [
+      "bmx",
+      "cruiser",
+      "fixter",
+      "scorcher",
+      "tribike",
+      "tribike2",
+      "tribike3"
+    ],
+    "Commercial": [
+      "benson",
+      "biff",
+      "cerberus",
+      "cerberus2",
+      "cerberus3",
+      "cutter",
+      "flatbed",
+      "hauler",
+      "hauler2",
+      "handler",
+      "mixer",
+      "mixer2",
+      "mule",
+      "mule2",
+      "mule3",
+      "mule4",
+      "packer",
+      "phantom",
+      "phantom2",
+      "phantom3",
+      "pounder",
+      "pounder2",
+      "rubble",
+      "stockade",
+      "stockade3",
+      "terbyte"
+    ],
+    "Utility": [
+      "airtug",
+      "caddy",
+      "caddy2",
+      "caddy3",
+      "docktug",
+      "forklift",
+      "mower",
+      "ripley",
+      "scrap",
+      "towtruck",
+      "towtruck2",
+      "tractor",
+      "tractor2",
+      "tractor3",
+      "utillitruck",
+      "utillitruck2",
+      "utillitruck3"
+    ],
+    "Open Wheel": [
+      "formula",
+      "formula2",
+      "openwheel1",
+      "openwheel2"
+    ]
+  },
+  "vehicles": [
+    {
+      "model_name": "adder",
+      "category": "Super",
+      "aliases": [
+        "adder"
+      ],
+      "normalized_aliases": [
+        "adder"
+      ]
+    },
+    {
+      "model_name": "autarch",
+      "category": "Super",
+      "aliases": [
+        "autarch"
+      ],
+      "normalized_aliases": [
+        "autarch"
+      ]
+    },
+    {
+      "model_name": "banshee2",
+      "category": "Super",
+      "aliases": [
+        "banshee",
+        "banshee2"
+      ],
+      "normalized_aliases": [
+        "banshee",
+        "banshee2"
+      ]
+    },
+    {
+      "model_name": "bullet",
+      "category": "Super",
+      "aliases": [
+        "bullet"
+      ],
+      "normalized_aliases": [
+        "bullet"
+      ]
+    },
+    {
+      "model_name": "cheetah",
+      "category": "Super",
+      "aliases": [
+        "cheetah"
+      ],
+      "normalized_aliases": [
+        "cheetah"
+      ]
+    },
+    {
+      "model_name": "cyclone",
+      "category": "Super",
+      "aliases": [
+        "cyclone"
+      ],
+      "normalized_aliases": [
+        "cyclone"
+      ]
+    },
+    {
+      "model_name": "deveste",
+      "category": "Super",
+      "aliases": [
+        "deveste"
+      ],
+      "normalized_aliases": [
+        "deveste"
+      ]
+    },
+    {
+      "model_name": "emerus",
+      "category": "Super",
+      "aliases": [
+        "emerus"
+      ],
+      "normalized_aliases": [
+        "emerus"
+      ]
+    },
+    {
+      "model_name": "entity2",
+      "category": "Super",
+      "aliases": [
+        "entity",
+        "entity2"
+      ],
+      "normalized_aliases": [
+        "entity",
+        "entity2"
+      ]
+    },
+    {
+      "model_name": "entityxf",
+      "category": "Super",
+      "aliases": [
+        "entityxf"
+      ],
+      "normalized_aliases": [
+        "entityxf"
+      ]
+    },
+    {
+      "model_name": "fmj",
+      "category": "Super",
+      "aliases": [
+        "fmj"
+      ],
+      "normalized_aliases": [
+        "fmj"
+      ]
+    },
+    {
+      "model_name": "furia",
+      "category": "Super",
+      "aliases": [
+        "furia"
+      ],
+      "normalized_aliases": [
+        "furia"
+      ]
+    },
+    {
+      "model_name": "gp1",
+      "category": "Super",
+      "aliases": [
+        "gp",
+        "gp1"
+      ],
+      "normalized_aliases": [
+        "gp",
+        "gp1"
+      ]
+    },
+    {
+      "model_name": "ignus",
+      "category": "Super",
+      "aliases": [
+        "ignus"
+      ],
+      "normalized_aliases": [
+        "ignus"
+      ]
+    },
+    {
+      "model_name": "italigtb",
+      "category": "Super",
+      "aliases": [
+        "italigtb"
+      ],
+      "normalized_aliases": [
+        "italigtb"
+      ]
+    },
+    {
+      "model_name": "italigtb2",
+      "category": "Super",
+      "aliases": [
+        "italigtb",
+        "italigtb2"
+      ],
+      "normalized_aliases": [
+        "italigtb",
+        "italigtb2"
+      ]
+    },
+    {
+      "model_name": "italirsx",
+      "category": "Super",
+      "aliases": [
+        "italirsx"
+      ],
+      "normalized_aliases": [
+        "italirsx"
+      ]
+    },
+    {
+      "model_name": "krieger",
+      "category": "Super",
+      "aliases": [
+        "krieger"
+      ],
+      "normalized_aliases": [
+        "krieger"
+      ]
+    },
+    {
+      "model_name": "le7b",
+      "category": "Super",
+      "aliases": [
+        "le7b"
+      ],
+      "normalized_aliases": [
+        "le7b"
+      ]
+    },
+    {
+      "model_name": "nero",
+      "category": "Super",
+      "aliases": [
+        "nero"
+      ],
+      "normalized_aliases": [
+        "nero"
+      ]
+    },
+    {
+      "model_name": "nero2",
+      "category": "Super",
+      "aliases": [
+        "nero",
+        "nero2"
+      ],
+      "normalized_aliases": [
+        "nero",
+        "nero2"
+      ]
+    },
+    {
+      "model_name": "osiris",
+      "category": "Super",
+      "aliases": [
+        "osiris"
+      ],
+      "normalized_aliases": [
+        "osiris"
+      ]
+    },
+    {
+      "model_name": "penetrator",
+      "category": "Super",
+      "aliases": [
+        "penetrator"
+      ],
+      "normalized_aliases": [
+        "penetrator"
+      ]
+    },
+    {
+      "model_name": "pfister811",
+      "category": "Super",
+      "aliases": [
+        "pfister",
+        "pfister811"
+      ],
+      "normalized_aliases": [
+        "pfister",
+        "pfister811"
+      ]
+    },
+    {
+      "model_name": "prototipo",
+      "category": "Super",
+      "aliases": [
+        "prototipo"
+      ],
+      "normalized_aliases": [
+        "prototipo"
+      ]
+    },
+    {
+      "model_name": "re7b",
+      "category": "Super",
+      "aliases": [
+        "re7b"
+      ],
+      "normalized_aliases": [
+        "re7b"
+      ]
+    },
+    {
+      "model_name": "reaper",
+      "category": "Super",
+      "aliases": [
+        "reaper"
+      ],
+      "normalized_aliases": [
+        "reaper"
+      ]
+    },
+    {
+      "model_name": "s80",
+      "category": "Super",
+      "aliases": [
+        "s",
+        "s80"
+      ],
+      "normalized_aliases": [
+        "s",
+        "s80"
+      ]
+    },
+    {
+      "model_name": "sc1",
+      "category": "Super",
+      "aliases": [
+        "sc",
+        "sc1"
+      ],
+      "normalized_aliases": [
+        "sc",
+        "sc1"
+      ]
+    },
+    {
+      "model_name": "scramjet",
+      "category": "Super",
+      "aliases": [
+        "scramjet"
+      ],
+      "normalized_aliases": [
+        "scramjet"
+      ]
+    },
+    {
+      "model_name": "sheava",
+      "category": "Super",
+      "aliases": [
+        "sheava"
+      ],
+      "normalized_aliases": [
+        "sheava"
+      ]
+    },
+    {
+      "model_name": "sultanrs",
+      "category": "Super",
+      "aliases": [
+        "sultanrs"
+      ],
+      "normalized_aliases": [
+        "sultanrs"
+      ]
+    },
+    {
+      "model_name": "t20",
+      "category": "Super",
+      "aliases": [
+        "t",
+        "t20"
+      ],
+      "normalized_aliases": [
+        "t",
+        "t20"
+      ]
+    },
+    {
+      "model_name": "taipan",
+      "category": "Super",
+      "aliases": [
+        "taipan"
+      ],
+      "normalized_aliases": [
+        "taipan"
+      ]
+    },
+    {
+      "model_name": "tempesta",
+      "category": "Super",
+      "aliases": [
+        "tempesta"
+      ],
+      "normalized_aliases": [
+        "tempesta"
+      ]
+    },
+    {
+      "model_name": "tezeract",
+      "category": "Super",
+      "aliases": [
+        "tezeract"
+      ],
+      "normalized_aliases": [
+        "tezeract"
+      ]
+    },
+    {
+      "model_name": "thrax",
+      "category": "Super",
+      "aliases": [
+        "thrax"
+      ],
+      "normalized_aliases": [
+        "thrax"
+      ]
+    },
+    {
+      "model_name": "tigon",
+      "category": "Super",
+      "aliases": [
+        "tigon"
+      ],
+      "normalized_aliases": [
+        "tigon"
+      ]
+    },
+    {
+      "model_name": "turismor",
+      "category": "Super",
+      "aliases": [
+        "turismor"
+      ],
+      "normalized_aliases": [
+        "turismor"
+      ]
+    },
+    {
+      "model_name": "tyrant",
+      "category": "Super",
+      "aliases": [
+        "tyrant"
+      ],
+      "normalized_aliases": [
+        "tyrant"
+      ]
+    },
+    {
+      "model_name": "tyrus",
+      "category": "Super",
+      "aliases": [
+        "tyrus"
+      ],
+      "normalized_aliases": [
+        "tyrus"
+      ]
+    },
+    {
+      "model_name": "vacca",
+      "category": "Super",
+      "aliases": [
+        "vacca"
+      ],
+      "normalized_aliases": [
+        "vacca"
+      ]
+    },
+    {
+      "model_name": "vagner",
+      "category": "Super",
+      "aliases": [
+        "vagner"
+      ],
+      "normalized_aliases": [
+        "vagner"
+      ]
+    },
+    {
+      "model_name": "vigilante",
+      "category": "Super",
+      "aliases": [
+        "vigilante"
+      ],
+      "normalized_aliases": [
+        "vigilante"
+      ]
+    },
+    {
+      "model_name": "visione",
+      "category": "Super",
+      "aliases": [
+        "visione"
+      ],
+      "normalized_aliases": [
+        "visione"
+      ]
+    },
+    {
+      "model_name": "voltic",
+      "category": "Super",
+      "aliases": [
+        "voltic"
+      ],
+      "normalized_aliases": [
+        "voltic"
+      ]
+    },
+    {
+      "model_name": "voltic2",
+      "category": "Super",
+      "aliases": [
+        "voltic",
+        "voltic2"
+      ],
+      "normalized_aliases": [
+        "voltic",
+        "voltic2"
+      ]
+    },
+    {
+      "model_name": "xa21",
+      "category": "Super",
+      "aliases": [
+        "xa",
+        "xa21"
+      ],
+      "normalized_aliases": [
+        "xa",
+        "xa21"
+      ]
+    },
+    {
+      "model_name": "zentorno",
+      "category": "Super",
+      "aliases": [
+        "zentorno"
+      ],
+      "normalized_aliases": [
+        "zentorno"
+      ]
+    },
+    {
+      "model_name": "zorrusso",
+      "category": "Super",
+      "aliases": [
+        "zorrusso"
+      ],
+      "normalized_aliases": [
+        "zorrusso"
+      ]
+    },
+    {
+      "model_name": "virtue",
+      "category": "Super",
+      "aliases": [
+        "virtue"
+      ],
+      "normalized_aliases": [
+        "virtue"
+      ]
+    },
+    {
+      "model_name": "torero2",
+      "category": "Super",
+      "aliases": [
+        "torero",
+        "torero2"
+      ],
+      "normalized_aliases": [
+        "torero",
+        "torero2"
+      ]
+    },
+    {
+      "model_name": "lm87",
+      "category": "Super",
+      "aliases": [
+        "lm",
+        "lm87"
+      ],
+      "normalized_aliases": [
+        "lm",
+        "lm87"
+      ]
+    },
+    {
+      "model_name": "zeno",
+      "category": "Super",
+      "aliases": [
+        "zeno"
+      ],
+      "normalized_aliases": [
+        "zeno"
+      ]
+    },
+    {
+      "model_name": "champion",
+      "category": "Super",
+      "aliases": [
+        "champion"
+      ],
+      "normalized_aliases": [
+        "champion"
+      ]
+    },
+    {
+      "model_name": "entity3",
+      "category": "Super",
+      "aliases": [
+        "entity",
+        "entity3"
+      ],
+      "normalized_aliases": [
+        "entity",
+        "entity3"
+      ]
+    },
+    {
+      "model_name": "tenf",
+      "category": "Super",
+      "aliases": [
+        "tenf"
+      ],
+      "normalized_aliases": [
+        "tenf"
+      ]
+    },
+    {
+      "model_name": "tenf2",
+      "category": "Super",
+      "aliases": [
+        "tenf",
+        "tenf2"
+      ],
+      "normalized_aliases": [
+        "tenf",
+        "tenf2"
+      ]
+    },
+    {
+      "model_name": "r300",
+      "category": "Super",
+      "aliases": [
+        "r",
+        "r300"
+      ],
+      "normalized_aliases": [
+        "r",
+        "r300"
+      ]
+    },
+    {
+      "model_name": "infernus",
+      "category": "Super",
+      "aliases": [
+        "infernus"
+      ],
+      "normalized_aliases": [
+        "infernus"
+      ]
+    },
+    {
+      "model_name": "turismo2",
+      "category": "Super",
+      "aliases": [
+        "turismo",
+        "turismo2"
+      ],
+      "normalized_aliases": [
+        "turismo",
+        "turismo2"
+      ]
+    },
+    {
+      "model_name": "alpha",
+      "category": "Sports",
+      "aliases": [
+        "alpha"
+      ],
+      "normalized_aliases": [
+        "alpha"
+      ]
+    },
+    {
+      "model_name": "9f",
+      "category": "Sports",
+      "aliases": [
+        "9f"
+      ],
+      "normalized_aliases": [
+        "9f"
+      ]
+    },
+    {
+      "model_name": "9f2",
+      "category": "Sports",
+      "aliases": [
+        "9f",
+        "9f2"
+      ],
+      "normalized_aliases": [
+        "9f",
+        "9f2"
+      ]
+    },
+    {
+      "model_name": "bestia",
+      "category": "Sports",
+      "aliases": [
+        "bestia"
+      ],
+      "normalized_aliases": [
+        "bestia"
+      ]
+    },
+    {
+      "model_name": "carbonizzare",
+      "category": "Sports",
+      "aliases": [
+        "carbonizzare"
+      ],
+      "normalized_aliases": [
+        "carbonizzare"
+      ]
+    },
+    {
+      "model_name": "comet2",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet2"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet2"
+      ]
+    },
+    {
+      "model_name": "comet3",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet3"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet3"
+      ]
+    },
+    {
+      "model_name": "comet4",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet4"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet4"
+      ]
+    },
+    {
+      "model_name": "comet5",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet5"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet5"
+      ]
+    },
+    {
+      "model_name": "coquette",
+      "category": "Sports",
+      "aliases": [
+        "coquette"
+      ],
+      "normalized_aliases": [
+        "coquette"
+      ]
+    },
+    {
+      "model_name": "coquette4",
+      "category": "Sports",
+      "aliases": [
+        "coquette",
+        "coquette4"
+      ],
+      "normalized_aliases": [
+        "coquette",
+        "coquette4"
+      ]
+    },
+    {
+      "model_name": "drafter",
+      "category": "Sports",
+      "aliases": [
+        "drafter"
+      ],
+      "normalized_aliases": [
+        "drafter"
+      ]
+    },
+    {
+      "model_name": "elegy",
+      "category": "Sports",
+      "aliases": [
+        "elegy"
+      ],
+      "normalized_aliases": [
+        "elegy"
+      ]
+    },
+    {
+      "model_name": "elegy2",
+      "category": "Sports",
+      "aliases": [
+        "elegy",
+        "elegy2"
+      ],
+      "normalized_aliases": [
+        "elegy",
+        "elegy2"
+      ]
+    },
+    {
+      "model_name": "feltzer2",
+      "category": "Sports",
+      "aliases": [
+        "feltzer",
+        "feltzer2"
+      ],
+      "normalized_aliases": [
+        "feltzer",
+        "feltzer2"
+      ]
+    },
+    {
+      "model_name": "flashgt",
+      "category": "Sports",
+      "aliases": [
+        "flashgt"
+      ],
+      "normalized_aliases": [
+        "flashgt"
+      ]
+    },
+    {
+      "model_name": "furoregt",
+      "category": "Sports",
+      "aliases": [
+        "furoregt"
+      ],
+      "normalized_aliases": [
+        "furoregt"
+      ]
+    },
+    {
+      "model_name": "fusilade",
+      "category": "Sports",
+      "aliases": [
+        "fusilade"
+      ],
+      "normalized_aliases": [
+        "fusilade"
+      ]
+    },
+    {
+      "model_name": "futo",
+      "category": "Sports",
+      "aliases": [
+        "futo"
+      ],
+      "normalized_aliases": [
+        "futo"
+      ]
+    },
+    {
+      "model_name": "futo2",
+      "category": "Sports",
+      "aliases": [
+        "futo",
+        "futo2"
+      ],
+      "normalized_aliases": [
+        "futo",
+        "futo2"
+      ]
+    },
+    {
+      "model_name": "gb200",
+      "category": "Sports",
+      "aliases": [
+        "gb",
+        "gb200"
+      ],
+      "normalized_aliases": [
+        "gb",
+        "gb200"
+      ]
+    },
+    {
+      "model_name": "growler",
+      "category": "Sports",
+      "aliases": [
+        "growler"
+      ],
+      "normalized_aliases": [
+        "growler"
+      ]
+    },
+    {
+      "model_name": "hotring",
+      "category": "Sports",
+      "aliases": [
+        "hotring"
+      ],
+      "normalized_aliases": [
+        "hotring"
+      ]
+    },
+    {
+      "model_name": "imorgon",
+      "category": "Sports",
+      "aliases": [
+        "imorgon"
+      ],
+      "normalized_aliases": [
+        "imorgon"
+      ]
+    },
+    {
+      "model_name": "issi7",
+      "category": "Sports",
+      "aliases": [
+        "issi",
+        "issi7"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi7"
+      ]
+    },
+    {
+      "model_name": "italigto",
+      "category": "Sports",
+      "aliases": [
+        "italigto"
+      ],
+      "normalized_aliases": [
+        "italigto"
+      ]
+    },
+    {
+      "model_name": "jester",
+      "category": "Sports",
+      "aliases": [
+        "jester"
+      ],
+      "normalized_aliases": [
+        "jester"
+      ]
+    },
+    {
+      "model_name": "jester2",
+      "category": "Sports",
+      "aliases": [
+        "jester",
+        "jester2"
+      ],
+      "normalized_aliases": [
+        "jester",
+        "jester2"
+      ]
+    },
+    {
+      "model_name": "jester3",
+      "category": "Sports",
+      "aliases": [
+        "jester",
+        "jester3"
+      ],
+      "normalized_aliases": [
+        "jester",
+        "jester3"
+      ]
+    },
+    {
+      "model_name": "jester4",
+      "category": "Sports",
+      "aliases": [
+        "jester",
+        "jester4"
+      ],
+      "normalized_aliases": [
+        "jester",
+        "jester4"
+      ]
+    },
+    {
+      "model_name": "jugular",
+      "category": "Sports",
+      "aliases": [
+        "jugular"
+      ],
+      "normalized_aliases": [
+        "jugular"
+      ]
+    },
+    {
+      "model_name": "khamelion",
+      "category": "Sports",
+      "aliases": [
+        "khamelion"
+      ],
+      "normalized_aliases": [
+        "khamelion"
+      ]
+    },
+    {
+      "model_name": "komoda",
+      "category": "Sports",
+      "aliases": [
+        "komoda"
+      ],
+      "normalized_aliases": [
+        "komoda"
+      ]
+    },
+    {
+      "model_name": "kuruma",
+      "category": "Sports",
+      "aliases": [
+        "kuruma"
+      ],
+      "normalized_aliases": [
+        "kuruma"
+      ]
+    },
+    {
+      "model_name": "kuruma2",
+      "category": "Sports",
+      "aliases": [
+        "kuruma",
+        "kuruma2"
+      ],
+      "normalized_aliases": [
+        "kuruma",
+        "kuruma2"
+      ]
+    },
+    {
+      "model_name": "locust",
+      "category": "Sports",
+      "aliases": [
+        "locust"
+      ],
+      "normalized_aliases": [
+        "locust"
+      ]
+    },
+    {
+      "model_name": "lynx",
+      "category": "Sports",
+      "aliases": [
+        "lynx"
+      ],
+      "normalized_aliases": [
+        "lynx"
+      ]
+    },
+    {
+      "model_name": "massacro",
+      "category": "Sports",
+      "aliases": [
+        "massacro"
+      ],
+      "normalized_aliases": [
+        "massacro"
+      ]
+    },
+    {
+      "model_name": "massacro2",
+      "category": "Sports",
+      "aliases": [
+        "massacro",
+        "massacro2"
+      ],
+      "normalized_aliases": [
+        "massacro",
+        "massacro2"
+      ]
+    },
+    {
+      "model_name": "neo",
+      "category": "Sports",
+      "aliases": [
+        "neo"
+      ],
+      "normalized_aliases": [
+        "neo"
+      ]
+    },
+    {
+      "model_name": "neon",
+      "category": "Sports",
+      "aliases": [
+        "neon"
+      ],
+      "normalized_aliases": [
+        "neon"
+      ]
+    },
+    {
+      "model_name": "ninef",
+      "category": "Sports",
+      "aliases": [
+        "ninef"
+      ],
+      "normalized_aliases": [
+        "ninef"
+      ]
+    },
+    {
+      "model_name": "ninef2",
+      "category": "Sports",
+      "aliases": [
+        "ninef",
+        "ninef2"
+      ],
+      "normalized_aliases": [
+        "ninef",
+        "ninef2"
+      ]
+    },
+    {
+      "model_name": "omnis",
+      "category": "Sports",
+      "aliases": [
+        "omnis"
+      ],
+      "normalized_aliases": [
+        "omnis"
+      ]
+    },
+    {
+      "model_name": "omnisegt",
+      "category": "Sports",
+      "aliases": [
+        "omnisegt"
+      ],
+      "normalized_aliases": [
+        "omnisegt"
+      ]
+    },
+    {
+      "model_name": "pariah",
+      "category": "Sports",
+      "aliases": [
+        "pariah"
+      ],
+      "normalized_aliases": [
+        "pariah"
+      ]
+    },
+    {
+      "model_name": "penumbra",
+      "category": "Sports",
+      "aliases": [
+        "penumbra"
+      ],
+      "normalized_aliases": [
+        "penumbra"
+      ]
+    },
+    {
+      "model_name": "penumbra2",
+      "category": "Sports",
+      "aliases": [
+        "penumbra",
+        "penumbra2"
+      ],
+      "normalized_aliases": [
+        "penumbra",
+        "penumbra2"
+      ]
+    },
+    {
+      "model_name": "raiden",
+      "category": "Sports",
+      "aliases": [
+        "raiden"
+      ],
+      "normalized_aliases": [
+        "raiden"
+      ]
+    },
+    {
+      "model_name": "rapidgt",
+      "category": "Sports",
+      "aliases": [
+        "rapidgt"
+      ],
+      "normalized_aliases": [
+        "rapidgt"
+      ]
+    },
+    {
+      "model_name": "rapidgt2",
+      "category": "Sports",
+      "aliases": [
+        "rapidgt",
+        "rapidgt2"
+      ],
+      "normalized_aliases": [
+        "rapidgt",
+        "rapidgt2"
+      ]
+    },
+    {
+      "model_name": "raptor",
+      "category": "Sports",
+      "aliases": [
+        "raptor"
+      ],
+      "normalized_aliases": [
+        "raptor"
+      ]
+    },
+    {
+      "model_name": "remus",
+      "category": "Sports",
+      "aliases": [
+        "remus"
+      ],
+      "normalized_aliases": [
+        "remus"
+      ]
+    },
+    {
+      "model_name": "revolter",
+      "category": "Sports",
+      "aliases": [
+        "revolter"
+      ],
+      "normalized_aliases": [
+        "revolter"
+      ]
+    },
+    {
+      "model_name": "rt3000",
+      "category": "Sports",
+      "aliases": [
+        "rt",
+        "rt3000"
+      ],
+      "normalized_aliases": [
+        "rt",
+        "rt3000"
+      ]
+    },
+    {
+      "model_name": "ruston",
+      "category": "Sports",
+      "aliases": [
+        "ruston"
+      ],
+      "normalized_aliases": [
+        "ruston"
+      ]
+    },
+    {
+      "model_name": "schafter3",
+      "category": "Sports",
+      "aliases": [
+        "schafter",
+        "schafter3"
+      ],
+      "normalized_aliases": [
+        "schafter",
+        "schafter3"
+      ]
+    },
+    {
+      "model_name": "schafter4",
+      "category": "Sports",
+      "aliases": [
+        "schafter",
+        "schafter4"
+      ],
+      "normalized_aliases": [
+        "schafter",
+        "schafter4"
+      ]
+    },
+    {
+      "model_name": "schafter5",
+      "category": "Sports",
+      "aliases": [
+        "schafter",
+        "schafter5"
+      ],
+      "normalized_aliases": [
+        "schafter",
+        "schafter5"
+      ]
+    },
+    {
+      "model_name": "schafter6",
+      "category": "Sports",
+      "aliases": [
+        "schafter",
+        "schafter6"
+      ],
+      "normalized_aliases": [
+        "schafter",
+        "schafter6"
+      ]
+    },
+    {
+      "model_name": "schlagen",
+      "category": "Sports",
+      "aliases": [
+        "schlagen"
+      ],
+      "normalized_aliases": [
+        "schlagen"
+      ]
+    },
+    {
+      "model_name": "schwarzer",
+      "category": "Sports",
+      "aliases": [
+        "schwarzer"
+      ],
+      "normalized_aliases": [
+        "schwarzer"
+      ]
+    },
+    {
+      "model_name": "sentinel3",
+      "category": "Sports",
+      "aliases": [
+        "sentinel",
+        "sentinel3"
+      ],
+      "normalized_aliases": [
+        "sentinel",
+        "sentinel3"
+      ]
+    },
+    {
+      "model_name": "seven70",
+      "category": "Sports",
+      "aliases": [
+        "seven",
+        "seven70"
+      ],
+      "normalized_aliases": [
+        "seven",
+        "seven70"
+      ]
+    },
+    {
+      "model_name": "specter",
+      "category": "Sports",
+      "aliases": [
+        "specter"
+      ],
+      "normalized_aliases": [
+        "specter"
+      ]
+    },
+    {
+      "model_name": "specter2",
+      "category": "Sports",
+      "aliases": [
+        "specter",
+        "specter2"
+      ],
+      "normalized_aliases": [
+        "specter",
+        "specter2"
+      ]
+    },
+    {
+      "model_name": "streiter",
+      "category": "Sports",
+      "aliases": [
+        "streiter"
+      ],
+      "normalized_aliases": [
+        "streiter"
+      ]
+    },
+    {
+      "model_name": "sugoi",
+      "category": "Sports",
+      "aliases": [
+        "sugoi"
+      ],
+      "normalized_aliases": [
+        "sugoi"
+      ]
+    },
+    {
+      "model_name": "sultan",
+      "category": "Sports",
+      "aliases": [
+        "sultan"
+      ],
+      "normalized_aliases": [
+        "sultan"
+      ]
+    },
+    {
+      "model_name": "sultan2",
+      "category": "Sports",
+      "aliases": [
+        "sultan",
+        "sultan2"
+      ],
+      "normalized_aliases": [
+        "sultan",
+        "sultan2"
+      ]
+    },
+    {
+      "model_name": "sultan3",
+      "category": "Sports",
+      "aliases": [
+        "sultan",
+        "sultan3"
+      ],
+      "normalized_aliases": [
+        "sultan",
+        "sultan3"
+      ]
+    },
+    {
+      "model_name": "surano",
+      "category": "Sports",
+      "aliases": [
+        "surano"
+      ],
+      "normalized_aliases": [
+        "surano"
+      ]
+    },
+    {
+      "model_name": "tropos",
+      "category": "Sports",
+      "aliases": [
+        "tropos"
+      ],
+      "normalized_aliases": [
+        "tropos"
+      ]
+    },
+    {
+      "model_name": "verlierer2",
+      "category": "Sports",
+      "aliases": [
+        "verlierer",
+        "verlierer2"
+      ],
+      "normalized_aliases": [
+        "verlierer",
+        "verlierer2"
+      ]
+    },
+    {
+      "model_name": "vectre",
+      "category": "Sports",
+      "aliases": [
+        "vectre"
+      ],
+      "normalized_aliases": [
+        "vectre"
+      ]
+    },
+    {
+      "model_name": "vstr",
+      "category": "Sports",
+      "aliases": [
+        "vstr"
+      ],
+      "normalized_aliases": [
+        "vstr"
+      ]
+    },
+    {
+      "model_name": "zr350",
+      "category": "Sports",
+      "aliases": [
+        "zr",
+        "zr350"
+      ],
+      "normalized_aliases": [
+        "zr",
+        "zr350"
+      ]
+    },
+    {
+      "model_name": "calico",
+      "category": "Sports",
+      "aliases": [
+        "calico"
+      ],
+      "normalized_aliases": [
+        "calico"
+      ]
+    },
+    {
+      "model_name": "comet6",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet6"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet6"
+      ]
+    },
+    {
+      "model_name": "cypher",
+      "category": "Sports",
+      "aliases": [
+        "cypher"
+      ],
+      "normalized_aliases": [
+        "cypher"
+      ]
+    },
+    {
+      "model_name": "dominator7",
+      "category": "Sports",
+      "aliases": [
+        "dominator",
+        "dominator7"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator7"
+      ]
+    },
+    {
+      "model_name": "dominator8",
+      "category": "Sports",
+      "aliases": [
+        "dominator",
+        "dominator8"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator8"
+      ]
+    },
+    {
+      "model_name": "euros",
+      "category": "Sports",
+      "aliases": [
+        "euros"
+      ],
+      "normalized_aliases": [
+        "euros"
+      ]
+    },
+    {
+      "model_name": "previon",
+      "category": "Sports",
+      "aliases": [
+        "previon"
+      ],
+      "normalized_aliases": [
+        "previon"
+      ]
+    },
+    {
+      "model_name": "tailgater2",
+      "category": "Sports",
+      "aliases": [
+        "tailgater",
+        "tailgater2"
+      ],
+      "normalized_aliases": [
+        "tailgater",
+        "tailgater2"
+      ]
+    },
+    {
+      "model_name": "warrener2",
+      "category": "Sports",
+      "aliases": [
+        "warrener",
+        "warrener2"
+      ],
+      "normalized_aliases": [
+        "warrener",
+        "warrener2"
+      ]
+    },
+    {
+      "model_name": "comet7",
+      "category": "Sports",
+      "aliases": [
+        "comet",
+        "comet7"
+      ],
+      "normalized_aliases": [
+        "comet",
+        "comet7"
+      ]
+    },
+    {
+      "model_name": "blade",
+      "category": "Muscle",
+      "aliases": [
+        "blade"
+      ],
+      "normalized_aliases": [
+        "blade"
+      ]
+    },
+    {
+      "model_name": "buccaneer",
+      "category": "Muscle",
+      "aliases": [
+        "buccaneer"
+      ],
+      "normalized_aliases": [
+        "buccaneer"
+      ]
+    },
+    {
+      "model_name": "buccaneer2",
+      "category": "Muscle",
+      "aliases": [
+        "buccaneer",
+        "buccaneer2"
+      ],
+      "normalized_aliases": [
+        "buccaneer",
+        "buccaneer2"
+      ]
+    },
+    {
+      "model_name": "chino",
+      "category": "Muscle",
+      "aliases": [
+        "chino"
+      ],
+      "normalized_aliases": [
+        "chino"
+      ]
+    },
+    {
+      "model_name": "chino2",
+      "category": "Muscle",
+      "aliases": [
+        "chino",
+        "chino2"
+      ],
+      "normalized_aliases": [
+        "chino",
+        "chino2"
+      ]
+    },
+    {
+      "model_name": "clique",
+      "category": "Muscle",
+      "aliases": [
+        "clique"
+      ],
+      "normalized_aliases": [
+        "clique"
+      ]
+    },
+    {
+      "model_name": "coquette3",
+      "category": "Muscle",
+      "aliases": [
+        "coquette",
+        "coquette3"
+      ],
+      "normalized_aliases": [
+        "coquette",
+        "coquette3"
+      ]
+    },
+    {
+      "model_name": "deviant",
+      "category": "Muscle",
+      "aliases": [
+        "deviant"
+      ],
+      "normalized_aliases": [
+        "deviant"
+      ]
+    },
+    {
+      "model_name": "dominator",
+      "category": "Muscle",
+      "aliases": [
+        "dominator"
+      ],
+      "normalized_aliases": [
+        "dominator"
+      ]
+    },
+    {
+      "model_name": "dominator2",
+      "category": "Muscle",
+      "aliases": [
+        "dominator",
+        "dominator2"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator2"
+      ]
+    },
+    {
+      "model_name": "dominator3",
+      "category": "Muscle",
+      "aliases": [
+        "dominator",
+        "dominator3"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator3"
+      ]
+    },
+    {
+      "model_name": "dominator4",
+      "category": "Muscle",
+      "aliases": [
+        "dominator",
+        "dominator4"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator4"
+      ]
+    },
+    {
+      "model_name": "dominator5",
+      "category": "Muscle",
+      "aliases": [
+        "dominator",
+        "dominator5"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator5"
+      ]
+    },
+    {
+      "model_name": "dominator6",
+      "category": "Muscle",
+      "aliases": [
+        "dominator",
+        "dominator6"
+      ],
+      "normalized_aliases": [
+        "dominator",
+        "dominator6"
+      ]
+    },
+    {
+      "model_name": "dukes",
+      "category": "Muscle",
+      "aliases": [
+        "dukes"
+      ],
+      "normalized_aliases": [
+        "dukes"
+      ]
+    },
+    {
+      "model_name": "dukes2",
+      "category": "Muscle",
+      "aliases": [
+        "dukes",
+        "dukes2"
+      ],
+      "normalized_aliases": [
+        "dukes",
+        "dukes2"
+      ]
+    },
+    {
+      "model_name": "dukes3",
+      "category": "Muscle",
+      "aliases": [
+        "dukes",
+        "dukes3"
+      ],
+      "normalized_aliases": [
+        "dukes",
+        "dukes3"
+      ]
+    },
+    {
+      "model_name": "ellie",
+      "category": "Muscle",
+      "aliases": [
+        "ellie"
+      ],
+      "normalized_aliases": [
+        "ellie"
+      ]
+    },
+    {
+      "model_name": "faction",
+      "category": "Muscle",
+      "aliases": [
+        "faction"
+      ],
+      "normalized_aliases": [
+        "faction"
+      ]
+    },
+    {
+      "model_name": "faction2",
+      "category": "Muscle",
+      "aliases": [
+        "faction",
+        "faction2"
+      ],
+      "normalized_aliases": [
+        "faction",
+        "faction2"
+      ]
+    },
+    {
+      "model_name": "faction3",
+      "category": "Muscle",
+      "aliases": [
+        "faction",
+        "faction3"
+      ],
+      "normalized_aliases": [
+        "faction",
+        "faction3"
+      ]
+    },
+    {
+      "model_name": "gauntlet",
+      "category": "Muscle",
+      "aliases": [
+        "gauntlet"
+      ],
+      "normalized_aliases": [
+        "gauntlet"
+      ]
+    },
+    {
+      "model_name": "gauntlet2",
+      "category": "Muscle",
+      "aliases": [
+        "gauntlet",
+        "gauntlet2"
+      ],
+      "normalized_aliases": [
+        "gauntlet",
+        "gauntlet2"
+      ]
+    },
+    {
+      "model_name": "gauntlet3",
+      "category": "Muscle",
+      "aliases": [
+        "gauntlet",
+        "gauntlet3"
+      ],
+      "normalized_aliases": [
+        "gauntlet",
+        "gauntlet3"
+      ]
+    },
+    {
+      "model_name": "gauntlet4",
+      "category": "Muscle",
+      "aliases": [
+        "gauntlet",
+        "gauntlet4"
+      ],
+      "normalized_aliases": [
+        "gauntlet",
+        "gauntlet4"
+      ]
+    },
+    {
+      "model_name": "gauntlet5",
+      "category": "Muscle",
+      "aliases": [
+        "gauntlet",
+        "gauntlet5"
+      ],
+      "normalized_aliases": [
+        "gauntlet",
+        "gauntlet5"
+      ]
+    },
+    {
+      "model_name": "hermes",
+      "category": "Muscle",
+      "aliases": [
+        "hermes"
+      ],
+      "normalized_aliases": [
+        "hermes"
+      ]
+    },
+    {
+      "model_name": "hotknife",
+      "category": "Muscle",
+      "aliases": [
+        "hotknife"
+      ],
+      "normalized_aliases": [
+        "hotknife"
+      ]
+    },
+    {
+      "model_name": "hustler",
+      "category": "Muscle",
+      "aliases": [
+        "hustler"
+      ],
+      "normalized_aliases": [
+        "hustler"
+      ]
+    },
+    {
+      "model_name": "impaler",
+      "category": "Muscle",
+      "aliases": [
+        "impaler"
+      ],
+      "normalized_aliases": [
+        "impaler"
+      ]
+    },
+    {
+      "model_name": "impaler2",
+      "category": "Muscle",
+      "aliases": [
+        "impaler",
+        "impaler2"
+      ],
+      "normalized_aliases": [
+        "impaler",
+        "impaler2"
+      ]
+    },
+    {
+      "model_name": "impaler3",
+      "category": "Muscle",
+      "aliases": [
+        "impaler",
+        "impaler3"
+      ],
+      "normalized_aliases": [
+        "impaler",
+        "impaler3"
+      ]
+    },
+    {
+      "model_name": "impaler4",
+      "category": "Muscle",
+      "aliases": [
+        "impaler",
+        "impaler4"
+      ],
+      "normalized_aliases": [
+        "impaler",
+        "impaler4"
+      ]
+    },
+    {
+      "model_name": "imperator",
+      "category": "Muscle",
+      "aliases": [
+        "imperator"
+      ],
+      "normalized_aliases": [
+        "imperator"
+      ]
+    },
+    {
+      "model_name": "imperator2",
+      "category": "Muscle",
+      "aliases": [
+        "imperator",
+        "imperator2"
+      ],
+      "normalized_aliases": [
+        "imperator",
+        "imperator2"
+      ]
+    },
+    {
+      "model_name": "imperator3",
+      "category": "Muscle",
+      "aliases": [
+        "imperator",
+        "imperator3"
+      ],
+      "normalized_aliases": [
+        "imperator",
+        "imperator3"
+      ]
+    },
+    {
+      "model_name": "lurcher",
+      "category": "Muscle",
+      "aliases": [
+        "lurcher"
+      ],
+      "normalized_aliases": [
+        "lurcher"
+      ]
+    },
+    {
+      "model_name": "moonbeam",
+      "category": "Muscle",
+      "aliases": [
+        "moonbeam"
+      ],
+      "normalized_aliases": [
+        "moonbeam"
+      ]
+    },
+    {
+      "model_name": "moonbeam2",
+      "category": "Muscle",
+      "aliases": [
+        "moonbeam",
+        "moonbeam2"
+      ],
+      "normalized_aliases": [
+        "moonbeam",
+        "moonbeam2"
+      ]
+    },
+    {
+      "model_name": "nightshade",
+      "category": "Muscle",
+      "aliases": [
+        "nightshade"
+      ],
+      "normalized_aliases": [
+        "nightshade"
+      ]
+    },
+    {
+      "model_name": "peyote3",
+      "category": "Muscle",
+      "aliases": [
+        "peyote",
+        "peyote3"
+      ],
+      "normalized_aliases": [
+        "peyote",
+        "peyote3"
+      ]
+    },
+    {
+      "model_name": "phoenix",
+      "category": "Muscle",
+      "aliases": [
+        "phoenix"
+      ],
+      "normalized_aliases": [
+        "phoenix"
+      ]
+    },
+    {
+      "model_name": "picador",
+      "category": "Muscle",
+      "aliases": [
+        "picador"
+      ],
+      "normalized_aliases": [
+        "picador"
+      ]
+    },
+    {
+      "model_name": "ratloader",
+      "category": "Muscle",
+      "aliases": [
+        "ratloader"
+      ],
+      "normalized_aliases": [
+        "ratloader"
+      ]
+    },
+    {
+      "model_name": "ratloader2",
+      "category": "Muscle",
+      "aliases": [
+        "ratloader",
+        "ratloader2"
+      ],
+      "normalized_aliases": [
+        "ratloader",
+        "ratloader2"
+      ]
+    },
+    {
+      "model_name": "ruiner",
+      "category": "Muscle",
+      "aliases": [
+        "ruiner"
+      ],
+      "normalized_aliases": [
+        "ruiner"
+      ]
+    },
+    {
+      "model_name": "ruiner2",
+      "category": "Muscle",
+      "aliases": [
+        "ruiner",
+        "ruiner2"
+      ],
+      "normalized_aliases": [
+        "ruiner",
+        "ruiner2"
+      ]
+    },
+    {
+      "model_name": "ruiner3",
+      "category": "Muscle",
+      "aliases": [
+        "ruiner",
+        "ruiner3"
+      ],
+      "normalized_aliases": [
+        "ruiner",
+        "ruiner3"
+      ]
+    },
+    {
+      "model_name": "sabregt",
+      "category": "Muscle",
+      "aliases": [
+        "sabregt"
+      ],
+      "normalized_aliases": [
+        "sabregt"
+      ]
+    },
+    {
+      "model_name": "sabregt2",
+      "category": "Muscle",
+      "aliases": [
+        "sabregt",
+        "sabregt2"
+      ],
+      "normalized_aliases": [
+        "sabregt",
+        "sabregt2"
+      ]
+    },
+    {
+      "model_name": "slamvan",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan"
+      ],
+      "normalized_aliases": [
+        "slamvan"
+      ]
+    },
+    {
+      "model_name": "slamvan2",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan",
+        "slamvan2"
+      ],
+      "normalized_aliases": [
+        "slamvan",
+        "slamvan2"
+      ]
+    },
+    {
+      "model_name": "slamvan3",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan",
+        "slamvan3"
+      ],
+      "normalized_aliases": [
+        "slamvan",
+        "slamvan3"
+      ]
+    },
+    {
+      "model_name": "slamvan4",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan",
+        "slamvan4"
+      ],
+      "normalized_aliases": [
+        "slamvan",
+        "slamvan4"
+      ]
+    },
+    {
+      "model_name": "slamvan5",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan",
+        "slamvan5"
+      ],
+      "normalized_aliases": [
+        "slamvan",
+        "slamvan5"
+      ]
+    },
+    {
+      "model_name": "slamvan6",
+      "category": "Muscle",
+      "aliases": [
+        "slamvan",
+        "slamvan6"
+      ],
+      "normalized_aliases": [
+        "slamvan",
+        "slamvan6"
+      ]
+    },
+    {
+      "model_name": "stalion",
+      "category": "Muscle",
+      "aliases": [
+        "stalion"
+      ],
+      "normalized_aliases": [
+        "stalion"
+      ]
+    },
+    {
+      "model_name": "stalion2",
+      "category": "Muscle",
+      "aliases": [
+        "stalion",
+        "stalion2"
+      ],
+      "normalized_aliases": [
+        "stalion",
+        "stalion2"
+      ]
+    },
+    {
+      "model_name": "tampa",
+      "category": "Muscle",
+      "aliases": [
+        "tampa"
+      ],
+      "normalized_aliases": [
+        "tampa"
+      ]
+    },
+    {
+      "model_name": "tampa3",
+      "category": "Muscle",
+      "aliases": [
+        "tampa",
+        "tampa3"
+      ],
+      "normalized_aliases": [
+        "tampa",
+        "tampa3"
+      ]
+    },
+    {
+      "model_name": "tulip",
+      "category": "Muscle",
+      "aliases": [
+        "tulip"
+      ],
+      "normalized_aliases": [
+        "tulip"
+      ]
+    },
+    {
+      "model_name": "vamos",
+      "category": "Muscle",
+      "aliases": [
+        "vamos"
+      ],
+      "normalized_aliases": [
+        "vamos"
+      ]
+    },
+    {
+      "model_name": "vigero",
+      "category": "Muscle",
+      "aliases": [
+        "vigero"
+      ],
+      "normalized_aliases": [
+        "vigero"
+      ]
+    },
+    {
+      "model_name": "vigero2",
+      "category": "Muscle",
+      "aliases": [
+        "vigero",
+        "vigero2"
+      ],
+      "normalized_aliases": [
+        "vigero",
+        "vigero2"
+      ]
+    },
+    {
+      "model_name": "virgo",
+      "category": "Muscle",
+      "aliases": [
+        "virgo"
+      ],
+      "normalized_aliases": [
+        "virgo"
+      ]
+    },
+    {
+      "model_name": "virgo2",
+      "category": "Muscle",
+      "aliases": [
+        "virgo",
+        "virgo2"
+      ],
+      "normalized_aliases": [
+        "virgo",
+        "virgo2"
+      ]
+    },
+    {
+      "model_name": "virgo3",
+      "category": "Muscle",
+      "aliases": [
+        "virgo",
+        "virgo3"
+      ],
+      "normalized_aliases": [
+        "virgo",
+        "virgo3"
+      ]
+    },
+    {
+      "model_name": "voodoo",
+      "category": "Muscle",
+      "aliases": [
+        "voodoo"
+      ],
+      "normalized_aliases": [
+        "voodoo"
+      ]
+    },
+    {
+      "model_name": "voodoo2",
+      "category": "Muscle",
+      "aliases": [
+        "voodoo",
+        "voodoo2"
+      ],
+      "normalized_aliases": [
+        "voodoo",
+        "voodoo2"
+      ]
+    },
+    {
+      "model_name": "yosemite",
+      "category": "Muscle",
+      "aliases": [
+        "yosemite"
+      ],
+      "normalized_aliases": [
+        "yosemite"
+      ]
+    },
+    {
+      "model_name": "yosemite2",
+      "category": "Muscle",
+      "aliases": [
+        "yosemite",
+        "yosemite2"
+      ],
+      "normalized_aliases": [
+        "yosemite",
+        "yosemite2"
+      ]
+    },
+    {
+      "model_name": "buffalo4",
+      "category": "Muscle",
+      "aliases": [
+        "buffalo",
+        "buffalo4"
+      ],
+      "normalized_aliases": [
+        "buffalo",
+        "buffalo4"
+      ]
+    },
+    {
+      "model_name": "greenwood",
+      "category": "Muscle",
+      "aliases": [
+        "greenwood"
+      ],
+      "normalized_aliases": [
+        "greenwood"
+      ]
+    },
+    {
+      "model_name": "manana2",
+      "category": "Muscle",
+      "aliases": [
+        "manana",
+        "manana2"
+      ],
+      "normalized_aliases": [
+        "manana",
+        "manana2"
+      ]
+    },
+    {
+      "model_name": "weevil2",
+      "category": "Muscle",
+      "aliases": [
+        "weevil",
+        "weevil2"
+      ],
+      "normalized_aliases": [
+        "weevil",
+        "weevil2"
+      ]
+    },
+    {
+      "model_name": "tahoma",
+      "category": "Muscle",
+      "aliases": [
+        "tahoma"
+      ],
+      "normalized_aliases": [
+        "tahoma"
+      ]
+    },
+    {
+      "model_name": "ardent",
+      "category": "Sports Classic",
+      "aliases": [
+        "ardent"
+      ],
+      "normalized_aliases": [
+        "ardent"
+      ]
+    },
+    {
+      "model_name": "btype",
+      "category": "Sports Classic",
+      "aliases": [
+        "btype"
+      ],
+      "normalized_aliases": [
+        "btype"
+      ]
+    },
+    {
+      "model_name": "btype2",
+      "category": "Sports Classic",
+      "aliases": [
+        "btype",
+        "btype2"
+      ],
+      "normalized_aliases": [
+        "btype",
+        "btype2"
+      ]
+    },
+    {
+      "model_name": "btype3",
+      "category": "Sports Classic",
+      "aliases": [
+        "btype",
+        "btype3"
+      ],
+      "normalized_aliases": [
+        "btype",
+        "btype3"
+      ]
+    },
+    {
+      "model_name": "casco",
+      "category": "Sports Classic",
+      "aliases": [
+        "casco"
+      ],
+      "normalized_aliases": [
+        "casco"
+      ]
+    },
+    {
+      "model_name": "cheburek",
+      "category": "Sports Classic",
+      "aliases": [
+        "cheburek"
+      ],
+      "normalized_aliases": [
+        "cheburek"
+      ]
+    },
+    {
+      "model_name": "cheetah2",
+      "category": "Sports Classic",
+      "aliases": [
+        "cheetah",
+        "cheetah2"
+      ],
+      "normalized_aliases": [
+        "cheetah",
+        "cheetah2"
+      ]
+    },
+    {
+      "model_name": "coquette2",
+      "category": "Sports Classic",
+      "aliases": [
+        "coquette",
+        "coquette2"
+      ],
+      "normalized_aliases": [
+        "coquette",
+        "coquette2"
+      ]
+    },
+    {
+      "model_name": "deluxo",
+      "category": "Sports Classic",
+      "aliases": [
+        "deluxo"
+      ],
+      "normalized_aliases": [
+        "deluxo"
+      ]
+    },
+    {
+      "model_name": "dynasty",
+      "category": "Sports Classic",
+      "aliases": [
+        "dynasty"
+      ],
+      "normalized_aliases": [
+        "dynasty"
+      ]
+    },
+    {
+      "model_name": "fagaloa",
+      "category": "Sports Classic",
+      "aliases": [
+        "fagaloa"
+      ],
+      "normalized_aliases": [
+        "fagaloa"
+      ]
+    },
+    {
+      "model_name": "feltzer3",
+      "category": "Sports Classic",
+      "aliases": [
+        "feltzer",
+        "feltzer3"
+      ],
+      "normalized_aliases": [
+        "feltzer",
+        "feltzer3"
+      ]
+    },
+    {
+      "model_name": "gt500",
+      "category": "Sports Classic",
+      "aliases": [
+        "gt",
+        "gt500"
+      ],
+      "normalized_aliases": [
+        "gt",
+        "gt500"
+      ]
+    },
+    {
+      "model_name": "infernus2",
+      "category": "Sports Classic",
+      "aliases": [
+        "infernus",
+        "infernus2"
+      ],
+      "normalized_aliases": [
+        "infernus",
+        "infernus2"
+      ]
+    },
+    {
+      "model_name": "jb700",
+      "category": "Sports Classic",
+      "aliases": [
+        "jb",
+        "jb700"
+      ],
+      "normalized_aliases": [
+        "jb",
+        "jb700"
+      ]
+    },
+    {
+      "model_name": "jb7002",
+      "category": "Sports Classic",
+      "aliases": [
+        "jb",
+        "jb7002"
+      ],
+      "normalized_aliases": [
+        "jb",
+        "jb7002"
+      ]
+    },
+    {
+      "model_name": "mamba",
+      "category": "Sports Classic",
+      "aliases": [
+        "mamba"
+      ],
+      "normalized_aliases": [
+        "mamba"
+      ]
+    },
+    {
+      "model_name": "manana",
+      "category": "Sports Classic",
+      "aliases": [
+        "manana"
+      ],
+      "normalized_aliases": [
+        "manana"
+      ]
+    },
+    {
+      "model_name": "michelli",
+      "category": "Sports Classic",
+      "aliases": [
+        "michelli"
+      ],
+      "normalized_aliases": [
+        "michelli"
+      ]
+    },
+    {
+      "model_name": "monroe",
+      "category": "Sports Classic",
+      "aliases": [
+        "monroe"
+      ],
+      "normalized_aliases": [
+        "monroe"
+      ]
+    },
+    {
+      "model_name": "nebula",
+      "category": "Sports Classic",
+      "aliases": [
+        "nebula"
+      ],
+      "normalized_aliases": [
+        "nebula"
+      ]
+    },
+    {
+      "model_name": "peyote",
+      "category": "Sports Classic",
+      "aliases": [
+        "peyote"
+      ],
+      "normalized_aliases": [
+        "peyote"
+      ]
+    },
+    {
+      "model_name": "peyote2",
+      "category": "Sports Classic",
+      "aliases": [
+        "peyote",
+        "peyote2"
+      ],
+      "normalized_aliases": [
+        "peyote",
+        "peyote2"
+      ]
+    },
+    {
+      "model_name": "pigalle",
+      "category": "Sports Classic",
+      "aliases": [
+        "pigalle"
+      ],
+      "normalized_aliases": [
+        "pigalle"
+      ]
+    },
+    {
+      "model_name": "rapidgt3",
+      "category": "Sports Classic",
+      "aliases": [
+        "rapidgt",
+        "rapidgt3"
+      ],
+      "normalized_aliases": [
+        "rapidgt",
+        "rapidgt3"
+      ]
+    },
+    {
+      "model_name": "retinue",
+      "category": "Sports Classic",
+      "aliases": [
+        "retinue"
+      ],
+      "normalized_aliases": [
+        "retinue"
+      ]
+    },
+    {
+      "model_name": "retinue2",
+      "category": "Sports Classic",
+      "aliases": [
+        "retinue",
+        "retinue2"
+      ],
+      "normalized_aliases": [
+        "retinue",
+        "retinue2"
+      ]
+    },
+    {
+      "model_name": "savestra",
+      "category": "Sports Classic",
+      "aliases": [
+        "savestra"
+      ],
+      "normalized_aliases": [
+        "savestra"
+      ]
+    },
+    {
+      "model_name": "stinger",
+      "category": "Sports Classic",
+      "aliases": [
+        "stinger"
+      ],
+      "normalized_aliases": [
+        "stinger"
+      ]
+    },
+    {
+      "model_name": "stingergt",
+      "category": "Sports Classic",
+      "aliases": [
+        "stingergt"
+      ],
+      "normalized_aliases": [
+        "stingergt"
+      ]
+    },
+    {
+      "model_name": "stromberg",
+      "category": "Sports Classic",
+      "aliases": [
+        "stromberg"
+      ],
+      "normalized_aliases": [
+        "stromberg"
+      ]
+    },
+    {
+      "model_name": "swinger",
+      "category": "Sports Classic",
+      "aliases": [
+        "swinger"
+      ],
+      "normalized_aliases": [
+        "swinger"
+      ]
+    },
+    {
+      "model_name": "torero",
+      "category": "Sports Classic",
+      "aliases": [
+        "torero"
+      ],
+      "normalized_aliases": [
+        "torero"
+      ]
+    },
+    {
+      "model_name": "tornado",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado"
+      ],
+      "normalized_aliases": [
+        "tornado"
+      ]
+    },
+    {
+      "model_name": "tornado2",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado",
+        "tornado2"
+      ],
+      "normalized_aliases": [
+        "tornado",
+        "tornado2"
+      ]
+    },
+    {
+      "model_name": "tornado3",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado",
+        "tornado3"
+      ],
+      "normalized_aliases": [
+        "tornado",
+        "tornado3"
+      ]
+    },
+    {
+      "model_name": "tornado4",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado",
+        "tornado4"
+      ],
+      "normalized_aliases": [
+        "tornado",
+        "tornado4"
+      ]
+    },
+    {
+      "model_name": "tornado5",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado",
+        "tornado5"
+      ],
+      "normalized_aliases": [
+        "tornado",
+        "tornado5"
+      ]
+    },
+    {
+      "model_name": "tornado6",
+      "category": "Sports Classic",
+      "aliases": [
+        "tornado",
+        "tornado6"
+      ],
+      "normalized_aliases": [
+        "tornado",
+        "tornado6"
+      ]
+    },
+    {
+      "model_name": "viseris",
+      "category": "Sports Classic",
+      "aliases": [
+        "viseris"
+      ],
+      "normalized_aliases": [
+        "viseris"
+      ]
+    },
+    {
+      "model_name": "z190",
+      "category": "Sports Classic",
+      "aliases": [
+        "z",
+        "z190"
+      ],
+      "normalized_aliases": [
+        "z",
+        "z190"
+      ]
+    },
+    {
+      "model_name": "zion3",
+      "category": "Sports Classic",
+      "aliases": [
+        "zion",
+        "zion3"
+      ],
+      "normalized_aliases": [
+        "zion",
+        "zion3"
+      ]
+    },
+    {
+      "model_name": "ztype",
+      "category": "Sports Classic",
+      "aliases": [
+        "ztype"
+      ],
+      "normalized_aliases": [
+        "ztype"
+      ]
+    },
+    {
+      "model_name": "toreador",
+      "category": "Sports Classic",
+      "aliases": [
+        "toreador"
+      ],
+      "normalized_aliases": [
+        "toreador"
+      ]
+    },
+    {
+      "model_name": "panthere",
+      "category": "Sports Classic",
+      "aliases": [
+        "panthere"
+      ],
+      "normalized_aliases": [
+        "panthere"
+      ]
+    },
+    {
+      "model_name": "sm722",
+      "category": "Sports Classic",
+      "aliases": [
+        "sm",
+        "sm722"
+      ],
+      "normalized_aliases": [
+        "sm",
+        "sm722"
+      ]
+    },
+    {
+      "model_name": "asea",
+      "category": "Sedan",
+      "aliases": [
+        "asea"
+      ],
+      "normalized_aliases": [
+        "asea"
+      ]
+    },
+    {
+      "model_name": "asea2",
+      "category": "Sedan",
+      "aliases": [
+        "asea",
+        "asea2"
+      ],
+      "normalized_aliases": [
+        "asea",
+        "asea2"
+      ]
+    },
+    {
+      "model_name": "asterope",
+      "category": "Sedan",
+      "aliases": [
+        "asterope"
+      ],
+      "normalized_aliases": [
+        "asterope"
+      ]
+    },
+    {
+      "model_name": "cog55",
+      "category": "Sedan",
+      "aliases": [
+        "cog",
+        "cog55"
+      ],
+      "normalized_aliases": [
+        "cog",
+        "cog55"
+      ]
+    },
+    {
+      "model_name": "cog552",
+      "category": "Sedan",
+      "aliases": [
+        "cog",
+        "cog552"
+      ],
+      "normalized_aliases": [
+        "cog",
+        "cog552"
+      ]
+    },
+    {
+      "model_name": "cognoscenti",
+      "category": "Sedan",
+      "aliases": [
+        "cognoscenti"
+      ],
+      "normalized_aliases": [
+        "cognoscenti"
+      ]
+    },
+    {
+      "model_name": "cognoscenti2",
+      "category": "Sedan",
+      "aliases": [
+        "cognoscenti",
+        "cognoscenti2"
+      ],
+      "normalized_aliases": [
+        "cognoscenti",
+        "cognoscenti2"
+      ]
+    },
+    {
+      "model_name": "emperor",
+      "category": "Sedan",
+      "aliases": [
+        "emperor"
+      ],
+      "normalized_aliases": [
+        "emperor"
+      ]
+    },
+    {
+      "model_name": "emperor2",
+      "category": "Sedan",
+      "aliases": [
+        "emperor",
+        "emperor2"
+      ],
+      "normalized_aliases": [
+        "emperor",
+        "emperor2"
+      ]
+    },
+    {
+      "model_name": "emperor3",
+      "category": "Sedan",
+      "aliases": [
+        "emperor",
+        "emperor3"
+      ],
+      "normalized_aliases": [
+        "emperor",
+        "emperor3"
+      ]
+    },
+    {
+      "model_name": "fugitive",
+      "category": "Sedan",
+      "aliases": [
+        "fugitive"
+      ],
+      "normalized_aliases": [
+        "fugitive"
+      ]
+    },
+    {
+      "model_name": "glendale",
+      "category": "Sedan",
+      "aliases": [
+        "glendale"
+      ],
+      "normalized_aliases": [
+        "glendale"
+      ]
+    },
+    {
+      "model_name": "glendale2",
+      "category": "Sedan",
+      "aliases": [
+        "glendale",
+        "glendale2"
+      ],
+      "normalized_aliases": [
+        "glendale",
+        "glendale2"
+      ]
+    },
+    {
+      "model_name": "ingot",
+      "category": "Sedan",
+      "aliases": [
+        "ingot"
+      ],
+      "normalized_aliases": [
+        "ingot"
+      ]
+    },
+    {
+      "model_name": "intruder",
+      "category": "Sedan",
+      "aliases": [
+        "intruder"
+      ],
+      "normalized_aliases": [
+        "intruder"
+      ]
+    },
+    {
+      "model_name": "limo2",
+      "category": "Sedan",
+      "aliases": [
+        "limo",
+        "limo2"
+      ],
+      "normalized_aliases": [
+        "limo",
+        "limo2"
+      ]
+    },
+    {
+      "model_name": "premier",
+      "category": "Sedan",
+      "aliases": [
+        "premier"
+      ],
+      "normalized_aliases": [
+        "premier"
+      ]
+    },
+    {
+      "model_name": "primo",
+      "category": "Sedan",
+      "aliases": [
+        "primo"
+      ],
+      "normalized_aliases": [
+        "primo"
+      ]
+    },
+    {
+      "model_name": "primo2",
+      "category": "Sedan",
+      "aliases": [
+        "primo",
+        "primo2"
+      ],
+      "normalized_aliases": [
+        "primo",
+        "primo2"
+      ]
+    },
+    {
+      "model_name": "regina",
+      "category": "Sedan",
+      "aliases": [
+        "regina"
+      ],
+      "normalized_aliases": [
+        "regina"
+      ]
+    },
+    {
+      "model_name": "romero",
+      "category": "Sedan",
+      "aliases": [
+        "romero"
+      ],
+      "normalized_aliases": [
+        "romero"
+      ]
+    },
+    {
+      "model_name": "schafter2",
+      "category": "Sedan",
+      "aliases": [
+        "schafter",
+        "schafter2"
+      ],
+      "normalized_aliases": [
+        "schafter",
+        "schafter2"
+      ]
+    },
+    {
+      "model_name": "stafford",
+      "category": "Sedan",
+      "aliases": [
+        "stafford"
+      ],
+      "normalized_aliases": [
+        "stafford"
+      ]
+    },
+    {
+      "model_name": "stanier",
+      "category": "Sedan",
+      "aliases": [
+        "stanier"
+      ],
+      "normalized_aliases": [
+        "stanier"
+      ]
+    },
+    {
+      "model_name": "stretch",
+      "category": "Sedan",
+      "aliases": [
+        "stretch"
+      ],
+      "normalized_aliases": [
+        "stretch"
+      ]
+    },
+    {
+      "model_name": "superd",
+      "category": "Sedan",
+      "aliases": [
+        "superd"
+      ],
+      "normalized_aliases": [
+        "superd"
+      ]
+    },
+    {
+      "model_name": "surge",
+      "category": "Sedan",
+      "aliases": [
+        "surge"
+      ],
+      "normalized_aliases": [
+        "surge"
+      ]
+    },
+    {
+      "model_name": "tailgater",
+      "category": "Sedan",
+      "aliases": [
+        "tailgater"
+      ],
+      "normalized_aliases": [
+        "tailgater"
+      ]
+    },
+    {
+      "model_name": "warrener",
+      "category": "Sedan",
+      "aliases": [
+        "warrener"
+      ],
+      "normalized_aliases": [
+        "warrener"
+      ]
+    },
+    {
+      "model_name": "washington",
+      "category": "Sedan",
+      "aliases": [
+        "washington"
+      ],
+      "normalized_aliases": [
+        "washington"
+      ]
+    },
+    {
+      "model_name": "cogcabrio",
+      "category": "Coupe",
+      "aliases": [
+        "cogcabrio"
+      ],
+      "normalized_aliases": [
+        "cogcabrio"
+      ]
+    },
+    {
+      "model_name": "exemplar",
+      "category": "Coupe",
+      "aliases": [
+        "exemplar"
+      ],
+      "normalized_aliases": [
+        "exemplar"
+      ]
+    },
+    {
+      "model_name": "f620",
+      "category": "Coupe",
+      "aliases": [
+        "f",
+        "f620"
+      ],
+      "normalized_aliases": [
+        "f",
+        "f620"
+      ]
+    },
+    {
+      "model_name": "felon",
+      "category": "Coupe",
+      "aliases": [
+        "felon"
+      ],
+      "normalized_aliases": [
+        "felon"
+      ]
+    },
+    {
+      "model_name": "felon2",
+      "category": "Coupe",
+      "aliases": [
+        "felon",
+        "felon2"
+      ],
+      "normalized_aliases": [
+        "felon",
+        "felon2"
+      ]
+    },
+    {
+      "model_name": "jackal",
+      "category": "Coupe",
+      "aliases": [
+        "jackal"
+      ],
+      "normalized_aliases": [
+        "jackal"
+      ]
+    },
+    {
+      "model_name": "oracle",
+      "category": "Coupe",
+      "aliases": [
+        "oracle"
+      ],
+      "normalized_aliases": [
+        "oracle"
+      ]
+    },
+    {
+      "model_name": "oracle2",
+      "category": "Coupe",
+      "aliases": [
+        "oracle",
+        "oracle2"
+      ],
+      "normalized_aliases": [
+        "oracle",
+        "oracle2"
+      ]
+    },
+    {
+      "model_name": "sentinel",
+      "category": "Coupe",
+      "aliases": [
+        "sentinel"
+      ],
+      "normalized_aliases": [
+        "sentinel"
+      ]
+    },
+    {
+      "model_name": "sentinel2",
+      "category": "Coupe",
+      "aliases": [
+        "sentinel",
+        "sentinel2"
+      ],
+      "normalized_aliases": [
+        "sentinel",
+        "sentinel2"
+      ]
+    },
+    {
+      "model_name": "windsor",
+      "category": "Coupe",
+      "aliases": [
+        "windsor"
+      ],
+      "normalized_aliases": [
+        "windsor"
+      ]
+    },
+    {
+      "model_name": "windsor2",
+      "category": "Coupe",
+      "aliases": [
+        "windsor",
+        "windsor2"
+      ],
+      "normalized_aliases": [
+        "windsor",
+        "windsor2"
+      ]
+    },
+    {
+      "model_name": "zion",
+      "category": "Coupe",
+      "aliases": [
+        "zion"
+      ],
+      "normalized_aliases": [
+        "zion"
+      ]
+    },
+    {
+      "model_name": "zion2",
+      "category": "Coupe",
+      "aliases": [
+        "zion",
+        "zion2"
+      ],
+      "normalized_aliases": [
+        "zion",
+        "zion2"
+      ]
+    },
+    {
+      "model_name": "baller",
+      "category": "SUV",
+      "aliases": [
+        "baller"
+      ],
+      "normalized_aliases": [
+        "baller"
+      ]
+    },
+    {
+      "model_name": "baller2",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller2"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller2"
+      ]
+    },
+    {
+      "model_name": "baller3",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller3"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller3"
+      ]
+    },
+    {
+      "model_name": "baller4",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller4"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller4"
+      ]
+    },
+    {
+      "model_name": "baller5",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller5"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller5"
+      ]
+    },
+    {
+      "model_name": "baller6",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller6"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller6"
+      ]
+    },
+    {
+      "model_name": "baller7",
+      "category": "SUV",
+      "aliases": [
+        "baller",
+        "baller7"
+      ],
+      "normalized_aliases": [
+        "baller",
+        "baller7"
+      ]
+    },
+    {
+      "model_name": "bjxl",
+      "category": "SUV",
+      "aliases": [
+        "bjxl"
+      ],
+      "normalized_aliases": [
+        "bjxl"
+      ]
+    },
+    {
+      "model_name": "cavalcade",
+      "category": "SUV",
+      "aliases": [
+        "cavalcade"
+      ],
+      "normalized_aliases": [
+        "cavalcade"
+      ]
+    },
+    {
+      "model_name": "cavalcade2",
+      "category": "SUV",
+      "aliases": [
+        "cavalcade",
+        "cavalcade2"
+      ],
+      "normalized_aliases": [
+        "cavalcade",
+        "cavalcade2"
+      ]
+    },
+    {
+      "model_name": "contender",
+      "category": "SUV",
+      "aliases": [
+        "contender"
+      ],
+      "normalized_aliases": [
+        "contender"
+      ]
+    },
+    {
+      "model_name": "dubsta",
+      "category": "SUV",
+      "aliases": [
+        "dubsta"
+      ],
+      "normalized_aliases": [
+        "dubsta"
+      ]
+    },
+    {
+      "model_name": "dubsta2",
+      "category": "SUV",
+      "aliases": [
+        "dubsta",
+        "dubsta2"
+      ],
+      "normalized_aliases": [
+        "dubsta",
+        "dubsta2"
+      ]
+    },
+    {
+      "model_name": "fq2",
+      "category": "SUV",
+      "aliases": [
+        "fq",
+        "fq2"
+      ],
+      "normalized_aliases": [
+        "fq",
+        "fq2"
+      ]
+    },
+    {
+      "model_name": "granger",
+      "category": "SUV",
+      "aliases": [
+        "granger"
+      ],
+      "normalized_aliases": [
+        "granger"
+      ]
+    },
+    {
+      "model_name": "granger2",
+      "category": "SUV",
+      "aliases": [
+        "granger",
+        "granger2"
+      ],
+      "normalized_aliases": [
+        "granger",
+        "granger2"
+      ]
+    },
+    {
+      "model_name": "gresley",
+      "category": "SUV",
+      "aliases": [
+        "gresley"
+      ],
+      "normalized_aliases": [
+        "gresley"
+      ]
+    },
+    {
+      "model_name": "habanero",
+      "category": "SUV",
+      "aliases": [
+        "habanero"
+      ],
+      "normalized_aliases": [
+        "habanero"
+      ]
+    },
+    {
+      "model_name": "huntley",
+      "category": "SUV",
+      "aliases": [
+        "huntley"
+      ],
+      "normalized_aliases": [
+        "huntley"
+      ]
+    },
+    {
+      "model_name": "landstalker",
+      "category": "SUV",
+      "aliases": [
+        "landstalker"
+      ],
+      "normalized_aliases": [
+        "landstalker"
+      ]
+    },
+    {
+      "model_name": "landstalker2",
+      "category": "SUV",
+      "aliases": [
+        "landstalker",
+        "landstalker2"
+      ],
+      "normalized_aliases": [
+        "landstalker",
+        "landstalker2"
+      ]
+    },
+    {
+      "model_name": "mesa",
+      "category": "SUV",
+      "aliases": [
+        "mesa"
+      ],
+      "normalized_aliases": [
+        "mesa"
+      ]
+    },
+    {
+      "model_name": "mesa2",
+      "category": "SUV",
+      "aliases": [
+        "mesa",
+        "mesa2"
+      ],
+      "normalized_aliases": [
+        "mesa",
+        "mesa2"
+      ]
+    },
+    {
+      "model_name": "novak",
+      "category": "SUV",
+      "aliases": [
+        "novak"
+      ],
+      "normalized_aliases": [
+        "novak"
+      ]
+    },
+    {
+      "model_name": "patriot",
+      "category": "SUV",
+      "aliases": [
+        "patriot"
+      ],
+      "normalized_aliases": [
+        "patriot"
+      ]
+    },
+    {
+      "model_name": "patriot2",
+      "category": "SUV",
+      "aliases": [
+        "patriot",
+        "patriot2"
+      ],
+      "normalized_aliases": [
+        "patriot",
+        "patriot2"
+      ]
+    },
+    {
+      "model_name": "patriot3",
+      "category": "SUV",
+      "aliases": [
+        "patriot",
+        "patriot3"
+      ],
+      "normalized_aliases": [
+        "patriot",
+        "patriot3"
+      ]
+    },
+    {
+      "model_name": "radi",
+      "category": "SUV",
+      "aliases": [
+        "radi"
+      ],
+      "normalized_aliases": [
+        "radi"
+      ]
+    },
+    {
+      "model_name": "rebla",
+      "category": "SUV",
+      "aliases": [
+        "rebla"
+      ],
+      "normalized_aliases": [
+        "rebla"
+      ]
+    },
+    {
+      "model_name": "rocoto",
+      "category": "SUV",
+      "aliases": [
+        "rocoto"
+      ],
+      "normalized_aliases": [
+        "rocoto"
+      ]
+    },
+    {
+      "model_name": "seminole",
+      "category": "SUV",
+      "aliases": [
+        "seminole"
+      ],
+      "normalized_aliases": [
+        "seminole"
+      ]
+    },
+    {
+      "model_name": "seminole2",
+      "category": "SUV",
+      "aliases": [
+        "seminole",
+        "seminole2"
+      ],
+      "normalized_aliases": [
+        "seminole",
+        "seminole2"
+      ]
+    },
+    {
+      "model_name": "serrano",
+      "category": "SUV",
+      "aliases": [
+        "serrano"
+      ],
+      "normalized_aliases": [
+        "serrano"
+      ]
+    },
+    {
+      "model_name": "toros",
+      "category": "SUV",
+      "aliases": [
+        "toros"
+      ],
+      "normalized_aliases": [
+        "toros"
+      ]
+    },
+    {
+      "model_name": "xls",
+      "category": "SUV",
+      "aliases": [
+        "xls"
+      ],
+      "normalized_aliases": [
+        "xls"
+      ]
+    },
+    {
+      "model_name": "xls2",
+      "category": "SUV",
+      "aliases": [
+        "xls",
+        "xls2"
+      ],
+      "normalized_aliases": [
+        "xls",
+        "xls2"
+      ]
+    },
+    {
+      "model_name": "jubilee",
+      "category": "SUV",
+      "aliases": [
+        "jubilee"
+      ],
+      "normalized_aliases": [
+        "jubilee"
+      ]
+    },
+    {
+      "model_name": "iwagen",
+      "category": "SUV",
+      "aliases": [
+        "iwagen"
+      ],
+      "normalized_aliases": [
+        "iwagen"
+      ]
+    },
+    {
+      "model_name": "astron",
+      "category": "SUV",
+      "aliases": [
+        "astron"
+      ],
+      "normalized_aliases": [
+        "astron"
+      ]
+    },
+    {
+      "model_name": "astron2",
+      "category": "SUV",
+      "aliases": [
+        "astron",
+        "astron2"
+      ],
+      "normalized_aliases": [
+        "astron",
+        "astron2"
+      ]
+    },
+    {
+      "model_name": "blista",
+      "category": "Compact",
+      "aliases": [
+        "blista"
+      ],
+      "normalized_aliases": [
+        "blista"
+      ]
+    },
+    {
+      "model_name": "blista2",
+      "category": "Compact",
+      "aliases": [
+        "blista",
+        "blista2"
+      ],
+      "normalized_aliases": [
+        "blista",
+        "blista2"
+      ]
+    },
+    {
+      "model_name": "blista3",
+      "category": "Compact",
+      "aliases": [
+        "blista",
+        "blista3"
+      ],
+      "normalized_aliases": [
+        "blista",
+        "blista3"
+      ]
+    },
+    {
+      "model_name": "brioso",
+      "category": "Compact",
+      "aliases": [
+        "brioso"
+      ],
+      "normalized_aliases": [
+        "brioso"
+      ]
+    },
+    {
+      "model_name": "brioso2",
+      "category": "Compact",
+      "aliases": [
+        "brioso",
+        "brioso2"
+      ],
+      "normalized_aliases": [
+        "brioso",
+        "brioso2"
+      ]
+    },
+    {
+      "model_name": "dilettante",
+      "category": "Compact",
+      "aliases": [
+        "dilettante"
+      ],
+      "normalized_aliases": [
+        "dilettante"
+      ]
+    },
+    {
+      "model_name": "dilettante2",
+      "category": "Compact",
+      "aliases": [
+        "dilettante",
+        "dilettante2"
+      ],
+      "normalized_aliases": [
+        "dilettante",
+        "dilettante2"
+      ]
+    },
+    {
+      "model_name": "issi2",
+      "category": "Compact",
+      "aliases": [
+        "issi",
+        "issi2"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi2"
+      ]
+    },
+    {
+      "model_name": "issi3",
+      "category": "Compact",
+      "aliases": [
+        "issi",
+        "issi3"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi3"
+      ]
+    },
+    {
+      "model_name": "issi4",
+      "category": "Compact",
+      "aliases": [
+        "issi",
+        "issi4"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi4"
+      ]
+    },
+    {
+      "model_name": "issi5",
+      "category": "Compact",
+      "aliases": [
+        "issi",
+        "issi5"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi5"
+      ]
+    },
+    {
+      "model_name": "issi6",
+      "category": "Compact",
+      "aliases": [
+        "issi",
+        "issi6"
+      ],
+      "normalized_aliases": [
+        "issi",
+        "issi6"
+      ]
+    },
+    {
+      "model_name": "kanjo",
+      "category": "Compact",
+      "aliases": [
+        "kanjo"
+      ],
+      "normalized_aliases": [
+        "kanjo"
+      ]
+    },
+    {
+      "model_name": "panto",
+      "category": "Compact",
+      "aliases": [
+        "panto"
+      ],
+      "normalized_aliases": [
+        "panto"
+      ]
+    },
+    {
+      "model_name": "prairie",
+      "category": "Compact",
+      "aliases": [
+        "prairie"
+      ],
+      "normalized_aliases": [
+        "prairie"
+      ]
+    },
+    {
+      "model_name": "rhapsody",
+      "category": "Compact",
+      "aliases": [
+        "rhapsody"
+      ],
+      "normalized_aliases": [
+        "rhapsody"
+      ]
+    },
+    {
+      "model_name": "club",
+      "category": "Compact",
+      "aliases": [
+        "club"
+      ],
+      "normalized_aliases": [
+        "club"
+      ]
+    },
+    {
+      "model_name": "weevil",
+      "category": "Compact",
+      "aliases": [
+        "weevil"
+      ],
+      "normalized_aliases": [
+        "weevil"
+      ]
+    },
+    {
+      "model_name": "asbo",
+      "category": "Compact",
+      "aliases": [
+        "asbo"
+      ],
+      "normalized_aliases": [
+        "asbo"
+      ]
+    },
+    {
+      "model_name": "bifta",
+      "category": "Off-Road",
+      "aliases": [
+        "bifta"
+      ],
+      "normalized_aliases": [
+        "bifta"
+      ]
+    },
+    {
+      "model_name": "blazer",
+      "category": "Off-Road",
+      "aliases": [
+        "blazer"
+      ],
+      "normalized_aliases": [
+        "blazer"
+      ]
+    },
+    {
+      "model_name": "blazer2",
+      "category": "Off-Road",
+      "aliases": [
+        "blazer",
+        "blazer2"
+      ],
+      "normalized_aliases": [
+        "blazer",
+        "blazer2"
+      ]
+    },
+    {
+      "model_name": "blazer3",
+      "category": "Off-Road",
+      "aliases": [
+        "blazer",
+        "blazer3"
+      ],
+      "normalized_aliases": [
+        "blazer",
+        "blazer3"
+      ]
+    },
+    {
+      "model_name": "blazer4",
+      "category": "Off-Road",
+      "aliases": [
+        "blazer",
+        "blazer4"
+      ],
+      "normalized_aliases": [
+        "blazer",
+        "blazer4"
+      ]
+    },
+    {
+      "model_name": "blazer5",
+      "category": "Off-Road",
+      "aliases": [
+        "blazer",
+        "blazer5"
+      ],
+      "normalized_aliases": [
+        "blazer",
+        "blazer5"
+      ]
+    },
+    {
+      "model_name": "brawler",
+      "category": "Off-Road",
+      "aliases": [
+        "brawler"
+      ],
+      "normalized_aliases": [
+        "brawler"
+      ]
+    },
+    {
+      "model_name": "bruiser",
+      "category": "Off-Road",
+      "aliases": [
+        "bruiser"
+      ],
+      "normalized_aliases": [
+        "bruiser"
+      ]
+    },
+    {
+      "model_name": "bruiser2",
+      "category": "Off-Road",
+      "aliases": [
+        "bruiser",
+        "bruiser2"
+      ],
+      "normalized_aliases": [
+        "bruiser",
+        "bruiser2"
+      ]
+    },
+    {
+      "model_name": "bruiser3",
+      "category": "Off-Road",
+      "aliases": [
+        "bruiser",
+        "bruiser3"
+      ],
+      "normalized_aliases": [
+        "bruiser",
+        "bruiser3"
+      ]
+    },
+    {
+      "model_name": "brutus",
+      "category": "Off-Road",
+      "aliases": [
+        "brutus"
+      ],
+      "normalized_aliases": [
+        "brutus"
+      ]
+    },
+    {
+      "model_name": "brutus2",
+      "category": "Off-Road",
+      "aliases": [
+        "brutus",
+        "brutus2"
+      ],
+      "normalized_aliases": [
+        "brutus",
+        "brutus2"
+      ]
+    },
+    {
+      "model_name": "brutus3",
+      "category": "Off-Road",
+      "aliases": [
+        "brutus",
+        "brutus3"
+      ],
+      "normalized_aliases": [
+        "brutus",
+        "brutus3"
+      ]
+    },
+    {
+      "model_name": "caracara",
+      "category": "Off-Road",
+      "aliases": [
+        "caracara"
+      ],
+      "normalized_aliases": [
+        "caracara"
+      ]
+    },
+    {
+      "model_name": "caracara2",
+      "category": "Off-Road",
+      "aliases": [
+        "caracara",
+        "caracara2"
+      ],
+      "normalized_aliases": [
+        "caracara",
+        "caracara2"
+      ]
+    },
+    {
+      "model_name": "dloader",
+      "category": "Off-Road",
+      "aliases": [
+        "dloader"
+      ],
+      "normalized_aliases": [
+        "dloader"
+      ]
+    },
+    {
+      "model_name": "dubsta3",
+      "category": "Off-Road",
+      "aliases": [
+        "dubsta",
+        "dubsta3"
+      ],
+      "normalized_aliases": [
+        "dubsta",
+        "dubsta3"
+      ]
+    },
+    {
+      "model_name": "duneloader",
+      "category": "Off-Road",
+      "aliases": [
+        "duneloader"
+      ],
+      "normalized_aliases": [
+        "duneloader"
+      ]
+    },
+    {
+      "model_name": "everon",
+      "category": "Off-Road",
+      "aliases": [
+        "everon"
+      ],
+      "normalized_aliases": [
+        "everon"
+      ]
+    },
+    {
+      "model_name": "freecrawler",
+      "category": "Off-Road",
+      "aliases": [
+        "freecrawler"
+      ],
+      "normalized_aliases": [
+        "freecrawler"
+      ]
+    },
+    {
+      "model_name": "hellion",
+      "category": "Off-Road",
+      "aliases": [
+        "hellion"
+      ],
+      "normalized_aliases": [
+        "hellion"
+      ]
+    },
+    {
+      "model_name": "insurgent",
+      "category": "Off-Road",
+      "aliases": [
+        "insurgent"
+      ],
+      "normalized_aliases": [
+        "insurgent"
+      ]
+    },
+    {
+      "model_name": "insurgent2",
+      "category": "Off-Road",
+      "aliases": [
+        "insurgent",
+        "insurgent2"
+      ],
+      "normalized_aliases": [
+        "insurgent",
+        "insurgent2"
+      ]
+    },
+    {
+      "model_name": "insurgent3",
+      "category": "Off-Road",
+      "aliases": [
+        "insurgent",
+        "insurgent3"
+      ],
+      "normalized_aliases": [
+        "insurgent",
+        "insurgent3"
+      ]
+    },
+    {
+      "model_name": "kamacho",
+      "category": "Off-Road",
+      "aliases": [
+        "kamacho"
+      ],
+      "normalized_aliases": [
+        "kamacho"
+      ]
+    },
+    {
+      "model_name": "marshall",
+      "category": "Off-Road",
+      "aliases": [
+        "marshall"
+      ],
+      "normalized_aliases": [
+        "marshall"
+      ]
+    },
+    {
+      "model_name": "menacer",
+      "category": "Off-Road",
+      "aliases": [
+        "menacer"
+      ],
+      "normalized_aliases": [
+        "menacer"
+      ]
+    },
+    {
+      "model_name": "monster",
+      "category": "Off-Road",
+      "aliases": [
+        "monster"
+      ],
+      "normalized_aliases": [
+        "monster"
+      ]
+    },
+    {
+      "model_name": "monster3",
+      "category": "Off-Road",
+      "aliases": [
+        "monster",
+        "monster3"
+      ],
+      "normalized_aliases": [
+        "monster",
+        "monster3"
+      ]
+    },
+    {
+      "model_name": "monster4",
+      "category": "Off-Road",
+      "aliases": [
+        "monster",
+        "monster4"
+      ],
+      "normalized_aliases": [
+        "monster",
+        "monster4"
+      ]
+    },
+    {
+      "model_name": "monster5",
+      "category": "Off-Road",
+      "aliases": [
+        "monster",
+        "monster5"
+      ],
+      "normalized_aliases": [
+        "monster",
+        "monster5"
+      ]
+    },
+    {
+      "model_name": "nightshark",
+      "category": "Off-Road",
+      "aliases": [
+        "nightshark"
+      ],
+      "normalized_aliases": [
+        "nightshark"
+      ]
+    },
+    {
+      "model_name": "outlaw",
+      "category": "Off-Road",
+      "aliases": [
+        "outlaw"
+      ],
+      "normalized_aliases": [
+        "outlaw"
+      ]
+    },
+    {
+      "model_name": "rancherxl",
+      "category": "Off-Road",
+      "aliases": [
+        "rancherxl"
+      ],
+      "normalized_aliases": [
+        "rancherxl"
+      ]
+    },
+    {
+      "model_name": "rancherxl2",
+      "category": "Off-Road",
+      "aliases": [
+        "rancherxl",
+        "rancherxl2"
+      ],
+      "normalized_aliases": [
+        "rancherxl",
+        "rancherxl2"
+      ]
+    },
+    {
+      "model_name": "rebel",
+      "category": "Off-Road",
+      "aliases": [
+        "rebel"
+      ],
+      "normalized_aliases": [
+        "rebel"
+      ]
+    },
+    {
+      "model_name": "rebel2",
+      "category": "Off-Road",
+      "aliases": [
+        "rebel",
+        "rebel2"
+      ],
+      "normalized_aliases": [
+        "rebel",
+        "rebel2"
+      ]
+    },
+    {
+      "model_name": "riata",
+      "category": "Off-Road",
+      "aliases": [
+        "riata"
+      ],
+      "normalized_aliases": [
+        "riata"
+      ]
+    },
+    {
+      "model_name": "sandking",
+      "category": "Off-Road",
+      "aliases": [
+        "sandking"
+      ],
+      "normalized_aliases": [
+        "sandking"
+      ]
+    },
+    {
+      "model_name": "sandking2",
+      "category": "Off-Road",
+      "aliases": [
+        "sandking",
+        "sandking2"
+      ],
+      "normalized_aliases": [
+        "sandking",
+        "sandking2"
+      ]
+    },
+    {
+      "model_name": "technical",
+      "category": "Off-Road",
+      "aliases": [
+        "technical"
+      ],
+      "normalized_aliases": [
+        "technical"
+      ]
+    },
+    {
+      "model_name": "technical2",
+      "category": "Off-Road",
+      "aliases": [
+        "technical",
+        "technical2"
+      ],
+      "normalized_aliases": [
+        "technical",
+        "technical2"
+      ]
+    },
+    {
+      "model_name": "technical3",
+      "category": "Off-Road",
+      "aliases": [
+        "technical",
+        "technical3"
+      ],
+      "normalized_aliases": [
+        "technical",
+        "technical3"
+      ]
+    },
+    {
+      "model_name": "trophytruck",
+      "category": "Off-Road",
+      "aliases": [
+        "trophytruck"
+      ],
+      "normalized_aliases": [
+        "trophytruck"
+      ]
+    },
+    {
+      "model_name": "trophytruck2",
+      "category": "Off-Road",
+      "aliases": [
+        "trophytruck",
+        "trophytruck2"
+      ],
+      "normalized_aliases": [
+        "trophytruck",
+        "trophytruck2"
+      ]
+    },
+    {
+      "model_name": "vagrant",
+      "category": "Off-Road",
+      "aliases": [
+        "vagrant"
+      ],
+      "normalized_aliases": [
+        "vagrant"
+      ]
+    },
+    {
+      "model_name": "verus",
+      "category": "Off-Road",
+      "aliases": [
+        "verus"
+      ],
+      "normalized_aliases": [
+        "verus"
+      ]
+    },
+    {
+      "model_name": "winky",
+      "category": "Off-Road",
+      "aliases": [
+        "winky"
+      ],
+      "normalized_aliases": [
+        "winky"
+      ]
+    },
+    {
+      "model_name": "draugur",
+      "category": "Off-Road",
+      "aliases": [
+        "draugur"
+      ],
+      "normalized_aliases": [
+        "draugur"
+      ]
+    },
+    {
+      "model_name": "akuma",
+      "category": "Motorcycle",
+      "aliases": [
+        "akuma"
+      ],
+      "normalized_aliases": [
+        "akuma"
+      ]
+    },
+    {
+      "model_name": "avarus",
+      "category": "Motorcycle",
+      "aliases": [
+        "avarus"
+      ],
+      "normalized_aliases": [
+        "avarus"
+      ]
+    },
+    {
+      "model_name": "bagger",
+      "category": "Motorcycle",
+      "aliases": [
+        "bagger"
+      ],
+      "normalized_aliases": [
+        "bagger"
+      ]
+    },
+    {
+      "model_name": "bati",
+      "category": "Motorcycle",
+      "aliases": [
+        "bati"
+      ],
+      "normalized_aliases": [
+        "bati"
+      ]
+    },
+    {
+      "model_name": "bati2",
+      "category": "Motorcycle",
+      "aliases": [
+        "bati",
+        "bati2"
+      ],
+      "normalized_aliases": [
+        "bati",
+        "bati2"
+      ]
+    },
+    {
+      "model_name": "bf400",
+      "category": "Motorcycle",
+      "aliases": [
+        "bf",
+        "bf400"
+      ],
+      "normalized_aliases": [
+        "bf",
+        "bf400"
+      ]
+    },
+    {
+      "model_name": "carbonrs",
+      "category": "Motorcycle",
+      "aliases": [
+        "carbonrs"
+      ],
+      "normalized_aliases": [
+        "carbonrs"
+      ]
+    },
+    {
+      "model_name": "chimera",
+      "category": "Motorcycle",
+      "aliases": [
+        "chimera"
+      ],
+      "normalized_aliases": [
+        "chimera"
+      ]
+    },
+    {
+      "model_name": "cliffhanger",
+      "category": "Motorcycle",
+      "aliases": [
+        "cliffhanger"
+      ],
+      "normalized_aliases": [
+        "cliffhanger"
+      ]
+    },
+    {
+      "model_name": "daemon",
+      "category": "Motorcycle",
+      "aliases": [
+        "daemon"
+      ],
+      "normalized_aliases": [
+        "daemon"
+      ]
+    },
+    {
+      "model_name": "daemon2",
+      "category": "Motorcycle",
+      "aliases": [
+        "daemon",
+        "daemon2"
+      ],
+      "normalized_aliases": [
+        "daemon",
+        "daemon2"
+      ]
+    },
+    {
+      "model_name": "defiler",
+      "category": "Motorcycle",
+      "aliases": [
+        "defiler"
+      ],
+      "normalized_aliases": [
+        "defiler"
+      ]
+    },
+    {
+      "model_name": "deathbike",
+      "category": "Motorcycle",
+      "aliases": [
+        "deathbike"
+      ],
+      "normalized_aliases": [
+        "deathbike"
+      ]
+    },
+    {
+      "model_name": "deathbike2",
+      "category": "Motorcycle",
+      "aliases": [
+        "deathbike",
+        "deathbike2"
+      ],
+      "normalized_aliases": [
+        "deathbike",
+        "deathbike2"
+      ]
+    },
+    {
+      "model_name": "deathbike3",
+      "category": "Motorcycle",
+      "aliases": [
+        "deathbike",
+        "deathbike3"
+      ],
+      "normalized_aliases": [
+        "deathbike",
+        "deathbike3"
+      ]
+    },
+    {
+      "model_name": "diablous",
+      "category": "Motorcycle",
+      "aliases": [
+        "diablous"
+      ],
+      "normalized_aliases": [
+        "diablous"
+      ]
+    },
+    {
+      "model_name": "diablous2",
+      "category": "Motorcycle",
+      "aliases": [
+        "diablous",
+        "diablous2"
+      ],
+      "normalized_aliases": [
+        "diablous",
+        "diablous2"
+      ]
+    },
+    {
+      "model_name": "double",
+      "category": "Motorcycle",
+      "aliases": [
+        "double"
+      ],
+      "normalized_aliases": [
+        "double"
+      ]
+    },
+    {
+      "model_name": "enduro",
+      "category": "Motorcycle",
+      "aliases": [
+        "enduro"
+      ],
+      "normalized_aliases": [
+        "enduro"
+      ]
+    },
+    {
+      "model_name": "esskey",
+      "category": "Motorcycle",
+      "aliases": [
+        "esskey"
+      ],
+      "normalized_aliases": [
+        "esskey"
+      ]
+    },
+    {
+      "model_name": "faggio",
+      "category": "Motorcycle",
+      "aliases": [
+        "faggio"
+      ],
+      "normalized_aliases": [
+        "faggio"
+      ]
+    },
+    {
+      "model_name": "faggio2",
+      "category": "Motorcycle",
+      "aliases": [
+        "faggio",
+        "faggio2"
+      ],
+      "normalized_aliases": [
+        "faggio",
+        "faggio2"
+      ]
+    },
+    {
+      "model_name": "faggio3",
+      "category": "Motorcycle",
+      "aliases": [
+        "faggio",
+        "faggio3"
+      ],
+      "normalized_aliases": [
+        "faggio",
+        "faggio3"
+      ]
+    },
+    {
+      "model_name": "fcr",
+      "category": "Motorcycle",
+      "aliases": [
+        "fcr"
+      ],
+      "normalized_aliases": [
+        "fcr"
+      ]
+    },
+    {
+      "model_name": "fcr2",
+      "category": "Motorcycle",
+      "aliases": [
+        "fcr",
+        "fcr2"
+      ],
+      "normalized_aliases": [
+        "fcr",
+        "fcr2"
+      ]
+    },
+    {
+      "model_name": "gargoyle",
+      "category": "Motorcycle",
+      "aliases": [
+        "gargoyle"
+      ],
+      "normalized_aliases": [
+        "gargoyle"
+      ]
+    },
+    {
+      "model_name": "hakuchou",
+      "category": "Motorcycle",
+      "aliases": [
+        "hakuchou"
+      ],
+      "normalized_aliases": [
+        "hakuchou"
+      ]
+    },
+    {
+      "model_name": "hakuchou2",
+      "category": "Motorcycle",
+      "aliases": [
+        "hakuchou",
+        "hakuchou2"
+      ],
+      "normalized_aliases": [
+        "hakuchou",
+        "hakuchou2"
+      ]
+    },
+    {
+      "model_name": "hexer",
+      "category": "Motorcycle",
+      "aliases": [
+        "hexer"
+      ],
+      "normalized_aliases": [
+        "hexer"
+      ]
+    },
+    {
+      "model_name": "innovation",
+      "category": "Motorcycle",
+      "aliases": [
+        "innovation"
+      ],
+      "normalized_aliases": [
+        "innovation"
+      ]
+    },
+    {
+      "model_name": "lectro",
+      "category": "Motorcycle",
+      "aliases": [
+        "lectro"
+      ],
+      "normalized_aliases": [
+        "lectro"
+      ]
+    },
+    {
+      "model_name": "manchez",
+      "category": "Motorcycle",
+      "aliases": [
+        "manchez"
+      ],
+      "normalized_aliases": [
+        "manchez"
+      ]
+    },
+    {
+      "model_name": "manchez2",
+      "category": "Motorcycle",
+      "aliases": [
+        "manchez",
+        "manchez2"
+      ],
+      "normalized_aliases": [
+        "manchez",
+        "manchez2"
+      ]
+    },
+    {
+      "model_name": "manchez3",
+      "category": "Motorcycle",
+      "aliases": [
+        "manchez",
+        "manchez3"
+      ],
+      "normalized_aliases": [
+        "manchez",
+        "manchez3"
+      ]
+    },
+    {
+      "model_name": "nemesis",
+      "category": "Motorcycle",
+      "aliases": [
+        "nemesis"
+      ],
+      "normalized_aliases": [
+        "nemesis"
+      ]
+    },
+    {
+      "model_name": "nightblade",
+      "category": "Motorcycle",
+      "aliases": [
+        "nightblade"
+      ],
+      "normalized_aliases": [
+        "nightblade"
+      ]
+    },
+    {
+      "model_name": "oppressor",
+      "category": "Motorcycle",
+      "aliases": [
+        "oppressor"
+      ],
+      "normalized_aliases": [
+        "oppressor"
+      ]
+    },
+    {
+      "model_name": "oppressor2",
+      "category": "Motorcycle",
+      "aliases": [
+        "oppressor",
+        "oppressor2"
+      ],
+      "normalized_aliases": [
+        "oppressor",
+        "oppressor2"
+      ]
+    },
+    {
+      "model_name": "pcj",
+      "category": "Motorcycle",
+      "aliases": [
+        "pcj"
+      ],
+      "normalized_aliases": [
+        "pcj"
+      ]
+    },
+    {
+      "model_name": "ratbike",
+      "category": "Motorcycle",
+      "aliases": [
+        "ratbike"
+      ],
+      "normalized_aliases": [
+        "ratbike"
+      ]
+    },
+    {
+      "model_name": "rrocket",
+      "category": "Motorcycle",
+      "aliases": [
+        "rrocket"
+      ],
+      "normalized_aliases": [
+        "rrocket"
+      ]
+    },
+    {
+      "model_name": "ruffian",
+      "category": "Motorcycle",
+      "aliases": [
+        "ruffian"
+      ],
+      "normalized_aliases": [
+        "ruffian"
+      ]
+    },
+    {
+      "model_name": "sanchez",
+      "category": "Motorcycle",
+      "aliases": [
+        "sanchez"
+      ],
+      "normalized_aliases": [
+        "sanchez"
+      ]
+    },
+    {
+      "model_name": "sanchez2",
+      "category": "Motorcycle",
+      "aliases": [
+        "sanchez",
+        "sanchez2"
+      ],
+      "normalized_aliases": [
+        "sanchez",
+        "sanchez2"
+      ]
+    },
+    {
+      "model_name": "sanctus",
+      "category": "Motorcycle",
+      "aliases": [
+        "sanctus"
+      ],
+      "normalized_aliases": [
+        "sanctus"
+      ]
+    },
+    {
+      "model_name": "shinobi",
+      "category": "Motorcycle",
+      "aliases": [
+        "shinobi"
+      ],
+      "normalized_aliases": [
+        "shinobi"
+      ]
+    },
+    {
+      "model_name": "shotaro",
+      "category": "Motorcycle",
+      "aliases": [
+        "shotaro"
+      ],
+      "normalized_aliases": [
+        "shotaro"
+      ]
+    },
+    {
+      "model_name": "sovereign",
+      "category": "Motorcycle",
+      "aliases": [
+        "sovereign"
+      ],
+      "normalized_aliases": [
+        "sovereign"
+      ]
+    },
+    {
+      "model_name": "stryder",
+      "category": "Motorcycle",
+      "aliases": [
+        "stryder"
+      ],
+      "normalized_aliases": [
+        "stryder"
+      ]
+    },
+    {
+      "model_name": "thrust",
+      "category": "Motorcycle",
+      "aliases": [
+        "thrust"
+      ],
+      "normalized_aliases": [
+        "thrust"
+      ]
+    },
+    {
+      "model_name": "vader",
+      "category": "Motorcycle",
+      "aliases": [
+        "vader"
+      ],
+      "normalized_aliases": [
+        "vader"
+      ]
+    },
+    {
+      "model_name": "vindicator",
+      "category": "Motorcycle",
+      "aliases": [
+        "vindicator"
+      ],
+      "normalized_aliases": [
+        "vindicator"
+      ]
+    },
+    {
+      "model_name": "vortex",
+      "category": "Motorcycle",
+      "aliases": [
+        "vortex"
+      ],
+      "normalized_aliases": [
+        "vortex"
+      ]
+    },
+    {
+      "model_name": "wolfsbane",
+      "category": "Motorcycle",
+      "aliases": [
+        "wolfsbane"
+      ],
+      "normalized_aliases": [
+        "wolfsbane"
+      ]
+    },
+    {
+      "model_name": "zombiea",
+      "category": "Motorcycle",
+      "aliases": [
+        "zombiea"
+      ],
+      "normalized_aliases": [
+        "zombiea"
+      ]
+    },
+    {
+      "model_name": "zombieb",
+      "category": "Motorcycle",
+      "aliases": [
+        "zombieb"
+      ],
+      "normalized_aliases": [
+        "zombieb"
+      ]
+    },
+    {
+      "model_name": "reever",
+      "category": "Motorcycle",
+      "aliases": [
+        "reever"
+      ],
+      "normalized_aliases": [
+        "reever"
+      ]
+    },
+    {
+      "model_name": "powersurge",
+      "category": "Motorcycle",
+      "aliases": [
+        "powersurge"
+      ],
+      "normalized_aliases": [
+        "powersurge"
+      ]
+    },
+    {
+      "model_name": "bison",
+      "category": "Van / Pickup",
+      "aliases": [
+        "bison"
+      ],
+      "normalized_aliases": [
+        "bison"
+      ]
+    },
+    {
+      "model_name": "bison2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "bison",
+        "bison2"
+      ],
+      "normalized_aliases": [
+        "bison",
+        "bison2"
+      ]
+    },
+    {
+      "model_name": "bison3",
+      "category": "Van / Pickup",
+      "aliases": [
+        "bison",
+        "bison3"
+      ],
+      "normalized_aliases": [
+        "bison",
+        "bison3"
+      ]
+    },
+    {
+      "model_name": "bobcatxl",
+      "category": "Van / Pickup",
+      "aliases": [
+        "bobcatxl"
+      ],
+      "normalized_aliases": [
+        "bobcatxl"
+      ]
+    },
+    {
+      "model_name": "bodhi2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "bodhi",
+        "bodhi2"
+      ],
+      "normalized_aliases": [
+        "bodhi",
+        "bodhi2"
+      ]
+    },
+    {
+      "model_name": "burrito",
+      "category": "Van / Pickup",
+      "aliases": [
+        "burrito"
+      ],
+      "normalized_aliases": [
+        "burrito"
+      ]
+    },
+    {
+      "model_name": "burrito2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "burrito",
+        "burrito2"
+      ],
+      "normalized_aliases": [
+        "burrito",
+        "burrito2"
+      ]
+    },
+    {
+      "model_name": "burrito3",
+      "category": "Van / Pickup",
+      "aliases": [
+        "burrito",
+        "burrito3"
+      ],
+      "normalized_aliases": [
+        "burrito",
+        "burrito3"
+      ]
+    },
+    {
+      "model_name": "burrito4",
+      "category": "Van / Pickup",
+      "aliases": [
+        "burrito",
+        "burrito4"
+      ],
+      "normalized_aliases": [
+        "burrito",
+        "burrito4"
+      ]
+    },
+    {
+      "model_name": "burrito5",
+      "category": "Van / Pickup",
+      "aliases": [
+        "burrito",
+        "burrito5"
+      ],
+      "normalized_aliases": [
+        "burrito",
+        "burrito5"
+      ]
+    },
+    {
+      "model_name": "camper",
+      "category": "Van / Pickup",
+      "aliases": [
+        "camper"
+      ],
+      "normalized_aliases": [
+        "camper"
+      ]
+    },
+    {
+      "model_name": "gburrito",
+      "category": "Van / Pickup",
+      "aliases": [
+        "gburrito"
+      ],
+      "normalized_aliases": [
+        "gburrito"
+      ]
+    },
+    {
+      "model_name": "gburrito2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "gburrito",
+        "gburrito2"
+      ],
+      "normalized_aliases": [
+        "gburrito",
+        "gburrito2"
+      ]
+    },
+    {
+      "model_name": "journey",
+      "category": "Van / Pickup",
+      "aliases": [
+        "journey"
+      ],
+      "normalized_aliases": [
+        "journey"
+      ]
+    },
+    {
+      "model_name": "minivan",
+      "category": "Van / Pickup",
+      "aliases": [
+        "minivan"
+      ],
+      "normalized_aliases": [
+        "minivan"
+      ]
+    },
+    {
+      "model_name": "minivan2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "minivan",
+        "minivan2"
+      ],
+      "normalized_aliases": [
+        "minivan",
+        "minivan2"
+      ]
+    },
+    {
+      "model_name": "paradise",
+      "category": "Van / Pickup",
+      "aliases": [
+        "paradise"
+      ],
+      "normalized_aliases": [
+        "paradise"
+      ]
+    },
+    {
+      "model_name": "pony",
+      "category": "Van / Pickup",
+      "aliases": [
+        "pony"
+      ],
+      "normalized_aliases": [
+        "pony"
+      ]
+    },
+    {
+      "model_name": "pony2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "pony",
+        "pony2"
+      ],
+      "normalized_aliases": [
+        "pony",
+        "pony2"
+      ]
+    },
+    {
+      "model_name": "rumpo",
+      "category": "Van / Pickup",
+      "aliases": [
+        "rumpo"
+      ],
+      "normalized_aliases": [
+        "rumpo"
+      ]
+    },
+    {
+      "model_name": "rumpo2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "rumpo",
+        "rumpo2"
+      ],
+      "normalized_aliases": [
+        "rumpo",
+        "rumpo2"
+      ]
+    },
+    {
+      "model_name": "rumpo3",
+      "category": "Van / Pickup",
+      "aliases": [
+        "rumpo",
+        "rumpo3"
+      ],
+      "normalized_aliases": [
+        "rumpo",
+        "rumpo3"
+      ]
+    },
+    {
+      "model_name": "sadler",
+      "category": "Van / Pickup",
+      "aliases": [
+        "sadler"
+      ],
+      "normalized_aliases": [
+        "sadler"
+      ]
+    },
+    {
+      "model_name": "sadler2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "sadler",
+        "sadler2"
+      ],
+      "normalized_aliases": [
+        "sadler",
+        "sadler2"
+      ]
+    },
+    {
+      "model_name": "speedo",
+      "category": "Van / Pickup",
+      "aliases": [
+        "speedo"
+      ],
+      "normalized_aliases": [
+        "speedo"
+      ]
+    },
+    {
+      "model_name": "speedo2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "speedo",
+        "speedo2"
+      ],
+      "normalized_aliases": [
+        "speedo",
+        "speedo2"
+      ]
+    },
+    {
+      "model_name": "speedo4",
+      "category": "Van / Pickup",
+      "aliases": [
+        "speedo",
+        "speedo4"
+      ],
+      "normalized_aliases": [
+        "speedo",
+        "speedo4"
+      ]
+    },
+    {
+      "model_name": "surfer",
+      "category": "Van / Pickup",
+      "aliases": [
+        "surfer"
+      ],
+      "normalized_aliases": [
+        "surfer"
+      ]
+    },
+    {
+      "model_name": "surfer2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "surfer",
+        "surfer2"
+      ],
+      "normalized_aliases": [
+        "surfer",
+        "surfer2"
+      ]
+    },
+    {
+      "model_name": "taco",
+      "category": "Van / Pickup",
+      "aliases": [
+        "taco"
+      ],
+      "normalized_aliases": [
+        "taco"
+      ]
+    },
+    {
+      "model_name": "youga",
+      "category": "Van / Pickup",
+      "aliases": [
+        "youga"
+      ],
+      "normalized_aliases": [
+        "youga"
+      ]
+    },
+    {
+      "model_name": "youga2",
+      "category": "Van / Pickup",
+      "aliases": [
+        "youga",
+        "youga2"
+      ],
+      "normalized_aliases": [
+        "youga",
+        "youga2"
+      ]
+    },
+    {
+      "model_name": "youga3",
+      "category": "Van / Pickup",
+      "aliases": [
+        "youga",
+        "youga3"
+      ],
+      "normalized_aliases": [
+        "youga",
+        "youga3"
+      ]
+    },
+    {
+      "model_name": "youga4",
+      "category": "Van / Pickup",
+      "aliases": [
+        "youga",
+        "youga4"
+      ],
+      "normalized_aliases": [
+        "youga",
+        "youga4"
+      ]
+    },
+    {
+      "model_name": "ambulance",
+      "category": "Emergency",
+      "aliases": [
+        "ambulance"
+      ],
+      "normalized_aliases": [
+        "ambulance"
+      ]
+    },
+    {
+      "model_name": "barracks",
+      "category": "Emergency",
+      "aliases": [
+        "barracks"
+      ],
+      "normalized_aliases": [
+        "barracks"
+      ]
+    },
+    {
+      "model_name": "barracks2",
+      "category": "Emergency",
+      "aliases": [
+        "barracks",
+        "barracks2"
+      ],
+      "normalized_aliases": [
+        "barracks",
+        "barracks2"
+      ]
+    },
+    {
+      "model_name": "barracks3",
+      "category": "Emergency",
+      "aliases": [
+        "barracks",
+        "barracks3"
+      ],
+      "normalized_aliases": [
+        "barracks",
+        "barracks3"
+      ]
+    },
+    {
+      "model_name": "crusader",
+      "category": "Emergency",
+      "aliases": [
+        "crusader"
+      ],
+      "normalized_aliases": [
+        "crusader"
+      ]
+    },
+    {
+      "model_name": "fbi",
+      "category": "Emergency",
+      "aliases": [
+        "fbi"
+      ],
+      "normalized_aliases": [
+        "fbi"
+      ]
+    },
+    {
+      "model_name": "fbi2",
+      "category": "Emergency",
+      "aliases": [
+        "fbi",
+        "fbi2"
+      ],
+      "normalized_aliases": [
+        "fbi",
+        "fbi2"
+      ]
+    },
+    {
+      "model_name": "firetruk",
+      "category": "Emergency",
+      "aliases": [
+        "firetruk"
+      ],
+      "normalized_aliases": [
+        "firetruk"
+      ]
+    },
+    {
+      "model_name": "lguard",
+      "category": "Emergency",
+      "aliases": [
+        "lguard"
+      ],
+      "normalized_aliases": [
+        "lguard"
+      ]
+    },
+    {
+      "model_name": "pbus",
+      "category": "Emergency",
+      "aliases": [
+        "pbus"
+      ],
+      "normalized_aliases": [
+        "pbus"
+      ]
+    },
+    {
+      "model_name": "police",
+      "category": "Emergency",
+      "aliases": [
+        "police"
+      ],
+      "normalized_aliases": [
+        "police"
+      ]
+    },
+    {
+      "model_name": "police2",
+      "category": "Emergency",
+      "aliases": [
+        "police",
+        "police2"
+      ],
+      "normalized_aliases": [
+        "police",
+        "police2"
+      ]
+    },
+    {
+      "model_name": "police3",
+      "category": "Emergency",
+      "aliases": [
+        "police",
+        "police3"
+      ],
+      "normalized_aliases": [
+        "police",
+        "police3"
+      ]
+    },
+    {
+      "model_name": "police4",
+      "category": "Emergency",
+      "aliases": [
+        "police",
+        "police4"
+      ],
+      "normalized_aliases": [
+        "police",
+        "police4"
+      ]
+    },
+    {
+      "model_name": "policeb",
+      "category": "Emergency",
+      "aliases": [
+        "policeb"
+      ],
+      "normalized_aliases": [
+        "policeb"
+      ]
+    },
+    {
+      "model_name": "policeold1",
+      "category": "Emergency",
+      "aliases": [
+        "policeold",
+        "policeold1"
+      ],
+      "normalized_aliases": [
+        "policeold",
+        "policeold1"
+      ]
+    },
+    {
+      "model_name": "policeold2",
+      "category": "Emergency",
+      "aliases": [
+        "policeold",
+        "policeold2"
+      ],
+      "normalized_aliases": [
+        "policeold",
+        "policeold2"
+      ]
+    },
+    {
+      "model_name": "policet",
+      "category": "Emergency",
+      "aliases": [
+        "policet"
+      ],
+      "normalized_aliases": [
+        "policet"
+      ]
+    },
+    {
+      "model_name": "polmav",
+      "category": "Emergency",
+      "aliases": [
+        "polmav"
+      ],
+      "normalized_aliases": [
+        "polmav"
+      ]
+    },
+    {
+      "model_name": "pranger",
+      "category": "Emergency",
+      "aliases": [
+        "pranger"
+      ],
+      "normalized_aliases": [
+        "pranger"
+      ]
+    },
+    {
+      "model_name": "predator",
+      "category": "Emergency",
+      "aliases": [
+        "predator"
+      ],
+      "normalized_aliases": [
+        "predator"
+      ]
+    },
+    {
+      "model_name": "riot",
+      "category": "Emergency",
+      "aliases": [
+        "riot"
+      ],
+      "normalized_aliases": [
+        "riot"
+      ]
+    },
+    {
+      "model_name": "riot2",
+      "category": "Emergency",
+      "aliases": [
+        "riot",
+        "riot2"
+      ],
+      "normalized_aliases": [
+        "riot",
+        "riot2"
+      ]
+    },
+    {
+      "model_name": "sheriff",
+      "category": "Emergency",
+      "aliases": [
+        "sheriff"
+      ],
+      "normalized_aliases": [
+        "sheriff"
+      ]
+    },
+    {
+      "model_name": "sheriff2",
+      "category": "Emergency",
+      "aliases": [
+        "sheriff",
+        "sheriff2"
+      ],
+      "normalized_aliases": [
+        "sheriff",
+        "sheriff2"
+      ]
+    },
+    {
+      "model_name": "apc",
+      "category": "Military",
+      "aliases": [
+        "apc"
+      ],
+      "normalized_aliases": [
+        "apc"
+      ]
+    },
+    {
+      "model_name": "barrage",
+      "category": "Military",
+      "aliases": [
+        "barrage"
+      ],
+      "normalized_aliases": [
+        "barrage"
+      ]
+    },
+    {
+      "model_name": "chernobog",
+      "category": "Military",
+      "aliases": [
+        "chernobog"
+      ],
+      "normalized_aliases": [
+        "chernobog"
+      ]
+    },
+    {
+      "model_name": "halftrack",
+      "category": "Military",
+      "aliases": [
+        "halftrack"
+      ],
+      "normalized_aliases": [
+        "halftrack"
+      ]
+    },
+    {
+      "model_name": "khanjali",
+      "category": "Military",
+      "aliases": [
+        "khanjali"
+      ],
+      "normalized_aliases": [
+        "khanjali"
+      ]
+    },
+    {
+      "model_name": "minitank",
+      "category": "Military",
+      "aliases": [
+        "minitank"
+      ],
+      "normalized_aliases": [
+        "minitank"
+      ]
+    },
+    {
+      "model_name": "rhino",
+      "category": "Military",
+      "aliases": [
+        "rhino"
+      ],
+      "normalized_aliases": [
+        "rhino"
+      ]
+    },
+    {
+      "model_name": "scarab",
+      "category": "Military",
+      "aliases": [
+        "scarab"
+      ],
+      "normalized_aliases": [
+        "scarab"
+      ]
+    },
+    {
+      "model_name": "scarab2",
+      "category": "Military",
+      "aliases": [
+        "scarab",
+        "scarab2"
+      ],
+      "normalized_aliases": [
+        "scarab",
+        "scarab2"
+      ]
+    },
+    {
+      "model_name": "scarab3",
+      "category": "Military",
+      "aliases": [
+        "scarab",
+        "scarab3"
+      ],
+      "normalized_aliases": [
+        "scarab",
+        "scarab3"
+      ]
+    },
+    {
+      "model_name": "thruster",
+      "category": "Military",
+      "aliases": [
+        "thruster"
+      ],
+      "normalized_aliases": [
+        "thruster"
+      ]
+    },
+    {
+      "model_name": "vetir",
+      "category": "Military",
+      "aliases": [
+        "vetir"
+      ],
+      "normalized_aliases": [
+        "vetir"
+      ]
+    },
+    {
+      "model_name": "akula",
+      "category": "Aircraft",
+      "aliases": [
+        "akula"
+      ],
+      "normalized_aliases": [
+        "akula"
+      ]
+    },
+    {
+      "model_name": "alkonost",
+      "category": "Aircraft",
+      "aliases": [
+        "alkonost"
+      ],
+      "normalized_aliases": [
+        "alkonost"
+      ]
+    },
+    {
+      "model_name": "alphaz1",
+      "category": "Aircraft",
+      "aliases": [
+        "alphaz",
+        "alphaz1"
+      ],
+      "normalized_aliases": [
+        "alphaz",
+        "alphaz1"
+      ]
+    },
+    {
+      "model_name": "annihilator",
+      "category": "Aircraft",
+      "aliases": [
+        "annihilator"
+      ],
+      "normalized_aliases": [
+        "annihilator"
+      ]
+    },
+    {
+      "model_name": "annihilator2",
+      "category": "Aircraft",
+      "aliases": [
+        "annihilator",
+        "annihilator2"
+      ],
+      "normalized_aliases": [
+        "annihilator",
+        "annihilator2"
+      ]
+    },
+    {
+      "model_name": "avenger",
+      "category": "Aircraft",
+      "aliases": [
+        "avenger"
+      ],
+      "normalized_aliases": [
+        "avenger"
+      ]
+    },
+    {
+      "model_name": "avenger2",
+      "category": "Aircraft",
+      "aliases": [
+        "avenger",
+        "avenger2"
+      ],
+      "normalized_aliases": [
+        "avenger",
+        "avenger2"
+      ]
+    },
+    {
+      "model_name": "besra",
+      "category": "Aircraft",
+      "aliases": [
+        "besra"
+      ],
+      "normalized_aliases": [
+        "besra"
+      ]
+    },
+    {
+      "model_name": "bombushka",
+      "category": "Aircraft",
+      "aliases": [
+        "bombushka"
+      ],
+      "normalized_aliases": [
+        "bombushka"
+      ]
+    },
+    {
+      "model_name": "buzzard",
+      "category": "Aircraft",
+      "aliases": [
+        "buzzard"
+      ],
+      "normalized_aliases": [
+        "buzzard"
+      ]
+    },
+    {
+      "model_name": "buzzard2",
+      "category": "Aircraft",
+      "aliases": [
+        "buzzard",
+        "buzzard2"
+      ],
+      "normalized_aliases": [
+        "buzzard",
+        "buzzard2"
+      ]
+    },
+    {
+      "model_name": "cargobob",
+      "category": "Aircraft",
+      "aliases": [
+        "cargobob"
+      ],
+      "normalized_aliases": [
+        "cargobob"
+      ]
+    },
+    {
+      "model_name": "cargobob2",
+      "category": "Aircraft",
+      "aliases": [
+        "cargobob",
+        "cargobob2"
+      ],
+      "normalized_aliases": [
+        "cargobob",
+        "cargobob2"
+      ]
+    },
+    {
+      "model_name": "cargobob3",
+      "category": "Aircraft",
+      "aliases": [
+        "cargobob",
+        "cargobob3"
+      ],
+      "normalized_aliases": [
+        "cargobob",
+        "cargobob3"
+      ]
+    },
+    {
+      "model_name": "cargobob4",
+      "category": "Aircraft",
+      "aliases": [
+        "cargobob",
+        "cargobob4"
+      ],
+      "normalized_aliases": [
+        "cargobob",
+        "cargobob4"
+      ]
+    },
+    {
+      "model_name": "conada",
+      "category": "Aircraft",
+      "aliases": [
+        "conada"
+      ],
+      "normalized_aliases": [
+        "conada"
+      ]
+    },
+    {
+      "model_name": "cuban800",
+      "category": "Aircraft",
+      "aliases": [
+        "cuban",
+        "cuban800"
+      ],
+      "normalized_aliases": [
+        "cuban",
+        "cuban800"
+      ]
+    },
+    {
+      "model_name": "dodo",
+      "category": "Aircraft",
+      "aliases": [
+        "dodo"
+      ],
+      "normalized_aliases": [
+        "dodo"
+      ]
+    },
+    {
+      "model_name": "duster",
+      "category": "Aircraft",
+      "aliases": [
+        "duster"
+      ],
+      "normalized_aliases": [
+        "duster"
+      ]
+    },
+    {
+      "model_name": "frogger",
+      "category": "Aircraft",
+      "aliases": [
+        "frogger"
+      ],
+      "normalized_aliases": [
+        "frogger"
+      ]
+    },
+    {
+      "model_name": "frogger2",
+      "category": "Aircraft",
+      "aliases": [
+        "frogger",
+        "frogger2"
+      ],
+      "normalized_aliases": [
+        "frogger",
+        "frogger2"
+      ]
+    },
+    {
+      "model_name": "havok",
+      "category": "Aircraft",
+      "aliases": [
+        "havok"
+      ],
+      "normalized_aliases": [
+        "havok"
+      ]
+    },
+    {
+      "model_name": "howard",
+      "category": "Aircraft",
+      "aliases": [
+        "howard"
+      ],
+      "normalized_aliases": [
+        "howard"
+      ]
+    },
+    {
+      "model_name": "hunter",
+      "category": "Aircraft",
+      "aliases": [
+        "hunter"
+      ],
+      "normalized_aliases": [
+        "hunter"
+      ]
+    },
+    {
+      "model_name": "hydra",
+      "category": "Aircraft",
+      "aliases": [
+        "hydra"
+      ],
+      "normalized_aliases": [
+        "hydra"
+      ]
+    },
+    {
+      "model_name": "lazer",
+      "category": "Aircraft",
+      "aliases": [
+        "lazer"
+      ],
+      "normalized_aliases": [
+        "lazer"
+      ]
+    },
+    {
+      "model_name": "luxor",
+      "category": "Aircraft",
+      "aliases": [
+        "luxor"
+      ],
+      "normalized_aliases": [
+        "luxor"
+      ]
+    },
+    {
+      "model_name": "luxor2",
+      "category": "Aircraft",
+      "aliases": [
+        "luxor",
+        "luxor2"
+      ],
+      "normalized_aliases": [
+        "luxor",
+        "luxor2"
+      ]
+    },
+    {
+      "model_name": "mammatus",
+      "category": "Aircraft",
+      "aliases": [
+        "mammatus"
+      ],
+      "normalized_aliases": [
+        "mammatus"
+      ]
+    },
+    {
+      "model_name": "maverick",
+      "category": "Aircraft",
+      "aliases": [
+        "maverick"
+      ],
+      "normalized_aliases": [
+        "maverick"
+      ]
+    },
+    {
+      "model_name": "microlight",
+      "category": "Aircraft",
+      "aliases": [
+        "microlight"
+      ],
+      "normalized_aliases": [
+        "microlight"
+      ]
+    },
+    {
+      "model_name": "miljet",
+      "category": "Aircraft",
+      "aliases": [
+        "miljet"
+      ],
+      "normalized_aliases": [
+        "miljet"
+      ]
+    },
+    {
+      "model_name": "mogul",
+      "category": "Aircraft",
+      "aliases": [
+        "mogul"
+      ],
+      "normalized_aliases": [
+        "mogul"
+      ]
+    },
+    {
+      "model_name": "molotok",
+      "category": "Aircraft",
+      "aliases": [
+        "molotok"
+      ],
+      "normalized_aliases": [
+        "molotok"
+      ]
+    },
+    {
+      "model_name": "nimbus",
+      "category": "Aircraft",
+      "aliases": [
+        "nimbus"
+      ],
+      "normalized_aliases": [
+        "nimbus"
+      ]
+    },
+    {
+      "model_name": "nokota",
+      "category": "Aircraft",
+      "aliases": [
+        "nokota"
+      ],
+      "normalized_aliases": [
+        "nokota"
+      ]
+    },
+    {
+      "model_name": "pyro",
+      "category": "Aircraft",
+      "aliases": [
+        "pyro"
+      ],
+      "normalized_aliases": [
+        "pyro"
+      ]
+    },
+    {
+      "model_name": "rogue",
+      "category": "Aircraft",
+      "aliases": [
+        "rogue"
+      ],
+      "normalized_aliases": [
+        "rogue"
+      ]
+    },
+    {
+      "model_name": "savage",
+      "category": "Aircraft",
+      "aliases": [
+        "savage"
+      ],
+      "normalized_aliases": [
+        "savage"
+      ]
+    },
+    {
+      "model_name": "seabreeze",
+      "category": "Aircraft",
+      "aliases": [
+        "seabreeze"
+      ],
+      "normalized_aliases": [
+        "seabreeze"
+      ]
+    },
+    {
+      "model_name": "seasparrow",
+      "category": "Aircraft",
+      "aliases": [
+        "seasparrow"
+      ],
+      "normalized_aliases": [
+        "seasparrow"
+      ]
+    },
+    {
+      "model_name": "seasparrow2",
+      "category": "Aircraft",
+      "aliases": [
+        "seasparrow",
+        "seasparrow2"
+      ],
+      "normalized_aliases": [
+        "seasparrow",
+        "seasparrow2"
+      ]
+    },
+    {
+      "model_name": "seasparrow3",
+      "category": "Aircraft",
+      "aliases": [
+        "seasparrow",
+        "seasparrow3"
+      ],
+      "normalized_aliases": [
+        "seasparrow",
+        "seasparrow3"
+      ]
+    },
+    {
+      "model_name": "shamal",
+      "category": "Aircraft",
+      "aliases": [
+        "shamal"
+      ],
+      "normalized_aliases": [
+        "shamal"
+      ]
+    },
+    {
+      "model_name": "skylift",
+      "category": "Aircraft",
+      "aliases": [
+        "skylift"
+      ],
+      "normalized_aliases": [
+        "skylift"
+      ]
+    },
+    {
+      "model_name": "starling",
+      "category": "Aircraft",
+      "aliases": [
+        "starling"
+      ],
+      "normalized_aliases": [
+        "starling"
+      ]
+    },
+    {
+      "model_name": "strikeforce",
+      "category": "Aircraft",
+      "aliases": [
+        "strikeforce"
+      ],
+      "normalized_aliases": [
+        "strikeforce"
+      ]
+    },
+    {
+      "model_name": "stunt",
+      "category": "Aircraft",
+      "aliases": [
+        "stunt"
+      ],
+      "normalized_aliases": [
+        "stunt"
+      ]
+    },
+    {
+      "model_name": "supervolito",
+      "category": "Aircraft",
+      "aliases": [
+        "supervolito"
+      ],
+      "normalized_aliases": [
+        "supervolito"
+      ]
+    },
+    {
+      "model_name": "supervolito2",
+      "category": "Aircraft",
+      "aliases": [
+        "supervolito",
+        "supervolito2"
+      ],
+      "normalized_aliases": [
+        "supervolito",
+        "supervolito2"
+      ]
+    },
+    {
+      "model_name": "swift",
+      "category": "Aircraft",
+      "aliases": [
+        "swift"
+      ],
+      "normalized_aliases": [
+        "swift"
+      ]
+    },
+    {
+      "model_name": "swift2",
+      "category": "Aircraft",
+      "aliases": [
+        "swift",
+        "swift2"
+      ],
+      "normalized_aliases": [
+        "swift",
+        "swift2"
+      ]
+    },
+    {
+      "model_name": "tula",
+      "category": "Aircraft",
+      "aliases": [
+        "tula"
+      ],
+      "normalized_aliases": [
+        "tula"
+      ]
+    },
+    {
+      "model_name": "titan",
+      "category": "Aircraft",
+      "aliases": [
+        "titan"
+      ],
+      "normalized_aliases": [
+        "titan"
+      ]
+    },
+    {
+      "model_name": "valkyrie",
+      "category": "Aircraft",
+      "aliases": [
+        "valkyrie"
+      ],
+      "normalized_aliases": [
+        "valkyrie"
+      ]
+    },
+    {
+      "model_name": "valkyrie2",
+      "category": "Aircraft",
+      "aliases": [
+        "valkyrie",
+        "valkyrie2"
+      ],
+      "normalized_aliases": [
+        "valkyrie",
+        "valkyrie2"
+      ]
+    },
+    {
+      "model_name": "velum",
+      "category": "Aircraft",
+      "aliases": [
+        "velum"
+      ],
+      "normalized_aliases": [
+        "velum"
+      ]
+    },
+    {
+      "model_name": "velum2",
+      "category": "Aircraft",
+      "aliases": [
+        "velum",
+        "velum2"
+      ],
+      "normalized_aliases": [
+        "velum",
+        "velum2"
+      ]
+    },
+    {
+      "model_name": "vestra",
+      "category": "Aircraft",
+      "aliases": [
+        "vestra"
+      ],
+      "normalized_aliases": [
+        "vestra"
+      ]
+    },
+    {
+      "model_name": "volatol",
+      "category": "Aircraft",
+      "aliases": [
+        "volatol"
+      ],
+      "normalized_aliases": [
+        "volatol"
+      ]
+    },
+    {
+      "model_name": "volatus",
+      "category": "Aircraft",
+      "aliases": [
+        "volatus"
+      ],
+      "normalized_aliases": [
+        "volatus"
+      ]
+    },
+    {
+      "model_name": "raiju",
+      "category": "Aircraft",
+      "aliases": [
+        "raiju"
+      ],
+      "normalized_aliases": [
+        "raiju"
+      ]
+    },
+    {
+      "model_name": "streamer216",
+      "category": "Aircraft",
+      "aliases": [
+        "streamer",
+        "streamer216"
+      ],
+      "normalized_aliases": [
+        "streamer",
+        "streamer216"
+      ]
+    },
+    {
+      "model_name": "conada2",
+      "category": "Aircraft",
+      "aliases": [
+        "conada",
+        "conada2"
+      ],
+      "normalized_aliases": [
+        "conada",
+        "conada2"
+      ]
+    },
+    {
+      "model_name": "avisa",
+      "category": "Boat",
+      "aliases": [
+        "avisa"
+      ],
+      "normalized_aliases": [
+        "avisa"
+      ]
+    },
+    {
+      "model_name": "dinghy",
+      "category": "Boat",
+      "aliases": [
+        "dinghy"
+      ],
+      "normalized_aliases": [
+        "dinghy"
+      ]
+    },
+    {
+      "model_name": "dinghy2",
+      "category": "Boat",
+      "aliases": [
+        "dinghy",
+        "dinghy2"
+      ],
+      "normalized_aliases": [
+        "dinghy",
+        "dinghy2"
+      ]
+    },
+    {
+      "model_name": "dinghy3",
+      "category": "Boat",
+      "aliases": [
+        "dinghy",
+        "dinghy3"
+      ],
+      "normalized_aliases": [
+        "dinghy",
+        "dinghy3"
+      ]
+    },
+    {
+      "model_name": "dinghy4",
+      "category": "Boat",
+      "aliases": [
+        "dinghy",
+        "dinghy4"
+      ],
+      "normalized_aliases": [
+        "dinghy",
+        "dinghy4"
+      ]
+    },
+    {
+      "model_name": "dinghy5",
+      "category": "Boat",
+      "aliases": [
+        "dinghy",
+        "dinghy5"
+      ],
+      "normalized_aliases": [
+        "dinghy",
+        "dinghy5"
+      ]
+    },
+    {
+      "model_name": "jetmax",
+      "category": "Boat",
+      "aliases": [
+        "jetmax"
+      ],
+      "normalized_aliases": [
+        "jetmax"
+      ]
+    },
+    {
+      "model_name": "kosatka",
+      "category": "Boat",
+      "aliases": [
+        "kosatka"
+      ],
+      "normalized_aliases": [
+        "kosatka"
+      ]
+    },
+    {
+      "model_name": "marquis",
+      "category": "Boat",
+      "aliases": [
+        "marquis"
+      ],
+      "normalized_aliases": [
+        "marquis"
+      ]
+    },
+    {
+      "model_name": "seashark",
+      "category": "Boat",
+      "aliases": [
+        "seashark"
+      ],
+      "normalized_aliases": [
+        "seashark"
+      ]
+    },
+    {
+      "model_name": "seashark2",
+      "category": "Boat",
+      "aliases": [
+        "seashark",
+        "seashark2"
+      ],
+      "normalized_aliases": [
+        "seashark",
+        "seashark2"
+      ]
+    },
+    {
+      "model_name": "seashark3",
+      "category": "Boat",
+      "aliases": [
+        "seashark",
+        "seashark3"
+      ],
+      "normalized_aliases": [
+        "seashark",
+        "seashark3"
+      ]
+    },
+    {
+      "model_name": "speeder",
+      "category": "Boat",
+      "aliases": [
+        "speeder"
+      ],
+      "normalized_aliases": [
+        "speeder"
+      ]
+    },
+    {
+      "model_name": "speeder2",
+      "category": "Boat",
+      "aliases": [
+        "speeder",
+        "speeder2"
+      ],
+      "normalized_aliases": [
+        "speeder",
+        "speeder2"
+      ]
+    },
+    {
+      "model_name": "squalo",
+      "category": "Boat",
+      "aliases": [
+        "squalo"
+      ],
+      "normalized_aliases": [
+        "squalo"
+      ]
+    },
+    {
+      "model_name": "submersible",
+      "category": "Boat",
+      "aliases": [
+        "submersible"
+      ],
+      "normalized_aliases": [
+        "submersible"
+      ]
+    },
+    {
+      "model_name": "submersible2",
+      "category": "Boat",
+      "aliases": [
+        "submersible",
+        "submersible2"
+      ],
+      "normalized_aliases": [
+        "submersible",
+        "submersible2"
+      ]
+    },
+    {
+      "model_name": "suntrap",
+      "category": "Boat",
+      "aliases": [
+        "suntrap"
+      ],
+      "normalized_aliases": [
+        "suntrap"
+      ]
+    },
+    {
+      "model_name": "tropic",
+      "category": "Boat",
+      "aliases": [
+        "tropic"
+      ],
+      "normalized_aliases": [
+        "tropic"
+      ]
+    },
+    {
+      "model_name": "tropic2",
+      "category": "Boat",
+      "aliases": [
+        "tropic",
+        "tropic2"
+      ],
+      "normalized_aliases": [
+        "tropic",
+        "tropic2"
+      ]
+    },
+    {
+      "model_name": "tug",
+      "category": "Boat",
+      "aliases": [
+        "tug"
+      ],
+      "normalized_aliases": [
+        "tug"
+      ]
+    },
+    {
+      "model_name": "longfin",
+      "category": "Boat",
+      "aliases": [
+        "longfin"
+      ],
+      "normalized_aliases": [
+        "longfin"
+      ]
+    },
+    {
+      "model_name": "patrolboat",
+      "category": "Boat",
+      "aliases": [
+        "patrolboat"
+      ],
+      "normalized_aliases": [
+        "patrolboat"
+      ]
+    },
+    {
+      "model_name": "bmx",
+      "category": "Bicycle",
+      "aliases": [
+        "bmx"
+      ],
+      "normalized_aliases": [
+        "bmx"
+      ]
+    },
+    {
+      "model_name": "cruiser",
+      "category": "Bicycle",
+      "aliases": [
+        "cruiser"
+      ],
+      "normalized_aliases": [
+        "cruiser"
+      ]
+    },
+    {
+      "model_name": "fixter",
+      "category": "Bicycle",
+      "aliases": [
+        "fixter"
+      ],
+      "normalized_aliases": [
+        "fixter"
+      ]
+    },
+    {
+      "model_name": "scorcher",
+      "category": "Bicycle",
+      "aliases": [
+        "scorcher"
+      ],
+      "normalized_aliases": [
+        "scorcher"
+      ]
+    },
+    {
+      "model_name": "tribike",
+      "category": "Bicycle",
+      "aliases": [
+        "tribike"
+      ],
+      "normalized_aliases": [
+        "tribike"
+      ]
+    },
+    {
+      "model_name": "tribike2",
+      "category": "Bicycle",
+      "aliases": [
+        "tribike",
+        "tribike2"
+      ],
+      "normalized_aliases": [
+        "tribike",
+        "tribike2"
+      ]
+    },
+    {
+      "model_name": "tribike3",
+      "category": "Bicycle",
+      "aliases": [
+        "tribike",
+        "tribike3"
+      ],
+      "normalized_aliases": [
+        "tribike",
+        "tribike3"
+      ]
+    },
+    {
+      "model_name": "benson",
+      "category": "Commercial",
+      "aliases": [
+        "benson"
+      ],
+      "normalized_aliases": [
+        "benson"
+      ]
+    },
+    {
+      "model_name": "biff",
+      "category": "Commercial",
+      "aliases": [
+        "biff"
+      ],
+      "normalized_aliases": [
+        "biff"
+      ]
+    },
+    {
+      "model_name": "cerberus",
+      "category": "Commercial",
+      "aliases": [
+        "cerberus"
+      ],
+      "normalized_aliases": [
+        "cerberus"
+      ]
+    },
+    {
+      "model_name": "cerberus2",
+      "category": "Commercial",
+      "aliases": [
+        "cerberus",
+        "cerberus2"
+      ],
+      "normalized_aliases": [
+        "cerberus",
+        "cerberus2"
+      ]
+    },
+    {
+      "model_name": "cerberus3",
+      "category": "Commercial",
+      "aliases": [
+        "cerberus",
+        "cerberus3"
+      ],
+      "normalized_aliases": [
+        "cerberus",
+        "cerberus3"
+      ]
+    },
+    {
+      "model_name": "cutter",
+      "category": "Commercial",
+      "aliases": [
+        "cutter"
+      ],
+      "normalized_aliases": [
+        "cutter"
+      ]
+    },
+    {
+      "model_name": "flatbed",
+      "category": "Commercial",
+      "aliases": [
+        "flatbed"
+      ],
+      "normalized_aliases": [
+        "flatbed"
+      ]
+    },
+    {
+      "model_name": "hauler",
+      "category": "Commercial",
+      "aliases": [
+        "hauler"
+      ],
+      "normalized_aliases": [
+        "hauler"
+      ]
+    },
+    {
+      "model_name": "hauler2",
+      "category": "Commercial",
+      "aliases": [
+        "hauler",
+        "hauler2"
+      ],
+      "normalized_aliases": [
+        "hauler",
+        "hauler2"
+      ]
+    },
+    {
+      "model_name": "handler",
+      "category": "Commercial",
+      "aliases": [
+        "handler"
+      ],
+      "normalized_aliases": [
+        "handler"
+      ]
+    },
+    {
+      "model_name": "mixer",
+      "category": "Commercial",
+      "aliases": [
+        "mixer"
+      ],
+      "normalized_aliases": [
+        "mixer"
+      ]
+    },
+    {
+      "model_name": "mixer2",
+      "category": "Commercial",
+      "aliases": [
+        "mixer",
+        "mixer2"
+      ],
+      "normalized_aliases": [
+        "mixer",
+        "mixer2"
+      ]
+    },
+    {
+      "model_name": "mule",
+      "category": "Commercial",
+      "aliases": [
+        "mule"
+      ],
+      "normalized_aliases": [
+        "mule"
+      ]
+    },
+    {
+      "model_name": "mule2",
+      "category": "Commercial",
+      "aliases": [
+        "mule",
+        "mule2"
+      ],
+      "normalized_aliases": [
+        "mule",
+        "mule2"
+      ]
+    },
+    {
+      "model_name": "mule3",
+      "category": "Commercial",
+      "aliases": [
+        "mule",
+        "mule3"
+      ],
+      "normalized_aliases": [
+        "mule",
+        "mule3"
+      ]
+    },
+    {
+      "model_name": "mule4",
+      "category": "Commercial",
+      "aliases": [
+        "mule",
+        "mule4"
+      ],
+      "normalized_aliases": [
+        "mule",
+        "mule4"
+      ]
+    },
+    {
+      "model_name": "packer",
+      "category": "Commercial",
+      "aliases": [
+        "packer"
+      ],
+      "normalized_aliases": [
+        "packer"
+      ]
+    },
+    {
+      "model_name": "phantom",
+      "category": "Commercial",
+      "aliases": [
+        "phantom"
+      ],
+      "normalized_aliases": [
+        "phantom"
+      ]
+    },
+    {
+      "model_name": "phantom2",
+      "category": "Commercial",
+      "aliases": [
+        "phantom",
+        "phantom2"
+      ],
+      "normalized_aliases": [
+        "phantom",
+        "phantom2"
+      ]
+    },
+    {
+      "model_name": "phantom3",
+      "category": "Commercial",
+      "aliases": [
+        "phantom",
+        "phantom3"
+      ],
+      "normalized_aliases": [
+        "phantom",
+        "phantom3"
+      ]
+    },
+    {
+      "model_name": "pounder",
+      "category": "Commercial",
+      "aliases": [
+        "pounder"
+      ],
+      "normalized_aliases": [
+        "pounder"
+      ]
+    },
+    {
+      "model_name": "pounder2",
+      "category": "Commercial",
+      "aliases": [
+        "pounder",
+        "pounder2"
+      ],
+      "normalized_aliases": [
+        "pounder",
+        "pounder2"
+      ]
+    },
+    {
+      "model_name": "rubble",
+      "category": "Commercial",
+      "aliases": [
+        "rubble"
+      ],
+      "normalized_aliases": [
+        "rubble"
+      ]
+    },
+    {
+      "model_name": "stockade",
+      "category": "Commercial",
+      "aliases": [
+        "stockade"
+      ],
+      "normalized_aliases": [
+        "stockade"
+      ]
+    },
+    {
+      "model_name": "stockade3",
+      "category": "Commercial",
+      "aliases": [
+        "stockade",
+        "stockade3"
+      ],
+      "normalized_aliases": [
+        "stockade",
+        "stockade3"
+      ]
+    },
+    {
+      "model_name": "terbyte",
+      "category": "Commercial",
+      "aliases": [
+        "terbyte"
+      ],
+      "normalized_aliases": [
+        "terbyte"
+      ]
+    },
+    {
+      "model_name": "airtug",
+      "category": "Utility",
+      "aliases": [
+        "airtug"
+      ],
+      "normalized_aliases": [
+        "airtug"
+      ]
+    },
+    {
+      "model_name": "caddy",
+      "category": "Utility",
+      "aliases": [
+        "caddy"
+      ],
+      "normalized_aliases": [
+        "caddy"
+      ]
+    },
+    {
+      "model_name": "caddy2",
+      "category": "Utility",
+      "aliases": [
+        "caddy",
+        "caddy2"
+      ],
+      "normalized_aliases": [
+        "caddy",
+        "caddy2"
+      ]
+    },
+    {
+      "model_name": "caddy3",
+      "category": "Utility",
+      "aliases": [
+        "caddy",
+        "caddy3"
+      ],
+      "normalized_aliases": [
+        "caddy",
+        "caddy3"
+      ]
+    },
+    {
+      "model_name": "docktug",
+      "category": "Utility",
+      "aliases": [
+        "docktug"
+      ],
+      "normalized_aliases": [
+        "docktug"
+      ]
+    },
+    {
+      "model_name": "forklift",
+      "category": "Utility",
+      "aliases": [
+        "forklift"
+      ],
+      "normalized_aliases": [
+        "forklift"
+      ]
+    },
+    {
+      "model_name": "mower",
+      "category": "Utility",
+      "aliases": [
+        "mower"
+      ],
+      "normalized_aliases": [
+        "mower"
+      ]
+    },
+    {
+      "model_name": "ripley",
+      "category": "Utility",
+      "aliases": [
+        "ripley"
+      ],
+      "normalized_aliases": [
+        "ripley"
+      ]
+    },
+    {
+      "model_name": "scrap",
+      "category": "Utility",
+      "aliases": [
+        "scrap"
+      ],
+      "normalized_aliases": [
+        "scrap"
+      ]
+    },
+    {
+      "model_name": "towtruck",
+      "category": "Utility",
+      "aliases": [
+        "towtruck"
+      ],
+      "normalized_aliases": [
+        "towtruck"
+      ]
+    },
+    {
+      "model_name": "towtruck2",
+      "category": "Utility",
+      "aliases": [
+        "towtruck",
+        "towtruck2"
+      ],
+      "normalized_aliases": [
+        "towtruck",
+        "towtruck2"
+      ]
+    },
+    {
+      "model_name": "tractor",
+      "category": "Utility",
+      "aliases": [
+        "tractor"
+      ],
+      "normalized_aliases": [
+        "tractor"
+      ]
+    },
+    {
+      "model_name": "tractor2",
+      "category": "Utility",
+      "aliases": [
+        "tractor",
+        "tractor2"
+      ],
+      "normalized_aliases": [
+        "tractor",
+        "tractor2"
+      ]
+    },
+    {
+      "model_name": "tractor3",
+      "category": "Utility",
+      "aliases": [
+        "tractor",
+        "tractor3"
+      ],
+      "normalized_aliases": [
+        "tractor",
+        "tractor3"
+      ]
+    },
+    {
+      "model_name": "utillitruck",
+      "category": "Utility",
+      "aliases": [
+        "utillitruck"
+      ],
+      "normalized_aliases": [
+        "utillitruck"
+      ]
+    },
+    {
+      "model_name": "utillitruck2",
+      "category": "Utility",
+      "aliases": [
+        "utillitruck",
+        "utillitruck2"
+      ],
+      "normalized_aliases": [
+        "utillitruck",
+        "utillitruck2"
+      ]
+    },
+    {
+      "model_name": "utillitruck3",
+      "category": "Utility",
+      "aliases": [
+        "utillitruck",
+        "utillitruck3"
+      ],
+      "normalized_aliases": [
+        "utillitruck",
+        "utillitruck3"
+      ]
+    },
+    {
+      "model_name": "formula",
+      "category": "Open Wheel",
+      "aliases": [
+        "formula"
+      ],
+      "normalized_aliases": [
+        "formula"
+      ]
+    },
+    {
+      "model_name": "formula2",
+      "category": "Open Wheel",
+      "aliases": [
+        "formula",
+        "formula2"
+      ],
+      "normalized_aliases": [
+        "formula",
+        "formula2"
+      ]
+    },
+    {
+      "model_name": "openwheel1",
+      "category": "Open Wheel",
+      "aliases": [
+        "openwheel",
+        "openwheel1"
+      ],
+      "normalized_aliases": [
+        "openwheel",
+        "openwheel1"
+      ]
+    },
+    {
+      "model_name": "openwheel2",
+      "category": "Open Wheel",
+      "aliases": [
+        "openwheel",
+        "openwheel2"
+      ],
+      "normalized_aliases": [
+        "openwheel",
+        "openwheel2"
+      ]
+    }
+  ],
+  "all_model_names_flat": [
+    "adder",
+    "autarch",
+    "banshee2",
+    "bullet",
+    "cheetah",
+    "cyclone",
+    "deveste",
+    "emerus",
+    "entity2",
+    "entityxf",
+    "fmj",
+    "furia",
+    "gp1",
+    "ignus",
+    "italigtb",
+    "italigtb2",
+    "italirsx",
+    "krieger",
+    "le7b",
+    "nero",
+    "nero2",
+    "osiris",
+    "penetrator",
+    "pfister811",
+    "prototipo",
+    "re7b",
+    "reaper",
+    "s80",
+    "sc1",
+    "scramjet",
+    "sheava",
+    "sultanrs",
+    "t20",
+    "taipan",
+    "tempesta",
+    "tezeract",
+    "thrax",
+    "tigon",
+    "turismor",
+    "tyrant",
+    "tyrus",
+    "vacca",
+    "vagner",
+    "vigilante",
+    "visione",
+    "voltic",
+    "voltic2",
+    "xa21",
+    "zentorno",
+    "zorrusso",
+    "virtue",
+    "torero2",
+    "lm87",
+    "zeno",
+    "champion",
+    "entity3",
+    "tenf",
+    "tenf2",
+    "r300",
+    "infernus",
+    "turismo2",
+    "alpha",
+    "9f",
+    "9f2",
+    "bestia",
+    "carbonizzare",
+    "comet2",
+    "comet3",
+    "comet4",
+    "comet5",
+    "coquette",
+    "coquette4",
+    "drafter",
+    "elegy",
+    "elegy2",
+    "feltzer2",
+    "flashgt",
+    "furoregt",
+    "fusilade",
+    "futo",
+    "futo2",
+    "gb200",
+    "growler",
+    "hotring",
+    "imorgon",
+    "issi7",
+    "italigto",
+    "jester",
+    "jester2",
+    "jester3",
+    "jester4",
+    "jugular",
+    "khamelion",
+    "komoda",
+    "kuruma",
+    "kuruma2",
+    "locust",
+    "lynx",
+    "massacro",
+    "massacro2",
+    "neo",
+    "neon",
+    "ninef",
+    "ninef2",
+    "omnis",
+    "omnisegt",
+    "pariah",
+    "penumbra",
+    "penumbra2",
+    "raiden",
+    "rapidgt",
+    "rapidgt2",
+    "raptor",
+    "remus",
+    "revolter",
+    "rt3000",
+    "ruston",
+    "schafter3",
+    "schafter4",
+    "schafter5",
+    "schafter6",
+    "schlagen",
+    "schwarzer",
+    "sentinel3",
+    "seven70",
+    "specter",
+    "specter2",
+    "streiter",
+    "sugoi",
+    "sultan",
+    "sultan2",
+    "sultan3",
+    "surano",
+    "tropos",
+    "verlierer2",
+    "vectre",
+    "vstr",
+    "zr350",
+    "calico",
+    "comet6",
+    "cypher",
+    "dominator7",
+    "dominator8",
+    "euros",
+    "previon",
+    "tailgater2",
+    "warrener2",
+    "comet7",
+    "blade",
+    "buccaneer",
+    "buccaneer2",
+    "chino",
+    "chino2",
+    "clique",
+    "coquette3",
+    "deviant",
+    "dominator",
+    "dominator2",
+    "dominator3",
+    "dominator4",
+    "dominator5",
+    "dominator6",
+    "dukes",
+    "dukes2",
+    "dukes3",
+    "ellie",
+    "faction",
+    "faction2",
+    "faction3",
+    "gauntlet",
+    "gauntlet2",
+    "gauntlet3",
+    "gauntlet4",
+    "gauntlet5",
+    "hermes",
+    "hotknife",
+    "hustler",
+    "impaler",
+    "impaler2",
+    "impaler3",
+    "impaler4",
+    "imperator",
+    "imperator2",
+    "imperator3",
+    "lurcher",
+    "moonbeam",
+    "moonbeam2",
+    "nightshade",
+    "peyote3",
+    "phoenix",
+    "picador",
+    "ratloader",
+    "ratloader2",
+    "ruiner",
+    "ruiner2",
+    "ruiner3",
+    "sabregt",
+    "sabregt2",
+    "slamvan",
+    "slamvan2",
+    "slamvan3",
+    "slamvan4",
+    "slamvan5",
+    "slamvan6",
+    "stalion",
+    "stalion2",
+    "tampa",
+    "tampa3",
+    "tulip",
+    "vamos",
+    "vigero",
+    "vigero2",
+    "virgo",
+    "virgo2",
+    "virgo3",
+    "voodoo",
+    "voodoo2",
+    "yosemite",
+    "yosemite2",
+    "buffalo4",
+    "greenwood",
+    "manana2",
+    "weevil2",
+    "tahoma",
+    "ardent",
+    "btype",
+    "btype2",
+    "btype3",
+    "casco",
+    "cheburek",
+    "cheetah2",
+    "coquette2",
+    "deluxo",
+    "dynasty",
+    "fagaloa",
+    "feltzer3",
+    "gt500",
+    "infernus2",
+    "jb700",
+    "jb7002",
+    "mamba",
+    "manana",
+    "michelli",
+    "monroe",
+    "nebula",
+    "peyote",
+    "peyote2",
+    "pigalle",
+    "rapidgt3",
+    "retinue",
+    "retinue2",
+    "savestra",
+    "stinger",
+    "stingergt",
+    "stromberg",
+    "swinger",
+    "torero",
+    "tornado",
+    "tornado2",
+    "tornado3",
+    "tornado4",
+    "tornado5",
+    "tornado6",
+    "viseris",
+    "z190",
+    "zion3",
+    "ztype",
+    "toreador",
+    "panthere",
+    "sm722",
+    "asea",
+    "asea2",
+    "asterope",
+    "cog55",
+    "cog552",
+    "cognoscenti",
+    "cognoscenti2",
+    "emperor",
+    "emperor2",
+    "emperor3",
+    "fugitive",
+    "glendale",
+    "glendale2",
+    "ingot",
+    "intruder",
+    "limo2",
+    "premier",
+    "primo",
+    "primo2",
+    "regina",
+    "romero",
+    "schafter2",
+    "stafford",
+    "stanier",
+    "stretch",
+    "superd",
+    "surge",
+    "tailgater",
+    "warrener",
+    "washington",
+    "cogcabrio",
+    "exemplar",
+    "f620",
+    "felon",
+    "felon2",
+    "jackal",
+    "oracle",
+    "oracle2",
+    "sentinel",
+    "sentinel2",
+    "windsor",
+    "windsor2",
+    "zion",
+    "zion2",
+    "baller",
+    "baller2",
+    "baller3",
+    "baller4",
+    "baller5",
+    "baller6",
+    "baller7",
+    "bjxl",
+    "cavalcade",
+    "cavalcade2",
+    "contender",
+    "dubsta",
+    "dubsta2",
+    "fq2",
+    "granger",
+    "granger2",
+    "gresley",
+    "habanero",
+    "huntley",
+    "landstalker",
+    "landstalker2",
+    "mesa",
+    "mesa2",
+    "novak",
+    "patriot",
+    "patriot2",
+    "patriot3",
+    "radi",
+    "rebla",
+    "rocoto",
+    "seminole",
+    "seminole2",
+    "serrano",
+    "toros",
+    "xls",
+    "xls2",
+    "jubilee",
+    "iwagen",
+    "astron",
+    "astron2",
+    "blista",
+    "blista2",
+    "blista3",
+    "brioso",
+    "brioso2",
+    "dilettante",
+    "dilettante2",
+    "issi2",
+    "issi3",
+    "issi4",
+    "issi5",
+    "issi6",
+    "kanjo",
+    "panto",
+    "prairie",
+    "rhapsody",
+    "club",
+    "weevil",
+    "asbo",
+    "bifta",
+    "blazer",
+    "blazer2",
+    "blazer3",
+    "blazer4",
+    "blazer5",
+    "brawler",
+    "bruiser",
+    "bruiser2",
+    "bruiser3",
+    "brutus",
+    "brutus2",
+    "brutus3",
+    "caracara",
+    "caracara2",
+    "dloader",
+    "dubsta3",
+    "duneloader",
+    "everon",
+    "freecrawler",
+    "hellion",
+    "insurgent",
+    "insurgent2",
+    "insurgent3",
+    "kamacho",
+    "marshall",
+    "menacer",
+    "monster",
+    "monster3",
+    "monster4",
+    "monster5",
+    "nightshark",
+    "outlaw",
+    "rancherxl",
+    "rancherxl2",
+    "rebel",
+    "rebel2",
+    "riata",
+    "sandking",
+    "sandking2",
+    "technical",
+    "technical2",
+    "technical3",
+    "trophytruck",
+    "trophytruck2",
+    "vagrant",
+    "verus",
+    "winky",
+    "draugur",
+    "akuma",
+    "avarus",
+    "bagger",
+    "bati",
+    "bati2",
+    "bf400",
+    "carbonrs",
+    "chimera",
+    "cliffhanger",
+    "daemon",
+    "daemon2",
+    "defiler",
+    "deathbike",
+    "deathbike2",
+    "deathbike3",
+    "diablous",
+    "diablous2",
+    "double",
+    "enduro",
+    "esskey",
+    "faggio",
+    "faggio2",
+    "faggio3",
+    "fcr",
+    "fcr2",
+    "gargoyle",
+    "hakuchou",
+    "hakuchou2",
+    "hexer",
+    "innovation",
+    "lectro",
+    "manchez",
+    "manchez2",
+    "manchez3",
+    "nemesis",
+    "nightblade",
+    "oppressor",
+    "oppressor2",
+    "pcj",
+    "ratbike",
+    "rrocket",
+    "ruffian",
+    "sanchez",
+    "sanchez2",
+    "sanctus",
+    "shinobi",
+    "shotaro",
+    "sovereign",
+    "stryder",
+    "thrust",
+    "vader",
+    "vindicator",
+    "vortex",
+    "wolfsbane",
+    "zombiea",
+    "zombieb",
+    "reever",
+    "powersurge",
+    "bison",
+    "bison2",
+    "bison3",
+    "bobcatxl",
+    "bodhi2",
+    "burrito",
+    "burrito2",
+    "burrito3",
+    "burrito4",
+    "burrito5",
+    "camper",
+    "gburrito",
+    "gburrito2",
+    "journey",
+    "minivan",
+    "minivan2",
+    "paradise",
+    "pony",
+    "pony2",
+    "rumpo",
+    "rumpo2",
+    "rumpo3",
+    "sadler",
+    "sadler2",
+    "speedo",
+    "speedo2",
+    "speedo4",
+    "surfer",
+    "surfer2",
+    "taco",
+    "youga",
+    "youga2",
+    "youga3",
+    "youga4",
+    "ambulance",
+    "barracks",
+    "barracks2",
+    "barracks3",
+    "crusader",
+    "fbi",
+    "fbi2",
+    "firetruk",
+    "lguard",
+    "pbus",
+    "police",
+    "police2",
+    "police3",
+    "police4",
+    "policeb",
+    "policeold1",
+    "policeold2",
+    "policet",
+    "polmav",
+    "pranger",
+    "predator",
+    "riot",
+    "riot2",
+    "sheriff",
+    "sheriff2",
+    "apc",
+    "barrage",
+    "chernobog",
+    "halftrack",
+    "khanjali",
+    "minitank",
+    "rhino",
+    "scarab",
+    "scarab2",
+    "scarab3",
+    "thruster",
+    "vetir",
+    "akula",
+    "alkonost",
+    "alphaz1",
+    "annihilator",
+    "annihilator2",
+    "avenger",
+    "avenger2",
+    "besra",
+    "bombushka",
+    "buzzard",
+    "buzzard2",
+    "cargobob",
+    "cargobob2",
+    "cargobob3",
+    "cargobob4",
+    "conada",
+    "cuban800",
+    "dodo",
+    "duster",
+    "frogger",
+    "frogger2",
+    "havok",
+    "howard",
+    "hunter",
+    "hydra",
+    "lazer",
+    "luxor",
+    "luxor2",
+    "mammatus",
+    "maverick",
+    "microlight",
+    "miljet",
+    "mogul",
+    "molotok",
+    "nimbus",
+    "nokota",
+    "pyro",
+    "rogue",
+    "savage",
+    "seabreeze",
+    "seasparrow",
+    "seasparrow2",
+    "seasparrow3",
+    "shamal",
+    "skylift",
+    "starling",
+    "strikeforce",
+    "stunt",
+    "supervolito",
+    "supervolito2",
+    "swift",
+    "swift2",
+    "tula",
+    "titan",
+    "valkyrie",
+    "valkyrie2",
+    "velum",
+    "velum2",
+    "vestra",
+    "volatol",
+    "volatus",
+    "raiju",
+    "streamer216",
+    "conada2",
+    "avisa",
+    "dinghy",
+    "dinghy2",
+    "dinghy3",
+    "dinghy4",
+    "dinghy5",
+    "jetmax",
+    "kosatka",
+    "marquis",
+    "seashark",
+    "seashark2",
+    "seashark3",
+    "speeder",
+    "speeder2",
+    "squalo",
+    "submersible",
+    "submersible2",
+    "suntrap",
+    "tropic",
+    "tropic2",
+    "tug",
+    "longfin",
+    "patrolboat",
+    "bmx",
+    "cruiser",
+    "fixter",
+    "scorcher",
+    "tribike",
+    "tribike2",
+    "tribike3",
+    "benson",
+    "biff",
+    "cerberus",
+    "cerberus2",
+    "cerberus3",
+    "cutter",
+    "flatbed",
+    "hauler",
+    "hauler2",
+    "handler",
+    "mixer",
+    "mixer2",
+    "mule",
+    "mule2",
+    "mule3",
+    "mule4",
+    "packer",
+    "phantom",
+    "phantom2",
+    "phantom3",
+    "pounder",
+    "pounder2",
+    "rubble",
+    "stockade",
+    "stockade3",
+    "terbyte",
+    "airtug",
+    "caddy",
+    "caddy2",
+    "caddy3",
+    "docktug",
+    "forklift",
+    "mower",
+    "ripley",
+    "scrap",
+    "towtruck",
+    "towtruck2",
+    "tractor",
+    "tractor2",
+    "tractor3",
+    "utillitruck",
+    "utillitruck2",
+    "utillitruck3",
+    "formula",
+    "formula2",
+    "openwheel1",
+    "openwheel2"
+  ],
+  "extra_model_names_seen_in_current_cfxre_docs": {
+    "Compacts": [
+      "brioso3",
+      "inductor",
+      "inductor2"
+    ],
+    "Sedans": [
+      "asterope2",
+      "impaler5",
+      "minimus",
+      "rhinehart"
+    ],
+    "SUV": [
+      "cavalcade3",
+      "dorado",
+      "squaddie",
+      "vivanite",
+      "woodlander"
+    ],
+    "Coupes": [
+      "driftfr36",
+      "driftsent2",
+      "kanjosj",
+      "postlude",
+      "sentinel6"
+    ],
+    "Muscle": [
+      "brigham",
+      "broadway",
+      "buffalo5",
+      "dominator9",
+      "dominator10",
+      "dominator11",
+      "dominator12",
+      "impaler6",
+      "vigero3",
+      "vigero4"
+    ],
+    "Sports Classic": [
+      "gt750",
+      "itali2",
+      "monstrociti",
+      "nebula2",
+      "rapidgt4",
+      "toreador2"
+    ],
+    "Sports": [
+      "comet8",
+      "coquette5",
+      "driftcypher",
+      "drifteuros",
+      "driftfuto",
+      "driftjester",
+      "driftremus",
+      "drifttampa",
+      "driftzr350",
+      "everon2",
+      "fr36",
+      "paragon3",
+      "paragon4",
+      "sentinel4",
+      "sentinel5"
+    ],
+    "Super": [
+      "fmj2",
+      "luiva",
+      "suzume",
+      "turismo3"
+    ],
+    "Off-Road": [
+      "terminus",
+      "yosemite3",
+      "zhaba"
+    ],
+    "Vans": [
+      "speedo5",
+      "surfer3"
+    ],
+    "Planes": [
+      "avenger3",
+      "avenger4",
+      "blimp",
+      "blimp2",
+      "blimp3"
+    ],
+    "Helicopters": [
+      "maverick2"
+    ],
+    "Service": [
+      "airbus",
+      "brickade",
+      "brickade2",
+      "bus",
+      "coach",
+      "pbus2",
+      "rallytruck",
+      "rentalbus",
+      "taxi",
+      "tourbus",
+      "trash",
+      "trash2",
+      "vivanite2",
+      "wastelander"
+    ],
+    "Emergency": [
+      "polbuffalo",
+      "polbuffalo6",
+      "polgauntlet",
+      "police5",
+      "policeb2"
+    ],
+    "Utility/Trailers": [
+      "armytanker",
+      "armytrailer",
+      "armytrailer2",
+      "baletrailer",
+      "boattrailer",
+      "boattrailer2",
+      "boattrailer3",
+      "flatbed2",
+      "trailerlarge",
+      "trailers",
+      "trailers2",
+      "trailers3",
+      "trailers4",
+      "trailers5",
+      "trailersmall",
+      "trflat",
+      "tvtrailer",
+      "tvtrailer2"
+    ]
+  },
+  "extra_models_flat": [
+    {
+      "model_name": "brioso3",
+      "category": "Compacts",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "inductor",
+      "category": "Compacts",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "inductor2",
+      "category": "Compacts",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "asterope2",
+      "category": "Sedans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "impaler5",
+      "category": "Sedans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "minimus",
+      "category": "Sedans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "rhinehart",
+      "category": "Sedans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "cavalcade3",
+      "category": "SUV",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "dorado",
+      "category": "SUV",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "squaddie",
+      "category": "SUV",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "vivanite",
+      "category": "SUV",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "woodlander",
+      "category": "SUV",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftfr36",
+      "category": "Coupes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftsent2",
+      "category": "Coupes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "kanjosj",
+      "category": "Coupes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "postlude",
+      "category": "Coupes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "sentinel6",
+      "category": "Coupes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "brigham",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "broadway",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "buffalo5",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "dominator9",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "dominator10",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "dominator11",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "dominator12",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "impaler6",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "vigero3",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "vigero4",
+      "category": "Muscle",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "gt750",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "itali2",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "monstrociti",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "nebula2",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "rapidgt4",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "toreador2",
+      "category": "Sports Classic",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "comet8",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "coquette5",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftcypher",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "drifteuros",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftfuto",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftjester",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftremus",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "drifttampa",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "driftzr350",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "everon2",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "fr36",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "paragon3",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "paragon4",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "sentinel4",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "sentinel5",
+      "category": "Sports",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "fmj2",
+      "category": "Super",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "luiva",
+      "category": "Super",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "suzume",
+      "category": "Super",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "turismo3",
+      "category": "Super",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "terminus",
+      "category": "Off-Road",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "yosemite3",
+      "category": "Off-Road",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "zhaba",
+      "category": "Off-Road",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "speedo5",
+      "category": "Vans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "surfer3",
+      "category": "Vans",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "avenger3",
+      "category": "Planes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "avenger4",
+      "category": "Planes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "blimp",
+      "category": "Planes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "blimp2",
+      "category": "Planes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "blimp3",
+      "category": "Planes",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "maverick2",
+      "category": "Helicopters",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "airbus",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "brickade",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "brickade2",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "bus",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "coach",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "pbus2",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "rallytruck",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "rentalbus",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "taxi",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "tourbus",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trash",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trash2",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "vivanite2",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "wastelander",
+      "category": "Service",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "polbuffalo",
+      "category": "Emergency",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "polbuffalo6",
+      "category": "Emergency",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "polgauntlet",
+      "category": "Emergency",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "police5",
+      "category": "Emergency",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "policeb2",
+      "category": "Emergency",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "armytanker",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "armytrailer",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "armytrailer2",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "baletrailer",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "boattrailer",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "boattrailer2",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "boattrailer3",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "flatbed2",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailerlarge",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailers",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailers2",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailers3",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailers4",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailers5",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trailersmall",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "trflat",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "tvtrailer",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    },
+    {
+      "model_name": "tvtrailer2",
+      "category": "Utility/Trailers",
+      "source": "seen_in_current_cfxre_docs_snippets"
+    }
+  ],
+  "parser_tip": "Pour comparer un texte radio/OCR, normalise en minuscules sans accents et enlève espaces/tirets, puis compare avec normalized_aliases."
+}
