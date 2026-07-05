@@ -54,6 +54,22 @@ class LocationParser:
     def find(self, text: str):
         text_clean = self.clean(text)
 
+        manual_locations = {
+            "mission row": "Mission Row",
+            "sandy shores": "Sandy Shores",
+            "paleto bay": "Paleto Bay",
+            "legion square": "Legion Square",
+        }
+
+        for alias, name in manual_locations.items():
+            if re.search(r"\b" + re.escape(alias) + r"\b", text_clean):
+                return {
+                    "name": name,
+                    "id": None,
+                    "category": "Manuel",
+                    "type": "zone",
+                }
+
         for item in self.aliases:
             alias = item["alias_clean"]
 

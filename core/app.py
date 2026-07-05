@@ -12,6 +12,7 @@ from parser.location_parser import LocationParser
 from parser.unit_parser import UnitParser
 from parser.direction_parser import DirectionParser
 from parser.vehicle_parser import VehicleParser
+from parser.incident_parser import IncidentParser
 
 
 class RadioVisionApp(QObject):
@@ -19,6 +20,7 @@ class RadioVisionApp(QObject):
     def __init__(self):
         super().__init__()
 
+        self.incident_parser = IncidentParser()
         self.vehicle_parser = VehicleParser()
         self.direction_parser = DirectionParser()
         self.location_parser = LocationParser()
@@ -90,8 +92,8 @@ class RadioVisionApp(QObject):
         location = self.location_parser.find(text)
         unit = self.unit_parser.find(text)
         direction = self.direction_parser.find(text)
-
         vehicle = self.vehicle_parser.find(text)
+        incidents = self.incident_parser.find(text)
 
         if unit:
             self.window.details.append(
@@ -117,6 +119,11 @@ class RadioVisionApp(QObject):
             self.window.details.append(
                 f"[{datetime.now():%H:%M:%S}] 🚗 Véhicule : {label}"
             )
+
+        for incident in incidents:
+            self.window.details.append(
+                f"[{datetime.now():%H:%M:%S}] {incident}"
+            )    
 
         if code:
             self.window.code.setText(f"📟 Code : {code}")
