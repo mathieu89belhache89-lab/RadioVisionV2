@@ -95,6 +95,9 @@ class RadioVisionApp(QObject):
         self.bubble_counter = 0
         self.pursuit_bubble_ids = {}
         self.max_detail_bubbles = 80
+        self.last_heard_text = ""
+        self.recent_heard_texts = []
+        self.max_recent_heard_texts = 30
 
         self.pending_timer = QTimer(self)
         self.pending_timer.setSingleShot(True)
@@ -108,6 +111,7 @@ class RadioVisionApp(QObject):
 
         self._connect_signals()
         self.apply_runtime_settings(self.runtime_settings, update_ui=True)
+        self.refresh_learning_ui()
         self.update_pursuit_history()
 
         self.logger.info("RadioVision démarré")
@@ -268,6 +272,337 @@ class RadioVisionApp(QObject):
         self.window.setting_apply_button.clicked.connect(self.apply_settings_from_ui)
         self.window.setting_reset_button.clicked.connect(self.reset_runtime_settings)
 
+        self.window.learning_add_button.clicked.connect(self.add_learning_correction)
+        self.window.learning_reload_button.clicked.connect(self.reload_learning_corrections)
+        self.window.learning_use_last_button.clicked.connect(self.use_last_call_for_learning)
+        self.window.learning_use_selected_recent_button.clicked.connect(self.use_selected_recent_for_learning)
+        self.window.learning_test_button.clicked.connect(self.test_learning_correction)
+        self.window.learning_update_button.clicked.connect(self.update_selected_learning_correction)
+        self.window.learning_delete_button.clicked.connect(self.delete_selected_learning_correction)
+        self.window.learning_corrections_table.itemSelectionChanged.connect(
+            self.load_selected_correction_into_form
+        )
+        self.window.learning_recent_list.itemDoubleClicked.connect(
+            self.use_selected_recent_for_learning
+        )
+
+
+    def get_learning_options(self):
+        location_names = set()
+
+        for item in getattr(self.location_parser, "locations", []):
+            name = item.get("name")
+
+            if name:
+                location_names.add(str(name))
+
+        for item in getattr(self.location_parser, "aliases", []):
+            name = item.get("name")
+
+            if name:
+                location_names.add(str(name))
+
+        vehicle_names = set()
+
+        for item in getattr(self.vehicle_parser, "vehicles", []):
+            label = item.get("label")
+
+            if label:
+                vehicle_names.add(str(label))
+
+        vehicle_names.update([
+            "Moto",
+            "Véhicule aérien",
+            "Véhicule noir",
+            "Véhicule blanc",
+            "Véhicule gris",
+        ])
+
+        code_names = set()
+
+        for code in getattr(self.parser, "codes", {}).keys():
+            code_names.add(str(code))
+
+        incident_names = [
+            "vehicule immobilise",
+            "vehicule accidente",
+            "besoin de renfort",
+            "coups de feu",
+            "suspect arme",
+            "arme visible",
+            "dernier visuel",
+            "plus de visuel",
+            "suspect interpelle",
+            "vehicule saisie",
+            "fuite a pied",
+            "poursuite en cours",
+            "agent a terre",
+        ]
+
+        return {
+            "locations": sorted(location_names),
+            "vehicles": sorted(vehicle_names),
+            "codes": sorted(code_names),
+            "incidents": incident_names,
+        }
+
+    def learning_section_labels(self):
+        return {
+            "locations": "Lieu",
+            "vehicles": "Véhicule",
+            "codes": "Code radio",
+            "incidents": "Incident / info",
+        }
+
+    def format_corrections_preview(self):
+        labels = self.learning_section_labels()
+        body = ""
+
+        for section in ["locations", "vehicles", "codes", "incidents"]:
+            corrections = self.correction_parser.get_section(section)
+            title = labels.get(section, section)
+
+            body += f"""
+            <div style="
+                color:#ffffff;
+                font-weight:bold;
+                font-size:14px;
+                margin:10px 0 6px 0;
+            ">
+                {html.escape(title)}
+            </div>
+            """
+
+            if not corrections:
+                body += """
+                <div style="color:#747f8d; margin-bottom:8px;">
+                    Aucune correction.
+                </div>
+                """
+                continue
+
+            body += """
+            <table cellspacing="0" cellpadding="0" style="
+                width:100%;
+                border-collapse:collapse;
+                font-size:13px;
+            ">
+            """
+
+            for heard, correction in sorted(corrections.items()):
+                body += f"""
+                <tr>
+                    <td style="color:#949ba4; padding:3px 8px; width:45%;">
+                        {html.escape(str(heard))}
+                    </td>
+                    <td style="color:#57f287; padding:3px 8px; width:10%;">
+                        →
+                    </td>
+                    <td style="color:#dbdee1; padding:3px 8px;">
+                        {html.escape(str(correction))}
+                    </td>
+                </tr>
+                """
+
+            body += "</table>"
+
+        return f"""
+        <html>
+            <body style="
+                background-color:#1e1f22;
+                color:#dbdee1;
+                font-family:Segoe UI, Arial;
+                font-size:13px;
+                margin:0;
+                padding:8px;
+            ">
+                {body}
+            </body>
+        </html>
+        """
+
+    def format_corrections_rows(self):
+        labels = self.learning_section_labels()
+        rows = []
+
+        for section in ["locations", "vehicles", "codes", "incidents"]:
+            corrections = self.correction_parser.get_section(section)
+
+            for heard, correction in sorted(corrections.items()):
+                rows.append({
+                    "section": section,
+                    "section_label": labels.get(section, section),
+                    "heard": heard,
+                    "correction": correction,
+                })
+
+        return rows
+
+    def refresh_learning_ui(self):
+        self.window.set_learning_options(self.get_learning_options())
+        self.window.set_corrections_preview(self.format_corrections_preview())
+        self.window.set_corrections_table(self.format_corrections_rows())
+        self.window.set_recent_calls(self.recent_heard_texts)
+
+    def add_learning_correction(self):
+        values = self.window.get_learning_values()
+
+        success, message = self.correction_parser.add_correction(
+            values.get("section"),
+            values.get("heard"),
+            values.get("correction"),
+        )
+
+        self.window.set_learning_status(message, error=not success)
+        self.window.status.showMessage(message, 6000)
+
+        if success:
+            self.window.learning_heard_input.clear()
+            self.refresh_learning_ui()
+
+    def update_selected_learning_correction(self):
+        selected = self.window.get_selected_correction()
+
+        if not selected:
+            message = "Sélectionne une correction à modifier."
+            self.window.set_learning_status(message, error=True)
+            self.window.status.showMessage(message, 4000)
+            return
+
+        values = self.window.get_learning_values()
+
+        old_section = selected.get("section")
+        old_heard = selected.get("heard")
+
+        # Si le texte entendu ou le type change, on supprime l'ancienne entrée.
+        new_section = values.get("section")
+        new_heard = values.get("heard")
+
+        if old_section != new_section or old_heard != new_heard:
+            self.correction_parser.remove_correction(old_section, old_heard)
+
+        success, message = self.correction_parser.add_correction(
+            new_section,
+            new_heard,
+            values.get("correction"),
+        )
+
+        self.window.set_learning_status(message, error=not success)
+        self.window.status.showMessage(message, 6000)
+
+        if success:
+            self.refresh_learning_ui()
+
+    def delete_selected_learning_correction(self):
+        selected = self.window.get_selected_correction()
+
+        if not selected:
+            message = "Sélectionne une correction à supprimer."
+            self.window.set_learning_status(message, error=True)
+            self.window.status.showMessage(message, 4000)
+            return
+
+        success, message = self.correction_parser.remove_correction(
+            selected.get("section"),
+            selected.get("heard"),
+        )
+
+        self.window.set_learning_status(message, error=not success)
+        self.window.status.showMessage(message, 6000)
+
+        if success:
+            self.refresh_learning_ui()
+
+    def test_learning_correction(self):
+        values = self.window.get_learning_values()
+        heard = values.get("heard", "")
+        section = values.get("section")
+        correction = values.get("correction", "")
+
+        if not heard:
+            message = "Mets d’abord un texte entendu à tester."
+            self.window.set_learning_status(message, error=True)
+            self.window.status.showMessage(message, 4000)
+            return
+
+        old_value = self.correction_parser.find_exact(section, heard)
+        replaced = self.correction_parser.replace_in_text(heard)
+
+        if old_value:
+            message = f"Correction déjà active : {heard} → {old_value}."
+        elif correction:
+            message = f"Test : {heard} sera ajouté vers {correction}. Texte corrigé actuel : {replaced}"
+        else:
+            message = f"Texte corrigé actuel : {replaced}"
+
+        self.window.set_learning_status(message, error=False)
+        self.window.status.showMessage(message, 6000)
+
+    def reload_learning_corrections(self):
+        self.correction_parser.load()
+        self.refresh_learning_ui()
+
+        message = "Corrections rechargées."
+        self.window.set_learning_status(message, error=False)
+        self.window.status.showMessage(message, 4000)
+
+    def use_last_call_for_learning(self):
+        if not self.last_heard_text:
+            message = "Aucun call entendu pour le moment."
+            self.window.set_learning_status(message, error=True)
+            self.window.status.showMessage(message, 4000)
+            return
+
+        self.window.set_learning_heard_text(self.last_heard_text)
+
+        message = "Dernier call copié dans le champ entendu."
+        self.window.set_learning_status(message, error=False)
+        self.window.status.showMessage(message, 4000)
+
+    def use_selected_recent_for_learning(self):
+        text = self.window.get_selected_recent_call()
+
+        if not text:
+            message = "Sélectionne une ligne dans les derniers calls."
+            self.window.set_learning_status(message, error=True)
+            self.window.status.showMessage(message, 4000)
+            return
+
+        self.window.set_learning_heard_text(text)
+
+        message = "Call sélectionné copié dans le champ entendu."
+        self.window.set_learning_status(message, error=False)
+        self.window.status.showMessage(message, 4000)
+
+    def load_selected_correction_into_form(self):
+        selected = self.window.get_selected_correction()
+
+        if not selected:
+            return
+
+        self.window.set_learning_values(
+            section=selected.get("section"),
+            heard=selected.get("heard"),
+            correction=selected.get("correction"),
+        )
+
+    def remember_heard_text(self, text):
+        text = str(text or "").strip()
+
+        if not text:
+            return
+
+        if self.recent_heard_texts and self.recent_heard_texts[0] == text:
+            return
+
+        if text in self.recent_heard_texts:
+            self.recent_heard_texts.remove(text)
+
+        self.recent_heard_texts.insert(0, text)
+        self.recent_heard_texts = self.recent_heard_texts[:self.max_recent_heard_texts]
+
+        self.window.set_recent_calls(self.recent_heard_texts)
+
     def start(self):
         if self.audio_worker and self.audio_worker.isRunning():
             return
@@ -354,6 +689,69 @@ class RadioVisionApp(QObject):
 
         return False
     
+    def should_prefer_direction_over_location(self, location, direction, direction_meta=None, code=None):
+        if not location or not direction:
+            return False
+
+        location_name = str(location.get("name", "")).strip()
+        direction_name = str(direction or "").strip()
+
+        if not location_name or not direction_name:
+            return False
+
+        location_clean = self.clean_text_simple(location_name)
+        direction_clean = self.clean_text_simple(direction_name)
+
+        if location_clean == direction_clean:
+            return False
+
+        if direction_clean and direction_clean in location_clean:
+            return True
+
+        location_score = int(location.get("score", 100) or 100)
+        direction_score = 100
+
+        if direction_meta:
+            direction_score = int(direction_meta.get("score", 100) or 100)
+
+        noisy_specific_locations = [
+            "zone rouge",
+            "casse",
+            "magasin",
+            "vetement",
+            "vêtement",
+            "parking",
+            "garage",
+        ]
+
+        if any(word in location_clean for word in noisy_specific_locations):
+            return True
+
+        pursuit_like_codes = set(PURSUIT_START_CODES + ["10-16", "10-17", "10-19"])
+
+        if code in pursuit_like_codes and direction_score >= 78:
+            return True
+
+        if direction_score >= 92 and location_score < 92:
+            return True
+
+        return False
+
+    def normalize_event_location(self, location, direction, direction_meta=None, code=None):
+        if self.should_prefer_direction_over_location(
+            location=location,
+            direction=direction,
+            direction_meta=direction_meta,
+            code=code,
+        ):
+            return self.location_parser.find_by_name(
+                direction,
+                score=direction_meta.get("score", 100) if direction_meta else 100,
+                raw=direction_meta.get("raw") if direction_meta else direction,
+            )
+
+        return location
+
     def is_raw_code_lookup_text(self, text, code):
         if not code:
             return False
@@ -438,6 +836,13 @@ class RadioVisionApp(QObject):
                 "probable": location.get("score", 100) < 92,
             }
 
+        location = self.normalize_event_location(
+            location=location,
+            direction=direction,
+            direction_meta=direction_meta,
+            code=code,
+        )
+
         vehicle = self.vehicle_parser.find(parse_text)
 
         # Le code radio 208 ne doit pas devenir Peugeot 208 sauf contexte véhicule clair.
@@ -487,13 +892,28 @@ class RadioVisionApp(QObject):
         ])
 
     def is_code_only_event(self, event):
-        return bool(event.get("code")) and not any([
+        code = event.get("code")
+
+        if not code:
+            return False
+
+        if any([
             event.get("unit"),
             event.get("location"),
             event.get("direction"),
             event.get("vehicle"),
             event.get("incidents"),
-        ])
+        ]):
+            return False
+
+        # Sécurité V8.1 :
+        # un code radio seul doit vraiment être une phrase courte du type "10-99" ou "Code OD".
+        # Si Whisper entend "central code od agent at", ce n'est pas un simple lookup :
+        # on laisse l'évènement en attente pour pouvoir fusionner le morceau suivant
+        # "mission row besoin de renfort".
+        lookup_text = event.get("parse_text") or event.get("text") or ""
+
+        return self.is_raw_code_lookup_text(lookup_text, code)
 
     def build_signature(
         self,
@@ -1372,6 +1792,9 @@ class RadioVisionApp(QObject):
         self.window.pursuit_history.moveCursor(QTextCursor.MoveOperation.End)
 
     def on_text(self, text):
+        self.last_heard_text = str(text or "").strip()
+        self.remember_heard_text(self.last_heard_text)
+
         self.window.radio_log.append(
             f"[{datetime.now():%H:%M:%S}] {text}"
         )

@@ -837,6 +837,24 @@ class VehicleParser:
         )
 
     def should_ignore_exact_match(self, text_clean, alias_clean):
+        # Anti-faux positif V8.1 :
+        # Whisper transforme parfois "BMW M4 blanche, deux individus" en
+        # "BMW M2 individus". Dans ce cas M2 est collé au nombre d'individus,
+        # ce n'est pas un véhicule fiable.
+        bmw_m2_aliases = {
+            "m2",
+            "m 2",
+            "bmw m2",
+            "bmw m 2",
+        }
+
+        if alias_clean in bmw_m2_aliases:
+            if re.search(
+                r"\b(bmw\s+)?m\s*2\s+(individu|individus|personne|personnes|suspect|suspects|a bord)\b",
+                text_clean,
+            ):
+                return True
+
         if alias_clean in self.AMBIGUOUS_ALIASES:
             if not self.has_vehicle_context(text_clean) and not self.has_any_color(text_clean):
                 return True

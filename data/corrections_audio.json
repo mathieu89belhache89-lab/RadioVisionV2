@@ -24,7 +24,8 @@
         "legion": "Legion Square",
         "delpero": "Del Perro",
         "del pero": "Del Perro",
-        "delpéro": "Del Perro"
+        "delpéro": "Del Perro",
+        "sambishap": "Sandy Shores"
     },
     "vehicles": {
         "od rs6": "Audi RS6",
@@ -41,5 +42,16 @@
         "dis sank": "10-5",
         "cis cis": "10-6",
         "disces": "10-7"
+    },
+    "incidents": {
+        "vehicules immobilises": "vehicule immobilise",
+        "vehicule immobilises": "vehicule immobilise",
+        "vehicules accidentes": "vehicule accidente",
+        "besoin de renforts": "besoin de renfort",
+        "dernier visual": "dernier visuel",
+        "dernier visu": "dernier visuel",
+        "en fuite a pie": "en fuite a pied",
+        "suspes en fuite a pied": "suspect en fuite a pied",
+        "suspès en fuite a pied": "suspect en fuite a pied"
     }
 }
