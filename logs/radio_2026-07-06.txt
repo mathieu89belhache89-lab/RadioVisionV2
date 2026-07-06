@@ -1,0 +1,1079 @@
+============================================================
+Heure : 16:48:22
+Poursuite : #1
+Phrase : bmw m4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:48:50
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : bmw mk de blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:49:37
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : bmwm 4 blanches 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:50:31
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : direction 100 d-shore
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone de pêche Sandy shore
+Direction : Zone de pêche Sandy shore
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:50:59
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : oh d'ailleurs mami j'ai une question on a un breaké ou pas à la maison ?
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Maison O'Neil
+Direction : Zone de pêche Sandy shore
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:52:53
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : dishore bmw m4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Direction : Zone de pêche Sandy shore
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:53:36
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Direction : Zone de pêche Sandy shore
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:53:38
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : m4 blanche deux individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Zone Rouge Nord
+Direction : Zone de pêche Sandy shore
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:54:11
+Poursuite : #1
+Phrase : centrale unité 21 10-11 direction centres
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Central Electrique
+Direction : Central Electrique
+============================================================
+Heure : 16:55:58
+Poursuite : #1
+Phrase : mwm 4 blanches 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:57:28
+Poursuite : #1
+Phrase : richard bmw m4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 16:59:51
+Poursuite : #1
+Phrase : bmw mk de blanche deux individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:01:08
+Poursuite : #1
+Phrase : bmwm4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:02:05
+Poursuite : #1
+Phrase : dicher bmw m4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:03:10
+Poursuite : #1
+Phrase : bmwm4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:06:01
+Phrase : réalisé par la police
+Véhicule : police
+============================================================
+Heure : 17:08:53
+Poursuite : #1
+Phrase : central unité 21 10-11 direction sandy shoress bmw m4 blanche deux individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:09:18
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : unité 21 dernier visuel vers mission row véhicules immobilisés
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 17:09:45
+Phrase : central code od agent à terre vers mission row besoin de renfort immédiat
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+Info : 🚨 Renfort demandé
+============================================================
+Heure : 17:10:06
+Type : Info non attribuée
+Phrase : unité 55 208 mission row agent pris en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Lieu : Mission Row
+Info : 🔫 Individu armé
+============================================================
+Heure : 17:10:41
+Poursuite : #2
+Phrase : central unité tango 10-11 direction paleto bay audi rs6 noire
+Unité : Tango
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 17:12:17
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11 direction sandy shoress bmw m4
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 17:12:35
+Type : Info non attribuée
+Phrase : 4 blanches deux individus à bord
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:12:53
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : unité 21 dernier visuel vers mission row véhicule immobilier
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 17:13:27
+Phrase : central code od agent à terre vers mission row besoin de renfort immédiat
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+Info : 🚨 Renfort demandé
+============================================================
+Heure : 17:14:52
+Type : Info non attribuée
+Phrase : c'est moi central unité 55 208 mission row agent pris en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Lieu : Mission Row
+Info : 🔫 Individu armé
+============================================================
+Heure : 17:15:15
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité tango 10-11 direction paleto bay audi rs6 noire
+Unité : Tango
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 17:17:07
+Phrase : au rech 10-1
+Code : 10-1
+Motif : En route sur les lieux
+============================================================
+Heure : 17:17:07
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 17:19:23
+Type : Code radio seul
+Phrase : 10-2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+============================================================
+Heure : 17:21:38
+Type : Code radio seul
+Phrase : 10-4
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 17:21:46
+Type : Code radio seul
+Phrase : 10-5
+Code : 10-5
+Motif : Négatif
+============================================================
+Heure : 17:21:53
+Type : Code radio seul
+Phrase : 10-3
+Code : 10-3
+Motif : Demande de renfort, équivaut code 3
+============================================================
+Heure : 17:21:59
+Type : Code radio seul
+Phrase : 10-32
+Code : 10-32
+Motif : Sniper
+============================================================
+Heure : 17:22:08
+Type : Code radio seul
+Phrase : 10-2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+============================================================
+Heure : 17:22:15
+Type : Code radio seul
+Phrase : 10-1
+Code : 10-1
+Motif : En route sur les lieux
+============================================================
+Heure : 17:22:21
+Type : Code radio seul
+Phrase : 10-0
+Code : 10-0
+Motif : Retour au poste de police
+============================================================
+Heure : 17:23:30
+Type : Code radio seul
+Phrase : 10-6
+Code : 10-6
+Motif : En cours / Occupé sur un contrôle, un 911
+============================================================
+Heure : 17:23:38
+Type : Code radio seul
+Phrase : 10-7
+Code : 10-7
+Motif : Transfert d’un suspect au poste de police ou fédérale
+============================================================
+Heure : 17:23:44
+Type : Code radio seul
+Phrase : 10-8
+Code : 10-8
+Motif : Fusillade, échange de coup de feu
+============================================================
+Heure : 17:24:04
+Type : Code radio seul
+Phrase : 10-99
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 17:24:13
+Type : Code radio seul
+Phrase : 10-9
+Code : 10-9
+Motif : Tirs sur notre unité, code 3
+============================================================
+Heure : 17:24:46
+Type : Code radio seul
+Phrase : 10-11
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+============================================================
+Heure : 17:24:54
+Type : Code radio seul
+Phrase : code 10-12
+Code : 10-12
+Motif : Refus d'obtempérer en voiture rapide
+============================================================
+Heure : 17:25:13
+Phrase : code ds-13
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 17:25:57
+Type : Code radio seul
+Phrase : code 10-14
+Code : 10-14
+Motif : Refus d'obtempérer en véhicule aérien
+============================================================
+Heure : 17:26:05
+Type : Code radio seul
+Phrase : code 10-15
+Code : 10-15
+Motif : Refus d'obtempérer en véhicule aquatique
+============================================================
+Heure : 17:26:23
+Poursuite : #1
+Phrase : code 10-16
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 17:26:33
+Poursuite : #2
+Phrase : code 10-10-7
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 17:26:42
+Type : Code radio seul
+Phrase : code 10-17
+Code : 10-17
+Motif : Autorisation de tirer sur les pneus
+============================================================
+Heure : 17:27:19
+Phrase : code ds-disnf
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 17:27:37
+Phrase : code ds-30
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 17:30:10
+Type : Code radio seul
+Phrase : code ds-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 17:30:26
+Type : Code radio seul
+Phrase : 10-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 17:30:34
+Type : Code radio seul
+Phrase : 10-31
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 17:30:43
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 17:30:50
+Type : Code radio seul
+Phrase : 460
+Code : 460
+Motif : Braquage
+============================================================
+Heure : 17:30:58
+Type : Code radio seul
+Phrase : 461
+Code : 461
+Motif : Supérette
+============================================================
+Heure : 17:31:22
+Type : Code radio seul
+Phrase : code 10-20
+Code : 10-20
+Motif : Regroupement important
+============================================================
+Heure : 17:31:39
+Type : Code radio seul
+Phrase : 10-29
+Code : 10-29
+Motif : RAS
+============================================================
+Heure : 17:31:47
+Type : Code radio seul
+Phrase : 10-32
+Code : 10-32
+Motif : Sniper
+============================================================
+Heure : 17:31:54
+Type : Code radio seul
+Phrase : 10-33
+Code : 10-33
+Motif : Unité parachutiste
+============================================================
+Heure : 17:32:15
+Phrase : 187 207 208
+Code : 187
+Motif : Homicide
+Véhicule : Peugeot 208
+============================================================
+Heure : 17:32:29
+Type : Code radio seul
+Phrase : 10-4
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 17:32:45
+Type : Code radio seul
+Phrase : 10-0
+Code : 10-0
+Motif : Retour au poste de police
+============================================================
+Heure : 17:58:31
+Poursuite : #1
+Phrase : central unité 21 10-11 direction sandy shoress bmw m4 blanche deux individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 17:59:11
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : let's go unité 21 dernier visuel vers mission row véhicules immobilisés
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 17:59:45
+Phrase : central code od agent à terre vers mission row besoin de renfort immédiat
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+Info : 🚨 Renfort demandé
+============================================================
+Heure : 18:00:07
+Type : Info non attribuée
+Phrase : centrale unité 55 208 mission row agent pris en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Lieu : Mission Row
+Info : 🔫 Individu armé
+============================================================
+Heure : 18:01:46
+Poursuite : #2
+Phrase : centrale unité tango 10-11 direction paleto bay audi rs6 noir
+Unité : Tango
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 18:02:29
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-10 direction sandy shoress bmw m4 blanc
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 18:03:42
+Poursuite : #3
+Phrase : centrale unité 14 10-11 vers palais-tobay mercedes amg grise
+Unité : 14
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+============================================================
+Heure : 18:04:26
+Poursuite : #4
+Phrase : central unité 32 10-10 direction legion square square square audi rs6 noire trois individus à bord poursuite en cours
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Legion Square
+Direction : Legion Square
+Véhicule : Audi RS6 noir
+Info : 👥 3 individu(s) à bord
+Info : 🚓 Poursuite en cours
+============================================================
+Heure : 18:06:03
+Type : Info non attribuée
+Phrase : ah la la la central unité 12 10-99 direction mission row audi rs6 noire armes visibles
+Unité : 12
+Code : 10-99
+Motif : Demande de renfort immédiat
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 18:06:27
+Phrase : deuxième agent à terre vers mission row
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+============================================================
+Heure : 18:07:10
+Poursuite : #5
+Phrase : centrale unité 4 10-11 direction paleto banque gtr rouge
+Unité : 4
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Nissan GTR rouge
+============================================================
+Heure : 18:07:35
+Poursuite : #6
+Phrase : central unité 12 10-11 direction mission row audi rs6 noire deux individus à bord
+Unité : 12
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Audi RS6 noir
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 18:07:44
+Poursuite : #7
+Phrase : centrale unité 8 10-11 direction casino sultan noir
+Unité : 8
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Casino
+Direction : Casino
+Véhicule : sultan noir
+============================================================
+Heure : 18:07:56
+Poursuite : #6
+Type : Mise à jour poursuite
+Phrase : centrale unité 12 10-10 direction sandy shoress
+Unité : 12
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : Audi RS6 noir
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 18:08:07
+Poursuite : #7
+Type : Mise à jour poursuite
+Phrase : unité 8 code 3 direction post bcso sandy
+Unité : 8
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Poste BCSO
+Direction : Poste BCSO
+Véhicule : sultan noir
+============================================================
+Heure : 18:08:20
+Type : Info non attribuée
+Phrase : unité 24 10-31 à la bijouterie
+Unité : 24
+Code : 10-31
+Motif : Braquage confirmé
+Lieu : Bijouterie
+============================================================
+Heure : 18:08:37
+Poursuite : #4
+Type : Mise à jour poursuite
+Phrase : centrale unité 32 10-11 direction mission row
+Unité : 32
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Audi RS6 noir
+Info : 👥 3 individu(s) à bord
+Info : 🚓 Poursuite en cours
+============================================================
+Heure : 18:09:21
+Phrase : bah ouais mais mais mais mais mais mais mais mais allez ça y est bordel de merde mon téléphone est bouillant sa mère euh unité 14 unité 14 suspect en
+Unité : 14
+============================================================
+Heure : 18:09:31
+Type : Info non attribuée
+Phrase : unité 26 besoin de renfort coups de feu suspect armé
+Unité : 26
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 18:16:02
+Phrase : deuxième agent à terre vers mission row
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+============================================================
+Heure : 18:21:14
+Dossier : Intervention #1
+Type dossier : Prise d’otage agent
+Phrase : centrale unité 55 208 mission row agent pris en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Lieu : Mission Row
+Info : 🔫 Individu armé
+Info : 🧍 Otage signalé
+============================================================
+Heure : 18:21:37
+Phrase : centrale unité 21 10-4
+Unité : 21
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 18:21:55
+Dossier : Urgence #2
+Type dossier : Agent à terre
+Phrase : enfantable agent à terre vers mission row agent à terre vers mission row
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+============================================================
+Heure : 18:22:05
+Dossier : Urgence #2
+Type dossier : Agent à terre
+Type : Mise à jour intervention
+Phrase : deuxième agent à terre vers mission row
+Code : CODE OD
+Motif : Agent à terre
+Lieu : Mission Row
+Direction : Mission Row
+============================================================
+Heure : 18:23:43
+Poursuite : #1
+Phrase : central unité 9 10-11 direction sandy shoress bmw m4 blanche deux individus à bord
+Unité : 9
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Sandy Shores
+Direction : Sandy Shores
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 18:23:56
+Type : Info non attribuée
+Phrase : unité 12 dernier visuel vers mission row véhicules immobilisés
+Unité : 12
+Lieu : Mission Row
+Direction : Mission Row
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 18:24:15
+Dossier : Intervention #1
+Type dossier : Prise d’otage agent
+Phrase : unité 55 208 mission row agent pris en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Lieu : Mission Row
+Info : 🔫 Individu armé
+Info : 🧍 Otage signalé
+============================================================
+Heure : 18:24:26
+Poursuite : #2
+Phrase : central unité tango 10-11 direction paleto bay audi rs6 noir
+Unité : Tango
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 18:24:36
+Poursuite : #3
+Phrase : central unité henry 10-14 vers sandy shoress véhicules aériens en fuite
+Unité : Henry
+Code : 10-14
+Motif : Refus d'obtempérer en véhicule aérien
+Lieu : Sandy Shores
+Direction : Sandy Shores
+============================================================
+Heure : 18:24:48
+Poursuite : #4
+Phrase : central unité 27 10-12 direction casino mercedes amg grise quatre individus à bord
+Unité : 27
+Code : 10-12
+Motif : Refus d'obtempérer en voiture rapide
+Lieu : Casino
+Direction : Casino
+Véhicule : Mercedes AMG gris
+Info : 👥 4 individu(s) à bord
+============================================================
+Heure : 18:25:34
+Poursuite : #5
+Phrase : central unité 12 10-10 direction sandy shoress
+Unité : 12
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Sandy Shores
+Direction : Sandy Shores
+============================================================
+Heure : 18:25:46
+Poursuite : #6
+Phrase : central unité 15 10-11 vers paleto bay mercedes amg grise
+Unité : 15
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Paleto Bay
+Direction : Paleto Bay
+Véhicule : Mercedes AMG gris
+============================================================
+Heure : 18:25:56
+Poursuite : #6
+Type : Mise à jour poursuite
+Phrase : unité 15 dernier visuel vers mission row véhicules immobilisés
+Unité : 15
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Lieu : Mission Row
+Direction : Mission Row
+Véhicule : Mercedes AMG gris
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 18:26:05
+Type : Info non attribuée
+Phrase : unité 5 suspect en fuite à pied vers filiade
+Unité : 5
+Info : 👥 5 individu(s) à bord
+Info : 🏃 Fuite à pied
+============================================================
+Heure : 18:26:20
+Type : Info non attribuée
+Phrase : unité 17 besoin de renfort coups de feu suspect armé
+Unité : 17
+Info : 🔫 Individu armé
+Info : 🚨 Renfort demandé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 18:26:29
+Type : Info non attribuée
+Phrase : unité 17 individus interpellés véhicules immobilisés
+Unité : 17
+Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 18:26:52
+Type : Info non attribuée
+Phrase : il n'y a pas d'autres ? c'est toutes les mêmes après
+Lieu : Champ d'éolienne
+============================================================
+Heure : 18:26:57
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:27:03
+Type : Code radio seul
+Phrase : 10-7
+Code : 10-7
+Motif : Transfert d’un suspect au poste de police ou fédérale
+============================================================
+Heure : 18:27:09
+Type : Code radio seul
+Phrase : 10-8
+Code : 10-8
+Motif : Fusillade, échange de coup de feu
+============================================================
+Heure : 18:27:16
+Type : Code radio seul
+Phrase : 10-9
+Code : 10-9
+Motif : Tirs sur notre unité, code 3
+============================================================
+Heure : 18:27:58
+Type : Code radio seul
+Phrase : code 10-9
+Code : 10-9
+Motif : Tirs sur notre unité, code 3
+============================================================
+Heure : 18:28:43
+Type : Code radio seul
+Phrase : je n'ai pas testé 10-19 encore
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:28:55
+Type : Code radio seul
+Phrase : 10-19
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:29:17
+Type : Code radio seul
+Phrase : code 10-19
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:29:43
+Type : Info non attribuée
+Phrase : attention à l'heure toi d'ailleurs parce que tu devais sortir
+Lieu : Champ d'éolienne
+Direction : Champ d'éolienne
+============================================================
+Heure : 18:29:49
+Type : Info non attribuée
+Phrase : je ne sais pas tu avais donné une heure tout à l'heure
+Lieu : Sandy Shores
+Direction : Sandy Shores
+============================================================
+Heure : 18:30:01
+Type : Code radio seul
+Phrase : 10-19
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:30:15
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 18:31:00
+Type : Code radio seul
+Phrase : 10-20
+Code : 10-20
+Motif : Regroupement important
+============================================================
+Heure : 18:31:07
+Type : Code radio seul
+Phrase : 10-29
+Code : 10-29
+Motif : RAS
+============================================================
+Heure : 18:31:14
+Type : Code radio seul
+Phrase : 10-32
+Code : 10-32
+Motif : Sniper
+============================================================
+Heure : 18:31:20
+Type : Code radio seul
+Phrase : 10-33
+Code : 10-33
+Motif : Unité parachutiste
+============================================================
+Heure : 18:31:26
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 18:31:40
+Type : Code radio seul
+Phrase : 10-31
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 18:32:03
+Phrase : en fait je ne vois pas s'il marche parce que du coup je suis sur la feuille des codes
+Lieu : Tekilala
+============================================================
+Heure : 18:32:11
+Type : Code radio seul
+Phrase : 460
+Code : 460
+Motif : Braquage
+============================================================
+Heure : 18:32:18
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 18:32:24
+Type : Code radio seul
+Phrase : 461
+Code : 461
+Motif : Supérette
+============================================================
+Heure : 18:32:33
+Type : Code radio seul
+Phrase : 10-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 18:32:40
+Type : Code radio seul
+Phrase : code doa
+Code : CODE DOA
+Motif : Civil à terre, sans info précise
+============================================================
+Heure : 18:32:47
+Type : Code radio seul
+Phrase : code rdp
+Code : CODE RDP
+Motif : Récapitulatif des patrouilles
+============================================================
+Heure : 18:32:54
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 18:33:01
+Type : Code radio seul
+Phrase : code dcd
+Code : CODE DCD
+Motif : Civil décédé
+============================================================
+Heure : 18:33:07
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 18:33:13
+Type : Code radio seul
+Phrase : code od
+Code : CODE OD
+Motif : Agent à terre
+============================================================
+Heure : 18:33:20
+Type : Code radio seul
+Phrase : tango
+Code : TANGO
+Motif : Patrouille à trois
+============================================================
+Heure : 18:33:29
+Type : Code radio seul
+Phrase : adams
+Code : ADAMS
+Motif : Patrouille à deux
+============================================================
+Heure : 18:33:50
+Type : Code radio seul
+Phrase : 187
+Code : 187
+Motif : Homicide
+============================================================
+Heure : 18:33:57
+Type : Code radio seul
+Phrase : cp
+Code : CP
+Motif : Patrouille des hauts gradés
+============================================================
+Heure : 18:34:05
+Type : Code radio seul
+Phrase : lincoln
+Code : LINCOLN
+Motif : Patrouille seul
+============================================================
+Heure : 18:34:26
+Type : Code radio seul
+Phrase : mary
+Code : MARY
+Motif : Patrouille en moto
+============================================================
+Heure : 18:34:43
+Type : Code radio seul
+Phrase : ap
+Code : AP
+Motif : Patrouille en avion
+============================================================
+Heure : 18:36:32
+Poursuite : #7
+Phrase : central unité 22 10-19 véhicules accidentés vers mission row
+Unité : 22
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Mission Row
+Direction : Mission Row
+Info : 💥 Accident signalé
+============================================================
+Heure : 18:36:44
+Type : Code radio seul
+Phrase : 10-19
+Code : 10-10
+Motif : Refus d'obtempérer à pied

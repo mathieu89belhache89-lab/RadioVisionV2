@@ -836,6 +836,19 @@ class VehicleParser:
             )
         )
 
+    def has_strong_vehicle_context_for_alias(self, text_clean, alias_clean):
+        color = self.find_color(text_clean, alias_clean)
+
+        if color:
+            return True
+
+        strong_patterns = [
+            rf"\b(vehicule|voiture|auto)\s+{re.escape(alias_clean)}\b",
+            rf"\b{re.escape(alias_clean)}\s+(noir|blanc|rouge|bleu|vert|jaune|orange|gris|violet|rose|marron|beige|chrome|dore|argent)\b",
+        ]
+
+        return any(re.search(pattern, text_clean) for pattern in strong_patterns)
+
     def should_ignore_exact_match(self, text_clean, alias_clean):
         # Anti-faux positif V8.1 :
         # Whisper transforme parfois "BMW M4 blanche, deux individus" en
@@ -856,7 +869,9 @@ class VehicleParser:
                 return True
 
         if alias_clean in self.AMBIGUOUS_ALIASES:
-            if not self.has_vehicle_context(text_clean) and not self.has_any_color(text_clean):
+            # Les noms GTA comme premier/oracle/fugitive sont aussi des mots courants.
+            # On les accepte seulement avec un contexte véhicule fort.
+            if not self.has_strong_vehicle_context_for_alias(text_clean, alias_clean):
                 return True
 
         return False

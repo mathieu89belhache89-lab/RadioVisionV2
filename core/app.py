@@ -23,6 +23,8 @@ from parser.direction_parser import DirectionParser
 from parser.vehicle_parser import VehicleParser
 from parser.incident_parser import IncidentParser
 from parser.pursuit_tracker import PursuitTracker
+from parser.intervention_tracker import InterventionTracker
+from parser.radio_code_classifier import RadioCodeClassifier
 from parser.correction_parser import CorrectionParser
 
 
@@ -35,7 +37,10 @@ DEFAULT_RUNTIME_SETTINGS = {
     "pending_delay": 6,
     "merge_window": 8,
     "pursuit_window": 3,
-    "whisper_model": "base",
+    "whisper_model": "large-v3-turbo",
+    "whisper_device": "auto",
+    "whisper_compute_type": "auto",
+    "whisper_beam_size": 5,
 }
 
 
@@ -78,6 +83,8 @@ class RadioVisionApp(QObject):
         self.vehicle_parser = VehicleParser()
         self.incident_parser = IncidentParser()
         self.pursuit_tracker = PursuitTracker()
+        self.intervention_tracker = InterventionTracker()
+        self.code_classifier = RadioCodeClassifier()
         self.correction_parser = CorrectionParser()
 
         self.runtime_settings_file = Path("data") / "radiovision_settings.json"
@@ -94,6 +101,7 @@ class RadioVisionApp(QObject):
         self.detail_bubbles = []
         self.bubble_counter = 0
         self.pursuit_bubble_ids = {}
+        self.case_bubble_ids = {}
         self.max_detail_bubbles = 80
         self.last_heard_text = ""
         self.recent_heard_texts = []
@@ -184,8 +192,25 @@ class RadioVisionApp(QObject):
 
             model = data.get("whisper_model", settings["whisper_model"])
 
-            if model in ["tiny", "base", "small"]:
+            if model in ["tiny", "base", "small", "medium", "large-v3-turbo", "large-v3"]:
                 settings["whisper_model"] = model
+
+            device = data.get("whisper_device", settings.get("whisper_device", "auto"))
+
+            if device in ["auto", "cuda", "cpu"]:
+                settings["whisper_device"] = device
+
+            compute_type = data.get("whisper_compute_type", settings.get("whisper_compute_type", "auto"))
+
+            if compute_type in ["auto", "float16", "int8_float16", "int8"]:
+                settings["whisper_compute_type"] = compute_type
+
+            settings["whisper_beam_size"] = self.clamp_int(
+                data.get("whisper_beam_size"),
+                1,
+                8,
+                settings.get("whisper_beam_size", 5),
+            )
 
         except Exception:
             return settings
@@ -209,6 +234,7 @@ class RadioVisionApp(QObject):
 
         pursuit_window_seconds = int(settings.get("pursuit_window", 3)) * 60
         self.pursuit_tracker.set_active_window(pursuit_window_seconds)
+        self.intervention_tracker.set_active_window(pursuit_window_seconds + 120)
 
         self.overlay.set_enabled(settings.get("overlay_enabled", True))
         self.overlay.set_display_seconds(settings.get("overlay_duration", 15))
@@ -222,6 +248,9 @@ class RadioVisionApp(QObject):
         old_capture_microphone = bool(
             self.runtime_settings.get("capture_microphone", False)
         )
+        old_device = self.runtime_settings.get("whisper_device", "auto")
+        old_compute_type = self.runtime_settings.get("whisper_compute_type", "auto")
+        old_beam_size = int(self.runtime_settings.get("whisper_beam_size", 5))
 
         self.runtime_settings = self.window.get_settings_values()
         self.save_runtime_settings()
@@ -231,6 +260,9 @@ class RadioVisionApp(QObject):
         new_capture_microphone = bool(
             self.runtime_settings.get("capture_microphone", False)
         )
+        new_device = self.runtime_settings.get("whisper_device", "auto")
+        new_compute_type = self.runtime_settings.get("whisper_compute_type", "auto")
+        new_beam_size = int(self.runtime_settings.get("whisper_beam_size", 5))
 
         message = "Paramètres sauvegardés."
 
@@ -238,6 +270,9 @@ class RadioVisionApp(QObject):
 
         if new_model != old_model:
             restart_reasons.append("le modèle Whisper")
+
+        if new_device != old_device or new_compute_type != old_compute_type or new_beam_size != old_beam_size:
+            restart_reasons.append("le moteur Whisper V9")
 
         if new_capture_microphone != old_capture_microphone:
             restart_reasons.append("la source micro")
@@ -689,69 +724,6 @@ class RadioVisionApp(QObject):
 
         return False
     
-    def should_prefer_direction_over_location(self, location, direction, direction_meta=None, code=None):
-        if not location or not direction:
-            return False
-
-        location_name = str(location.get("name", "")).strip()
-        direction_name = str(direction or "").strip()
-
-        if not location_name or not direction_name:
-            return False
-
-        location_clean = self.clean_text_simple(location_name)
-        direction_clean = self.clean_text_simple(direction_name)
-
-        if location_clean == direction_clean:
-            return False
-
-        if direction_clean and direction_clean in location_clean:
-            return True
-
-        location_score = int(location.get("score", 100) or 100)
-        direction_score = 100
-
-        if direction_meta:
-            direction_score = int(direction_meta.get("score", 100) or 100)
-
-        noisy_specific_locations = [
-            "zone rouge",
-            "casse",
-            "magasin",
-            "vetement",
-            "vêtement",
-            "parking",
-            "garage",
-        ]
-
-        if any(word in location_clean for word in noisy_specific_locations):
-            return True
-
-        pursuit_like_codes = set(PURSUIT_START_CODES + ["10-16", "10-17", "10-19"])
-
-        if code in pursuit_like_codes and direction_score >= 78:
-            return True
-
-        if direction_score >= 92 and location_score < 92:
-            return True
-
-        return False
-
-    def normalize_event_location(self, location, direction, direction_meta=None, code=None):
-        if self.should_prefer_direction_over_location(
-            location=location,
-            direction=direction,
-            direction_meta=direction_meta,
-            code=code,
-        ):
-            return self.location_parser.find_by_name(
-                direction,
-                score=direction_meta.get("score", 100) if direction_meta else 100,
-                raw=direction_meta.get("raw") if direction_meta else direction,
-            )
-
-        return location
-
     def is_raw_code_lookup_text(self, text, code):
         if not code:
             return False
@@ -779,10 +751,41 @@ class RadioVisionApp(QObject):
 
         return text_clean in accepted
 
+    def build_code_classification_fields(self, code):
+        classification = self.code_classifier.classify(code)
+
+        return {
+            "code_classification": classification,
+            "code_category": classification.get("category"),
+            "code_category_label": classification.get("category_label"),
+            "code_action": classification.get("action"),
+            "code_action_label": classification.get("action_label"),
+            "code_priority": classification.get("priority"),
+        }
+
+    def apply_code_classification_to_event(self, event):
+        event.update(self.build_code_classification_fields(event.get("code")))
+        return event
+
+    def should_display_without_tracker(self, event):
+        action = event.get("code_action")
+
+        if not event.get("code"):
+            return False
+
+        if action in ["status", "unit_info"]:
+            return True
+
+        if action == "pursuit_update" and not self.pursuit_tracker.has_active_pursuits():
+            return True
+
+        return False
+
     def parse_event(self, text):
         parse_text = self.correction_parser.replace_in_text(text)
 
         code, signification = self.parser.parse(parse_text)
+        code_fields = self.build_code_classification_fields(code)
 
         if code and self.is_raw_code_lookup_text(parse_text, code):
             return {
@@ -804,6 +807,13 @@ class RadioVisionApp(QObject):
                 "pursuit_label": None,
                 "pursuit_status": None,
                 "pursuit_status_label": None,
+                "case_id": None,
+                "case_label": None,
+                "case_kind": None,
+                "case_priority": None,
+                "case_type_label": None,
+                "case_status_label": None,
+                **code_fields,
                 "tracker_action": None,
                 "association_score": 0,
             }
@@ -835,13 +845,6 @@ class RadioVisionApp(QObject):
                 "source": "location",
                 "probable": location.get("score", 100) < 92,
             }
-
-        location = self.normalize_event_location(
-            location=location,
-            direction=direction,
-            direction_meta=direction_meta,
-            code=code,
-        )
 
         vehicle = self.vehicle_parser.find(parse_text)
 
@@ -877,6 +880,13 @@ class RadioVisionApp(QObject):
             "pursuit_label": None,
             "pursuit_status": None,
             "pursuit_status_label": None,
+            "case_id": None,
+            "case_label": None,
+            "case_kind": None,
+            "case_priority": None,
+            "case_type_label": None,
+            "case_status_label": None,
+            **code_fields,
             "tracker_action": None,
             "association_score": 0,
         }
@@ -892,28 +902,13 @@ class RadioVisionApp(QObject):
         ])
 
     def is_code_only_event(self, event):
-        code = event.get("code")
-
-        if not code:
-            return False
-
-        if any([
+        return bool(event.get("code")) and not any([
             event.get("unit"),
             event.get("location"),
             event.get("direction"),
             event.get("vehicle"),
             event.get("incidents"),
-        ]):
-            return False
-
-        # Sécurité V8.1 :
-        # un code radio seul doit vraiment être une phrase courte du type "10-99" ou "Code OD".
-        # Si Whisper entend "central code od agent at", ce n'est pas un simple lookup :
-        # on laisse l'évènement en attente pour pouvoir fusionner le morceau suivant
-        # "mission row besoin de renfort".
-        lookup_text = event.get("parse_text") or event.get("text") or ""
-
-        return self.is_raw_code_lookup_text(lookup_text, code)
+        ])
 
     def build_signature(
         self,
@@ -925,6 +920,8 @@ class RadioVisionApp(QObject):
         vehicle=None,
         incidents=None,
         pursuit_id=None,
+        case_id=None,
+        case_kind=None,
         is_unassigned=False,
         is_code_lookup=False,
     ):
@@ -942,6 +939,8 @@ class RadioVisionApp(QObject):
 
         signature_parts = [
             str(pursuit_id or ""),
+            str(case_id or ""),
+            str(case_kind or ""),
             str(code or ""),
             str(unit or ""),
             str(location_name or ""),
@@ -1163,6 +1162,15 @@ class RadioVisionApp(QObject):
             self.display_event(event)
             return
 
+        # Les statuts radio et les codes de type unité ne doivent pas attendre
+        # un lieu / véhicule et ne doivent jamais être forcés dans une poursuite.
+        if self.should_display_without_tracker(event):
+            if self.pending_event:
+                self.flush_pending_event()
+
+            self.process_and_display_event(event)
+            return
+
         if self.should_merge_with_pending(event):
             merged = self.merge_events(
                 self.pending_event,
@@ -1215,7 +1223,31 @@ class RadioVisionApp(QObject):
         self.process_and_display_event(event)
 
     def process_and_display_event(self, event):
+        self.apply_code_classification_to_event(event)
+
+        if self.should_display_without_tracker(event):
+            self.display_event(event)
+            self.update_pursuit_history()
+            return
+
+        # Cas mixte : 10-19 peut être une mise à jour de poursuite si une poursuite
+        # est active, sinon il devient un dossier intervention "Accident".
+        if event.get("code_action") == "pursuit_or_case" and self.pursuit_tracker.has_active_pursuits():
+            tracked_event = self.pursuit_tracker.process_event(event)
+            self.display_event(tracked_event)
+            self.update_pursuit_history()
+            return
+
+        tracked_case = self.intervention_tracker.process_event(event)
+
+        if tracked_case:
+            self.apply_code_classification_to_event(tracked_case)
+            self.display_event(tracked_case)
+            self.update_pursuit_history()
+            return
+
         tracked_event = self.pursuit_tracker.process_event(event)
+        self.apply_code_classification_to_event(tracked_event)
         self.display_event(tracked_event)
         self.update_pursuit_history()
 
@@ -1236,6 +1268,15 @@ class RadioVisionApp(QObject):
             pursuit_id=event.get("pursuit_id"),
             pursuit_label=event.get("pursuit_label"),
             pursuit_status_label=event.get("pursuit_status_label"),
+            case_id=event.get("case_id"),
+            case_label=event.get("case_label"),
+            case_kind=event.get("case_kind"),
+            case_priority=event.get("case_priority"),
+            case_type_label=event.get("case_type_label"),
+            case_status_label=event.get("case_status_label"),
+            code_category_label=event.get("code_category_label"),
+            code_action_label=event.get("code_action_label"),
+            code_priority=event.get("code_priority"),
             association_score=event.get("association_score", 0),
         )
 
@@ -1260,6 +1301,12 @@ class RadioVisionApp(QObject):
         is_unassigned=False,
         is_code_lookup=False,
         pursuit_id=None,
+        case_id=None,
+        case_label=None,
+        case_kind=None,
+        case_type_label=None,
+        code_category_label=None,
+        code_action_label=None,
     ):
         incidents = incidents or []
 
@@ -1275,7 +1322,22 @@ class RadioVisionApp(QObject):
         if pursuit_id:
             lines.append(f"Poursuite : #{pursuit_id}")
 
-        if is_update:
+        if case_id:
+            label = case_label or f"Intervention #{case_id}"
+            lines.append(f"Dossier : {label}")
+
+        if case_type_label:
+            lines.append(f"Type dossier : {case_type_label}")
+
+        if code_category_label:
+            lines.append(f"Catégorie : {code_category_label}")
+
+        if code_action_label:
+            lines.append(f"Traitement : {code_action_label}")
+
+        if is_update and case_id:
+            lines.append("Type : Mise à jour intervention")
+        elif is_update:
             lines.append("Type : Mise à jour poursuite")
 
         if is_unassigned:
@@ -1349,12 +1411,19 @@ class RadioVisionApp(QObject):
         bubble_html,
         is_update=False,
         pursuit_id=None,
+        case_id=None,
     ):
         updated = False
+
+        bubble_id_to_update = None
 
         if is_update and pursuit_id in self.pursuit_bubble_ids:
             bubble_id_to_update = self.pursuit_bubble_ids[pursuit_id]
 
+        if is_update and case_id in self.case_bubble_ids:
+            bubble_id_to_update = self.case_bubble_ids[case_id]
+
+        if bubble_id_to_update is not None:
             for index, item in enumerate(self.detail_bubbles):
                 if item["id"] == bubble_id_to_update:
                     item["html"] = bubble_html
@@ -1378,12 +1447,19 @@ class RadioVisionApp(QObject):
             if pursuit_id:
                 self.pursuit_bubble_ids[pursuit_id] = bubble_id
 
+            if case_id:
+                self.case_bubble_ids[case_id] = bubble_id
+
         while len(self.detail_bubbles) > self.max_detail_bubbles:
             removed = self.detail_bubbles.pop(0)
 
             for pursuit_key, bubble_id in list(self.pursuit_bubble_ids.items()):
                 if bubble_id == removed["id"]:
                     del self.pursuit_bubble_ids[pursuit_key]
+
+            for case_key, bubble_id in list(self.case_bubble_ids.items()):
+                if bubble_id == removed["id"]:
+                    del self.case_bubble_ids[case_key]
 
         self.render_detail_bubbles()
 
@@ -1404,6 +1480,15 @@ class RadioVisionApp(QObject):
         pursuit_id=None,
         pursuit_label=None,
         pursuit_status_label=None,
+        case_id=None,
+        case_label=None,
+        case_kind=None,
+        case_priority=None,
+        case_type_label=None,
+        case_status_label=None,
+        code_category_label=None,
+        code_action_label=None,
+        code_priority=None,
         association_score=0,
     ):
         incidents = incidents or []
@@ -1434,6 +1519,8 @@ class RadioVisionApp(QObject):
             vehicle=vehicle,
             incidents=incidents,
             pursuit_id=pursuit_id,
+            case_id=case_id,
+            case_kind=case_kind,
             is_unassigned=is_unassigned,
             is_code_lookup=is_code_lookup,
         )
@@ -1456,6 +1543,23 @@ class RadioVisionApp(QObject):
             priority_color = "#5865f2"
             priority_label = "CODE RADIO"
 
+        elif code_category_label == "Statut radio":
+            priority_color = "#5865f2"
+            priority_label = "STATUT RADIO"
+
+        elif code_category_label == "Type unité":
+            priority_color = "#5865f2"
+            priority_label = "TYPE UNITÉ"
+
+        elif case_id:
+            if case_kind == "urgence" or case_priority in ["critical", "high"]:
+                priority_color = "#ed4245"
+            else:
+                priority_color = "#faa61a"
+
+            label_prefix = "URGENCE" if case_kind == "urgence" else "INTERVENTION"
+            priority_label = f"{label_prefix} #{case_id}"
+
         elif is_unassigned:
             priority_color = "#747f8d"
             priority_label = "NON ATTRIBUÉ"
@@ -1476,6 +1580,11 @@ class RadioVisionApp(QObject):
             priority_color = "#57f287"
             priority_label = f"POURSUITE #{pursuit_id}"
 
+        elif is_update and case_id:
+            priority_color = "#57f287"
+            label_prefix = "URGENCE" if case_kind == "urgence" else "INTERVENTION"
+            priority_label = f"{label_prefix} #{case_id}"
+
         elif missing_infos and priority_label not in [
             "URGENT",
             "NON ATTRIBUÉ",
@@ -1489,17 +1598,34 @@ class RadioVisionApp(QObject):
         if is_code_lookup:
             rows.append(("📘", "Type", "Signification code radio"))
 
+        if code_category_label:
+            rows.append(("🧭", "Catégorie", html.escape(str(code_category_label))))
+
+        if code_action_label and not is_code_lookup:
+            rows.append(("⚙️", "Traitement", html.escape(str(code_action_label))))
+
         if pursuit_label:
             rows.append(("🚓", "Dossier", html.escape(str(pursuit_label))))
 
+        if case_label:
+            icon = "🚨" if case_kind == "urgence" else "📁"
+            rows.append((icon, "Dossier", html.escape(str(case_label))))
+
         if pursuit_status_label:
             rows.append(("📌", "Statut", html.escape(str(pursuit_status_label))))
+
+        if case_status_label:
+            rows.append(("📌", "Statut", html.escape(str(case_status_label))))
+
+        if case_type_label:
+            rows.append(("📋", "Type dossier", html.escape(str(case_type_label))))
 
         if text and not is_code_lookup:
             rows.append(("🎙️", "Call entendu", html.escape(str(text))))
 
         if is_update:
-            rows.append(("🔄", "Type", "Mise à jour"))
+            update_label = "Mise à jour intervention" if case_id else "Mise à jour"
+            rows.append(("🔄", "Type", update_label))
 
         if is_unassigned:
             rows.append(("⚪", "Type", "Info non attribuée"))
@@ -1622,6 +1748,7 @@ class RadioVisionApp(QObject):
             bubble_html=bubble,
             is_update=is_update,
             pursuit_id=pursuit_id,
+            case_id=case_id,
         )
 
         self.overlay.show_radio_event(
@@ -1643,12 +1770,19 @@ class RadioVisionApp(QObject):
             is_unassigned=is_unassigned,
             is_code_lookup=is_code_lookup,
             pursuit_id=pursuit_id,
+            case_id=case_id,
+            case_label=case_label,
+            case_kind=case_kind,
+            case_type_label=case_type_label,
+            code_category_label=code_category_label,
+            code_action_label=code_action_label,
         )
 
     def update_pursuit_history(self):
         pursuits = self.pursuit_tracker.get_history()
+        interventions = self.intervention_tracker.get_history()
 
-        if not pursuits:
+        if not pursuits and not interventions:
             self.window.pursuit_history.setHtml("""
             <html>
                 <body style="
@@ -1668,6 +1802,56 @@ class RadioVisionApp(QObject):
             return
 
         body = ""
+
+        for case in interventions:
+            status = case.get("status")
+            status_label = case.get("status_label", "-")
+            kind = case.get("kind", "intervention")
+            priority = case.get("priority", "medium")
+
+            color = "#faa61a"
+
+            if kind == "urgence" or priority in ["critical", "high"]:
+                color = "#ed4245"
+
+            if status == "ended":
+                color = "#57f287"
+            elif status == "expired":
+                color = "#747f8d"
+
+            title_prefix = "Urgence" if kind == "urgence" else "Intervention"
+            location = case.get("location_name") or "-"
+            unit = case.get("unit") or "-"
+            code = case.get("code") or "-"
+            type_label = case.get("type_label") or case.get("signification") or "-"
+            incidents = case.get("incidents") or []
+            incidents_text = "<br>".join(html.escape(str(item)) for item in incidents)
+
+            if not incidents_text:
+                incidents_text = "<span style='color:#747f8d;'>Aucune info</span>"
+
+            body += f"""
+            <div style="
+                background-color:#2b2d31;
+                border-left:5px solid {color};
+                padding:10px;
+                margin:8px 4px;
+            ">
+                <div style="color:#ffffff; font-weight:bold; font-size:14px; margin-bottom:6px;">
+                    📁 {title_prefix} #{case.get("id")}
+                    <span style="color:{color}; font-size:11px; margin-left:8px;">
+                        {html.escape(str(status_label))}
+                    </span>
+                </div>
+                <div style="color:#dbdee1; font-size:13px;">
+                    <b>Type :</b> {html.escape(str(type_label))}<br>
+                    <b>Unité :</b> {html.escape(str(unit))}<br>
+                    <b>Code :</b> {html.escape(str(code))}<br>
+                    <b>Lieu :</b> {html.escape(str(location))}<br>
+                    <b>Infos :</b><br>{incidents_text}
+                </div>
+            </div>
+            """
 
         for pursuit in pursuits:
             status = pursuit.get("status")

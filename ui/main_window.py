@@ -364,13 +364,34 @@ class MainWindow(QMainWindow):
         self.setting_whisper_model = QComboBox()
         self.setting_whisper_model.addItem("Tiny — rapide mais moins précis", "tiny")
         self.setting_whisper_model.addItem("Base — équilibré", "base")
-        self.setting_whisper_model.addItem("Small — plus précis mais plus lent", "small")
+        self.setting_whisper_model.addItem("Small — précis CPU/GPU léger", "small")
+        self.setting_whisper_model.addItem("Medium — plus précis", "medium")
+        self.setting_whisper_model.addItem("Large V3 Turbo — V9 conseillé", "large-v3-turbo")
+        self.setting_whisper_model.addItem("Large V3 — maximum mais lourd", "large-v3")
+
+        self.setting_whisper_device = QComboBox()
+        self.setting_whisper_device.addItem("Auto — essaie GPU puis CPU", "auto")
+        self.setting_whisper_device.addItem("GPU NVIDIA / CUDA", "cuda")
+        self.setting_whisper_device.addItem("CPU seulement", "cpu")
+
+        self.setting_whisper_compute = QComboBox()
+        self.setting_whisper_compute.addItem("Auto", "auto")
+        self.setting_whisper_compute.addItem("Float16 — GPU conseillé", "float16")
+        self.setting_whisper_compute.addItem("Int8 Float16 — GPU léger", "int8_float16")
+        self.setting_whisper_compute.addItem("Int8 — CPU secours", "int8")
+
+        self.setting_whisper_beam_size = QSpinBox()
+        self.setting_whisper_beam_size.setRange(1, 8)
+        self.setting_whisper_beam_size.setValue(5)
 
         analyse_form.addRow("Attente avant bulle incomplète", self.setting_pending_delay)
         analyse_form.addRow("Fenêtre fusion", self.setting_merge_window)
         analyse_form.addRow("Durée poursuite active", self.setting_pursuit_window)
         analyse_form.addRow("", self.setting_strict_analysis)
         analyse_form.addRow("Modèle Whisper", self.setting_whisper_model)
+        analyse_form.addRow("Accélération", self.setting_whisper_device)
+        analyse_form.addRow("Calcul", self.setting_whisper_compute)
+        analyse_form.addRow("Précision lecture", self.setting_whisper_beam_size)
 
         note = QLabel(
             "Note : le modèle Whisper change au prochain redémarrage de l’écoute."
@@ -415,6 +436,9 @@ class MainWindow(QMainWindow):
             "merge_window": self.setting_merge_window.value(),
             "pursuit_window": self.setting_pursuit_window.value(),
             "whisper_model": self.setting_whisper_model.currentData(),
+            "whisper_device": self.setting_whisper_device.currentData(),
+            "whisper_compute_type": self.setting_whisper_compute.currentData(),
+            "whisper_beam_size": self.setting_whisper_beam_size.value(),
         }
 
     def set_settings_values(self, settings):
@@ -453,7 +477,21 @@ class MainWindow(QMainWindow):
 
         self._set_combo_value(
             self.setting_whisper_model,
-            settings.get("whisper_model", "base"),
+            settings.get("whisper_model", "large-v3-turbo"),
+        )
+
+        self._set_combo_value(
+            self.setting_whisper_device,
+            settings.get("whisper_device", "auto"),
+        )
+
+        self._set_combo_value(
+            self.setting_whisper_compute,
+            settings.get("whisper_compute_type", "auto"),
+        )
+
+        self.setting_whisper_beam_size.setValue(
+            int(settings.get("whisper_beam_size", 5))
         )
 
     def set_learning_options(self, options):
@@ -508,7 +546,7 @@ class MainWindow(QMainWindow):
             self.learning_corrections_preview.setHtml(str(html_text or ""))
 
     def set_recent_calls(self, calls):
-        recent_list = getattr(self, "learning_recent_list", None)
+        recent_list = getattr(self, "learning_recent_calls_list", None)
 
         if recent_list is None:
             return

@@ -2,10 +2,13 @@
     "overlay_enabled": true,
     "overlay_duration": 15,
     "overlay_position": "top_right",
-    "capture_microphone": true,
+    "capture_microphone": false,
     "strict_analysis": true,
-    "pending_delay": 5,
-    "merge_window": 10,
+    "pending_delay": 10,
+    "merge_window": 18,
     "pursuit_window": 5,
-    "whisper_model": "small"
+    "whisper_model": "large-v3",
+    "whisper_device": "auto",
+    "whisper_compute_type": "float16",
+    "whisper_beam_size": 5
 }

@@ -9,7 +9,7 @@ import soundcard as sc
 class AudioCapture:
     def __init__(self, capture_microphone=False):
         self.sample_rate = 16000
-        self.block_seconds = 0.25
+        self.block_seconds = 0.20
         self.block_size = int(self.sample_rate * self.block_seconds)
 
         self.capture_microphone = bool(capture_microphone)
@@ -17,9 +17,9 @@ class AudioCapture:
         self.loopback_gain = 1.0
         self.microphone_gain = 0.85
 
-        self.queue = queue.Queue(maxsize=80)
-        self.loopback_queue = queue.Queue(maxsize=20)
-        self.microphone_queue = queue.Queue(maxsize=20)
+        self.queue = queue.Queue(maxsize=160)
+        self.loopback_queue = queue.Queue(maxsize=60)
+        self.microphone_queue = queue.Queue(maxsize=60)
 
         self.running = False
         self.threads = []

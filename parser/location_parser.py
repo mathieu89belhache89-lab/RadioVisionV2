@@ -115,6 +115,88 @@ class LocationParser:
 
         return text.strip()
 
+
+    def is_weak_alias(self, alias_clean: str) -> bool:
+        alias_clean = self.clean(alias_clean)
+
+        if not alias_clean:
+            return True
+
+        weak_aliases = {
+            "a",
+            "au",
+            "aux",
+            "de",
+            "du",
+            "des",
+            "le",
+            "la",
+            "les",
+            "un",
+            "une",
+            "en",
+            "sur",
+            "vers",
+            "bord",
+            "a bord",
+            "nord",
+            "sud",
+            "est",
+            "ouest",
+            "noir",
+            "blanc",
+            "rouge",
+            "bleu",
+            "vert",
+            "jaune",
+            "orange",
+            "gris",
+            "violet",
+            "rose",
+            "beige",
+            "marron",
+        }
+
+        if alias_clean in weak_aliases:
+            return True
+
+        # Un seul mot très court est trop dangereux pour un lieu.
+        # Exemple réel : "bord" dans "à bord" partait en Zone Rouge Nord.
+        if len(alias_clean) <= 4 and " " not in alias_clean:
+            return True
+
+        return False
+
+    def is_bad_location_fragment(self, fragment: str) -> bool:
+        fragment_clean = self.clean(fragment)
+
+        if not fragment_clean:
+            return True
+
+        if self.is_weak_alias(fragment_clean):
+            return True
+
+        bad_starts = [
+            "bord",
+            "a bord",
+            "individu",
+            "individus",
+            "suspect",
+            "suspects",
+            "vehicule",
+            "voiture",
+            "auto",
+            "bmw",
+            "audi",
+            "mercedes",
+            "moto",
+        ]
+
+        return any(
+            fragment_clean == item or fragment_clean.startswith(item + " ")
+            for item in bad_starts
+        )
+
     def make_location(self, name, id_value=None, category="Manuel", type_value="zone", score=100, raw=None):
         return {
             "name": name,
@@ -159,6 +241,9 @@ class LocationParser:
             if len(alias) <= 2:
                 continue
 
+            if self.is_weak_alias(alias):
+                continue
+
             pattern = r"\b" + re.escape(alias) + r"\b"
 
             if re.search(pattern, text_clean):
@@ -175,12 +260,23 @@ class LocationParser:
         if len(fragment_clean) < 4:
             return None
 
+        if self.is_bad_location_fragment(fragment_clean):
+            return None
+
         result = best_match(fragment_clean, self.aliases, threshold=threshold)
 
         if not result:
             return None
 
+        # Un fragment d'un seul mot avec score moyen est trop risqué.
+        # Exemple réel : "bord" dans "à bord" était pris pour Zone Rouge Nord.
+        if " " not in fragment_clean and result.get("score", 0) < 92:
+            return None
+
         item = result["item"]
+
+        if self.is_weak_alias(self.clean(item.get("alias", ""))):
+            return None
 
         return {
             "name": item.get("name"),
@@ -216,7 +312,7 @@ class LocationParser:
 
             fragment = match.group(1)
             fragment = re.split(
-                r"\b(vehicule|voiture|auto|bmw|audi|mercedes|moto|suspect|individu|individus|conducteur|arme|code|10|unite|central|besoin|coups|dernier)\b",
+                r"\b(vehicule|voiture|auto|bmw|audi|mercedes|moto|suspect|individu|individus|conducteur|arme|code|10|unite|central|besoin|coups|dernier|bord)\b",
                 fragment,
             )[0].strip()
 

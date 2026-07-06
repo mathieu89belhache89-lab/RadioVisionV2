@@ -19,7 +19,7 @@ class IncidentParser:
     }
 
     def clean(self, text: str) -> str:
-        text = str(text).lower()
+        text = text.lower()
 
         text = unicodedata.normalize("NFD", text)
         text = "".join(
@@ -37,14 +37,10 @@ class IncidentParser:
             "en fuite a pcie": "en fuite a pied",
             "individu en fuite": "individu a pied",
             "suspect en fuite": "suspect a pied",
-            "suspes en fuite": "suspect a pied",
-            "suspès en fuite": "suspect a pied",
 
             "poisons de renfort": "besoin de renfort",
             "besoins de renfort": "besoin de renfort",
-            "besoin de renforts": "besoin de renfort",
             "besoin d un renfort": "besoin de renfort",
-            "renforts": "renfort",
 
             "coup de feu": "coups de feu",
             "coups de feux": "coups de feu",
@@ -52,37 +48,17 @@ class IncidentParser:
             "supermiss": "suspect",
             "super mis": "suspect",
             "sus permis": "suspect",
-            "suspes": "suspect",
 
             "suspect armer": "suspect arme",
             "suspect arme": "suspect arme",
-            "suspects armes": "suspects armes",
             "individu armer": "individu arme",
             "individu arme": "individu arme",
-            "individus armes": "individus armes",
 
-            "vehicules immobilises": "vehicule immobilise",
-            "vehicule immobilises": "vehicule immobilise",
-            "vehicules immobilise": "vehicule immobilise",
-            "vehicule immobilisee": "vehicule immobilise",
-
-            "vehicules accidentes": "vehicule accidente",
-            "vehicule accidentes": "vehicule accidente",
-            "vehicules accidente": "vehicule accidente",
-
-            "vehicule saisie": "vehicule saisi",
-            "vehicule saisit": "vehicule saisi",
-
-            "dernier visual": "dernier visuel",
-            "dernier visu": "dernier visuel",
-            "visual": "visuel",
-
-            "agent pret en otage": "agent pris en otage",
-            "agent prete en otage": "agent pris en otage",
-            "agent prise en otage": "agent pris en otage",
-
-            "mot au noir": "moto noir",
-            "moto noire": "moto noir",
+            "agent pris en hotel": "agent pris en otage",
+            "pris en hotel": "pris en otage",
+            "agent prit en otage": "agent pris en otage",
+            "pris en otages": "pris en otage",
+            "prise otage": "prise d otage",
         }
 
         for bad, good in replacements.items():
@@ -165,6 +141,15 @@ class IncidentParser:
 
         return None
 
+    def find_hostage(self, text_clean: str):
+        if re.search(
+            r"\botage\b|\botages\b|\bprise d otage\b|\bpris en otage\b|\bprise en otage\b|\bagent pris en otage\b",
+            text_clean,
+        ):
+            return "🧍 Otage signalé"
+
+        return None
+
     def find_plate(self, text_clean: str):
         patterns = [
             r"\bplaque\s+([a-z0-9 ]{3,12})\b",
@@ -211,13 +196,13 @@ class IncidentParser:
             self.add_unique(statuses, "🚓 Poursuite en cours")
 
         if re.search(
-            r"\bdernier visuel\b|\bun des visuels\b|\bvisuel vers\b|\bcontact visuel\b|\bapercu\b|\baperçu\b",
+            r"\bdernier visuel\b|\bdernier visu\b|\bun des visuels\b|\bvisuel vers\b|\bcontact visuel\b",
             text_clean
         ):
             self.add_unique(statuses, "👁️ Visuel signalé")
 
         if re.search(
-            r"\bperdu de vue\b|\bplus de visuel\b|\bvisuel perdu\b|\baucun visuel\b|\bsuspect perdu\b",
+            r"\bperdu de vue\b|\bplus de visuel\b|\bvisuel perdu\b|\baucun visuel\b",
             text_clean
         ):
             self.add_unique(statuses, "⚠️ Visuel perdu")
@@ -229,19 +214,13 @@ class IncidentParser:
             self.add_unique(statuses, "🛑 Véhicule immobilisé")
 
         if re.search(
-            r"\bvehicule saisi\b|\bvoiture saisie\b|\bvehicule saisie\b",
-            text_clean
-        ):
-            self.add_unique(statuses, "🧾 Véhicule saisi")
-
-        if re.search(
             r"\baccident\b|\bcrash\b|\bvehicule accidente\b|\ba percute\b|\bcollision\b",
             text_clean
         ):
             self.add_unique(statuses, "💥 Accident signalé")
 
         if re.search(
-            r"\bfuite a pied\b|\bpart a pied\b|\bindividu a pied\b|\bsuspect a pied\b|\bcontinue a pied\b|\ben fuite a pied\b",
+            r"\bfuite a pied\b|\bpart a pied\b|\bindividu a pied\b|\bsuspect a pied\b|\bcontinue a pied\b",
             text_clean
         ):
             self.add_unique(statuses, "🏃 Fuite à pied")
@@ -253,7 +232,7 @@ class IncidentParser:
             self.add_unique(statuses, "✅ Interpellation")
 
         if re.search(
-            r"\brenfort demande\b|\bdemande renfort\b|\bbesoin de renfort\b|\bbesoin d un renfort\b|\bbackup\b|\brenfort immediat\b",
+            r"\brenfort demande\b|\bdemande renfort\b|\bbesoin de renfort\b|\bbesoin d un renfort\b|\bbackup\b",
             text_clean
         ):
             self.add_unique(statuses, "🚨 Renfort demandé")
@@ -270,39 +249,7 @@ class IncidentParser:
         ):
             self.add_unique(statuses, "🚨 Coups de feu")
 
-        if re.search(
-            r"\bagent a terre\b|\bagents a terre\b|\bofficier a terre\b",
-            text_clean
-        ):
-            self.add_unique(statuses, "🆘 Agent à terre")
-
-        if re.search(
-            r"\bagent pris en otage\b|\bprise d otage\b|\botage\b",
-            text_clean
-        ):
-            self.add_unique(statuses, "🧍 Otage signalé")
-
         return statuses
-
-    def find_affiliation_info(self, text_clean: str):
-        infos = []
-
-        affiliation_infos = [
-            (r"\btango\s+plus\b", "👥 Patrouille Tango+ : 4 agents"),
-            (r"\btango\b", "👥 Patrouille Tango : 3 agents"),
-            (r"\badams?\b", "👥 Patrouille Adams : 2 agents"),
-            (r"\blincoln\b|\blincon\b", "👤 Patrouille Lincoln : 1 agent"),
-            (r"\bmary\b|\bmarie\b|\bmari\b|\bmairie\b", "🏍️ Patrouille Mary : moto"),
-            (r"\bhenry\b|\bhenri\b", "🚁 Patrouille Henry : hélicoptère"),
-            (r"\bap\b|\ba p\b", "✈️ Patrouille AP : avion"),
-            (r"\bcp\b|\bc p\b", "⭐ Patrouille CP : hauts gradés"),
-        ]
-
-        for pattern, label in affiliation_infos:
-            if re.search(pattern, text_clean):
-                self.add_unique(infos, label)
-
-        return infos
 
     def find(self, text: str):
         text_clean = self.clean(text)
@@ -311,18 +258,16 @@ class IncidentParser:
 
         people = self.find_people(text_clean)
         weapon = self.find_weapon(text_clean)
+        hostage = self.find_hostage(text_clean)
         plate = self.find_plate(text_clean)
         statuses = self.find_pursuit_statuses(text_clean)
-        affiliation_infos = self.find_affiliation_info(text_clean)
 
         self.add_unique(results, people)
         self.add_unique(results, weapon)
+        self.add_unique(results, hostage)
         self.add_unique(results, plate)
 
         for status in statuses:
             self.add_unique(results, status)
-
-        for info in affiliation_infos:
-            self.add_unique(results, info)
 
         return results

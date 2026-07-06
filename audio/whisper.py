@@ -1,46 +1,327 @@
 import json
+import os
 import re
+import site
+import sys
 import unicodedata
 from pathlib import Path
 
 import numpy as np
-from faster_whisper import WhisperModel
+
+
+def add_nvidia_dll_dirs():
+    """
+    Windows : ajoute automatiquement les dossiers DLL NVIDIA installés par pip
+    dans le .venv, par exemple nvidia-cublas-cu12 / nvidia-cudnn-cu12.
+
+    Ça évite l'erreur : cublas64_12.dll is not found.
+    """
+    if os.name != "nt":
+        return []
+
+    candidate_dirs = set()
+
+    def add_dir(path):
+        try:
+            path = Path(path)
+        except Exception:
+            return
+
+        if path.exists() and path.is_dir():
+            candidate_dirs.add(str(path))
+
+    # CUDA Toolkit classique.
+    for env_name in ["CUDA_PATH", "CUDA_HOME"]:
+        value = os.environ.get(env_name)
+        if value:
+            add_dir(Path(value) / "bin")
+            add_dir(Path(value) / "lib" / "x64")
+
+    program_files = os.environ.get("ProgramFiles", r"C:\Program Files")
+    cuda_root = Path(program_files) / "NVIDIA GPU Computing Toolkit" / "CUDA"
+
+    if cuda_root.exists():
+        for version_dir in cuda_root.glob("v12*"):
+            add_dir(version_dir / "bin")
+            add_dir(version_dir / "lib" / "x64")
+
+    # Paquets pip NVIDIA dans le venv / site-packages.
+    site_roots = []
+
+    try:
+        site_roots.extend(site.getsitepackages())
+    except Exception:
+        pass
+
+    try:
+        site_roots.append(site.getusersitepackages())
+    except Exception:
+        pass
+
+    # Racine du venv courant.
+    try:
+        site_roots.append(str(Path(sys.executable).resolve().parents[1] / "Lib" / "site-packages"))
+    except Exception:
+        pass
+
+    for root in site_roots:
+        nvidia_root = Path(root) / "nvidia"
+
+        if not nvidia_root.exists():
+            continue
+
+        for dll_file in nvidia_root.rglob("*.dll"):
+            add_dir(dll_file.parent)
+
+        for folder_name in ["bin", "lib"]:
+            for folder in nvidia_root.rglob(folder_name):
+                add_dir(folder)
+
+    added = []
+
+    for folder in sorted(candidate_dirs):
+        try:
+            os.add_dll_directory(folder)
+        except Exception:
+            pass
+
+        if folder not in os.environ.get("PATH", ""):
+            os.environ["PATH"] = folder + os.pathsep + os.environ.get("PATH", "")
+
+        added.append(folder)
+
+    return added
+
+
+NVIDIA_DLL_DIRS = add_nvidia_dll_dirs()
+
+try:
+    from faster_whisper import WhisperModel
+except Exception:
+    WhisperModel = None
+
+
+ALLOWED_MODELS = [
+    "tiny",
+    "base",
+    "small",
+    "medium",
+    "large-v3-turbo",
+    "large-v3",
+]
+
+ALLOWED_DEVICES = [
+    "auto",
+    "cuda",
+    "cpu",
+]
+
+ALLOWED_COMPUTE_TYPES = [
+    "auto",
+    "float16",
+    "int8_float16",
+    "int8",
+]
+
+DEFAULT_TRANSCRIPTION_CONFIG = {
+    "whisper_model": "large-v3-turbo",
+    "whisper_device": "auto",
+    "whisper_compute_type": "auto",
+    "whisper_beam_size": 5,
+}
+
+
+def clamp_int(value, minimum, maximum, default):
+    try:
+        value = int(value)
+    except Exception:
+        value = default
+
+    return max(minimum, min(value, maximum))
+
+
+def normalize_transcription_config(data=None):
+    data = data or {}
+
+    model = str(data.get("whisper_model", DEFAULT_TRANSCRIPTION_CONFIG["whisper_model"])).strip()
+    if model not in ALLOWED_MODELS:
+        model = DEFAULT_TRANSCRIPTION_CONFIG["whisper_model"]
+
+    device = str(data.get("whisper_device", DEFAULT_TRANSCRIPTION_CONFIG["whisper_device"])).strip().lower()
+    if device not in ALLOWED_DEVICES:
+        device = DEFAULT_TRANSCRIPTION_CONFIG["whisper_device"]
+
+    compute_type = str(data.get("whisper_compute_type", DEFAULT_TRANSCRIPTION_CONFIG["whisper_compute_type"])).strip().lower()
+    if compute_type not in ALLOWED_COMPUTE_TYPES:
+        compute_type = DEFAULT_TRANSCRIPTION_CONFIG["whisper_compute_type"]
+
+    beam_size = clamp_int(
+        data.get("whisper_beam_size", DEFAULT_TRANSCRIPTION_CONFIG["whisper_beam_size"]),
+        1,
+        8,
+        DEFAULT_TRANSCRIPTION_CONFIG["whisper_beam_size"],
+    )
+
+    return {
+        "whisper_model": model,
+        "whisper_device": device,
+        "whisper_compute_type": compute_type,
+        "whisper_beam_size": beam_size,
+    }
+
+
+def load_transcription_config(settings_file=None):
+    if settings_file is None:
+        settings_file = Path("data") / "radiovision_settings.json"
+    else:
+        settings_file = Path(settings_file)
+
+    if not settings_file.exists():
+        return normalize_transcription_config({})
+
+    try:
+        with settings_file.open("r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        if not isinstance(data, dict):
+            data = {}
+    except Exception:
+        data = {}
+
+    return normalize_transcription_config(data)
 
 
 class Whisper:
 
     def __init__(self):
-        self.model_name = self.load_model_name()
+        self.config = load_transcription_config()
+        self.model_name = self.config["whisper_model"]
+        self.requested_device = self.config["whisper_device"]
+        self.requested_compute_type = self.config["whisper_compute_type"]
+        self.beam_size = int(self.config["whisper_beam_size"])
 
-        self.model = WhisperModel(
-            self.model_name,
-            device="cpu",
-            compute_type="int8",
-        )
+        self.device = ""
+        self.compute_type = ""
+        self.model = self.load_model()
 
     def load_model_name(self):
-        settings_file = Path("data") / "radiovision_settings.json"
+        return self.model_name
 
-        allowed = ["tiny", "base", "small"]
+    def model_candidates(self):
+        requested = self.model_name
 
-        if not settings_file.exists():
-            return "base"
+        if requested == "large-v3-turbo":
+            return ["large-v3-turbo", "large-v3", "small"]
 
-        try:
-            with settings_file.open("r", encoding="utf-8") as f:
-                data = json.load(f)
+        if requested == "large-v3":
+            return ["large-v3", "large-v3-turbo", "small"]
 
-            model_name = data.get("whisper_model", "base")
+        if requested == "medium":
+            return ["medium", "small"]
 
-            if model_name in allowed:
-                return model_name
+        return [requested]
 
-        except Exception:
-            pass
+    def device_candidates(self):
+        device = self.requested_device
+        compute_type = self.requested_compute_type
 
-        return "base"
+        if device == "cpu":
+            if compute_type == "auto":
+                return [("cpu", "int8")]
+            return [("cpu", compute_type)]
+
+        if device == "cuda":
+            if compute_type == "auto":
+                return [("cuda", "float16"), ("cuda", "int8_float16"), ("cpu", "int8")]
+            return [("cuda", compute_type), ("cpu", "int8")]
+
+        # Auto : on essaie la RTX/NVIDIA en premier, puis secours CPU.
+        if compute_type == "auto":
+            return [("cuda", "float16"), ("cuda", "int8_float16"), ("cpu", "int8")]
+
+        return [("cuda", compute_type), ("cpu", "int8")]
+
+    def load_model(self):
+        if WhisperModel is None:
+            raise RuntimeError(
+                "faster-whisper n'est pas installé. Lance : python -m pip install faster-whisper"
+            )
+
+        errors = []
+
+        for model_name in self.model_candidates():
+            for device, compute_type in self.device_candidates():
+                try:
+                    model = WhisperModel(
+                        model_name,
+                        device=device,
+                        compute_type=compute_type,
+                    )
+
+                    self.model_name = model_name
+                    self.device = device
+                    self.compute_type = compute_type
+                    return model
+
+                except Exception as exc:
+                    errors.append(f"{model_name}/{device}/{compute_type}: {exc}")
+
+        joined_errors = " | ".join(errors[-4:])
+        raise RuntimeError(f"Impossible de charger Whisper V9. Dernières erreurs : {joined_errors}")
+
+    def is_cuda_library_error(self, exc):
+        message = str(exc).lower()
+
+        needles = [
+            "cublas",
+            "cudnn",
+            "cuda",
+            "cufft",
+            "cublas64_12.dll",
+            "cudnn_ops64_9.dll",
+            "is not found",
+            "cannot be loaded",
+        ]
+
+        return any(needle in message for needle in needles)
+
+    def force_cpu_fallback(self):
+        self.requested_device = "cpu"
+        self.requested_compute_type = "int8"
+        self.model = self.load_model()
+
+    def engine_label(self):
+        return f"{self.model_name} / {self.device} / {self.compute_type} / beam {self.beam_size}"
+
+    def initial_prompt(self):
+        return (
+            "Communication radio police LSPD GTA FiveM en français. "
+            "Transcrire fidèlement les calls courts, même si le son est radio ou haché. "
+            "Codes possibles : 10-0, 10-1, 10-2, 10-3, 10-4, 10-5, 10-6, 10-7, 10-8, 10-9, "
+            "10-10, 10-11, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-19, 10-20, 10-29, "
+            "10-30, 10-31, 10-32, 10-33, 10-99, 459, 460, 461, 187, 207, 208. "
+            "Rapports sensibles : Code OD agent à terre, Code DS, Code DOA, Code DCD, Code RDP, Code S. "
+            "Unités : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus. "
+            "Lieux fréquents : Mission Row, Sandy Shores, Paleto Bay, Legion Square, Del Perro, Casino, Mirror Park, Bijouterie. "
+            "Véhicules fréquents : BMW M4, BMW M3, Audi RS6, Mercedes AMG, moto noire. "
+            "Important : 10-19 signifie accident, se prononce dix dix-neuf, et ne doit pas être confondu avec 10-10. "
+            "Exemples : Central unité 21, 10-11 direction Sandy Shores, BMW M4 blanche, deux individus à bord. "
+            "Central Code OD, agent à terre vers Mission Row, besoin de renfort immédiat. "
+            "Unité 55, 208 Mission Row, agent pris en otage, suspect armé. "
+            "Ne pas inventer de phrase. Garder les codes radio exactement."
+        )
 
     def transcribe_array(self, audio):
+        try:
+            return self._transcribe_array_no_fallback(audio)
+        except Exception as exc:
+            if self.device == "cuda" and self.is_cuda_library_error(exc):
+                self.force_cpu_fallback()
+                return self._transcribe_array_no_fallback(audio)
+
+            raise
+
+    def _transcribe_array_no_fallback(self, audio):
         audio = np.asarray(audio, dtype=np.float32)
 
         if len(audio) < 4000:
@@ -55,23 +336,15 @@ class Whisper:
         segments, _ = self.model.transcribe(
             audio,
             language="fr",
-            beam_size=1,
-            best_of=1,
+            beam_size=self.beam_size,
+            best_of=self.beam_size,
             temperature=0.0,
             vad_filter=False,
             condition_on_previous_text=False,
-            no_speech_threshold=0.65,
+            no_speech_threshold=0.55,
             compression_ratio_threshold=2.4,
             log_prob_threshold=-1.0,
-            initial_prompt=(
-                "Communication radio police LSPD GTA FiveM. "
-                "Codes radio courts possibles. "
-                "Exemples codes seuls : 10-2, 10-4, 10-6, 10-7, 10-8, 10-10, 10-11, 10-12, 10-30, 10-31, 459, 460, 461, 10-99, 187, 207, 208. "
-                "Exemples rapports : Code OD, Code DS, Code DOA, Code DCD, Code RDP, Code S. "
-                "Exemples urgences : Code 0, Code 1, Code 2, Code 3. "
-                "Exemples affiliations : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus. "
-                "Informations générales : PDP, PO."
-            ),
+            initial_prompt=self.initial_prompt(),
         )
 
         text = " ".join(
@@ -497,9 +770,23 @@ class Whisper:
 
             "10-19": [
                 "10 19",
+                "10 1 9",
                 "1019",
                 "dix dix neuf",
+                "dix dix neuve",
+                "dis dix neuf",
+                "dise dix neuf",
+                "dit dix neuf",
+                "dis dis neuf",
+                "dix dis neuf",
+                "dise dise neuf",
+                "dix dix 9",
+                "dis dix 9",
+                "code 19",
+                "codes 19",
                 "accident",
+                "vehicule accidente",
+                "vehicule accidenté",
             ],
 
             "10-20": [
@@ -868,6 +1155,8 @@ class Whisper:
             "code 31": "10-31",
             "codes 17": "10-17",
             "code 17": "10-17",
+            "codes 19": "10-19",
+            "code 19": "10-19",
 
             "codes sont en cascant neuf": "10-99",
             "codes quatre vingt dix neuf": "10-99",
@@ -903,6 +1192,13 @@ class Whisper:
 
             "dix dix sept": "10-17",
             "dix dix neuf": "10-19",
+            "dix dix neuve": "10-19",
+            "dis dix neuf": "10-19",
+            "dise dix neuf": "10-19",
+            "dit dix neuf": "10-19",
+            "dis dis neuf": "10-19",
+            "dix dis neuf": "10-19",
+            "10 1 9": "10-19",
             "dix seize": "10-16",
             "dix quinze": "10-15",
             "dix quatorze": "10-14",
