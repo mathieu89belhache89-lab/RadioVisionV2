@@ -2767,3 +2767,266 @@ Type : Code radio seul
 Phrase : 10-33
 Code : 10-33
 Motif : Unité parachutiste
+============================================================
+Heure : 03:17:20
+Phrase : le premier centruignité 21-11 et touche le lit
+Véhicule : premier
+============================================================
+Heure : 03:17:46
+Poursuite : #1
+Phrase : central unité 21 10-11 direction sandishore bmw m4 blanche
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sandishore bmw m4 blanche
+Véhicule : BMW M4 blanc
+============================================================
+Heure : 03:17:49
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11 direction sandishore bmw m4 blanche 2 individus à bord
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sandishore bmw m4 blanche
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 03:17:55
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11 direction sandishore bmw m4 blanche 2 individus à bord unité 21 dernier visuel vers mission raw véhicules immobilisés
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sandishore bmw m4 blanche
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 03:18:03
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11 direction sandishore bmw m4 blanche 2 individus à bord unité 21 dernier visuel vers mission raw véhicules immobilisés unités 21 besoin de renforts coups de feu suspects armés
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sandishore bmw m4 blanche
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🔫 Individu armé
+Info : 🚨 Coups de feu
+============================================================
+Heure : 03:18:07
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21 10-11 direction sandishore bmw m4 blanche 2 individus à bord unité 21 dernier visuel vers mission raw véhicules immobilisés unités 21 besoin de renforts coups de feu suspects armés unité 21 suspect interpellé véhicule saisie
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sandishore bmw m4 blanche
+Véhicule : BMW M4 blanc
+Info : 👥 2 individu(s) à bord
+Info : 👁️ Visuel signalé
+Info : 🔫 Individu armé
+Info : 🚨 Coups de feu
+Info : ✅ Interpellation
+============================================================
+Heure : 03:18:14
+Poursuite : #2
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Direction : palais-taubeille audi rs6 noir
+Véhicule : Audi RS6 noir
+============================================================
+Heure : 03:18:16
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Direction : palais-taubeille audi rs6 noir
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+============================================================
+Heure : 03:18:22
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul od rs6 noir aperçu vers casino poursuite en cours
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+Info : 🚓 Poursuite en cours
+============================================================
+Heure : 03:18:31
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul od rs6 noir aperçu vers casino poursuite en cours dernier visuel vers les jeans square véhicules accidentés
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 03:18:38
+Type : Info non attribuée
+Phrase : central unité 32 10-31 bijouterie 3 individus armés sur place
+Unité : 32
+Code : 10-31
+Motif : Braquage confirmé
+Lieu : Bijouterie
+Info : 👥 3 individu(s) à bord
+Info : 🔫 Individu armé
+============================================================
+Heure : 03:18:46
+Type : Info non attribuée
+Phrase : central unité 12 461 supéret 110 heures besoin de renfort
+Unité : 12
+Code : 461
+Motif : Supérette
+Info : 🚨 Renfort demandé
+============================================================
+Heure : 03:18:53
+Type : Info non attribuée
+Phrase : central unité 8 459 vers mirror park suspès en fuite à pied
+Unité : 8
+Code : 459
+Motif : Cambriolage
+Lieu : Mirror Park
+Direction : Mirror Park
+============================================================
+Heure : 03:19:01
+Type : Info non attribuée
+Phrase : central unité 44 207 direction palais-taubeille véhicules noirs 2 suspects à bord
+Unité : 44
+Code : 207
+Motif : Enlèvement
+Direction : palais-taubeille vehicules noirs 2 suspects a bord
+Info : 👥 2 individu(s) à bord
+============================================================
+Heure : 03:19:09
+Type : Info non attribuée
+Phrase : central unité 55-208 mission rô agent prêt en otage suspect armé
+Unité : 55
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+Véhicule : Peugeot 208
+Info : 🔫 Individu armé
+============================================================
+Heure : 03:19:16
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul od rs6 noir aperçu vers casino poursuite en cours dernier visuel vers les jeans square véhicules accidentés central code od agents à terre vers mission rho besoin de renfort immédiat
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Casino
+Direction : Casino
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 🚨 Renfort demandé
+============================================================
+Heure : 03:19:21
+Type : Code radio seul
+Phrase : central code ds suspect neutralisé scène sécurisée
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 03:19:31
+Type : Info non attribuée
+Phrase : centrale unité 27 10-12 direction casino mercedes amg gris 4 individus à bord
+Unité : 27
+Code : 10-12
+Motif : Refus d'obtempérer en voiture rapide
+Lieu : Casino
+Direction : casino mercedes amg gris 4 individus a bord
+Véhicule : Mercedes AMG gris
+Info : 👥 4 individu(s) à bord
+============================================================
+Heure : 03:19:42
+Type : Info non attribuée
+Phrase : central unité 6 10-13 direction delpéro suspect en mot au noir dernier visual
+Unité : 6
+Code : 10-13
+Motif : Refus d'obtempérer en moto
+Direction : delpero suspect
+============================================================
+Heure : 03:19:51
+Type : Code radio seul
+Phrase : central nuit unité henry 10-14 vers 110h véhicule aérien
+Code : 10-14
+Motif : Refus d'obtempérer en véhicule aérien
+============================================================
+Heure : 03:20:00
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul od rs6 noir aperçu vers casino poursuite en cours dernier visuel vers les jeans square véhicules accidentés central code od agents à terre vers mission rho besoin de renfort immédiat unité 14 plus de visuel suspect perdu vers paleto
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Paleto
+Direction : Paleto
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 🚨 Renfort demandé
+Info : ⚠️ Visuel perdu
+============================================================
+Heure : 03:20:10
+Poursuite : #3
+Phrase : central unité 21-10-11 direction sand dicher bmw m4 blanche
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sand dicher bmw m4 blanche
+Véhicule : BMW M4 blanc
+============================================================
+Heure : 03:20:17
+Poursuite : #2
+Type : Mise à jour poursuite
+Phrase : central unité 14 10-10 direction palais-taubeille audi rs6 noir conducteur seul od rs6 noir aperçu vers casino poursuite en cours dernier visuel vers les jeans square véhicules accidentés central code od agents à terre vers mission rho besoin de renfort immédiat unité 14 plus de visuel suspect perdu vers paleto centrale unité 14 10-11 direction palais-taubeille audi rs6 noir
+Unité : 14
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+Lieu : Paleto
+Direction : palais-taubeille audi rs6 noir
+Véhicule : Audi RS6 noir
+Info : 👥 1 individu à bord
+Info : 🚓 Poursuite en cours
+Info : 👁️ Visuel signalé
+Info : 🚨 Renfort demandé
+Info : ⚠️ Visuel perdu
+============================================================
+Heure : 03:20:23
+Type : Info non attribuée
+Phrase : dernier visuel vers casino véhicules immobilisés
+Lieu : Casino
+Direction : Casino
+Info : 👁️ Visuel signalé
+============================================================
+Heure : 03:20:28
+Poursuite : #3
+Type : Mise à jour poursuite
+Phrase : central unité 21-10-11 direction sand dicher bmw m4 blanche unité 21 dernier visuel vercasino véhicule immobilisé
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sand dicher bmw m4 blanche
+Véhicule : BMW M4 blanc
+Info : 👁️ Visuel signalé
+Info : 🛑 Véhicule immobilisé
