@@ -23,11 +23,15 @@ class AudioWorker(QThread):
         self.whisper.text_received.connect(self.text_received.emit)
         self.whisper.status.connect(self.status.emit)
 
+        # Ancien réglage : silence_limit=5 et max_blocks=26.
+        # Ça gardait trop longtemps le micro ouvert pendant les tests
+        # et plusieurs appels se collaient dans la même transcription.
         self.threshold = 0.0018
-        self.silence_limit = 5
-        self.min_blocks = 5
-        self.max_blocks = 26
-        self.pre_roll_blocks = 4
+        self.silence_limit = 2
+        self.min_blocks = 3
+        self.max_blocks = 16
+        self.pre_roll_blocks = 2
+        self.cooldown_blocks = 1
 
     def run(self):
         self.running = True
@@ -44,6 +48,7 @@ class AudioWorker(QThread):
 
         recording = False
         silence_count = 0
+        cooldown_count = 0
 
         while self.running:
             block = self.capture.read(timeout=0.5)
@@ -58,6 +63,11 @@ class AudioWorker(QThread):
             )
 
             self.volume.emit(int(min(rms * 15000, 100)))
+
+            if cooldown_count > 0:
+                cooldown_count -= 1
+                pre_roll.clear()
+                continue
 
             is_voice = rms >= self.threshold
 
@@ -81,6 +91,7 @@ class AudioWorker(QThread):
                         recording = False
                         silence_count = 0
                         pre_roll.clear()
+                        cooldown_count = self.cooldown_blocks
                 else:
                     pre_roll.append(block)
 
@@ -90,6 +101,7 @@ class AudioWorker(QThread):
                 recording = False
                 silence_count = 0
                 pre_roll.clear()
+                cooldown_count = self.cooldown_blocks
 
         if frames:
             self._send_segment(frames)

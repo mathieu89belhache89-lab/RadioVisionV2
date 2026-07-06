@@ -8,6 +8,45 @@ from config import DATA_DIR
 
 class LocationParser:
 
+    MANUAL_LOCATIONS = {
+        "mission row": "Mission Row",
+        "mission raw": "Mission Row",
+        "mission rho": "Mission Row",
+        "mission ro": "Mission Row",
+        "mission rô": "Mission Row",
+        "mission road": "Mission Row",
+
+        "sandy shores": "Sandy Shores",
+        "sandy shore": "Sandy Shores",
+        "sandy shoress": "Sandy Shores",
+        "sandishore": "Sandy Shores",
+        "sandi shore": "Sandy Shores",
+        "sand dicher": "Sandy Shores",
+        "sand diche": "Sandy Shores",
+        "110 heures": "Sandy Shores",
+        "110h": "Sandy Shores",
+        "110 h": "Sandy Shores",
+
+        "paleto bay": "Paleto Bay",
+        "paleto": "Paleto Bay",
+        "paletto": "Paleto Bay",
+        "palais taubeille": "Paleto Bay",
+        "palais-taubeille": "Paleto Bay",
+        "palet au bay": "Paleto Bay",
+
+        "legion square": "Legion Square",
+        "les jeans square": "Legion Square",
+        "le jeans square": "Legion Square",
+        "legion": "Legion Square",
+
+        "casino": "Casino",
+        "bijouterie": "Bijouterie",
+        "mirror park": "Mirror Park",
+        "del perro": "Del Perro",
+        "delpero": "Del Perro",
+        "canaux": "Canaux",
+    }
+
     def __init__(self):
         self.file = Path(DATA_DIR) / "ddr_emplacements_radio.json"
 
@@ -36,7 +75,7 @@ class LocationParser:
         )
 
     def clean(self, text: str) -> str:
-        text = text.lower()
+        text = str(text).lower()
 
         text = unicodedata.normalize("NFD", text)
         text = "".join(
@@ -51,29 +90,22 @@ class LocationParser:
 
         return text.strip()
 
+    def make_manual_result(self, name):
+        return {
+            "name": name,
+            "id": None,
+            "category": "Manuel",
+            "type": "zone",
+        }
+
     def find(self, text: str):
         text_clean = self.clean(text)
 
-        manual_locations = {
-            "mission row": "Mission Row",
-            "sandy shores": "Sandy Shores",
-            "sandy shore": "Sandy Shores",
-            "sandy shoress": "Sandy Shores",
-            "paleto bay": "Paleto Bay",
-            "paleto": "Paleto",
-            "legion square": "Legion Square",
-            "casino": "Casino",
-            "bijouterie": "Bijouterie",
-        }
+        for alias, name in self.MANUAL_LOCATIONS.items():
+            alias_clean = self.clean(alias)
 
-        for alias, name in manual_locations.items():
-            if re.search(r"\b" + re.escape(alias) + r"\b", text_clean):
-                return {
-                    "name": name,
-                    "id": None,
-                    "category": "Manuel",
-                    "type": "zone",
-                }
+            if re.search(r"\b" + re.escape(alias_clean) + r"\b", text_clean):
+                return self.make_manual_result(name)
 
         for item in self.aliases:
             alias = item["alias_clean"]

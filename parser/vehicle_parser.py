@@ -44,6 +44,18 @@ class VehicleParser:
 
     MANUAL_VEHICLES = [
         {
+            "key": "moto_generic",
+            "label": "Moto",
+            "aliases": [
+                "moto",
+                "moto noir",
+                "moto noire",
+                "deux roues",
+                "deux-roues",
+            ],
+            "category": "Générique",
+        },
+        {
             "key": "mercedes_amg",
             "label": "Mercedes AMG",
             "aliases": [
@@ -508,6 +520,35 @@ class VehicleParser:
         },
     ]
 
+    AMBIGUOUS_ALIASES = {
+        "premier",
+        "primo",
+        "felon",
+        "oracle",
+        "fugitive",
+        "ingot",
+        "emperor",
+        "stanier",
+    }
+
+    VEHICLE_CONTEXT_WORDS = [
+        "vehicule",
+        "voiture",
+        "auto",
+        "berline",
+        "suv",
+        "coupe",
+        "sportive",
+        "fuite",
+        "poursuite",
+        "direction",
+        "visuel",
+        "conducteur",
+        "suspect",
+        "a bord",
+        "moto",
+    ]
+
     def __init__(self):
         self.vehicles = []
 
@@ -587,6 +628,10 @@ class VehicleParser:
             "g t r": "gtr",
 
             "track hawk": "trackhawk",
+
+            "mot au noir": "moto noir",
+            "moto noire": "moto noir",
+            "od rs6": "audi rs6",
 
             "grise": "gris",
             "noire": "noir",
@@ -762,6 +807,42 @@ class VehicleParser:
 
         return None
 
+    def has_vehicle_context(self, text_clean):
+        return any(
+            word in text_clean
+            for word in self.VEHICLE_CONTEXT_WORDS
+        )
+
+    def has_any_color(self, text_clean):
+        return any(
+            self.normalize_color(color) in text_clean
+            for color in self.COLORS
+        )
+
+    def is_radio_code_208_context(self, text_clean):
+        if not re.search(r"\b208\b", text_clean):
+            return False
+
+        if re.search(r"\bpeugeot\b", text_clean):
+            return False
+
+        if re.search(r"\bvehicule\b|\bvoiture\b|\bauto\b", text_clean):
+            return False
+
+        return bool(
+            re.search(
+                r"\bcode\b|\bunite\b|\bcentral\b|\bagent\b|\botage\b|\bprise d otage\b",
+                text_clean,
+            )
+        )
+
+    def should_ignore_exact_match(self, text_clean, alias_clean):
+        if alias_clean in self.AMBIGUOUS_ALIASES:
+            if not self.has_vehicle_context(text_clean) and not self.has_any_color(text_clean):
+                return True
+
+        return False
+
     def find_exact_vehicle(self, text_clean):
         for vehicle in self.vehicles:
             alias = vehicle["alias_clean"]
@@ -769,6 +850,9 @@ class VehicleParser:
             pattern = r"\b" + re.escape(alias) + r"\b"
 
             if re.search(pattern, text_clean):
+                if self.should_ignore_exact_match(text_clean, alias):
+                    continue
+
                 color = self.find_color(text_clean, alias)
 
                 return {
@@ -783,30 +867,8 @@ class VehicleParser:
         return None
 
     def find_generic_vehicle(self, text_clean):
-        vehicle_words = [
-            "vehicule",
-            "voiture",
-            "auto",
-            "berline",
-            "suv",
-            "coupe",
-            "sportive",
-            "fuite",
-            "poursuite",
-            "direction",
-            "visuel",
-            "conducteur",
-        ]
-
-        has_vehicle_context = any(
-            word in text_clean
-            for word in vehicle_words
-        )
-
-        has_color = any(
-            self.normalize_color(color) in text_clean
-            for color in self.COLORS
-        )
+        has_vehicle_context = self.has_vehicle_context(text_clean)
+        has_color = self.has_any_color(text_clean)
 
         for item in self.GENERIC_BRAND_PATTERNS:
             for pattern in item["patterns"]:
@@ -834,6 +896,9 @@ class VehicleParser:
 
     def find(self, text: str):
         text_clean = self.clean(text)
+
+        if self.is_radio_code_208_context(text_clean):
+            return None
 
         exact = self.find_exact_vehicle(text_clean)
 
