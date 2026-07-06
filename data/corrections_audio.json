@@ -1,0 +1,45 @@
+{
+    "locations": {
+        "sambi chap": "Sandy Shores",
+        "sambi shap": "Sandy Shores",
+        "sambi shore": "Sandy Shores",
+        "sandy chap": "Sandy Shores",
+        "sandichore": "Sandy Shores",
+        "sandishore": "Sandy Shores",
+        "sand dicher": "Sandy Shores",
+        "sandy short": "Sandy Shores",
+        "sandy shore": "Sandy Shores",
+        "110 heures": "Sandy Shores",
+        "cent dix heures": "Sandy Shores",
+        "palais taubeille": "Paleto Bay",
+        "palais-taubeille": "Paleto Bay",
+        "paleto": "Paleto Bay",
+        "mission raw": "Mission Row",
+        "mission rho": "Mission Row",
+        "mission ro": "Mission Row",
+        "mission roux": "Mission Row",
+        "mission rowe": "Mission Row",
+        "les jeans square": "Legion Square",
+        "jeans square": "Legion Square",
+        "legion": "Legion Square",
+        "delpero": "Del Perro",
+        "del pero": "Del Perro",
+        "delpéro": "Del Perro"
+    },
+    "vehicles": {
+        "od rs6": "Audi RS6",
+        "audi air s6": "Audi RS6",
+        "audi r s6": "Audi RS6",
+        "bm double v m4": "BMW M4",
+        "bmw aime quatre": "BMW M4",
+        "mercedes amg gris": "Mercedes AMG"
+    },
+    "codes": {
+        "dis 99": "10-99",
+        "disquette": "10-4",
+        "disquatre": "10-4",
+        "dis sank": "10-5",
+        "cis cis": "10-6",
+        "disces": "10-7"
+    }
+}

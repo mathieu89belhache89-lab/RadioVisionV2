@@ -8,6 +8,11 @@ from PySide6.QtCore import QThread, Signal
 
 from audio.whisper import Whisper
 
+try:
+    from rapidfuzz import fuzz
+except Exception:
+    fuzz = None
+
 
 class WhisperWorker(QThread):
     text_received = Signal(str)
@@ -63,6 +68,21 @@ class WhisperWorker(QThread):
 
         return text
 
+    def similarity(self, left, right):
+        left = self.normalize_text(left)
+        right = self.normalize_text(right)
+
+        if not left or not right:
+            return 0
+
+        if fuzz:
+            return int(fuzz.ratio(left, right))
+
+        # Fallback sans rapidfuzz.
+        import difflib
+
+        return int(difflib.SequenceMatcher(None, left, right).ratio() * 100)
+
     def is_tiny_noise(self, text):
         text_clean = self.normalize_text(text)
 
@@ -82,15 +102,7 @@ class WhisperWorker(QThread):
 
         return text_clean in noises
 
-    def remove_repeated_prefix(self, text):
-        now = time.time()
-
-        if not self.last_text:
-            return text
-
-        if now - self.last_text_time > 20:
-            return text
-
+    def remove_exact_repeated_prefix(self, text):
         current_clean = self.normalize_text(text)
         last_clean = self.normalize_text(self.last_text)
 
@@ -107,6 +119,65 @@ class WhisperWorker(QThread):
                 return rest
 
             return ""
+
+        return text
+
+    def remove_fuzzy_repeated_prefix(self, text):
+        current_clean = self.normalize_text(text)
+        last_clean = self.normalize_text(self.last_text)
+
+        if not current_clean or not last_clean:
+            return text
+
+        current_tokens = current_clean.split()
+        last_tokens = last_clean.split()
+
+        if len(current_tokens) < 5 or len(last_tokens) < 5:
+            return text
+
+        # Cas où Whisper renvoie quasiment la même phrase.
+        if self.similarity(current_clean, last_clean) >= 92:
+            return ""
+
+        min_size = max(4, len(last_tokens) - 5)
+        max_size = min(len(current_tokens), len(last_tokens) + 8)
+
+        best_size = 0
+        best_score = 0
+
+        for size in range(max_size, min_size - 1, -1):
+            candidate = " ".join(current_tokens[:size])
+            score = self.similarity(candidate, last_clean)
+
+            if score > best_score:
+                best_score = score
+                best_size = size
+
+        if best_score >= 86 and best_size > 0:
+            rest_tokens = current_tokens[best_size:]
+
+            if len(rest_tokens) >= 2:
+                return " ".join(rest_tokens)
+
+            return ""
+
+        return text
+
+    def remove_repeated_prefix(self, text):
+        now = time.time()
+
+        if not self.last_text:
+            return text
+
+        if now - self.last_text_time > 25:
+            return text
+
+        text = self.remove_exact_repeated_prefix(text)
+
+        if not text:
+            return ""
+
+        text = self.remove_fuzzy_repeated_prefix(text)
 
         return text
 

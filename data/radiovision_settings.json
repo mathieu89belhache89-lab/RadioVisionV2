@@ -2,8 +2,9 @@
     "overlay_enabled": true,
     "overlay_duration": 15,
     "overlay_position": "top_right",
+    "capture_microphone": false,
     "pending_delay": 5,
-    "merge_window": 8,
+    "merge_window": 10,
     "pursuit_window": 5,
     "whisper_model": "small"
 }

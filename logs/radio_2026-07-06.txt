@@ -3030,3 +3030,50 @@ Direction : sand dicher bmw m4 blanche
 Véhicule : BMW M4 blanc
 Info : 👁️ Visuel signalé
 Info : 🛑 Véhicule immobilisé
+============================================================
+Heure : 14:10:32
+Phrase : soixante pour les collègues à ce qu'il y a key one qui en otage dans la stx devant
+Info : 🧍 Otage signalé
+============================================================
+Heure : 14:10:44
+Phrase : et que des fuirs là dans la voiture on est d'accord ?
+Lieu : Concess Voiture
+============================================================
+Heure : 14:10:47
+Type : Code radio seul
+Phrase : 10-4
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 14:11:35
+Phrase : cache partout mon petit pdp
+Code : PDP
+Motif : Poste de police
+Lieu : Ancien PDP
+Direction : Ancien PDP
+============================================================
+Heure : 14:17:16
+Poursuite : #1
+Phrase : central unité 21-10-11 direction sondishorby
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sondishorby
+============================================================
+Heure : 14:17:36
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21-10-11 direction sambi-chap
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : sambi chap
+============================================================
+Heure : 14:18:00
+Poursuite : #1
+Type : Mise à jour poursuite
+Phrase : central unité 21-10-11 direction 110-shore
+Unité : 21
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+Direction : 110 shore

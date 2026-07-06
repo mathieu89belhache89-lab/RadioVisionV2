@@ -12,12 +12,15 @@ class AudioWorker(QThread):
     status = Signal(str)
     volume = Signal(int)
 
-    def __init__(self):
+    def __init__(self, capture_microphone=False):
         super().__init__()
 
         self.running = False
+        self.capture_microphone = bool(capture_microphone)
 
-        self.capture = AudioCapture()
+        self.capture = AudioCapture(
+            capture_microphone=self.capture_microphone,
+        )
         self.whisper = WhisperWorker()
 
         self.whisper.text_received.connect(self.text_received.emit)
@@ -41,7 +44,10 @@ class AudioWorker(QThread):
         self.capture.start()
         self.whisper.start()
 
-        self.status.emit("Capture continue active.")
+        if self.capture_microphone:
+            self.status.emit("Capture continue active avec micro.")
+        else:
+            self.status.emit("Capture continue active.")
 
         frames = []
         pre_roll = deque(maxlen=self.pre_roll_blocks)

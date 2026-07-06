@@ -284,6 +284,26 @@ class IncidentParser:
 
         return statuses
 
+    def find_affiliation_info(self, text_clean: str):
+        infos = []
+
+        affiliation_infos = [
+            (r"\btango\s+plus\b", "👥 Patrouille Tango+ : 4 agents"),
+            (r"\btango\b", "👥 Patrouille Tango : 3 agents"),
+            (r"\badams?\b", "👥 Patrouille Adams : 2 agents"),
+            (r"\blincoln\b|\blincon\b", "👤 Patrouille Lincoln : 1 agent"),
+            (r"\bmary\b|\bmarie\b|\bmari\b|\bmairie\b", "🏍️ Patrouille Mary : moto"),
+            (r"\bhenry\b|\bhenri\b", "🚁 Patrouille Henry : hélicoptère"),
+            (r"\bap\b|\ba p\b", "✈️ Patrouille AP : avion"),
+            (r"\bcp\b|\bc p\b", "⭐ Patrouille CP : hauts gradés"),
+        ]
+
+        for pattern, label in affiliation_infos:
+            if re.search(pattern, text_clean):
+                self.add_unique(infos, label)
+
+        return infos
+
     def find(self, text: str):
         text_clean = self.clean(text)
 
@@ -293,6 +313,7 @@ class IncidentParser:
         weapon = self.find_weapon(text_clean)
         plate = self.find_plate(text_clean)
         statuses = self.find_pursuit_statuses(text_clean)
+        affiliation_infos = self.find_affiliation_info(text_clean)
 
         self.add_unique(results, people)
         self.add_unique(results, weapon)
@@ -300,5 +321,8 @@ class IncidentParser:
 
         for status in statuses:
             self.add_unique(results, status)
+
+        for info in affiliation_infos:
+            self.add_unique(results, info)
 
         return results

@@ -23,17 +23,44 @@ from parser.direction_parser import DirectionParser
 from parser.vehicle_parser import VehicleParser
 from parser.incident_parser import IncidentParser
 from parser.pursuit_tracker import PursuitTracker
+from parser.correction_parser import CorrectionParser
 
 
 DEFAULT_RUNTIME_SETTINGS = {
     "overlay_enabled": True,
     "overlay_duration": 15,
     "overlay_position": "top_right",
+    "capture_microphone": False,
+    "strict_analysis": True,
     "pending_delay": 6,
     "merge_window": 8,
     "pursuit_window": 3,
     "whisper_model": "base",
 }
+
+
+PURSUIT_START_CODES = [
+    "10-10",
+    "10-11",
+    "10-12",
+    "10-13",
+    "10-14",
+    "10-15",
+]
+
+PURSUIT_VEHICLE_CODES = [
+    "10-11",
+    "10-12",
+]
+
+REPORT_CODES = [
+    "CODE OD",
+    "CODE DS",
+    "CODE DOA",
+    "CODE DCD",
+    "CODE RDP",
+    "CODE S",
+]
 
 
 class RadioVisionApp(QObject):
@@ -51,6 +78,7 @@ class RadioVisionApp(QObject):
         self.vehicle_parser = VehicleParser()
         self.incident_parser = IncidentParser()
         self.pursuit_tracker = PursuitTracker()
+        self.correction_parser = CorrectionParser()
 
         self.runtime_settings_file = Path("data") / "radiovision_settings.json"
         self.runtime_settings = self.load_runtime_settings()
@@ -121,6 +149,14 @@ class RadioVisionApp(QObject):
             if position in ["top_right", "top_left", "bottom_right", "bottom_left"]:
                 settings["overlay_position"] = position
 
+            settings["capture_microphone"] = bool(
+                data.get("capture_microphone", settings["capture_microphone"])
+            )
+
+            settings["strict_analysis"] = bool(
+                data.get("strict_analysis", settings["strict_analysis"])
+            )
+
             settings["pending_delay"] = self.clamp_int(
                 data.get("pending_delay"),
                 1,
@@ -179,19 +215,35 @@ class RadioVisionApp(QObject):
 
     def apply_settings_from_ui(self):
         old_model = self.runtime_settings.get("whisper_model", "base")
+        old_capture_microphone = bool(
+            self.runtime_settings.get("capture_microphone", False)
+        )
 
         self.runtime_settings = self.window.get_settings_values()
         self.save_runtime_settings()
         self.apply_runtime_settings(self.runtime_settings, update_ui=False)
 
         new_model = self.runtime_settings.get("whisper_model", "base")
+        new_capture_microphone = bool(
+            self.runtime_settings.get("capture_microphone", False)
+        )
 
         message = "Paramètres sauvegardés."
 
+        restart_reasons = []
+
         if new_model != old_model:
+            restart_reasons.append("le modèle Whisper")
+
+        if new_capture_microphone != old_capture_microphone:
+            restart_reasons.append("la source micro")
+
+        if restart_reasons:
             message = (
                 "Paramètres sauvegardés. "
-                "Redémarre l’écoute pour appliquer le modèle Whisper."
+                "Redémarre l’écoute pour appliquer : "
+                + ", ".join(restart_reasons)
+                + "."
             )
 
         self.window.setting_status.setText(message)
@@ -223,11 +275,22 @@ class RadioVisionApp(QObject):
         self.window.state.setText("🟢 Écoute")
         self.window.status.showMessage("Démarrage audio...")
 
-        self.window.radio_log.append(
-            f"[{datetime.now():%H:%M:%S}] ▶ Démarrage capture audio"
+        capture_microphone = bool(
+            self.runtime_settings.get("capture_microphone", False)
         )
 
-        self.audio_worker = AudioWorker()
+        if capture_microphone:
+            source_label = "son PC / FiveM + micro"
+        else:
+            source_label = "son PC / FiveM"
+
+        self.window.radio_log.append(
+            f"[{datetime.now():%H:%M:%S}] ▶ Démarrage capture audio ({source_label})"
+        )
+
+        self.audio_worker = AudioWorker(
+            capture_microphone=capture_microphone,
+        )
 
         self.audio_worker.text_received.connect(self.on_text)
         self.audio_worker.status.connect(self.on_status)
@@ -319,16 +382,21 @@ class RadioVisionApp(QObject):
         return text_clean in accepted
 
     def parse_event(self, text):
-        code, signification = self.parser.parse(text)
+        parse_text = self.correction_parser.replace_in_text(text)
 
-        if code and self.is_raw_code_lookup_text(text, code):
+        code, signification = self.parser.parse(parse_text)
+
+        if code and self.is_raw_code_lookup_text(parse_text, code):
             return {
                 "text": text,
+                "raw_text": text,
+                "parse_text": parse_text,
                 "code": code,
                 "signification": signification,
                 "location": None,
                 "unit": None,
                 "direction": None,
+                "direction_meta": None,
                 "vehicle": None,
                 "incidents": [],
                 "is_update": False,
@@ -342,21 +410,61 @@ class RadioVisionApp(QObject):
                 "association_score": 0,
             }
 
-        location = self.location_parser.find(text)
-        direction = self.direction_parser.find(text)
+        location = self.location_parser.find(parse_text)
+        direction_meta = self.direction_parser.find_detailed(
+            parse_text,
+            self.location_parser,
+        )
 
-        if not direction and location and self.text_has_direction_hint(text):
+        direction = None
+
+        if direction_meta:
+            direction = direction_meta.get("name")
+
+            if not location:
+                location = self.location_parser.find_by_name(
+                    direction,
+                    score=direction_meta.get("score", 100),
+                    raw=direction_meta.get("raw"),
+                )
+
+        if not direction and location and self.text_has_direction_hint(parse_text):
             direction = location.get("name")
+            direction_meta = {
+                "name": direction,
+                "raw": location.get("raw") or direction,
+                "score": location.get("score", 100),
+                "source": "location",
+                "probable": location.get("score", 100) < 92,
+            }
+
+        vehicle = self.vehicle_parser.find(parse_text)
+
+        # Le code radio 208 ne doit pas devenir Peugeot 208 sauf contexte véhicule clair.
+        if code == "208" and vehicle:
+            text_clean = self.clean_text_simple(parse_text)
+            vehicle_context = any([
+                "vehicule" in text_clean,
+                "voiture" in text_clean,
+                "auto" in text_clean,
+                "peugeot" in text_clean,
+            ])
+
+            if not vehicle_context:
+                vehicle = None
 
         return {
             "text": text,
+            "raw_text": text,
+            "parse_text": parse_text,
             "code": code,
             "signification": signification,
             "location": location,
-            "unit": self.unit_parser.find(text),
+            "unit": self.unit_parser.find(parse_text),
             "direction": direction,
-            "vehicle": self.vehicle_parser.find(text),
-            "incidents": self.incident_parser.find(text),
+            "direction_meta": direction_meta,
+            "vehicle": vehicle,
+            "incidents": self.incident_parser.find(parse_text),
             "is_update": False,
             "is_unassigned": False,
             "is_code_lookup": False,
@@ -393,6 +501,7 @@ class RadioVisionApp(QObject):
         unit=None,
         location=None,
         direction=None,
+        direction_meta=None,
         vehicle=None,
         incidents=None,
         pursuit_id=None,
@@ -451,6 +560,7 @@ class RadioVisionApp(QObject):
         unit=None,
         location=None,
         direction=None,
+        direction_meta=None,
         vehicle=None,
         is_code_lookup=False,
     ):
@@ -479,7 +589,7 @@ class RadioVisionApp(QObject):
         if not location and not direction:
             missing.append("lieu / direction")
 
-        if code in ["10-10", "10-11"] and not vehicle:
+        if code in PURSUIT_VEHICLE_CODES and not vehicle:
             missing.append("véhicule")
 
         return missing
@@ -490,6 +600,7 @@ class RadioVisionApp(QObject):
         unit=None,
         location=None,
         direction=None,
+        direction_meta=None,
         vehicle=None,
         incidents=None,
     ):
@@ -510,7 +621,7 @@ class RadioVisionApp(QObject):
         if location or direction:
             score += 25
 
-        if code in ["10-10", "10-11"]:
+        if code in PURSUIT_VEHICLE_CODES:
             max_score += 25
             if vehicle:
                 score += 25
@@ -540,6 +651,7 @@ class RadioVisionApp(QObject):
             unit=event.get("unit"),
             location=event.get("location"),
             direction=event.get("direction"),
+            direction_meta=event.get("direction_meta"),
             vehicle=event.get("vehicle"),
             is_code_lookup=event.get("is_code_lookup", False),
         )
@@ -575,7 +687,9 @@ class RadioVisionApp(QObject):
     def merge_events(self, old, new, update_existing=False):
         merged = old.copy()
 
-        merged["text"] = f"{old.get('text', '')} {new.get('text', '')}".strip()
+        previous_text = old.get("accumulated_text") or old.get("text", "")
+        merged["accumulated_text"] = f"{previous_text} {new.get('text', '')}".strip()
+        merged["text"] = new.get("text") or old.get("text", "")
 
         fill_only_keys = [
             "code",
@@ -591,6 +705,7 @@ class RadioVisionApp(QObject):
         update_keys = [
             "location",
             "direction",
+            "direction_meta",
         ]
 
         for key in update_keys:
@@ -692,6 +807,7 @@ class RadioVisionApp(QObject):
             unit=event.get("unit"),
             location=event.get("location"),
             direction=event.get("direction"),
+            direction_meta=event.get("direction_meta"),
             vehicle=event.get("vehicle"),
             incidents=event.get("incidents"),
             is_update=event.get("is_update", False),
@@ -717,6 +833,7 @@ class RadioVisionApp(QObject):
         unit=None,
         location=None,
         direction=None,
+        direction_meta=None,
         vehicle=None,
         incidents=None,
         is_update=False,
@@ -858,6 +975,7 @@ class RadioVisionApp(QObject):
         unit=None,
         location=None,
         direction=None,
+        direction_meta=None,
         vehicle=None,
         incidents=None,
         is_update=False,
@@ -922,7 +1040,7 @@ class RadioVisionApp(QObject):
             priority_color = "#747f8d"
             priority_label = "NON ATTRIBUÉ"
 
-        elif code in ["10-99", "CODE 3", "460", "10-31"]:
+        elif code in ["10-99", "CODE 3", "460", "10-31", "CODE OD"]:
             priority_color = "#ed4245"
             priority_label = "URGENT"
 
@@ -930,7 +1048,7 @@ class RadioVisionApp(QObject):
             priority_color = "#faa61a"
             priority_label = f"POURSUITE #{pursuit_id}"
 
-        elif code in ["10-10", "10-11"]:
+        elif code in PURSUIT_START_CODES:
             priority_color = "#faa61a"
             priority_label = "POURSUITE"
 
@@ -956,6 +1074,9 @@ class RadioVisionApp(QObject):
 
         if pursuit_status_label:
             rows.append(("📌", "Statut", html.escape(str(pursuit_status_label))))
+
+        if text and not is_code_lookup:
+            rows.append(("🎙️", "Call entendu", html.escape(str(text))))
 
         if is_update:
             rows.append(("🔄", "Type", "Mise à jour"))
@@ -990,7 +1111,22 @@ class RadioVisionApp(QObject):
             rows.append(("📍", "Dernier lieu", html.escape(str(location["name"]))))
 
         if direction:
-            rows.append(("➡️", "Direction", html.escape(str(direction))))
+            direction_label = "Direction"
+            direction_value = str(direction)
+
+            if direction_meta:
+                raw_direction = direction_meta.get("raw")
+                score_direction = int(direction_meta.get("score", 100))
+                is_probable = bool(direction_meta.get("probable", False))
+
+                if is_probable:
+                    direction_label = "Direction probable"
+                    direction_value = f"{direction} ({score_direction}%)"
+
+                    if raw_direction and self.clean_text_simple(raw_direction) != self.clean_text_simple(direction):
+                        direction_value += f" — entendu : {raw_direction}"
+
+            rows.append(("➡️", direction_label, html.escape(str(direction_value))))
 
         if vehicle:
             label = vehicle["vehicle"]
@@ -1002,6 +1138,9 @@ class RadioVisionApp(QObject):
 
         for incident in incidents:
             rows.append(("", "Info", html.escape(str(incident))))
+
+        if "véhicule" in missing_infos and code in PURSUIT_VEHICLE_CODES:
+            rows.append(("🚗", "Véhicule", "non identifié"))
 
         if missing_infos and not is_unassigned:
             missing_text = ", ".join(missing_infos)

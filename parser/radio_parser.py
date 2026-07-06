@@ -267,6 +267,36 @@ class RadioParser:
                 "codes s",
                 "silence radio",
             ],
+            "MARY": [
+                "mary",
+                "marie",
+                "mari",
+                "mairie",
+            ],
+            "HENRY": [
+                "henry",
+                "henri",
+                "enry",
+            ],
+            "AP": [
+                "ap",
+                "a p",
+            ],
+            "CP": [
+                "cp",
+                "c p",
+            ],
+            "LINCOLN": [
+                "lincoln",
+                "lincon",
+            ],
+            "ADAMS": [
+                "adams",
+                "adam",
+            ],
+            "TANGO": [
+                "tango",
+            ],
             "TANGO+": [
                 "tango plus",
                 "tango +",
@@ -289,8 +319,37 @@ class RadioParser:
             + r"(?![a-z0-9])"
         )
 
+
+    def parse_explicit_report_code(self, text_clean):
+        explicit_reports = [
+            ("CODE DOA", ["code doa", "code d o a"]),
+            ("CODE DCD", ["code dcd", "code d c d"]),
+            ("CODE RDP", ["code rdp", "code r d p"]),
+            ("CODE OD", ["code od", "code o d"]),
+            ("CODE DS", ["code ds", "code d s", "code dsd", "code des"]),
+            ("CODE S", ["code s", "codes s", "code esse", "code est"]),
+        ]
+
+        for code, aliases in explicit_reports:
+            for alias in aliases:
+                alias_clean = self.clean(alias)
+                pattern = self.alias_pattern(alias_clean)
+
+                if re.search(pattern, text_clean):
+                    signification = self.codes.get(code)
+
+                    if signification:
+                        return code, signification
+
+        return None, None
+
     def parse(self, text: str):
         text_clean = self.clean(text)
+
+        explicit_code, explicit_signification = self.parse_explicit_report_code(text_clean)
+
+        if explicit_code:
+            return explicit_code, explicit_signification
 
         direct_numeric_codes = [
             "10 99",

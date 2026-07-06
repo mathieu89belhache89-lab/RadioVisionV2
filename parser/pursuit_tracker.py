@@ -4,6 +4,36 @@ from datetime import datetime
 
 class PursuitTracker:
 
+    PURSUIT_START_CODES = [
+        "10-10",
+        "10-11",
+        "10-12",
+        "10-13",
+        "10-14",
+        "10-15",
+    ]
+
+    PURSUIT_RELATED_CODES = [
+        "10-10",
+        "10-11",
+        "10-12",
+        "10-13",
+        "10-14",
+        "10-15",
+        "10-16",
+        "10-17",
+        "10-19",
+    ]
+
+    REPORT_CODES = [
+        "CODE OD",
+        "CODE DS",
+        "CODE DOA",
+        "CODE DCD",
+        "CODE RDP",
+        "CODE S",
+    ]
+
     def __init__(self):
         self.pursuits = []
         self.next_id = 1
@@ -53,6 +83,21 @@ class PursuitTracker:
 
         return label.strip()
 
+    def is_report_code(self, event):
+        return event.get("code") in self.REPORT_CODES
+
+    def is_pursuit_start_code(self, event):
+        return event.get("code") in self.PURSUIT_START_CODES
+
+    def is_pursuit_related_code(self, event):
+        return event.get("code") in self.PURSUIT_RELATED_CODES
+
+    def report_can_attach(self, event):
+        if not self.is_report_code(event):
+            return True
+
+        return bool(event.get("unit") or self.get_vehicle_key(event))
+
     def is_end_event(self, event):
         incidents = event.get("incidents") or []
         text = event.get("text", "").lower()
@@ -69,6 +114,7 @@ class PursuitTracker:
             "termine",
             "fini",
             "saisi",
+            "saisie",
         ]
 
         for incident in incidents:
@@ -84,11 +130,13 @@ class PursuitTracker:
         return False
 
     def is_pursuit_related(self, event):
-        code = event.get("code")
-        incidents = event.get("incidents") or []
+        if self.is_report_code(event) and not self.report_can_attach(event):
+            return False
 
-        if code in ["10-10", "10-11"]:
+        if self.is_pursuit_related_code(event):
             return True
+
+        incidents = event.get("incidents") or []
 
         pursuit_words = [
             "poursuite",
@@ -141,7 +189,10 @@ class PursuitTracker:
         return len(self.get_active_pursuits()) > 0
 
     def is_followup_like(self, event):
-        if event.get("code") in ["10-10", "10-11"]:
+        if self.is_pursuit_start_code(event):
+            return False
+
+        if self.is_report_code(event) and not self.report_can_attach(event):
             return False
 
         return any([
@@ -158,8 +209,8 @@ class PursuitTracker:
         pursuit_unit = pursuit.get("unit")
 
         if event_unit and pursuit_unit:
-            if str(event_unit) == str(pursuit_unit):
-                score += 60
+            if str(event_unit).lower() == str(pursuit_unit).lower():
+                score += 70
             else:
                 score -= 100
 
@@ -167,8 +218,8 @@ class PursuitTracker:
         pursuit_vehicle = pursuit.get("vehicle_key")
 
         if event_vehicle and pursuit_vehicle:
-            if str(event_vehicle) == str(pursuit_vehicle):
-                score += 50
+            if str(event_vehicle).lower() == str(pursuit_vehicle).lower():
+                score += 55
             else:
                 score -= 80
 
@@ -176,7 +227,7 @@ class PursuitTracker:
         pursuit_location = pursuit.get("location_name")
 
         if event_location and pursuit_location:
-            if event_location == pursuit_location:
+            if str(event_location).lower() == str(pursuit_location).lower():
                 score += 20
             else:
                 score += 5
@@ -196,6 +247,8 @@ class PursuitTracker:
         if event_code and pursuit_code:
             if event_code == pursuit_code:
                 score += 20
+            elif event_code in self.PURSUIT_RELATED_CODES:
+                score += 5
 
         seconds_since_update = self.now_time() - pursuit.get("last_update_ts", 0)
 
@@ -212,6 +265,9 @@ class PursuitTracker:
         active = self.get_active_pursuits()
 
         if not active:
+            return None, 0
+
+        if self.is_report_code(event) and not self.report_can_attach(event):
             return None, 0
 
         event_has_strong_id = any([
@@ -250,6 +306,7 @@ class PursuitTracker:
 
         now = self.now_time()
         now_label = self.now_label()
+        text = event.get("text", "")
 
         pursuit = {
             "id": pursuit_id,
@@ -269,7 +326,8 @@ class PursuitTracker:
             "vehicle_key": vehicle_key,
             "vehicle_label": vehicle_label,
             "incidents": list(event.get("incidents") or []),
-            "texts": [event.get("text", "")],
+            "texts": [text] if text else [],
+            "latest_text": text,
         }
 
         if self.is_end_event(event):
@@ -294,11 +352,16 @@ class PursuitTracker:
         if event.get("unit") and not pursuit.get("unit"):
             pursuit["unit"] = event.get("unit")
 
-        if event.get("code") and not pursuit.get("code"):
-            pursuit["code"] = event.get("code")
+        if event.get("code"):
+            # On garde le code de départ de poursuite si le dossier existe déjà.
+            if not pursuit.get("code"):
+                pursuit["code"] = event.get("code")
+            elif pursuit.get("code") not in self.PURSUIT_START_CODES:
+                pursuit["code"] = event.get("code")
 
-        if event.get("signification") and not pursuit.get("signification"):
-            pursuit["signification"] = event.get("signification")
+        if event.get("signification"):
+            if not pursuit.get("signification"):
+                pursuit["signification"] = event.get("signification")
 
         if event.get("vehicle") and not pursuit.get("vehicle"):
             pursuit["vehicle"] = event.get("vehicle")
@@ -318,6 +381,7 @@ class PursuitTracker:
 
         if event.get("text"):
             pursuit["texts"].append(event.get("text"))
+            pursuit["latest_text"] = event.get("text")
 
         if self.is_end_event(event):
             pursuit["status"] = "ended"
@@ -341,7 +405,7 @@ class PursuitTracker:
 
     def pursuit_to_event(self, pursuit):
         return {
-            "text": " ".join(pursuit.get("texts", [])),
+            "text": pursuit.get("latest_text") or " ".join(pursuit.get("texts", [])),
             "code": pursuit.get("code"),
             "signification": pursuit.get("signification"),
             "location": pursuit.get("location"),
@@ -372,10 +436,13 @@ class PursuitTracker:
         return unassigned
 
     def process_event(self, event):
+        if self.is_report_code(event) and not self.report_can_attach(event):
+            return event
+
         active_exists = self.has_active_pursuits()
 
         if active_exists and self.is_followup_like(event):
-            if event.get("code") not in ["10-10", "10-11"]:
+            if not self.is_pursuit_start_code(event):
                 return self.process_followup_for_active_pursuit(event)
 
         if not self.is_pursuit_related(event):
@@ -388,7 +455,7 @@ class PursuitTracker:
             tracked_event["association_score"] = score
             return tracked_event
 
-        if event.get("code") in ["10-10", "10-11"]:
+        if self.is_pursuit_start_code(event):
             tracked_event = self.create_pursuit(event)
             tracked_event["association_score"] = 100
             return tracked_event

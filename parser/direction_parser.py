@@ -1,63 +1,13 @@
 import re
 import unicodedata
 
+from parser.fuzzy_matcher import best_match
+
 
 class DirectionParser:
 
-    STOP_WORDS = [
-        "bmw", "audi", "mercedes", "amg", "rs6", "rs 6", "m4", "m 4",
-        "vehicule", "vehicules", "voiture", "auto", "moto", "conducteur",
-        "blanc", "blanche", "noir", "noire", "gris", "grise", "rouge", "bleu", "bleue",
-        "individu", "individus", "suspect", "suspects", "personne", "personnes",
-        "arme", "armes", "arme visible", "a bord", "sur place",
-        "dernier", "visuel", "visual", "besoin", "renfort", "renforts",
-        "coups", "coup", "feu", "poursuite", "central", "centrale", "unite", "code",
-        "10", "459", "460", "461", "187", "207", "208",
-    ]
-
-    KNOWN_DIRECTIONS = {
-        "sandy shores": "Sandy Shores",
-        "sandy shore": "Sandy Shores",
-        "sandy shoress": "Sandy Shores",
-        "sandishore": "Sandy Shores",
-        "sandi shore": "Sandy Shores",
-        "sand dicher": "Sandy Shores",
-        "sand diche": "Sandy Shores",
-        "sandy": "Sandy Shores",
-        "110 heures": "Sandy Shores",
-        "110h": "Sandy Shores",
-        "110 h": "Sandy Shores",
-
-        "mission row": "Mission Row",
-        "mission raw": "Mission Row",
-        "mission rho": "Mission Row",
-        "mission ro": "Mission Row",
-        "mission rô": "Mission Row",
-        "mission road": "Mission Row",
-
-        "paleto bay": "Paleto Bay",
-        "paleto": "Paleto Bay",
-        "palais taubeille": "Paleto Bay",
-        "palais-taubeille": "Paleto Bay",
-        "palet au bay": "Paleto Bay",
-        "paletto": "Paleto Bay",
-
-        "legion square": "Legion Square",
-        "les jeans square": "Legion Square",
-        "le jeans square": "Legion Square",
-        "legion": "Legion Square",
-
-        "casino": "Casino",
-        "bijouterie": "Bijouterie",
-        "mirror park": "Mirror Park",
-        "del perro": "Del Perro",
-        "delpero": "Del Perro",
-        "delpero suspect": "Del Perro",
-        "canaux": "Canaux",
-    }
-
     def clean(self, text: str) -> str:
-        text = str(text).lower()
+        text = text.lower()
 
         text = unicodedata.normalize("NFD", text)
         text = "".join(
@@ -72,49 +22,98 @@ class DirectionParser:
 
         return text.strip()
 
-    def normalize_known_direction(self, value):
-        value_clean = self.clean(value)
+    def stop_direction(self, direction: str) -> str:
+        direction = direction.strip()
 
-        for alias, name in self.KNOWN_DIRECTIONS.items():
-            alias_clean = self.clean(alias)
+        direction = re.split(
+            r"\b(avec|en|sur|code|10|unite|central|vehicule|voiture|auto|bmw|audi|mercedes|moto|conducteur|individu|individus|suspect|suspects|arme|armes|besoin|renfort|coups|dernier|visuel|poursuite|a bord|bord)\b",
+            direction,
+        )[0].strip()
 
-            if re.search(r"\b" + re.escape(alias_clean) + r"\b", value_clean):
-                return name
+        return direction
+
+    def correction_map(self):
+        return {
+            "sandy shoress": "Sandy Shores",
+            "sandy shores": "Sandy Shores",
+            "sandy shore": "Sandy Shores",
+            "sandy short": "Sandy Shores",
+            "sandishore": "Sandy Shores",
+            "sandichore": "Sandy Shores",
+            "sand dicher": "Sandy Shores",
+            "sambi chap": "Sandy Shores",
+            "sambi shap": "Sandy Shores",
+            "sambi shore": "Sandy Shores",
+            "mission row": "Mission Row",
+            "mission raw": "Mission Row",
+            "mission rho": "Mission Row",
+            "mission ro": "Mission Row",
+            "mission roux": "Mission Row",
+            "paleto bay": "Paleto Bay",
+            "paleto": "Paleto Bay",
+            "palais taubeille": "Paleto Bay",
+            "legion square": "Legion Square",
+            "les jeans square": "Legion Square",
+            "jeans square": "Legion Square",
+            "casino": "Casino",
+            "del perro": "Del Perro",
+            "delpero": "Del Perro",
+            "del pero": "Del Perro",
+            "bijouterie": "Bijouterie",
+            "mirror park": "Mirror Park",
+        }
+
+    def build_meta(self, name, raw, score=100, source="exact"):
+        return {
+            "name": name,
+            "raw": raw,
+            "score": score,
+            "source": source,
+            "probable": score < 92 or self.clean(name) != self.clean(raw),
+        }
+
+    def correct_direction(self, raw_direction, location_parser=None):
+        raw_clean = self.clean(raw_direction)
+
+        if not raw_clean:
+            return None
+
+        for bad, good in self.correction_map().items():
+            bad_clean = self.clean(bad)
+
+            if raw_clean == bad_clean or bad_clean in raw_clean or raw_clean in bad_clean:
+                return self.build_meta(good, raw_direction, 100, "correction")
+
+        if location_parser:
+            fuzzy = location_parser.find_fuzzy_fragment(raw_clean, threshold=76)
+
+            if fuzzy:
+                return self.build_meta(
+                    fuzzy.get("name"),
+                    raw_direction,
+                    fuzzy.get("score", 80),
+                    "fuzzy_location",
+                )
+
+        candidates = []
+
+        for bad, good in self.correction_map().items():
+            candidates.append({"alias_clean": self.clean(bad), "name": good})
+
+        result = best_match(raw_clean, candidates, threshold=78)
+
+        if result:
+            item = result["item"]
+            return self.build_meta(
+                item.get("name"),
+                raw_direction,
+                result.get("score", 80),
+                "fuzzy_manual",
+            )
 
         return None
 
-    def cut_noise_after_direction(self, value):
-        value_clean = self.clean(value)
-
-        known = self.normalize_known_direction(value_clean)
-        if known:
-            return known
-
-        for stop_word in self.STOP_WORDS:
-            stop_clean = self.clean(stop_word)
-            value_clean = re.split(
-                r"\b" + re.escape(stop_clean) + r"\b",
-                value_clean,
-                maxsplit=1,
-            )[0].strip()
-
-        words = value_clean.split()
-
-        if len(words) > 4:
-            words = words[:4]
-
-        value_clean = " ".join(words).strip()
-
-        known = self.normalize_known_direction(value_clean)
-        if known:
-            return known
-
-        if not value_clean:
-            return None
-
-        return value_clean
-
-    def find(self, text: str):
+    def find_detailed(self, text: str, location_parser=None):
         text_clean = self.clean(text)
 
         patterns = [
@@ -123,6 +122,7 @@ class DirectionParser:
             r"\bse dirige vers\s+([a-z0-9 ]+)",
             r"\bpart vers\s+([a-z0-9 ]+)",
             r"\bva vers\s+([a-z0-9 ]+)",
+            r"\bdernier visuel vers\s+([a-z0-9 ]+)",
             r"\bvers\s+([a-z0-9 ]+)",
         ]
 
@@ -132,9 +132,25 @@ class DirectionParser:
             if not match:
                 continue
 
-            direction = self.cut_noise_after_direction(match.group(1))
+            raw_direction = self.stop_direction(match.group(1))
 
-            if direction:
-                return direction
+            if not raw_direction:
+                continue
+
+            corrected = self.correct_direction(raw_direction, location_parser)
+
+            if corrected:
+                return corrected
+
+            # Mode strict : si ce n'est pas connu, on ne retourne pas de direction brute.
+            return None
+
+        return None
+
+    def find(self, text: str):
+        detailed = self.find_detailed(text)
+
+        if detailed:
+            return detailed.get("name")
 
         return None

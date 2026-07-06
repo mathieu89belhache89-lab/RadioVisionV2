@@ -4,6 +4,27 @@ import unicodedata
 
 class UnitParser:
 
+    AFFILIATIONS = {
+        "mary": "Mary",
+        "marie": "Mary",
+        "mari": "Mary",
+        "mairie": "Mary",
+        "henry": "Henry",
+        "henri": "Henry",
+        "enry": "Henry",
+        "ap": "AP",
+        "a p": "AP",
+        "cp": "CP",
+        "c p": "CP",
+        "lincoln": "Lincoln",
+        "lincon": "Lincoln",
+        "adams": "Adams",
+        "adam": "Adams",
+        "tango plus": "Tango+",
+        "tango +": "Tango+",
+        "tango": "Tango",
+    }
+
     SIMPLE_NUMBERS = {
         "zero": 0,
         "un": 1,
@@ -168,8 +189,40 @@ class UnitParser:
 
         return None
 
+    def find_affiliation(self, text_clean: str):
+        # Détection prioritaire uniquement quand l'affiliation est utilisée comme unité.
+        patterns = [
+            r"\bunite\s+([a-z ]{2,20})",
+            r"\bcentral\s+unite\s+([a-z ]{2,20})",
+            r"\bpatrouille\s+([a-z ]{2,20})",
+        ]
+
+        for pattern in patterns:
+            match = re.search(pattern, text_clean)
+
+            if not match:
+                continue
+
+            raw = match.group(1).strip()
+            raw = self.cut_after_stop_word(raw)
+            raw = re.sub(r"\s+", " ", raw).strip()
+
+            # Tango+ doit passer avant Tango.
+            for alias in sorted(self.AFFILIATIONS, key=len, reverse=True):
+                pattern_alias = r"^" + re.escape(alias) + r"(\b|$)"
+
+                if re.search(pattern_alias, raw):
+                    return self.AFFILIATIONS[alias]
+
+        return None
+
     def find(self, text: str):
         text = self.clean(text)
+
+        affiliation = self.find_affiliation(text)
+
+        if affiliation:
+            return affiliation
 
         direct_patterns = [
             r"\bunite\s+(\d{1,3})\b",

@@ -188,6 +188,23 @@ class MainWindow(QMainWindow):
         overlay_form.addRow("Durée affichage", self.setting_overlay_duration)
         overlay_form.addRow("Position", self.setting_overlay_position)
 
+        audio_group = QGroupBox("Source audio")
+        audio_form = QFormLayout(audio_group)
+
+        self.setting_capture_microphone = QCheckBox(
+            "Inclure mon micro en plus du son PC / FiveM"
+        )
+        self.setting_capture_microphone.setChecked(False)
+
+        audio_note = QLabel(
+            "Conseil : utilise un casque pour éviter que ton micro reprenne le son du jeu ou de Discord."
+        )
+        audio_note.setWordWrap(True)
+        audio_note.setStyleSheet("color:#949ba4;")
+
+        audio_form.addRow("", self.setting_capture_microphone)
+        audio_form.addRow("Note", audio_note)
+
         analyse_group = QGroupBox("Analyse radio")
         analyse_form = QFormLayout(analyse_group)
 
@@ -206,6 +223,9 @@ class MainWindow(QMainWindow):
         self.setting_pursuit_window.setSuffix(" min")
         self.setting_pursuit_window.setValue(3)
 
+        self.setting_strict_analysis = QCheckBox("Mode analyse stricte : ne pas afficher les lieux inconnus comme sûrs")
+        self.setting_strict_analysis.setChecked(True)
+
         self.setting_whisper_model = QComboBox()
         self.setting_whisper_model.addItem("Tiny — rapide mais moins précis", "tiny")
         self.setting_whisper_model.addItem("Base — équilibré", "base")
@@ -214,6 +234,7 @@ class MainWindow(QMainWindow):
         analyse_form.addRow("Attente avant bulle incomplète", self.setting_pending_delay)
         analyse_form.addRow("Fenêtre fusion", self.setting_merge_window)
         analyse_form.addRow("Durée poursuite active", self.setting_pursuit_window)
+        analyse_form.addRow("", self.setting_strict_analysis)
         analyse_form.addRow("Modèle Whisper", self.setting_whisper_model)
 
         note = QLabel(
@@ -233,6 +254,7 @@ class MainWindow(QMainWindow):
         buttons.addStretch()
 
         layout.addWidget(overlay_group)
+        layout.addWidget(audio_group)
         layout.addWidget(analyse_group)
         layout.addWidget(note)
         layout.addLayout(buttons)
@@ -252,6 +274,8 @@ class MainWindow(QMainWindow):
             "overlay_enabled": self.setting_overlay_enabled.isChecked(),
             "overlay_duration": self.setting_overlay_duration.value(),
             "overlay_position": self.setting_overlay_position.currentData(),
+            "capture_microphone": self.setting_capture_microphone.isChecked(),
+            "strict_analysis": self.setting_strict_analysis.isChecked(),
             "pending_delay": self.setting_pending_delay.value(),
             "merge_window": self.setting_merge_window.value(),
             "pursuit_window": self.setting_pursuit_window.value(),
@@ -270,6 +294,14 @@ class MainWindow(QMainWindow):
         self._set_combo_value(
             self.setting_overlay_position,
             settings.get("overlay_position", "top_right"),
+        )
+
+        self.setting_capture_microphone.setChecked(
+            bool(settings.get("capture_microphone", False))
+        )
+
+        self.setting_strict_analysis.setChecked(
+            bool(settings.get("strict_analysis", True))
         )
 
         self.setting_pending_delay.setValue(
