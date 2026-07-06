@@ -59,20 +59,16 @@ class Whisper:
             temperature=0.0,
             vad_filter=False,
             condition_on_previous_text=False,
-            no_speech_threshold=0.85,
-            compression_ratio_threshold=2.8,
-            log_prob_threshold=-1.2,
+            no_speech_threshold=0.65,
+            compression_ratio_threshold=2.4,
+            log_prob_threshold=-1.0,
             initial_prompt=(
                 "Communication radio police LSPD GTA FiveM. "
-                "Les codes radio peuvent être dits seuls. "
-                "Codes patrol : 10-0, 10-1, 10-2, 10-3, 10-4, 10-5, 10-6, 10-7, 10-8, 10-9, 10-99. "
-                "Codes poursuite : 10-10, 10-11, 10-12, 10-13, 10-14, 10-15, 10-16, 10-17, 10-19. "
-                "Codes braquage : 10-30, 10-31, 459, 460, 461. "
-                "Codes divers : 10-20, 10-29, 10-32, 10-33, 187, 207, 208. "
-                "Codes rapports : Code OD, Code DS, Code DOA, Code DCD, Code RDP, Code S. "
-                "Codes urgence : Code 0, Code 1, Code 2, Code 3. "
-                "Affiliations : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus. "
-                "Exemples : 10-10. 10-11. 10-30. 10-31. 459. 10-99. 207. 208."
+                "Codes radio courts possibles. "
+                "Exemples codes seuls : 10-10, 10-11, 10-30, 10-31, 459, 460, 461, 10-99, 187, 207, 208. "
+                "Exemples rapports : Code OD, Code DS, Code DOA, Code DCD, Code RDP, Code S. "
+                "Exemples urgences : Code 0, Code 1, Code 2, Code 3. "
+                "Exemples affiliations : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus."
             ),
         )
 
@@ -84,10 +80,278 @@ class Whisper:
 
         return self.clean_text(text)
 
+    def known_code_tokens(self):
+        return {
+            "10-0",
+            "10-1",
+            "10-2",
+            "10-3",
+            "10-4",
+            "10-5",
+            "10-6",
+            "10-7",
+            "10-8",
+            "10-9",
+            "10-10",
+            "10-11",
+            "10-12",
+            "10-13",
+            "10-14",
+            "10-15",
+            "10-16",
+            "10-17",
+            "10-19",
+            "10-20",
+            "10-29",
+            "10-30",
+            "10-31",
+            "10-32",
+            "10-33",
+            "10-99",
+            "459",
+            "460",
+            "461",
+            "187",
+            "207",
+            "208",
+            "code 0",
+            "code 1",
+            "code 2",
+            "code 3",
+            "code od",
+            "code ds",
+            "code doa",
+            "code dcd",
+            "code rdp",
+            "code s",
+            "mary",
+            "henry",
+            "ap",
+            "cp",
+            "lincoln",
+            "adams",
+            "tango",
+            "tango+",
+        }
+
+    def get_most_common_token(self, counts):
+        most_common_token = ""
+        most_common_count = 0
+
+        for token, count in counts.items():
+            if count > most_common_count:
+                most_common_token = token
+                most_common_count = count
+
+        return most_common_token, most_common_count
+
+    def is_prompt_noise(self, text):
+        text = text.strip().lower()
+
+        exact_noise = {
+            "exemples",
+            "dis",
+            "dis dis",
+            "dis dis dis",
+            "dis en",
+            "dis-en",
+            "monique tamer",
+            "monique ta mer",
+            "ahead son son cop niff",
+        }
+
+        if text in exact_noise:
+            return True
+
+        noise_parts = [
+            "faire foutre",
+            "son son cop",
+            "la question est a dire",
+            "la question est à dire",
+            "depute de la police",
+            "député de la police",
+        ]
+
+        for part in noise_parts:
+            if part in text:
+                return True
+
+        return False
+
+    def is_repeated_sentence_noise(self, text):
+        text = text.strip().lower()
+
+        if len(text) < 60:
+            return False
+
+        words = re.findall(r"[a-z0-9]+", text)
+
+        if len(words) < 12:
+            return False
+
+        for size in range(3, 9):
+            chunks = []
+
+            for index in range(0, len(words), size):
+                chunk = " ".join(words[index:index + size])
+
+                if len(chunk.split()) == size:
+                    chunks.append(chunk)
+
+            if not chunks:
+                continue
+
+            counts = {}
+
+            for chunk in chunks:
+                counts[chunk] = counts.get(chunk, 0) + 1
+
+            _, count = self.get_most_common_token(counts)
+
+            if count >= 3:
+                return True
+
+        return False
+
+    def fix_repetition_loop(self, text):
+        text = text.strip()
+
+        if not text:
+            return ""
+
+        if self.is_prompt_noise(text):
+            return ""
+
+        if self.is_repeated_sentence_noise(text):
+            return ""
+
+        lower = text.lower()
+
+        joined_clean = re.sub(r"[^a-z0-9+-]+", " ", lower)
+        joined_clean = re.sub(r"\s+", " ", joined_clean).strip()
+
+        special_repeated_patterns = {
+            "codes s": "code s",
+            "code s": "code s",
+            "codes od": "code od",
+            "code od": "code od",
+            "codes ds": "code ds",
+            "code ds": "code ds",
+            "code dsd": "code ds",
+            "codes dsd": "code ds",
+            "codes doa": "code doa",
+            "code doa": "code doa",
+            "codes dcd": "code dcd",
+            "code dcd": "code dcd",
+            "codes rdp": "code rdp",
+            "code rdp": "code rdp",
+        }
+
+        for repeated, fixed in special_repeated_patterns.items():
+            if joined_clean.count(repeated) >= 2:
+                return fixed
+
+        known_codes = self.known_code_tokens()
+
+        for code in known_codes:
+            if "-" in code and lower.count(code) >= 2:
+                return code
+
+        tokens = re.findall(r"10-\d{1,2}|[a-z0-9]+", lower)
+
+        if len(tokens) < 3:
+            return text
+
+        counts = {}
+
+        for token in tokens:
+            counts[token] = counts.get(token, 0) + 1
+
+        most_common_token, most_common_count = self.get_most_common_token(counts)
+
+        if not most_common_token:
+            return ""
+
+        repetition_ratio = most_common_count / len(tokens)
+
+        useless_tokens = {
+            "code",
+            "codes",
+            "d",
+            "o",
+            "s",
+            "dis",
+            "content",
+            "exemples",
+            "question",
+            "depute",
+            "police",
+        }
+
+        if len(tokens) >= 3 and most_common_count == len(tokens):
+            if most_common_token in known_codes:
+                return most_common_token
+
+            if most_common_token in ["208", "207", "459"]:
+                return most_common_token
+
+            return ""
+
+        if repetition_ratio >= 0.60:
+            if most_common_token in known_codes:
+                return most_common_token
+
+            if most_common_token in ["208", "207", "459"]:
+                return most_common_token
+
+            if most_common_token in useless_tokens:
+                return ""
+
+            return ""
+
+        return text
+
     def clean_text(self, text):
         text = text.strip()
 
         replacements = {
+            "code ds code 19": "code ds",
+            "code dsd": "code ds",
+            "codes dsd": "code ds",
+            "code des": "code ds",
+            "codes des": "code ds",
+
+            "codes content": "10-10",
+            "code content": "10-10",
+
+            "codes 30": "10-30",
+            "code 30": "10-30",
+            "codes 31": "10-31",
+            "code 31": "10-31",
+            "codes 17": "10-17",
+            "code 17": "10-17",
+
+            "codes sont en cascant neuf": "10-99",
+            "codes quatre vingt dix neuf": "10-99",
+            "code quatre vingt dix neuf": "10-99",
+
+            "10-89": "10-99",
+            "10 89": "10-99",
+            "10-98": "10-99",
+            "10 98": "10-99",
+
+            "450-9": "459",
+            "450 9": "459",
+            "code 5 59": "459",
+            "code 5, 59": "459",
+            "code 559": "459",
+
+            "codes de 108": "208",
+            "code de 108": "208",
+            "code 108": "208",
+
+            "277": "207",
+
             "dix quatre vingt dix neuf": "10-99",
             "dix quatre-vingt-dix-neuf": "10-99",
 
@@ -204,6 +468,9 @@ class Whisper:
 
         lower = text.lower()
 
+        lower = lower.replace(",", " ")
+        lower = lower.replace(".", " ")
+
         for bad, good in sorted(
             replacements.items(),
             key=lambda item: len(item[0]),
@@ -211,7 +478,16 @@ class Whisper:
         ):
             lower = lower.replace(bad.lower(), good.lower())
 
+        lower = re.sub(r"\bcodes?\s+s\b", "code s", lower)
+        lower = re.sub(r"\bcodes?\s+od\b", "code od", lower)
+        lower = re.sub(r"\bcodes?\s+ds\b", "code ds", lower)
+        lower = re.sub(r"\bcodes?\s+doa\b", "code doa", lower)
+        lower = re.sub(r"\bcodes?\s+dcd\b", "code dcd", lower)
+        lower = re.sub(r"\bcodes?\s+rdp\b", "code rdp", lower)
+
         lower = re.sub(r"\b10\s*-\s*(\d+)\b", r"10-\1", lower)
-        lower = re.sub(r"\s+", " ", lower)
+        lower = re.sub(r"\s+", " ", lower).strip()
+
+        lower = self.fix_repetition_loop(lower)
 
         return lower.strip()

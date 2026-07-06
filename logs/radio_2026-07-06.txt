@@ -1031,3 +1031,591 @@ Type : Code radio seul
 Phrase : 10-10.
 Code : 10-10
 Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 01:55:46
+Type : Code radio seul
+Phrase : codes 10-11.
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+============================================================
+Heure : 01:56:02
+Type : Code radio seul
+Phrase : 10-30.
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 01:56:14
+Type : Code radio seul
+Phrase : codes 30, 10-31.
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 01:57:33
+Type : Code radio seul
+Phrase : 208.
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:07:41
+Type : Code radio seul
+Phrase : 10-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 02:07:46
+Type : Code radio seul
+Phrase : 10-31
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 02:07:58
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 02:08:11
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:08:17
+Type : Code radio seul
+Phrase : 10-99
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 02:08:23
+Type : Code radio seul
+Phrase : 207
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 02:08:31
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:08:36
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 02:09:28
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:09:58
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 02:10:05
+Type : Code radio seul
+Phrase : code ds code 19-19
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:10:15
+Type : Code radio seul
+Phrase : 207
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 02:10:19
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:10:23
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 02:11:57
+Phrase : la question est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est à dire que le député de la police est
+Véhicule : police
+============================================================
+Heure : 02:12:21
+Type : Code radio seul
+Phrase : tango
+Code : TANGO
+Motif : Patrouille à trois
+============================================================
+Heure : 02:12:25
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:12:37
+Type : Code radio seul
+Phrase : 207
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 02:12:41
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:12:47
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 02:14:32
+Phrase : codes de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de la police code de
+Véhicule : police
+============================================================
+Heure : 02:17:07
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:17:13
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 02:17:23
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 02:17:28
+Type : Code radio seul
+Phrase : 10-11
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+============================================================
+Heure : 02:17:34
+Type : Code radio seul
+Phrase : 10-99
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 02:17:39
+Type : Code radio seul
+Phrase : 207
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 02:17:44
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:18:10
+Type : Code radio seul
+Phrase : 10-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 02:18:16
+Type : Code radio seul
+Phrase : 10-31
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 02:18:28
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 02:18:35
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:18:40
+Type : Code radio seul
+Phrase : tango
+Code : TANGO
+Motif : Patrouille à trois
+============================================================
+Heure : 02:20:02
+Type : Code radio seul
+Phrase : 10-0
+Code : 10-0
+Motif : Retour au poste de police
+============================================================
+Heure : 02:20:14
+Type : Code radio seul
+Phrase : 10-1
+Code : 10-1
+Motif : En route sur les lieux
+============================================================
+Heure : 02:20:21
+Type : Code radio seul
+Phrase : 10-2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+============================================================
+Heure : 02:20:26
+Type : Code radio seul
+Phrase : 10-3
+Code : 10-3
+Motif : Demande de renfort, équivaut code 3
+============================================================
+Heure : 02:20:46
+Type : Code radio seul
+Phrase : 10-4
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 02:20:51
+Type : Code radio seul
+Phrase : 10-5
+Code : 10-5
+Motif : Négatif
+============================================================
+Heure : 02:21:08
+Type : Code radio seul
+Phrase : 10-6
+Code : 10-6
+Motif : En cours / Occupé sur un contrôle, un 911
+============================================================
+Heure : 02:21:20
+Type : Code radio seul
+Phrase : 10-7
+Code : 10-7
+Motif : Transfert d’un suspect au poste de police ou fédérale
+============================================================
+Heure : 02:23:56
+Type : Code radio seul
+Phrase : 10-0
+Code : 10-0
+Motif : Retour au poste de police
+============================================================
+Heure : 02:24:01
+Type : Code radio seul
+Phrase : 10-1
+Code : 10-1
+Motif : En route sur les lieux
+============================================================
+Heure : 02:24:10
+Type : Code radio seul
+Phrase : 10-2
+Code : 10-2
+Motif : En patrouille / Retour en patrouille
+============================================================
+Heure : 02:24:15
+Type : Code radio seul
+Phrase : 10-3
+Code : 10-3
+Motif : Demande de renfort, équivaut code 3
+============================================================
+Heure : 02:24:30
+Type : Code radio seul
+Phrase : 10-4
+Code : 10-4
+Motif : Message bien reçu, confirmation
+============================================================
+Heure : 02:24:44
+Type : Code radio seul
+Phrase : 10-5
+Code : 10-5
+Motif : Négatif
+============================================================
+Heure : 02:25:02
+Phrase : 10 à 6
+Véhicule : Audi A6
+============================================================
+Heure : 02:25:08
+Type : Code radio seul
+Phrase : 10-6
+Code : 10-6
+Motif : En cours / Occupé sur un contrôle, un 911
+============================================================
+Heure : 02:25:19
+Type : Code radio seul
+Phrase : 10 7
+Code : 10-7
+Motif : Transfert d’un suspect au poste de police ou fédérale
+============================================================
+Heure : 02:25:44
+Type : Code radio seul
+Phrase : 10-8
+Code : 10-8
+Motif : Fusillade, échange de coup de feu
+============================================================
+Heure : 02:25:51
+Type : Code radio seul
+Phrase : 10 9
+Code : 10-9
+Motif : Tirs sur notre unité, code 3
+============================================================
+Heure : 02:26:03
+Type : Code radio seul
+Phrase : 10-99
+Code : 10-99
+Motif : Demande de renfort immédiat
+============================================================
+Heure : 02:26:19
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 02:26:24
+Type : Code radio seul
+Phrase : 10-11
+Code : 10-11
+Motif : Refus d'obtempérer en voiture
+============================================================
+Heure : 02:26:48
+Type : Code radio seul
+Phrase : 10-12
+Code : 10-12
+Motif : Refus d'obtempérer en voiture rapide
+============================================================
+Heure : 02:26:59
+Type : Code radio seul
+Phrase : 10-13
+Code : 10-13
+Motif : Refus d'obtempérer en moto
+============================================================
+Heure : 02:27:05
+Type : Code radio seul
+Phrase : 10-14
+Code : 10-14
+Motif : Refus d'obtempérer en véhicule aérien
+============================================================
+Heure : 02:27:11
+Type : Code radio seul
+Phrase : 10-15
+Code : 10-15
+Motif : Refus d'obtempérer en véhicule aquatique
+============================================================
+Heure : 02:27:21
+Type : Code radio seul
+Phrase : 10-16
+Code : 10-16
+Motif : Suspect perdu
+============================================================
+Heure : 02:27:27
+Type : Code radio seul
+Phrase : 10-10
+Code : 10-10
+Motif : Refus d'obtempérer à pied
+============================================================
+Heure : 02:27:34
+Type : Code radio seul
+Phrase : 10-17
+Code : 10-17
+Motif : Autorisation de tirer sur les pneus
+============================================================
+Heure : 02:27:41
+Type : Code radio seul
+Phrase : 10-19
+Code : 10-19
+Motif : Accident
+============================================================
+Heure : 02:27:47
+Type : Code radio seul
+Phrase : code 0
+Code : CODE 0
+Motif : Problème de tête
+============================================================
+Heure : 02:27:53
+Type : Code radio seul
+Phrase : code 1
+Code : CODE 1
+Motif : Appel gouvernement
+============================================================
+Heure : 02:27:58
+Type : Code radio seul
+Phrase : code 2
+Code : CODE 2
+Motif : Nécessitons une unité silencieuse
+============================================================
+Heure : 02:28:02
+Type : Code radio seul
+Phrase : code 3
+Code : CODE 3
+Motif : Urgence toutes les unités avec sirène et gyrophare
+============================================================
+Heure : 02:28:10
+Type : Code radio seul
+Phrase : 10-30
+Code : 10-30
+Motif : Risque de braquage
+============================================================
+Heure : 02:28:15
+Type : Code radio seul
+Phrase : 10-31
+Code : 10-31
+Motif : Braquage confirmé
+============================================================
+Heure : 02:28:22
+Type : Code radio seul
+Phrase : 459
+Code : 459
+Motif : Cambriolage
+============================================================
+Heure : 02:28:28
+Type : Code radio seul
+Phrase : 460
+Code : 460
+Motif : Braquage
+============================================================
+Heure : 02:28:33
+Type : Code radio seul
+Phrase : 461
+Code : 461
+Motif : Supérette
+============================================================
+Heure : 02:28:40
+Type : Code radio seul
+Phrase : 10-20
+Code : 10-20
+Motif : Regroupement important
+============================================================
+Heure : 02:28:45
+Type : Code radio seul
+Phrase : 10-29
+Code : 10-29
+Motif : RAS
+============================================================
+Heure : 02:28:51
+Type : Code radio seul
+Phrase : 10-32
+Code : 10-32
+Motif : Sniper
+============================================================
+Heure : 02:28:57
+Type : Code radio seul
+Phrase : 10-33
+Code : 10-33
+Motif : Unité parachutiste
+============================================================
+Heure : 02:29:06
+Type : Code radio seul
+Phrase : 187
+Code : 187
+Motif : Homicide
+============================================================
+Heure : 02:29:11
+Type : Code radio seul
+Phrase : 207
+Code : 207
+Motif : Enlèvement
+============================================================
+Heure : 02:29:16
+Type : Code radio seul
+Phrase : 208
+Code : 208
+Motif : Prise d’otage sur agent de l’état
+============================================================
+Heure : 02:29:20
+Type : Code radio seul
+Phrase : code od
+Code : CODE OD
+Motif : Agent à terre
+============================================================
+Heure : 02:29:26
+Type : Code radio seul
+Phrase : code ds
+Code : CODE DS
+Motif : Suspect neutralisé / abattu
+============================================================
+Heure : 02:29:31
+Type : Code radio seul
+Phrase : code doa
+Code : CODE DOA
+Motif : Civil à terre, sans info précise
+============================================================
+Heure : 02:29:36
+Type : Code radio seul
+Phrase : code dcd
+Code : CODE DCD
+Motif : Civil décédé
+============================================================
+Heure : 02:29:41
+Type : Code radio seul
+Phrase : code rdp
+Code : CODE RDP
+Motif : Récapitulatif des patrouilles
+============================================================
+Heure : 02:29:46
+Type : Code radio seul
+Phrase : code s
+Code : CODE S
+Motif : Silence radio total
+============================================================
+Heure : 02:30:08
+Type : Code radio seul
+Phrase : henry
+Code : HENRY
+Motif : Patrouille en hélicoptère
+============================================================
+Heure : 02:30:15
+Type : Code radio seul
+Phrase : ap
+Code : AP
+Motif : Patrouille en avion
+============================================================
+Heure : 02:30:21
+Type : Code radio seul
+Phrase : cp
+Code : CP
+Motif : Patrouille des hauts gradés
+============================================================
+Heure : 02:30:29
+Type : Code radio seul
+Phrase : lincoln
+Code : LINCOLN
+Motif : Patrouille seul
+============================================================
+Heure : 02:30:35
+Type : Code radio seul
+Phrase : adams
+Code : ADAMS
+Motif : Patrouille à deux
+============================================================
+Heure : 02:30:41
+Type : Code radio seul
+Phrase : tango
+Code : TANGO
+Motif : Patrouille à trois
+============================================================
+Heure : 02:30:46
+Type : Code radio seul
+Phrase : tango+
+Code : TANGO+
+Motif : Patrouille à quatre
+============================================================
+Heure : 02:31:04
+Type : Code radio seul
+Phrase : mary
+Code : MARY
+Motif : Patrouille en moto
+============================================================
+Heure : 02:31:16
+Type : Code radio seul
+Phrase : pdp
+Code : PDP
+Motif : Poste de police
+============================================================
+Heure : 02:32:00
+Type : Code radio seul
+Phrase : il y a une po
+Code : PO
+Motif : Prise d’otage
