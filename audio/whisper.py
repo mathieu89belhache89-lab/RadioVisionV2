@@ -1,5 +1,6 @@
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 import numpy as np
@@ -65,10 +66,11 @@ class Whisper:
             initial_prompt=(
                 "Communication radio police LSPD GTA FiveM. "
                 "Codes radio courts possibles. "
-                "Exemples codes seuls : 10-10, 10-11, 10-30, 10-31, 459, 460, 461, 10-99, 187, 207, 208. "
+                "Exemples codes seuls : 10-2, 10-4, 10-6, 10-7, 10-8, 10-10, 10-11, 10-12, 10-30, 10-31, 459, 460, 461, 10-99, 187, 207, 208. "
                 "Exemples rapports : Code OD, Code DS, Code DOA, Code DCD, Code RDP, Code S. "
                 "Exemples urgences : Code 0, Code 1, Code 2, Code 3. "
-                "Exemples affiliations : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus."
+                "Exemples affiliations : Mary, Henry, AP, CP, Lincoln, Adams, Tango, Tango plus. "
+                "Informations générales : PDP, PO."
             ),
         )
 
@@ -132,6 +134,8 @@ class Whisper:
             "adams",
             "tango",
             "tango+",
+            "pdp",
+            "po",
         }
 
     def get_most_common_token(self, counts):
@@ -213,6 +217,540 @@ class Whisper:
 
         return False
 
+    def force_short_code_text(self, text):
+        """
+        Correction agressive pour les codes radio seuls.
+        Ne s'applique que sur les phrases courtes pour éviter
+        de casser les vraies phrases radio.
+        """
+        raw = str(text).lower().strip()
+
+        raw = unicodedata.normalize("NFD", raw)
+        raw = "".join(
+            c for c in raw
+            if unicodedata.category(c) != "Mn"
+        )
+
+        raw = raw.replace(",", " ")
+        raw = raw.replace(".", " ")
+        raw = raw.replace("_", " ")
+        raw = raw.replace("'", " ")
+        raw = raw.replace("-", " ")
+
+        raw = re.sub(r"[^a-z0-9+ ]", " ", raw)
+        raw = re.sub(r"\s+", " ", raw).strip()
+
+        if not raw:
+            return ""
+
+        words = raw.split()
+
+        # Sécurité : uniquement phrases courtes.
+        if len(words) > 7:
+            return text
+
+        compact = raw.replace(" ", "")
+
+        variants = {
+            "10-0": [
+                "10 0",
+                "100",
+                "dix zero",
+                "dis zero",
+                "dise zero",
+                "dizo",
+                "diso",
+            ],
+
+            "10-1": [
+                "10 1",
+                "101",
+                "dix un",
+                "dis un",
+                "dise un",
+                "dit un",
+                "disons",
+                "dis on",
+                "disque",
+                "disk",
+                "dixain",
+                "dizin",
+            ],
+
+            "10-2": [
+                "10 2",
+                "102",
+                "6-2",
+                "dix deux",
+                "dis deux",
+                "dise deux",
+                "dit deux",
+                "dix de",
+                "dis de",
+                "dis due",
+                "disdue",
+                "dis d",
+                "disd",
+                "dis deux",
+                "dix due",
+                "diz de",
+            ],
+
+            "10-3": [
+                "10 3",
+                "103",
+                "dix trois",
+                "dis trois",
+                "dise trois",
+                "dit trois",
+                "distrois",
+            ],
+
+            "10-4": [
+                "10 4",
+                "14",
+                "104",
+                "dix quatre",
+                "dis quatre",
+                "dise quatre",
+                "dit quatre",
+                "dis quatre",
+                "disquatre",
+                "dis 4",
+                "dix 4",
+                "dit 4",
+                "disquette",
+                "disquet",
+                "dixquette",
+                "dix quattre",
+            ],
+
+            "10-5": [
+                "10 5",
+                "105",
+                "dix cinq",
+                "dis cinq",
+                "dise cinq",
+                "dit cinq",
+                "dis sank",
+                "dis cinq",
+                "dix sank",
+                "dissank",
+                "cinq",
+                "5",
+            ],
+
+            "10-6": [
+                "10 6",
+                "106",
+                "dix six",
+                "dis six",
+                "dise six",
+                "dit six",
+                "dissix",
+                "this is",
+                "this six",
+                "six six",
+                "6 6",
+                "cis cis",
+                "cisse cisse",
+                "cis",
+                "cisse",
+                "six",
+                "6",
+            ],
+
+            "10-7": [
+                "10 7",
+                "107",
+                "dix sept",
+                "dis sept",
+                "dise sept",
+                "dit sept",
+                "dix 7",
+                "10 sept",
+                "17",
+                "set",
+                "disces",
+                "dices",
+                "disses",
+                "dixces",
+                "dis c",
+            ],
+
+            "10-8": [
+                "10 8",
+                "18",
+                "108",
+                "dix huit",
+                "dis huit",
+                "dise huit",
+                "dit huit",
+                "dizuit",
+                "dix huitre",
+                "dissuite",
+                "dis suite",
+                "huit",
+                "8",
+            ],
+
+            "10-9": [
+                "10 9",
+                "19",
+                "109",
+                "dix neuf",
+                "dis neuf",
+                "dise neuf",
+                "dit neuf",
+                "dis 9",
+                "dix 9",
+                "neuf",
+                "9",
+            ],
+
+            "10-10": [
+                "10 10",
+                "1010",
+                "this this",
+                "dix dix",
+                "dis dix",
+                "dise dix",
+                "dit dix",
+                "codes content",
+                "code content",
+                "content",
+                "est-ce-d'ici",
+            ],
+
+            "10-11": [
+                "10 11",
+                "1011",
+                "1111",
+                "dix onze",
+                "dis onze",
+                "dise onze",
+                "dit onze",
+            ],
+
+            "10-12": [
+                "10 12",
+                "612",
+                "1012",
+                "dix douze",
+                "dis douze",
+                "dise douze",
+                "disse douze",
+                "disse ouz",
+                "dis ouz",
+                "dix douce",
+                "dise douce",
+                "dis douce",
+                "douze",
+            ],
+
+            "10-13": [
+                "10 13",
+                "1013",
+                "dix treize",
+                "dis treize",
+                "dise treize",
+                "dit treize",
+            ],
+
+            "10-14": [
+                "10 14",
+                "1014",
+                "dix quatorze",
+                "dis quatorze",
+                "dise quatorze",
+                "dit quatorze",
+            ],
+
+            "10-15": [
+                "10 15",
+                "15",
+                "1015",
+                "disquins",
+                "dix quinze",
+                "dis quinze",
+                "dise quinze",
+                "dit quinze",
+            ],
+
+            "10-16": [
+                "10 16",
+                "1016",
+                "dissez",
+                "dix seize",
+                "dis seize",
+                "dise seize",
+                "dit seize",
+            ],
+
+            "10-17": [
+                "10 17",
+                "1017",
+                "dix dix sept",
+                "code 17",
+                "codes 17",
+            ],
+
+            "10-19": [
+                "10 19",
+                "1019",
+                "dix dix neuf",
+                "accident",
+            ],
+
+            "10-20": [
+                "10 20",
+                "1020",
+                "dix vingt",
+            ],
+
+            "10-29": [
+                "10 29",
+                "1029",
+                "dix vingt neuf",
+                "ras",
+                "r a s",
+            ],
+
+            "10-30": [
+                "10 30",
+                "30",
+                "1030",
+                "dix trente",
+                "code 30",
+                "codes 30",
+            ],
+
+            "10-31": [
+                "10 31",
+                "1031",
+                "dix trente et un",
+                "code 31",
+                "codes 31",
+            ],
+
+            "10-32": [
+                "10 32",
+                "32",
+                "1032",
+                "dix trente deux",
+                "sniper",
+            ],
+
+            "10-33": [
+                "10 33",
+                "33",
+                "1033",
+                "dix trente trois",
+            ],
+
+            "10-99": [
+                "10 99",
+                "1099",
+                "10 89",
+                "1089",
+                "10 98",
+                "1098",
+                "dis 99",
+                "dix 99",
+                "dise 99",
+                "dit 99",
+                "dix quatre vingt dix neuf",
+                "dis quatre vingt dix neuf",
+                "quatre vingt dix neuf",
+                "renfort immediat",
+                "renfort immediate",
+                "demande renfort immediat",
+            ],
+
+            "459": [
+                "459",
+                "450 9",
+                "4509",
+                "code 5 59",
+                "code 559",
+                "quatre cent cinquante neuf",
+            ],
+
+            "460": [
+                "460",
+                "quatre cent soixante",
+            ],
+
+            "461": [
+                "461",
+                "quatre cent soixante et un",
+            ],
+
+            "187": [
+                "187",
+                "cent quatre vingt sept",
+            ],
+
+            "207": [
+                "207",
+                "277",
+                "deux cent sept",
+            ],
+
+            "208": [
+                "208",
+                "108",
+                "code 108",
+                "code de 108",
+                "codes de 108",
+                "deux cent huit",
+            ],
+
+            "CODE 0": [
+                "code 0",
+                "code zero",
+            ],
+
+            "CODE 1": [
+                "code 1",
+                "code un",
+            ],
+
+            "CODE 2": [
+                "code 2",
+                "code deux",
+            ],
+
+            "CODE 3": [
+                "code 3",
+                "code trois",
+            ],
+
+            "CODE OD": [
+                "code od",
+                "code o d",
+                "code oscar david",
+            ],
+
+            "CODE DS": [
+                "code ds",
+                "code d s",
+                "code dsd",
+                "code des",
+                "code delta sierra",
+            ],
+
+            "CODE DOA": [
+                "code doa",
+                "code d o a",
+                "code delta oscar alpha",
+            ],
+
+            "CODE DCD": [
+                "code dcd",
+                "code d c d",
+                "code delta charlie delta",
+            ],
+
+            "CODE RDP": [
+                "code rdp",
+                "code r d p",
+                "code romeo delta papa",
+            ],
+
+            "CODE S": [
+                "code s",
+                "codes s",
+                "code esse",
+                "codesse",
+                "code est",
+            ],
+
+            "MARY": [
+                "mary",
+                "marie",
+                "mari",
+                "merry",
+                "mairie",
+                "meri",
+            ],
+
+            "HENRY": [
+                "henry",
+                "henri",
+                "enri",
+            ],
+
+            "AP": [
+                "ap",
+                "a p",
+            ],
+
+            "CP": [
+                "cp",
+                "c p",
+            ],
+
+            "LINCOLN": [
+                "lincoln",
+                "lincon",
+            ],
+
+            "ADAMS": [
+                "adams",
+                "adam",
+            ],
+
+            "TANGO": [
+                "tango",
+            ],
+
+            "TANGO+": [
+                "tango plus",
+                "tango+",
+            ],
+
+            "PDP": [
+                "pdp",
+                "p d p",
+                "poste de police",
+            ],
+
+            "PO": [
+                "po",
+                "p o",
+                "peau",
+                "p eau",
+                "prise otage",
+                "prise d otage",
+            ],
+        }
+
+        for code, alias_list in variants.items():
+            for alias in alias_list:
+                alias_clean = alias.lower().strip()
+
+                alias_clean = unicodedata.normalize("NFD", alias_clean)
+                alias_clean = "".join(
+                    c for c in alias_clean
+                    if unicodedata.category(c) != "Mn"
+                )
+
+                alias_clean = alias_clean.replace("-", " ")
+                alias_clean = alias_clean.replace("'", " ")
+                alias_clean = re.sub(r"[^a-z0-9+ ]", " ", alias_clean)
+                alias_clean = re.sub(r"\s+", " ", alias_clean).strip()
+
+                alias_compact = alias_clean.replace(" ", "")
+
+                if raw == alias_clean:
+                    return code.lower()
+
+                if compact == alias_compact:
+                    return code.lower()
+
+        return text
+    
     def fix_repetition_loop(self, text):
         text = text.strip()
 
@@ -487,6 +1025,11 @@ class Whisper:
 
         lower = re.sub(r"\b10\s*-\s*(\d+)\b", r"10-\1", lower)
         lower = re.sub(r"\s+", " ", lower).strip()
+
+        forced = self.force_short_code_text(lower)
+
+        if forced != lower:
+            return forced.strip()
 
         lower = self.fix_repetition_loop(lower)
 
